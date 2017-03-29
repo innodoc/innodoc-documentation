@@ -99,6 +99,13 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
 
 \end{MXContent}
 
+\begin{MXContent}{Makroliste}{Makroliste}{STD}
+\MDeclareSiteUXID{BASE_SITE_MACROS}
+Folgende Makros werden im Makropaket des Konverters definiert:
+\ \\ \ \\
+\MPythonScript{macrodoc.py}
+\end{MXContent}
+
 % MExercises ist eine spezialisierte MXContent-Umgebung für Aufgaben, die ein eigenes Icon erhält
 \begin{MExercises}
 \MDeclareSiteUXID{BASE_SITE_EXERCISES}
@@ -605,6 +612,11 @@ function doTheThing() {
 \end{verbatim}
 \end{MExample}
 
+\end{MXContent}
+
+\begin{MXContent}{Pythoncode einbinden}{Pythoncode einbinden}{STD}
+\MDeclareSiteUXID{BASE_SITE_PYTHON}
+
 \begin{MExample}
 Mit dem Befehl \texttt{$\backslash$MPythonScript\{DATEINAME\}} kann ein Pythonskript ausgeführt werden, seine Ausgabe wird als LaTeX-Code interpretiert
 und an Stelle des Kommandos eingesetzt. Hier ein Beispiel: \MPythonScript{blabla.py}
@@ -643,8 +655,7 @@ Bla2
 \end{verbatim}
 \end{MExample}
 
+
 \end{MXContent}
-
-
 
 \end{document}
