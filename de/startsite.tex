@@ -10,7 +10,7 @@ Dies ist das Basismodul des \texttt{tex2x}-Konverters des VE\&MINT-Projekts.
 
 % HTML-Stücke können dennoch im LaTeX direkt eingegeben werden mit der html-Umgebung
 \begin{html}
-<div style="background-color:rgb(220,220,220);padding:10px">
+<div class="jumbotron">
 <h1 class="start" >Basis-Beispielmodul</h1>
 <p>
 Willkommen zum Beispielmodul.
@@ -19,10 +19,9 @@ Kursdaten werden im Browser automatisch gespeichert, eine explizite Anmeldung zu
 <b>JavaScript ist auf diesem Browser nicht aktiviert, ohne Javascript kann der Kurs nicht ausgeführt werden!</b>
 </noscript>
 <br />
-<center><button class="stdbutton" type="button" onclick="opensite(':directmaterial:1.1.1/modstart.html');">Inhaltsbereich öffnen</button></center>
-<br />
-</p>
-</div>
+<center><button class="stdbutton btn btn-primary btn-lg" type="button"
+onclick="opensite(':directmaterial:1.1.1/modstart.html');">Inhaltsbereich
+öffnen</button></center> <br /> </p> </div>
 \end{html}
 
 % In der Optionendatei angegebene Flags können mit if abgefragt werden, vorher sollte mit ifttm aber immer geprüft werden,
@@ -59,7 +58,7 @@ Kursvariante: & \MSignatureVariant\\
 \end{tabular}
 
 \ \\
-% Ein paar technsiche Spielereien um auf den Browsertyp hinzuweisen
+% Ein paar technische Spielereien um auf den Browsertyp hinzuweisen
 \begin{html}
 <p>
 <h3  class="start">Welche Browser kann man verwenden?</h3>
