@@ -5,4 +5,15 @@
 BASE_COURSE_SETTING = 'new value'
 
 # Overwrite the course title
-description = 'Basis-Beispielmodul'
+#description = 'Basis-Beispielmodul'
+
+de = {
+        "description": "Basis-Beispielmodul",
+        "wikipedia": {
+                "categories" : [
+                        "Testen_(Software)","Qualitätsmanagement (Softwaretechnik)"
+                ],
+                "blacklist" : [ "Basis" ]
+        }
+}
+
