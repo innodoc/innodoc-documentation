@@ -9,6 +9,8 @@ BASE_COURSE_SETTING = 'new value'
 
 de = {
         "description": "Basis-Beispielmodul",
+        #"DO_PDF":False,
+        "PDF_TREE":"pdftitlepage.tex",
         "wikipedia": {
                 "categories" : [
                         "Rhetorischer_Begriff","Testen_(Software)","Qualitätsmanagement (Softwaretechnik)"
