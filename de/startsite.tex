@@ -20,14 +20,14 @@ Kursdaten werden im Browser automatisch gespeichert, eine explizite Anmeldung zu
 </noscript>
 <br />
 <center><button class="stdbutton btn btn-primary btn-lg" type="button"
-onclick="opensite(':directmaterial:1.1.1/modstart.html');">Inhaltsbereich
+onclick="opensite('sectionx1.2.0.html');">Inhaltsbereich
 öffnen</button></center> <br /> </p> </div>
 \end{html}
 
 % In der Optionendatei angegebene Flags können mit if abgefragt werden, vorher sollte mit ifttm aber immer geprüft werden,
 % ob tatsächlich eine Onlinekonvertierung (ifttm=true) oder eine PDF-Umsetzung stattfindet
 \ifttm%
-\ifnum\value{MCFlagdorelease}=0% Falls dorelease=0 in Optionen oder Kommandozeile: Füge eine Analyse-Tests-Box ein
+\ifnum\value{MCFlagdorelease}% Falls dorelease=0 in Optionen oder Kommandozeile: Füge eine Analyse-Tests-Box ein
 \begin{html}
 <div style="background-color:rgb(220,190,55);padding:30px">
 <h2 class="start" >TESTVERSION - NICHT ZUR VERÖFFENTLICHUNG GEDACHT</h2>
