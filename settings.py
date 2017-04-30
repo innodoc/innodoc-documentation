@@ -17,3 +17,12 @@ de = {
         }
 }
 
+en = {
+        "description": "Example module",
+        "wikipedia": {
+                "categories" : [
+                        "Figures_of_speech","Software_testing","Software_quality"
+                ],
+                "blacklist" : [ "Base" ]
+        }
+}
