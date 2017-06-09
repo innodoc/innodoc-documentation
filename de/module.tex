@@ -509,17 +509,26 @@ und den letzten beiden Ziffern jetzigen Postleitzahl:
 
 \end{MXContent}
 
-\begin{MXContent}{Roulett Aufgaben}{Roulett Aufgaben}{STD}
+\begin{MXContent}{Roulette Aufgaben}{Roulette Aufgaben}{STD}
+Roulette
+Mit den folgenden Aufgabentypen werden Aufgaben aus Python Skripten erzeugt. So ist es z.B.
+möglich parametrisierte Aufgabenreihen zu erstellen. Im folgenden werden die verschiedenen
+Rouletteaufgabentypen vorgestellt.
 
-%\begin{MExercise}
-Roulett typ 0:
+Roulette Typ 0:
+
+Die folgende Aufgabe wurde mit dem Befehl
+
+\texttt{$\backslash$MAutoRouletteExercises\{parabelaufgabe.py\}\{5\}\{PREFIX1\}\{0\}}
+
+erzeugt.
 % Wende die generate-Funktion aus agex_miniaufgabe.py 3-mal an um Aufgaben zu generieren (vom Typ 1: In Reihenfolge und mit Durchklickbuttons)
 \MAutoRouletteExercises{parabelaufgabe.py}{5}{PREFIX1}{0}
 %\end{MExercise}
-Roulett typ 1:
-\MAutoRouletteExercises{parabelaufgabe.py}{5}{PREFIX1}{1}
-Roulett typ 2:
-\MAutoRouletteExercises{parabelaufgabe.py}{5}{PREFIX1}{2}
+Roulette Typ 1:
+\MAutoRouletteExercises{parabelaufgabe.py}{5}{PREFIX2}{1}
+Roulette Typ 2:
+\MAutoRouletteExercises{parabelaufgabe.py}{5}{PREFIX3}{2}
 
 \end{MXContent}
 
