@@ -515,7 +515,13 @@ Mit den folgenden Aufgabentypen werden Aufgaben aus Python Skripten erzeugt. So 
 möglich parametrisierte Aufgabenreihen zu erstellen. Im folgenden werden die verschiedenen
 Rouletteaufgabentypen vorgestellt.
 
+\MTitle{Autoroulette}
+Autoroulleteaufgaben beziehen ihre Inhalte aus einem python script, das TeX zurückgibt, als beispiel, siehe parabelaufgabe.py in
+tub_base/de/parabelaufgabe.py.
+
 \MTitle{Roulette Typ 0:}
+Typ 0 Autorouletteaufgaben bieten einen Button, der eine zufällige neue Aufgabe erzeugt. Dabei wird darauf geachtet, dass bereits angezeigte Aufgaben erst wieder erscheinen, wenn 
+Nutzer*innen alle anderen Aufgaben angezeigt wurden.
 Die folgende Aufgabe wurde mit dem Befehl
 \begin{verbatim}
 \MAutoRouletteExercises {parabelaufgabe.py}{5}{Roulette0}{0}
@@ -525,6 +531,7 @@ erzeugt.
 \MAutoRouletteExercises{parabelaufgabe.py}{5}{Roulette0}{0}
 
 \MTitle{Roulette Typ 1:}
+Typ 1 Autorouletteaufgaben ermöglichen es Benutzer*innen durch alle Aufgaben zu navigieren.
 Die folgende Aufgabe wurde mit dem Befehl
 \begin{verbatim}
 \MAutoRouletteExercises {parabelaufgabe.py}{5}{Roulette1}{1}
@@ -533,6 +540,7 @@ erzeugt.
 \MAutoRouletteExercises{parabelaufgabe.py}{5}{Roulette1}{1}
 
 \MTitle{Roulette Typ 2:}
+Typ 2 Autorouletteaufgaben bieten immer nur eine Aufgabe der Aufgabenserie an und können so z.B. für Tests benutzt werden.
 Die folgende Aufgabe wurde mit dem Befehl
 \begin{verbatim}
 \MAutoRouletteExercises {parabelaufgabe.py}{5}{Roulette2}{2}
@@ -540,6 +548,9 @@ Die folgende Aufgabe wurde mit dem Befehl
 erzeugt.
 \MAutoRouletteExercises{parabelaufgabe.py}{5}{Roulette2}{2}
 
+\MTitle{Directroulette}
+Directrouletteaufgaben beziehen ihre Inhalte aus TeX-Dateien. Als Beispiel, siehe 
+\MDirectRouletteExercises{fraction.rtex}{VBKM01_FRACTIONTRAINING}{0}
 
 \end{MXContent}
 
