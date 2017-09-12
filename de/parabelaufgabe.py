@@ -29,6 +29,12 @@ def generate(exid, prefix):
     # Erstellung des LaTeX-Texts für die Aufgabe
     text = "Der abgebildete Funktionsgraph gehört zu einer Parabelfunktion der Form $f(x)=x^2+px+q$:\\\\"
     text = text + "\\MUGraphicsSolo{" + fname + "}{width=0.5\\linewidth}{width:550px}\\ \\\\"
+    text += '\\begin{html}'
+    text += '<div id="jsxbox_' + str(prefix) + str(exid) + '" class="jxgbox" style="width:500px; height:500px;">'
+    text += 'var p = board.create("point",[1,1],{size:4,name:"A"});'
+    text += 'board.create("functiongraph", [function(x){return (x-(' + str(a) + ')) * (x-(' + str(b) +')) ;}]);'
+    text += '</div>'
+    text += '\\end{html}'
     text = text + "Der Funktionsgraph verläuft durch die Punkte $P(0|" + str(a * b) + ")$ sowie $Q(" + str(p) + "|" + str((p - a) * (p - b)) + ")$.\n"
     text = text + "Wie lautet die Funktionsvorschrift?\\ \\\\ \\ \\\\"
     text = text + "Antwort: \\MEquationItem{$f(x)$}{\\MLSimplifyQuestion{25}{(x-(" + str(a) + "))*(x-(" + str(b) + "))}{5}{x}{5}{0}{" + prefix + "_fx" + "}}\\ \\\\ \\ \\\\"
