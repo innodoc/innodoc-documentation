@@ -5,7 +5,7 @@ import random # neben random können weitere Python3-module importiert werden
 # Jede automatisierte Aufgabe definiert eine generate-Funktion, die eine seed-Nummer für den Zufallsgenerator
 # (oder andere Anwendungen) erhält sowie ein Präfix, dass vor alle UXIDs gesetzt werden sollte.
 # Die genereate-Funktion liefert einen String mit LaTeX-Befehlen zurück.
-def generate(exid, prefix):
+def generate(exid, prefix, rid=""):
 
     # Zufallsgenerator MUSS mit der Aufgaben-ID initialisiert werden
     random.seed(exid)
@@ -30,7 +30,7 @@ def generate(exid, prefix):
     text = "Der abgebildete Funktionsgraph gehört zu einer Parabelfunktion der Form $f(x)=x^2+px+q$:\\\\"
     text = text + "\\MUGraphicsSolo{" + fname + "}{width=0.5\\linewidth}{width:550px}\\ \\\\"
     text += '\\begin{html}'
-    text += '<div id="jsxbox_' + str(prefix) + str(exid) + '" class="jxgbox" style="width:500px; height:500px;">'
+    text += '<div id="jsxbox_' + str(prefix) + str(exid) + "_" + str(rid) + '" class="jxgbox" style="width:500px; height:500px;">'
     text += 'var p = board.create("point",[1,1],{size:4,name:"A"});'
     text += 'board.create("functiongraph", [function(x){return (x-(' + str(a) + ')) * (x-(' + str(b) +')) ;}]);'
     text += '</div>'
