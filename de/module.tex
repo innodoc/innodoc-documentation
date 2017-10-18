@@ -420,6 +420,8 @@ Das Zahleneingabefeld kann genutzt werden, um symbolische Eingaben vom Benutzer 
 In einem rechtwinkligen Dreieck habe die Ankathete an einem Winkel $\alpha=\frac13\pi$ die Länge $5$, welche Länge besitzt die Hypothenuse?\ \\ \ \\
 Die Länge der Hypothenuse beträgt \MEquationItem{$c$}{\MLParsedQuestion{20}{5/(cos(pi/3))}{25}{EX_MLParsedQuestion3}}.\ \\ \ \\
 Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLParsedQuestion\{20\}\{5/(cos(pi/3))\}\{25\}\{EX\_MLParsedQuestion3\}} erzeugt.
+Für eine Genauigkeit von beispielsweise 25 statt 4 Stellen würde $10$ nicht als Eingabe akzeptiert werden, da der Kosinus mithilfe eines Taylorpolynoms achten
+Grades berechnet wird und in der Musterlösung Rundungsfehler auftreten.
 \ \\
 \begin{itemize}
 \item{\texttt{5/cos(1/3*pi)} oder auch \texttt{5/cos($\backslash$pi/3)} sind richtige Eingaben.}
@@ -854,7 +856,23 @@ Bla2
 \end{verbatim}
 \end{MExample}
 
+\end{MXContent}
+
+\begin{MXContent}{Einbinden von Videos}{Einbinden von Videos}{STD}
+    
+Mit dem Befehl \texttt{$\backslash$MYoutubeVideo\{TITEL\}\{BREITE\}\{HÖHE\}\{URL\}} kann ein embedded-Youtubevideo eingebunden werden, dazu wird ein von YouTube erzeugter
+Player auf der Seite eingeblendet, der bei Bedarf vergrößert werden kann.
+\ \\
+\MYoutubeVideo{Newtons Laws (2)}{400}{300}{https://www.youtube.com/embed/WzvhuQ5RWJE?rel=0&amp;wmode=transparent}
+\ \\
+Dabei muss für die URL die src-Adresse von YouTube eingegeben werden, diese erhält man aus YouTube heraus, indem man auf \glqq Teilen\grqq\ klickt und dann auf \glqq embedded\grqq\ und daraus den src-Teil kopiert.
+Der obige Player wurde mit folgendem Kommando erzeugt:
+\begin{verbatim}
+\MYoutubeVideo{Newtons Laws (2)}{400}{300}{https://www.youtube.com/embed/WzvhuQ5RWJE?rel=0&amp;wmode=transparent}
+\end{verbatim}
+
 
 \end{MXContent}
+    
 
 \end{document}
