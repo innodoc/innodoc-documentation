@@ -99,6 +99,106 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
 
 \end{MXContent}
 
+\begin{MXContent}{Strukturierung}{Strukturierung}{STD}
+    \MDeclareSiteUXID{BASE_SITE_STRUCTURE}
+    Die typische Struktur eines Dokuments für \texttt{tex2x} ist
+    \ \\
+    \ \\
+    \begin{itemize}
+    \item{\texttt{MSection}\ \ \ \ \textit{Ein Abschnitt}\\
+    \texttt{MSectionStart}\ \ \ \ \textit{Einführung/Übersicht}\\
+    \begin{itemize}
+    \item{\texttt{MSubsection}
+    \begin{itemize}
+    \item{\texttt{MXContent}\ \ \ \ \textit{Eine konkrete HTML-Seite}}
+    \item{\texttt{MXContent}}
+    \item{\texttt{...}}
+    \end{itemize}
+    }
+    \end{itemize}
+    }
+    \end{itemize}
+    \ \\
+    \begin{MInfo}
+    Für die Strukturierung werden folgende Befehle verwenden:\\
+    \begin{itemize}
+    \item{\verb%\MSection{ABSCHNITTSTITEL}%}
+    \item{\texttt{$\backslash$}\verb%begin{MSectionStart} ... \end{MSectionStart}%} % hier muss verhindert werden, dass der Konverter MSectionStart erkennt und übersetzt
+    \item{\verb%\MSubsection{UNTERTITEL}%}
+    \item{\texttt{$\backslash$}\verb%begin{MXContent}{TITEL}{KURZTITEL}{TYP}% (Abschnittstyp in der Regel \texttt{STD})}
+    \item{Alternative Umgebungen statt \texttt{MXContent}: \texttt{MExercises}, \texttt{MTest}}
+    \end{itemize}
+    \end{MInfo}
+    
+    \begin{MExample}
+    Der Kurztitel eines \texttt{MXContent} wird dabei für die Navigationsbuttons verwendet:
+    \ \\ \ \\
+    \begin{center}
+    \MUGraphicsSolo{iconsbeispiel.png}{width=0.3\linewidth}{}
+    \end{center}
+    \end{MExample}
+    
+    Diese Strukturelemente sollten stets mit \verb%\MDeclareSiteUXID{KENNUNG}% versehen werden.
+    
+    \begin{MInfo}
+    Strukturelemente (Abschnitte, Contents, Aufgaben, Boxen etc.) werden auf drei Arten gekennzeichnet:
+    \begin{itemize}
+    \item{Über Labels, die mit \verb%\MLabel{NAME}% vergeben und und mit \verb%\MRef{NAME}% angesprochen werden. Bis auf die Verlinkung sind die Labels für den Benutzer unsichtbar.}
+    \item{Über Nummern, typischerweise in der Form \texttt{X.Y.Z}, die an den Elementen automatisch angebracht wird. Der Konverter vergibt die Nummern automatisch.}
+    \item{Über unique extended ids (uxid), diese machen das Element unabhängig von seiner Position im Kurs, seiner Nummer oder seiner Existenz kenntlich und werden vor allem verwendet,
+    um eingegebene Antworten zuzuordnen. Eine uxid wird mit \verb%\MDeclareSiteUXID{UXID}% und direkt in den Frageelementen vergeben. Sie muss vom Autor sinnvoll gewählt werden. Unter der
+    vergebenen uxid können die eingegebenen Aufgabenlösungen aus der Datenbank abgerufen werden.} 
+    \end{itemize}
+    \end{MInfo}
+    
+    \begin{MInfo}
+    Schlagwörter werden mit den folgenden Befehlen definiert und in der Suchliste zum gesamten Modul aufgeführt:
+    \begin{itemize}
+    \item{\verb%\MIndex{SCHLAGWORT}% definiert ein Schlagwort (ohne Ausgabe auf der konkreten Seite),}
+    \item{\verb%\MEntry{SCHLAGWORT}{TEXT}% versieht ein Wort aus dem Seitentext (das von dem Schlagwort abweichen kann) mit einem Schlagwort.}
+    \end{itemize}
+    \end{MInfo}
+    
+    \begin{MExample}
+    Das Wort \MEntry{Schlagwort}{Schlagwörter} wird unter \texttt{Schlagwörter} in der Liste aufgeführt mit dem Befehl \texttt{$\backslash$}\verb%MEntry{Schlagwort}{Schlagwörter}%.
+    Mit dem Befehl \verb%\MIndex{Unwort}% wird \texttt{Unwort} in die Suchliste eingetragen und verlinkt, aber taucht nicht im Ausgabetext auf.
+    \end{MExample}
+    
+    \end{MXContent}
+    
+    \begin{MXContent}{Bilder einbinden}{Bilder einbinden}{STD}
+    \MDeclareSiteUXID{BASE_SITE_IMAGES}
+    
+    \begin{MInfo}
+    Zum Einbinden von Bildern erfolgt mit den Makros
+    \begin{itemize}
+    \item{\verb%\MGraphics{DATEINAME}{PDF-SKALIERUNG}{TITEL}%}
+    \item{\verb%\MUGraphics{DATEINAME}{PDF-SKALIERUNG}{TITEL}{CSS-STYLE}% (dabei können Skalierung/Stile auch leer sein)}
+    \item{\verb%\MGraphicsSolo{DATEINAME}{PDF-SKALIERUNG}%}
+    \item{\verb%\MUGraphicsSolo{DATEINAME}{PDF-SKALIERUNG}{CSS-STYLE}%}
+    \end{itemize}
+    \end{MInfo}
+    
+    Für die Bilder sind die Formate \texttt{png}, \texttt{jpg}, \texttt{gif}, \texttt{svg} möglich (andere mit Einschränkungen).
+    
+    
+    \begin{MExample}
+    Eine typische Bildeinbindung mit Nummerierung und Einrückung:
+    \MUGraphics{testbild.png}{width=0.3\linewidth}{Dies ist der Bildtitel}{width:400px}
+    Sie wurde mit dem Befehl \verb%\MUGraphics{testbild.png}{width=0.3\linewidth}{Dies ist der Bildtitel}{width:400px}%
+    erzeugt.
+    \end{MExample}
+    
+    \begin{MExample}
+    Eine einfache Bildeinbindung ohne zusätzliche Elemente, sie wird nicht eingerückt:
+    \MUGraphicsSolo{testbild.png}{width=0.2\linewidth}{width:150px}
+    Sie wurde mit dem Befehl \verb%\MUGraphicsSolo{testbild.png}{width=0.2\linewidth}{width:150px}%
+    erzeugt.
+    \end{MExample}
+    
+    
+    \end{MXContent}
+
 \begin{MXContent}{Makroliste}{Makroliste}{STD}
 \MDeclareSiteUXID{BASE_SITE_MACROS}
 Folgende Makros werden im Makropaket des Konverters definiert:
