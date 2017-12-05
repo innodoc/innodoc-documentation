@@ -879,25 +879,52 @@ Der obige Player wurde mit folgendem Kommando erzeugt:
 \begin{MXContent}{Views}{Views}{STD}
 \MDeclareSiteUXID{BASE_SITE_VIEWS}
 Es gibt die Möglichkeit Ansichten (Views) zu definieren. Das ist beispielsweise nützlich, um Kursinhalte weiter zu gliedern. So
-ist beispielsweise eine View denkbar, die alle Videos enthält, oder eine View, die zum ausgewählten Thema Zusatzinformationen anzeigt.
+ist eine View denkbar, die alle Videos enthält, oder eine View, die zum ausgewählten Thema Zusatzinformationen anzeigt.
 
-Views müssen zuerst mit dem Befehl \begin{verbatim}\defineView{view-name}{viewoptionen}\end{verbatim} definiert werden. Dabei gibt \texttt{view-name}
-den Namen an, der der View zugewiesen wird. \texttt{optionen} hat die Syntax \texttt{option1=wert1;option2=wert2}. Erkannt werden
-die Optionen:
-
-\begin{MDTabular}{lll}
-Option & Beschreibung & default \\
-icon & der icon-name des glyphicons (siehe \MExtLink{https://getbootstrap.com/docs/3.3/components/}{bootstrap3 glyphicons}) & glyphicon-eye-open \\
-helptext-key & Eine id über die ein i18n Text abgerufen wird. Diese sind in \texttt{src/files/i18n/<lang>.json} gespeichert und müssen um den ausgewählten
-helptext-key für alle Sprachen ergänzt werden. & view-helptext
-\end{MDTabular}
-
+Views können einfach mit dem folgenden Befehl definiert werden: \begin{verbatim}
+\beginView{view-name} 
+<hier kommt der inhalt der view>
+\endView{view-name}
+\end{verbatim} 
+Views werden dabei automatisch vom Konverter erkannt und falls auf einer Seite vorhanden, oben angezeigt. Gemäß der Trennung von Inhalt und Darstellung
+müssen/können die Icons, die für eine View angezeigt werden in css geändert werden. 
+\MTitle{View Icons}
+Jede View bekommt einen eindeutigen css ID-Selektor zugewisen. So hat eine View mit dem Namen \texttt{videos} den ID-selektor \texttt{view-videos}. 
+Mit dem folgenden css code kann beispielsweise das Icon für die view-videos geändert werden.
+\begin{verbatim}
+#navbarTop #view-videos::before {
+font-family: 'Glyphicons Halflings';
+content: "\e105";
+}
+\end{verbatim}
+Das setzt voraus, dass Glyphicons eingebunden wurden (per default der Fall). Die codes für den Content können hier gesehen werden
+\MextLink{https://glyphicons.bootstrapcheatsheets.com/}{bootstrap3 glyphicons cheatsheet}
 \beginView{test}{}
 Das ist die erste Ansicht
 \endView{test}
 \beginView{test2}{}
 Das ist die zweite Ansicht
 \endView{test2}
+
+\MTitle{View Hilfetexte}
+Entsprechend der Übersetzbarkeit der Inhalte werden die sprachspezifischen Texte im i18n ordner in den jeweiligen Sprachdateien editiert. Wenn für die
+View aus obigem Beispiel ein Hilfetext definiert werden soll müss in die Datei \texttt{i18n/de.json} sowie in jede weitere unterstützte Sprachdatei die folgende
+Zeile hinzugefügt werden:
+\begin{verbatim}
+"view-videos": "Video Ansicht mit zusätzlichem Kursmaterial",
+\end{verbatim}
+
+
+% Views müssen zuerst mit dem Befehl \begin{verbatim}\defineView{view-name}{viewoptionen}\end{verbatim} definiert werden. Dabei gibt \texttt{view-name}
+% den Namen an, der der View zugewiesen wird. \texttt{optionen} hat die Syntax \texttt{option1=wert1;option2=wert2}. Erkannt werden
+% die Optionen:
+
+% \begin{MDTabular}{lll}
+% Option & Beschreibung & default \\
+% icon & der icon-name des glyphicons (siehe \MExtLink{https://getbootstrap.com/docs/3.3/components/}{bootstrap3 glyphicons}) & glyphicon-eye-open \\
+% helptext-key & Eine id über die ein i18n Text abgerufen wird. Diese sind in \texttt{src/files/i18n/<lang>.json} gespeichert und müssen um den ausgewählten
+% helptext-key für alle Sprachen ergänzt werden. & view-helptext
+% \end{MDTabular}
 
 
 
