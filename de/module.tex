@@ -1,6 +1,7 @@
 % Damit die Moduldatei auch direkt mit pdflatex umgesetzt werden kann, müssen die Makros eingebunden werden
 \input{mintmod.tex}
 
+
 \MPragma{MathSkip} % Pragmas legen Konvertierungsoptionen nur für diese Datei fest. Diese Pragma fügt Abstände vor displaystyle-Matheumgebungen ein
 
 \begin{document}
@@ -612,6 +613,7 @@ und den letzten beiden Ziffern jetzigen Postleitzahl:
 \end{MXContent}
 
 \begin{MXContent}{Roulette Aufgaben}{Roulette Aufgaben}{STD}
+\MDeclareSiteUXID{BASE_SITE_EXERCISEELEMENTS_ROULETTE}
 
 Mit den folgenden Aufgabentypen werden Aufgaben aus Python Skripten erzeugt. So ist es z.B.
 möglich parametrisierte Aufgabenreihen zu erstellen. Im folgenden werden die verschiedenen
@@ -859,6 +861,7 @@ Bla2
 \end{MXContent}
 
 \begin{MXContent}{Einbinden von Videos}{Einbinden von Videos}{STD}
+\MDeclareSiteUXID{BASE_SITE_VIDEOS}
     
 Mit dem Befehl \texttt{$\backslash$MYoutubeVideo\{TITEL\}\{BREITE\}\{HÖHE\}\{URL\}} kann ein embedded-Youtubevideo eingebunden werden, dazu wird ein von YouTube erzeugter
 Player auf der Seite eingeblendet, der bei Bedarf vergrößert werden kann.
@@ -870,6 +873,32 @@ Der obige Player wurde mit folgendem Kommando erzeugt:
 \begin{verbatim}
 \MYoutubeVideo{Newtons Laws (2)}{400}{300}{https://www.youtube.com/embed/WzvhuQ5RWJE?rel=0&amp;wmode=transparent}
 \end{verbatim}
+
+\end{MXContent}
+
+\begin{MXContent}{Views}{Views}{STD}
+\MDeclareSiteUXID{BASE_SITE_VIEWS}
+Es gibt die Möglichkeit Ansichten (Views) zu definieren. Das ist beispielsweise nützlich, um Kursinhalte weiter zu gliedern. So
+ist beispielsweise eine View denkbar, die alle Videos enthält, oder eine View, die zum ausgewählten Thema Zusatzinformationen anzeigt.
+
+Views müssen zuerst mit dem Befehl \begin{verbatim}\defineView{view-name}{viewoptionen}\end{verbatim} definiert werden. Dabei gibt \texttt{view-name}
+den Namen an, der der View zugewiesen wird. \texttt{optionen} hat die Syntax \texttt{option1=wert1;option2=wert2}. Erkannt werden
+die Optionen:
+
+\begin{MDTabular}{lll}
+Option & Beschreibung & default \\
+icon & der icon-name des glyphicons (siehe \MExtLink{https://getbootstrap.com/docs/3.3/components/}{bootstrap3 glyphicons}) & glyphicon-eye-open \\
+helptext-key & Eine id über die ein i18n Text abgerufen wird. Diese sind in \texttt{src/files/i18n/<lang>.json} gespeichert und müssen um den ausgewählten
+helptext-key für alle Sprachen ergänzt werden. & view-helptext
+\end{MDTabular}
+
+\beginView{test}{}
+Das ist die erste Ansicht
+\endView{test}
+\beginView{test2}{}
+Das ist die zweite Ansicht
+\endView{test2}
+
 
 
 \end{MXContent}
