@@ -3,9 +3,6 @@ WGET = wget --quiet
 
 all: tree_pdf.pdf
 
-tree_pdf.pdf: tree_pdf.tex en.tex mintmod.tex maxpage.sty
-	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode -halt-on-error" -use-make tree_pdf.tex
-
 en.tex:
 	$(WGET) $(REPOBASE)$@
 
@@ -15,6 +12,11 @@ mintmod.tex:
 maxpage.sty:
 	$(WGET) $(REPOBASE)$@
 
+tree_pdf.pdf: tree_pdf.tex en.tex mintmod.tex maxpage.sty
+	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode -halt-on-error" -use-make tree_pdf.tex
+
 clean:
 	latexmk -CA
 	rm -f en.tex mintmod.tex maxpage.sty tree_pdf.pdf
+
+.PHONY: all clean

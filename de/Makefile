@@ -1,20 +1,22 @@
-REPOBASE = https://gitlab.tu-berlin.de/stefan.born/VEUNDMINT_TUB_Brueckenkurs/
+REPOBASE = https://gitlab.tu-berlin.de/stefan.born/VEUNDMINT_TUB_Brueckenkurs/raw/multilang/src/tex/
 WGET = wget --quiet
 
 all: tree_pdf.pdf
 
-tree_pdf.pdf: tree_pdf.tex de.tex mintmod.tex maxpage.sty
-	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode -halt-on-error" -use-make tree_pdf.tex
-
 de.tex:
-	$(WGET) $(REPOBASE)raw/multilang/src/tex/$@
+	$(WGET) $(REPOBASE)$@
 
 mintmod.tex:
-	$(WGET) $(REPOBASE)raw/multilang/src/tex/$@
+	$(WGET) $(REPOBASE)$@
 
 maxpage.sty:
-	$(WGET) $(REPOBASE)raw/multilang/src/tex/$@
+	$(WGET) $(REPOBASE)$@
+
+tree_pdf.pdf: tree_pdf.tex de.tex mintmod.tex maxpage.sty
+	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode -halt-on-error" -use-make tree_pdf.tex
 
 clean:
 	latexmk -CA
 	rm -f de.tex mintmod.tex maxpage.sty tree_pdf.pdf
+
+.PHONY: all clean
