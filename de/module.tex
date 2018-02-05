@@ -1,10 +1,4 @@
-% Damit die Moduldatei auch direkt mit pdflatex umgesetzt werden kann, müssen die Makros eingebunden werden
-\input{mintmod.tex}
-
-
 \MPragma{MathSkip} % Pragmas legen Konvertierungsoptionen nur für diese Datei fest. Diese Pragma fügt Abstände vor displaystyle-Matheumgebungen ein
-
-\begin{document}
 
 %\Mtableofcontents % erscheint nur bei PDF-Konvertierung, im HTML gibt es eine separate Seitennavigation
 
@@ -387,7 +381,8 @@ für nicht wirklich korrigierte Benutzereingaben (z.B. Feedbacks) gedacht. Der B
 ist aber an die maximale Zeichenzahl gebunden:
 \ \\ \ \\
 Bitte kommentieren Sie Ihre Antwort auf die vorangehende Frage:\\
-\MLQuestionArea{40}{}{3}{100}{EX_MLQuestionArea_1}
+% TODO: fix MLQuestionArea
+%\MLQuestionArea{40}{}{3}{100}{EX_MLQuestionArea_1}
 \ \\
 Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLQuestionArea\{40\}\{\}\{3\}\{100\}\{EX\_MLQuestionArea\_1\}} erzeugt.
 \end{MExample}
@@ -866,7 +861,8 @@ Bla2
 Mit dem Befehl \texttt{$\backslash$MYoutubeVideo\{TITEL\}\{BREITE\}\{HÖHE\}\{URL\}} kann ein embedded-Youtubevideo eingebunden werden, dazu wird ein von YouTube erzeugter
 Player auf der Seite eingeblendet, der bei Bedarf vergrößert werden kann.
 \ \\
-\MYoutubeVideo{Newtons Laws (2)}{400}{300}{https://www.youtube.com/embed/WzvhuQ5RWJE?rel=0&amp;wmode=transparent}
+% TODO fix MYoutubeVideo
+% \MYoutubeVideo{Newtons Laws (2)}{400}{300}{https://www.youtube.com/embed/WzvhuQ5RWJE?rel=0&amp;wmode=transparent}
 \ \\
 Dabei muss für die URL die src-Adresse von YouTube eingegeben werden, diese erhält man aus YouTube heraus, indem man auf \glqq Teilen\grqq\ klickt und dann auf \glqq embedded\grqq\ und daraus den src-Teil kopiert.
 Der obige Player wurde mit folgendem Kommando erzeugt:
@@ -884,7 +880,7 @@ ist eine View denkbar, die alle Videos enthält, oder eine View, die zum ausgew�
 Views können einfach mit dem folgenden Befehl definiert werden: \begin{verbatim}
 \beginView{view-name}
 <hier kommt der inhalt der view>
-\endView{view-name}
+\finView{view-name}
 \end{verbatim}
 Views werden dabei automatisch vom Konverter erkannt und falls auf einer Seite vorhanden, oben angezeigt. Gemäß der Trennung von Inhalt und Darstellung
 müssen/können die Icons, die für eine View angezeigt werden in css geändert werden.
@@ -901,10 +897,10 @@ Das setzt voraus, dass Glyphicons eingebunden wurden (per default der Fall). Die
 \MExtLink{https://glyphicons.bootstrapcheatsheets.com/}{bootstrap3 glyphicons cheatsheet}
 \beginView{test}{}
 Das ist die erste Ansicht
-\endView{test}
+\finView{test}
 \beginView{test2}{}
 Das ist die zweite Ansicht
-\endView{test2}
+\finView{test2}
 
 \MTitle{View Hilfetexte}
 Entsprechend der Übersetzbarkeit der Inhalte werden die sprachspezifischen Texte im i18n ordner in den jeweiligen Sprachdateien editiert. Wenn für die
@@ -929,6 +925,3 @@ Zeile hinzugefügt werden:
 
 
 \end{MXContent}
-
-
-\end{document}
