@@ -1,16 +1,21 @@
 *~
 __pycache__
 .DS_Store
+
+# latex include files
 mintmod.tex
 maxpage.sty
+de.tex
+en.tex
 
-# latex tmp files
-*.aux
-*.fdb_latexmk
-*.fls
-*.idx
-*.log
-*.out
-*.toc
-*.ilg
-*.ind
+# latex tmp build files
+tree_pdf.aux
+tree_pdf.fdb_latexmk
+tree_pdf.fls
+tree_pdf.idx
+tree_pdf.log
+tree_pdf.out
+tree_pdf.toc
+tree_pdf.ilg
+tree_pdf.ind
+tree_pdf.pdf

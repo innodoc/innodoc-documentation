@@ -3,8 +3,11 @@ WGET = wget --quiet
 
 all: tree_pdf.pdf
 
-tree_pdf.pdf: tree_pdf.tex mintmod.tex maxpage.sty
+tree_pdf.pdf: tree_pdf.tex de.tex mintmod.tex maxpage.sty
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode -halt-on-error" -use-make tree_pdf.tex
+
+de.tex:
+	$(WGET) $(REPOBASE)raw/multilang/src/tex/$@
 
 mintmod.tex:
 	$(WGET) $(REPOBASE)raw/multilang/src/tex/$@
@@ -14,4 +17,4 @@ maxpage.sty:
 
 clean:
 	latexmk -CA
-	rm -f mintmod.tex maxpage.sty tree_pdf.pdf
+	rm -f de.tex mintmod.tex maxpage.sty tree_pdf.pdf
