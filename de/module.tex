@@ -130,7 +130,7 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \item{Alternative Umgebungen statt \texttt{MXContent}: \texttt{MExercises}, \texttt{MTest}}
     \end{itemize}
     \end{MInfo}
-    
+
     \begin{MExample}
     Der Kurztitel eines \texttt{MXContent} wird dabei für die Navigationsbuttons verwendet:
     \ \\ \ \\
@@ -138,9 +138,9 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \MUGraphicsSolo{iconsbeispiel.png}{width=0.3\linewidth}{}
     \end{center}
     \end{MExample}
-    
+
     Diese Strukturelemente sollten stets mit \verb%\MDeclareSiteUXID{KENNUNG}% versehen werden.
-    
+
     \begin{MInfo}
     Strukturelemente (Abschnitte, Contents, Aufgaben, Boxen etc.) werden auf drei Arten gekennzeichnet:
     \begin{itemize}
@@ -148,10 +148,10 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \item{Über Nummern, typischerweise in der Form \texttt{X.Y.Z}, die an den Elementen automatisch angebracht wird. Der Konverter vergibt die Nummern automatisch.}
     \item{Über unique extended ids (uxid), diese machen das Element unabhängig von seiner Position im Kurs, seiner Nummer oder seiner Existenz kenntlich und werden vor allem verwendet,
     um eingegebene Antworten zuzuordnen. Eine uxid wird mit \verb%\MDeclareSiteUXID{UXID}% und direkt in den Frageelementen vergeben. Sie muss vom Autor sinnvoll gewählt werden. Unter der
-    vergebenen uxid können die eingegebenen Aufgabenlösungen aus der Datenbank abgerufen werden.} 
+    vergebenen uxid können die eingegebenen Aufgabenlösungen aus der Datenbank abgerufen werden.}
     \end{itemize}
     \end{MInfo}
-    
+
     \begin{MInfo}
     Schlagwörter werden mit den folgenden Befehlen definiert und in der Suchliste zum gesamten Modul aufgeführt:
     \begin{itemize}
@@ -159,17 +159,17 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \item{\verb%\MEntry{SCHLAGWORT}{TEXT}% versieht ein Wort aus dem Seitentext (das von dem Schlagwort abweichen kann) mit einem Schlagwort.}
     \end{itemize}
     \end{MInfo}
-    
+
     \begin{MExample}
     Das Wort \MEntry{Schlagwort}{Schlagwörter} wird unter \texttt{Schlagwörter} in der Liste aufgeführt mit dem Befehl \texttt{$\backslash$}\verb%MEntry{Schlagwort}{Schlagwörter}%.
     Mit dem Befehl \verb%\MIndex{Unwort}% wird \texttt{Unwort} in die Suchliste eingetragen und verlinkt, aber taucht nicht im Ausgabetext auf.
     \end{MExample}
-    
+
     \end{MXContent}
-    
+
     \begin{MXContent}{Bilder einbinden}{Bilder einbinden}{STD}
     \MDeclareSiteUXID{BASE_SITE_IMAGES}
-    
+
     \begin{MInfo}
     Zum Einbinden von Bildern erfolgt mit den Makros
     \begin{itemize}
@@ -179,25 +179,25 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \item{\verb%\MUGraphicsSolo{DATEINAME}{PDF-SKALIERUNG}{CSS-STYLE}%}
     \end{itemize}
     \end{MInfo}
-    
+
     Für die Bilder sind die Formate \texttt{png}, \texttt{jpg}, \texttt{gif}, \texttt{svg} möglich (andere mit Einschränkungen).
-    
-    
+
+
     \begin{MExample}
     Eine typische Bildeinbindung mit Nummerierung und Einrückung:
     \MUGraphics{testbild.png}{width=0.3\linewidth}{Dies ist der Bildtitel}{width:400px}
     Sie wurde mit dem Befehl \verb%\MUGraphics{testbild.png}{width=0.3\linewidth}{Dies ist der Bildtitel}{width:400px}%
     erzeugt.
     \end{MExample}
-    
+
     \begin{MExample}
     Eine einfache Bildeinbindung ohne zusätzliche Elemente, sie wird nicht eingerückt:
     \MUGraphicsSolo{testbild.png}{width=0.2\linewidth}{width:150px}
     Sie wurde mit dem Befehl \verb%\MUGraphicsSolo{testbild.png}{width=0.2\linewidth}{width:150px}%
     erzeugt.
     \end{MExample}
-    
-    
+
+
     \end{MXContent}
 
 \begin{MXContent}{Makroliste}{Makroliste}{STD}
@@ -626,7 +626,7 @@ tub_base/de/parabelaufgabe.py.
 \end{verbatim}
 
 \MTitle{Roulette Typ 0:}
-Typ 0 Autorouletteaufgaben bieten einen Button, der eine zufällige neue Aufgabe erzeugt. Dabei wird darauf geachtet, dass bereits angezeigte Aufgaben erst wieder erscheinen, wenn 
+Typ 0 Autorouletteaufgaben bieten einen Button, der eine zufällige neue Aufgabe erzeugt. Dabei wird darauf geachtet, dass bereits angezeigte Aufgaben erst wieder erscheinen, wenn
 Nutzer*innen alle anderen Aufgaben angezeigt wurden.
 Die folgende Aufgabe wurde mit dem Befehl
 \begin{verbatim}
@@ -655,7 +655,7 @@ erzeugt.
 \MAutoRouletteExercises{parabelaufgabe.py}{5}{Roulette2}{2}
 
 \MTitle{Directroulette}
-Directrouletteaufgaben beziehen ihre Inhalte aus TeX-Dateien. Als Beispiel, siehe 
+Directrouletteaufgaben beziehen ihre Inhalte aus TeX-Dateien. Als Beispiel, siehe
 \MDirectRouletteExercises{fraction.rtex}{VBKM01_FRACTIONTRAINING}{0}
 
 \end{MXContent}
@@ -862,7 +862,7 @@ Bla2
 
 \begin{MXContent}{Einbinden von Videos}{Einbinden von Videos}{STD}
 \MDeclareSiteUXID{BASE_SITE_VIDEOS}
-    
+
 Mit dem Befehl \texttt{$\backslash$MYoutubeVideo\{TITEL\}\{BREITE\}\{HÖHE\}\{URL\}} kann ein embedded-Youtubevideo eingebunden werden, dazu wird ein von YouTube erzeugter
 Player auf der Seite eingeblendet, der bei Bedarf vergrößert werden kann.
 \ \\
@@ -882,14 +882,14 @@ Es gibt die Möglichkeit Ansichten (Views) zu definieren. Das ist beispielsweise
 ist eine View denkbar, die alle Videos enthält, oder eine View, die zum ausgewählten Thema Zusatzinformationen anzeigt.
 
 Views können einfach mit dem folgenden Befehl definiert werden: \begin{verbatim}
-\beginView{view-name} 
+\beginView{view-name}
 <hier kommt der inhalt der view>
 \endView{view-name}
-\end{verbatim} 
+\end{verbatim}
 Views werden dabei automatisch vom Konverter erkannt und falls auf einer Seite vorhanden, oben angezeigt. Gemäß der Trennung von Inhalt und Darstellung
-müssen/können die Icons, die für eine View angezeigt werden in css geändert werden. 
+müssen/können die Icons, die für eine View angezeigt werden in css geändert werden.
 \MTitle{View Icons}
-Jede View bekommt einen eindeutigen css ID-Selektor zugewisen. So hat eine View mit dem Namen \texttt{videos} den ID-selektor \texttt{view-videos}. 
+Jede View bekommt einen eindeutigen css ID-Selektor zugewisen. So hat eine View mit dem Namen \texttt{videos} den ID-selektor \texttt{view-videos}.
 Mit dem folgenden css code kann beispielsweise das Icon für die view-videos geändert werden.
 \begin{verbatim}
 #navbarTop #view-videos::before {
@@ -929,6 +929,6 @@ Zeile hinzugefügt werden:
 
 
 \end{MXContent}
-    
+
 
 \end{document}
