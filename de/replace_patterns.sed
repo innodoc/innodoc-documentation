@@ -11,7 +11,7 @@ s/\\end{MXContent}//g;
 
 s/\\MLabel{\([^}]*\)}/\\label{\1}/g;
 
-s/\$\\backslash\$/\\textbackslash /g;
+s/\$\\backslash\$/\{\\textbackslash\}/g;
 
 # just strip these
 s/\\MPragma{MathSkip}//g;
@@ -43,6 +43,14 @@ s/\\MSRef{\([^}]*\)}/\\ref{\1}/g;
 
 # href
 s/\\MExtLink{\([^}]*\)}{\([^}]*\)}/\\href{\1}{\2}/g;
+
+# \verb
+# \verb%\MSection{ABSCHNITTSTITEL}%
+s/\\verb\%\([^%]*\)\%/\\verb\$\1\$/g;
+
+# pandoc chokes on underscore, don't know why
+s/EX_MLDROPDOWN_1/EXMLDROPDOWN1/g;
+s/MA_SETS/MASETS/g;
 
 # TODO
 # - handle ifttm??
