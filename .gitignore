@@ -20,6 +20,7 @@ tree_pdf.toc
 tree_pdf.ilg
 tree_pdf.ind
 tree_pdf.pdf
+tree_pandoc.html
 
 # pandoc tmp files
 module.dvi

@@ -1,0 +1,38 @@
+% these should be implemented in mintmod_filter.py !
+
+\newcommand\MSubject[1]{\title{#1}}
+
+% sections
+%\newcommand\MSection[1]{\section{#1}}
+\newcommand\MSubsection[1]{\subsection{#1}}
+\newcommand\MSubsubsection[1]{\subsubsection{#1}}
+\newcommand\MSubsubsubsectionx[1]{\paragraph{#1}}
+
+% misc
+\newcommand{\MUGraphicsSolo}[2]{\includegraphics[#2]{../static/#1}}
+\newcommand\MLabel[1]{\label{#1}}
+\newcommand{\glqq}{„}
+\newcommand{\grqq}{“}
+
+% Math macros
+%\newcommand\MCondSetSep{{\,}:{\,}}
+%\newcommand\MBlank{\ }
+
+% Text macros
+\newcommand{\MSmodulecontentphrase}{\iModuleOverview{}}
+\newcommand{\MSsectionlabelprefix}{\iModule{}}
+\newcommand{\MSglobalauthor}{UNKNOWN\_AUTHOR}
+\newcommand{\MSgloballicense}{UNKNOWN\_LICENSE}
+
+% refs/links
+\newcommand{\MExtLink}[2]{\href{#1}{#2}}
+\newcommand{\MCRef}[1]{\vref{#1}}
+\newcommand{\MRef}[1]{\vref{#1}}
+\newcommand{\MERef}[1]{\eqref{#1}}
+\newcommand{\MNRef}[1]{\ref{#1}}
+\newcommand{\MSRef}[2]{\href{\##1}{#2}}
+
+% noop
+\newcommand\MDeclareSiteUXID[1]{}
+\newcommand\MPragma[1]{}
+\newcommand\MModstartBox{}  % TODO do we need MModstartBox?

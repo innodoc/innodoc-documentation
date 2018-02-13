@@ -21,7 +21,7 @@ in einer Listenbox ausgeben lassen:
 % Bezeichner für die Kapitel/Module/Seiten/Lerneinheiten whatever:
 In diesem \MSsectionlabelprefix\ wird ein Überblick über die verschiedenen Makros gegeben, die im Makropaket \texttt{mintmod.tex} enthalten sind.
 \ \\ \ \\
-Mit dem Befehl \texttt{$\backslash$ifttm} kann abgefragt werden, ob eine PDF- oder HTML-Konvertierung erfolgt. In diesem
+Mit dem Befehl \texttt{{\textbackslash}ifttm} kann abgefragt werden, ob eine PDF- oder HTML-Konvertierung erfolgt. In diesem
 Fall ist
 \ifttm%
 ein HTML-Modul
@@ -58,7 +58,7 @@ $$
 M \;=\;\left\lbrace{x\MCondSetSep x\MBlank\text{erfüllt}\MBlank \text{Bedingung}}\right\rbrace\: .
 $$
 Die vorhandenen Befehle werden durch MathJax und das Makropaket festgelegt, beispielsweise kann MathJax nichts
-mit dem \texttt{$\backslash$texttt}-Befehl in einer Mathematikumgebung anfangen:
+mit dem \texttt{{\textbackslash}texttt}-Befehl in einer Mathematikumgebung anfangen:
 $$
 \text{Das klappt in der HTML-Übersetzung}\ \texttt{nicht}\: .
 $$
@@ -70,7 +70,7 @@ Es besteht die Möglichkeit \MEntry{Schlagwörter}{Schlagwort} eintragen zu lass
 Diese Seite ist jetzt zuende. Auf die nächste Seite gelangt man mit der Navigation oben oder über diesen \MSRef{LABEL_BASE_SITE_TWO}{Link}.
 % Die Links erscheinen auch im PDF
 \ \\ \ \\
-Man kann aber auch Links \MExtLink{www.mint-kolleg.de}{aus dem Kurs heraus} setzen, natürlich auf eigene Gefahr.
+Man kann aber auch Links \MExtLink{http://www.mint-kolleg.de/}{aus dem Kurs heraus} setzen, natürlich auf eigene Gefahr.
 \end{MXContent}
 
 \begin{MXContent}{Die zweite Seite}{Seite 2}{STD}
@@ -117,10 +117,10 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \begin{MInfo}
     Für die Strukturierung werden folgende Befehle verwenden:\\
     \begin{itemize}
-    \item{\verb%\MSection{ABSCHNITTSTITEL}%}
-    \item{\texttt{$\backslash$}\verb%begin{MSectionStart} ... \end{MSectionStart}%} % hier muss verhindert werden, dass der Konverter MSectionStart erkennt und übersetzt
-    \item{\verb%\MSubsection{UNTERTITEL}%}
-    \item{\texttt{$\backslash$}\verb%begin{MXContent}{TITEL}{KURZTITEL}{TYP}% (Abschnittstyp in der Regel \texttt{STD})}
+    \item{\verb$\MSection{ABSCHNITTSTITEL}$}
+    \item{\texttt{{\textbackslash}}\verb$begin{MSectionStart} ... \end{MSectionStart}$} % hier muss verhindert werden, dass der Konverter MSectionStart erkennt und übersetzt
+    \item{\verb$\MSubsection{UNTERTITEL}$}
+    \item{\texttt{{\textbackslash}}\verb$begin{MXContent}{TITEL}{KURZTITEL}{TYP}$ (Abschnittstyp in der Regel \texttt{STD})}
     \item{Alternative Umgebungen statt \texttt{MXContent}: \texttt{MExercises}, \texttt{MTest}}
     \end{itemize}
     \end{MInfo}
@@ -133,15 +133,15 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \end{center}
     \end{MExample}
 
-    Diese Strukturelemente sollten stets mit \verb%\MDeclareSiteUXID{KENNUNG}% versehen werden.
+    Diese Strukturelemente sollten stets mit \verb$\MDeclareSiteUXID{KENNUNG}$ versehen werden.
 
     \begin{MInfo}
     Strukturelemente (Abschnitte, Contents, Aufgaben, Boxen etc.) werden auf drei Arten gekennzeichnet:
     \begin{itemize}
-    \item{Über Labels, die mit \verb%\MLabel{NAME}% vergeben und und mit \verb%\MRef{NAME}% angesprochen werden. Bis auf die Verlinkung sind die Labels für den Benutzer unsichtbar.}
+    \item{Über Labels, die mit \verb$\MLabel{NAME}$ vergeben und und mit \verb$\MRef{NAME}$ angesprochen werden. Bis auf die Verlinkung sind die Labels für den Benutzer unsichtbar.}
     \item{Über Nummern, typischerweise in der Form \texttt{X.Y.Z}, die an den Elementen automatisch angebracht wird. Der Konverter vergibt die Nummern automatisch.}
     \item{Über unique extended ids (uxid), diese machen das Element unabhängig von seiner Position im Kurs, seiner Nummer oder seiner Existenz kenntlich und werden vor allem verwendet,
-    um eingegebene Antworten zuzuordnen. Eine uxid wird mit \verb%\MDeclareSiteUXID{UXID}% und direkt in den Frageelementen vergeben. Sie muss vom Autor sinnvoll gewählt werden. Unter der
+    um eingegebene Antworten zuzuordnen. Eine uxid wird mit \verb$\MDeclareSiteUXID{UXID}$ und direkt in den Frageelementen vergeben. Sie muss vom Autor sinnvoll gewählt werden. Unter der
     vergebenen uxid können die eingegebenen Aufgabenlösungen aus der Datenbank abgerufen werden.}
     \end{itemize}
     \end{MInfo}
@@ -149,14 +149,14 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \begin{MInfo}
     Schlagwörter werden mit den folgenden Befehlen definiert und in der Suchliste zum gesamten Modul aufgeführt:
     \begin{itemize}
-    \item{\verb%\MIndex{SCHLAGWORT}% definiert ein Schlagwort (ohne Ausgabe auf der konkreten Seite),}
-    \item{\verb%\MEntry{SCHLAGWORT}{TEXT}% versieht ein Wort aus dem Seitentext (das von dem Schlagwort abweichen kann) mit einem Schlagwort.}
+    \item{\verb$\MIndex{SCHLAGWORT}$ definiert ein Schlagwort (ohne Ausgabe auf der konkreten Seite),}
+    \item{\verb$\MEntry{SCHLAGWORT}{TEXT}$ versieht ein Wort aus dem Seitentext (das von dem Schlagwort abweichen kann) mit einem Schlagwort.}
     \end{itemize}
     \end{MInfo}
 
     \begin{MExample}
-    Das Wort \MEntry{Schlagwort}{Schlagwörter} wird unter \texttt{Schlagwörter} in der Liste aufgeführt mit dem Befehl \texttt{$\backslash$}\verb%MEntry{Schlagwort}{Schlagwörter}%.
-    Mit dem Befehl \verb%\MIndex{Unwort}% wird \texttt{Unwort} in die Suchliste eingetragen und verlinkt, aber taucht nicht im Ausgabetext auf.
+    Das Wort \MEntry{Schlagwort}{Schlagwörter} wird unter \texttt{Schlagwörter} in der Liste aufgeführt mit dem Befehl \texttt{{\textbackslash}}\verb$MEntry{Schlagwort}{Schlagwörter}$.
+    Mit dem Befehl \verb$\MIndex{Unwort}$ wird \texttt{Unwort} in die Suchliste eingetragen und verlinkt, aber taucht nicht im Ausgabetext auf.
     \end{MExample}
 
     \end{MXContent}
@@ -167,10 +167,10 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \begin{MInfo}
     Zum Einbinden von Bildern erfolgt mit den Makros
     \begin{itemize}
-    \item{\verb%\MGraphics{DATEINAME}{PDF-SKALIERUNG}{TITEL}%}
-    \item{\verb%\MUGraphics{DATEINAME}{PDF-SKALIERUNG}{TITEL}{CSS-STYLE}% (dabei können Skalierung/Stile auch leer sein)}
-    \item{\verb%\MGraphicsSolo{DATEINAME}{PDF-SKALIERUNG}%}
-    \item{\verb%\MUGraphicsSolo{DATEINAME}{PDF-SKALIERUNG}{CSS-STYLE}%}
+    \item{\verb$\MGraphics{DATEINAME}{PDF-SKALIERUNG}{TITEL}$}
+    \item{\verb$\MUGraphics{DATEINAME}{PDF-SKALIERUNG}{TITEL}{CSS-STYLE}$ (dabei können Skalierung/Stile auch leer sein)}
+    \item{\verb$\MGraphicsSolo{DATEINAME}{PDF-SKALIERUNG}$}
+    \item{\verb$\MUGraphicsSolo{DATEINAME}{PDF-SKALIERUNG}{CSS-STYLE}$}
     \end{itemize}
     \end{MInfo}
 
@@ -180,14 +180,14 @@ Jede Box wird entsprechend den Moduleinstellungen nummeriert oder nicht.
     \begin{MExample}
     Eine typische Bildeinbindung mit Nummerierung und Einrückung:
     \MUGraphics{testbild.png}{width=0.3\linewidth}{Dies ist der Bildtitel}{width:400px}
-    Sie wurde mit dem Befehl \verb%\MUGraphics{testbild.png}{width=0.3\linewidth}{Dies ist der Bildtitel}{width:400px}%
+    Sie wurde mit dem Befehl \verb$\MUGraphics{testbild.png}{width=0.3\linewidth}{Dies ist der Bildtitel}{width:400px}$
     erzeugt.
     \end{MExample}
 
     \begin{MExample}
     Eine einfache Bildeinbindung ohne zusätzliche Elemente, sie wird nicht eingerückt:
     \MUGraphicsSolo{testbild.png}{width=0.2\linewidth}{width:150px}
-    Sie wurde mit dem Befehl \verb%\MUGraphicsSolo{testbild.png}{width=0.2\linewidth}{width:150px}%
+    Sie wurde mit dem Befehl \verb$\MUGraphicsSolo{testbild.png}{width=0.2\linewidth}{width:150px}$
     erzeugt.
     \end{MExample}
 
@@ -260,7 +260,7 @@ Bei Auswahl- und Zuordnungsfeldern wählt der Benutzer zwischen Auswahl- oder Zu
 Erstellt eine Tristate-Checkbox mit den Zuständen unberührt/angewählt/abgewählt. Diese werden typischerweise in einer \texttt{MQuestionGroup} (für Multiple-Choice)
 oder einer \texttt{MXQuestionGroup} (für Single-Choice) in Form einer Tabelle (beispielsweise \texttt{MDTabular}) gruppiert.}
 \item{Umgebung \texttt{MLDropDownQuestion\{UXID\}\{LÖSUNGSTAG\}}\\
-Erstellt eine DropDown-Liste, in der Auswahlpunkte über den Befehl \texttt{$\backslash$MDropDownItem\{TEXT\}\{TAG\}} angeordnet werden, jeder mit einem Tag versehen.
+Erstellt eine DropDown-Liste, in der Auswahlpunkte über den Befehl \texttt{{\textbackslash}MDropDownItem\{TEXT\}\{TAG\}} angeordnet werden, jeder mit einem Tag versehen.
 Nur bei Auswahl des Items mit dem Lösungstag wird die Auswahl als richtig bewertet.}
 \item{Umgebung \texttt{MLDragDropQuestion\{UXID\}\{LÖSUNG\}}\\
 Erstellt einen DragDrop-Bereich, indem mit der Maus Kästen gezogen werden können.
@@ -271,7 +271,7 @@ wobei jeweils ein Rezeptor-Tag einem Item-Tag zugeordnet wird. Es ist dabei mög
 \end{itemize}
 
 Diese (und auch alle anderen Feldelemente) können in \texttt{MQuestionGroup}-Umgebungen kombiniert werden,
-diese werden dann durch einen mit \texttt{$\backslash$MGroupButton\{BUTTONTITEL\}} erzeugten Kontrollbutton ausgewertet.
+diese werden dann durch einen mit \texttt{{\textbackslash}MGroupButton\{BUTTONTITEL\}} erzeugten Kontrollbutton ausgewertet.
 \end{MInfo}
 
 \begin{MExample}
@@ -311,7 +311,7 @@ Welche der folgenden Termumformungen ist für $\log(\frac1{100})$ richtig?\\ \ \
 Das DropDown-Feld wird über eine \texttt{MLDropDownQuestion}-Umgebung und darin enthaltene \texttt{MDropDownItem}-Befehle erzeugt:
 \ \\
 Welche der folgenden Eigenschaften einer Funktion impliziert, dass sie auch stetig ist?
-\begin{MLDropDownQuestion}{EX_MLDROPDOWN_1}{lsg}
+\begin{MLDropDownQuestion}{EXMLDROPDOWN1}{lsg}
 \MDropDownItem{Monotonie}{fake1}
 \MDropDownItem{Differenzierbarkeit}{lsg}
 \MDropDownItem{Bijektivität}{fake2}
@@ -322,7 +322,7 @@ Welche der folgenden Eigenschaften einer Funktion impliziert, dass sie auch stet
 Diese DragDrop-Anordnung wird durch ein \texttt{MLDragDropQuestion}-Umgebung erzeugt:
 \ \\ \ \\
 Berechnen Sie Schnitt, Vereinigung und Restmenge der beiden Mengen $ A = \{ 1,3,5,7,9\} $ und $B= \{ 3,4,5,6 \}.$ Drei von den sechs möglichen Ergebnissen gehören hier allerdings nicht zur rechten Seite:\ \\
-\begin{MLDragDropQuestion}{MA_SETS}{r6:6;r3:3;r4:4}
+\begin{MLDragDropQuestion}{MASETS}{r6:6;r3:3;r4:4}
 \MDragDropItem{1}{\{1,3,5,7,9 \}}
 \MDragDropItem{2}{\{1,7,8,9\}}
 \MDragDropItem{3}{\{1,3,4,5,6,7,9\}}
@@ -372,7 +372,7 @@ Das \texttt{MLQuestion}-Feld eignet sich für Wörter in Lückentexten:
 \ \\ \ \\
 Ist $f(x)$ auf $(a,b)$ differenzierbar mit $f(x)>0$ für $a<x<b$, so ist $f$ auf dem Intervall streng monoton \MLQuestion{20}{wachsend,steigend}{EX_MLQuestion1}.
 \ \\ \ \\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLQuestion\{20\}\{wachsend,steigend\}\{EX\_MLQuestion1\}} erzeugt.
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLQuestion\{20\}\{wachsend,steigend\}\{EX\_MLQuestion1\}} erzeugt.
 \end{MExample}
 
 \begin{MExample}
@@ -384,16 +384,16 @@ Bitte kommentieren Sie Ihre Antwort auf die vorangehende Frage:\\
 % TODO: fix MLQuestionArea
 %\MLQuestionArea{40}{}{3}{100}{EX_MLQuestionArea_1}
 \ \\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLQuestionArea\{40\}\{\}\{3\}\{100\}\{EX\_MLQuestionArea\_1\}} erzeugt.
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLQuestionArea\{40\}\{\}\{3\}\{100\}\{EX\_MLQuestionArea\_1\}} erzeugt.
 \end{MExample}
 
 \begin{MExample}
 Das \texttt{MLParsedQuestion}-Feld ist das Standardeingabefeld für numerische Eingaben, Lösung und Eingaben können als numerischer Wert oder als auswertbarer Ausdruck eingegeben werden:
 \begin{itemize}
 \item{Was ist die Wurzel aus $36$? Antwort: \MEquationItem{$\sqrt{36}$}{\MLParsedQuestion{3}{wurzel(36)}{5}{EX_MLParsedQuestion1}}.\\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLParsedQuestion\{3\}\{wurzel(36)\}\{5\}\{EX\_MLParsedQuestion1\}} erzeugt.}
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLParsedQuestion\{3\}\{wurzel(36)\}\{5\}\{EX\_MLParsedQuestion1\}} erzeugt.}
 \item{Ein Körper der Masse $m=2$ Kilogramm besitzt auf der Erde ($g=9.81$) die Fallbeschleunigung \MEquationItem{$a$}{\MLParsedQuestion{20}{2*9.81}{5}{EX_MLParsedQuestion2}}.\\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLParsedQuestion\{20\}\{2*9.81\}\{5\}\{EX\_MLParsedQuestion2\}} erzeugt, es akzeptiert sowohl die numerische
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLParsedQuestion\{20\}\{2*9.81\}\{5\}\{EX\_MLParsedQuestion2\}} erzeugt, es akzeptiert sowohl die numerische
 Lösung wie auch Formeleingaben oder äquivalente Ausdrücke bis auf Rundung zur 5. Nachkommastelle, d.h.
 \ \\
 \begin{itemize}
@@ -415,12 +415,12 @@ Das Zahleneingabefeld kann genutzt werden, um symbolische Eingaben vom Benutzer 
 \ \\ \ \\
 In einem rechtwinkligen Dreieck habe die Ankathete an einem Winkel $\alpha=\frac13\pi$ die Länge $5$, welche Länge besitzt die Hypothenuse?\ \\ \ \\
 Die Länge der Hypothenuse beträgt \MEquationItem{$c$}{\MLParsedQuestion{20}{5/(cos(pi/3))}{25}{EX_MLParsedQuestion3}}.\ \\ \ \\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLParsedQuestion\{20\}\{5/(cos(pi/3))\}\{25\}\{EX\_MLParsedQuestion3\}} erzeugt.
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLParsedQuestion\{20\}\{5/(cos(pi/3))\}\{25\}\{EX\_MLParsedQuestion3\}} erzeugt.
 Für eine Genauigkeit von beispielsweise 25 statt 4 Stellen würde $10$ nicht als Eingabe akzeptiert werden, da der Kosinus mithilfe eines Taylorpolynoms achten
 Grades berechnet wird und in der Musterlösung Rundungsfehler auftreten.
 \ \\
 \begin{itemize}
-\item{\texttt{5/cos(1/3*pi)} oder auch \texttt{5/cos($\backslash$pi/3)} sind richtige Eingaben.}
+\item{\texttt{5/cos(1/3*pi)} oder auch \texttt{5/cos({\textbackslash}pi/3)} sind richtige Eingaben.}
 \item{Vorsicht ist bei hohen Genauigkeiten in der Lösung geboten: \texttt{5/(sin(pi/2+1/3*pi))} ist hier keine richtige Eingabe, weil durch Rundungsfehler im Browser (JavaScript)
 nicht $\cos(x)=\sin(x+\frac{\pi}{2})$ gegeben ist.}
 \item{Genauigkeit und maximale Zeichenzahl verhindern, dass der Benutzer den Wert per Taschenrechner numerisch bestimmt und eingibt, auch wenn es hier eine ganze Zahl ist.}
@@ -433,7 +433,7 @@ Das Zahleneingabefeld kann zur Erkennung von Mengen eingesetzt werden. Dabei wir
 \ \\ \ \\
 Die Nullstellenmenge von $f(x)=x^3-3x^2$ ist \MLParsedQuestion{20}{0,3}{5}{EX_MLParsedQuestion4}\: .
 \ \\ \ \\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLParsedQuestion\{20\}\{0,3\}\{5\}\{EX\_MLParsedQuestion4\}} erzeugt.
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLParsedQuestion\{20\}\{0,3\}\{5\}\{EX\_MLParsedQuestion4\}} erzeugt.
 \ \\
 \begin{itemize}
 \item{Die Eingaben \texttt{\{0;3\}} sowie \texttt{\{3;0\}} aber auch \texttt{\{3;0;3;0;0\}} sind richtig.}
@@ -448,7 +448,7 @@ Das Intervallfragefeld kann für numerische wie für algebraisch angegebene Rand
 \ \\ \ \\
 Auf welchem Intervall ist die Ungleichung $1<x^2\leq 2$ erfüllt?\ \ \MLIntervalQuestion{20}{(1,sqrt(2)]}{5}{EX_MIntervalQuestion1}.
 \ \\ \ \\
-Dieses Fragefeld wurde mit dem Befehl \texttt{$\backslash$MLIntervalQuestion\{20\}\{(1,sqrt(2)]\}\{5\}\{EX\_MIntervalQuestion1\}} erzeugt.
+Dieses Fragefeld wurde mit dem Befehl \texttt{{\textbackslash}MLIntervalQuestion\{20\}\{(1,sqrt(2)]\}\{5\}\{EX\_MIntervalQuestion1\}} erzeugt.
 \end{MExample}
 
 \end{MXContent}
@@ -501,7 +501,7 @@ Das Funktionseingabefeld kann genutzt werden, um einfache Funktionsausdrücke ab
 Angenommen $f:\:\R\rightarrow\R$ ist stetig differenzierbar mit $f'(x)=12x+1$ und $f(1)=1$, dann ist\ \\ \ \\
 \MEquationItem{$f(x)$}{\MLFunctionQuestion{20}{6*x^2+x-6}{5}{x}{5}{EX_MLFunctionQuestion1}}.
 \ \\ \ \\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLFunctionQuestion\{20\}\{6*x\^{}2+x-6\}\{5\}\{x\}\{5\}\{EX\_MLFunctionQuestion1\}} erzeugt. Bei der Eingabe erhält der Benutzer einen
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLFunctionQuestion\{20\}\{6*x\^{}2+x-6\}\{5\}\{x\}\{5\}\{EX\_MLFunctionQuestion1\}} erzeugt. Bei der Eingabe erhält der Benutzer einen
 Hinweis im Popup-Fenster, falls er \texttt{6x} statt \texttt{6*x} eingibt. Das Feld erkennt das Quadrat in der Form \texttt{x*x}, \texttt{x\^{}2} oder \texttt{x}$^2$ (das 2-Potenzzeichen, das
 man auf Windows-Tastaturen mit AltGr-2 erhält oder durch Copy\&Paste von der Kursseite bekommen kann).
 \end{MExample}
@@ -511,7 +511,7 @@ Die Eingabe bei Vereinfachungsaufgaben macht nur mit Restriktionen Sinn, da anso
 \ \\ \ \\
 Multiplizieren Sie vollständig aus: \MEquationItem{$(a+b)(1+x)$}{\MLSimplifyQuestion{40}{(a+b)*(1+x)}{5}{a,b,x}{5}{257}{EX_MLSimplifyQuestion1}}.
 \ \\ \ \\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLSimplifyQuestion\{40\}\{(a+b)*(1+x)\}\{5\}\{a,b,x\}\{5\}\{EX\_MLSimplifyQuestion1\}} erzeugt.
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLSimplifyQuestion\{40\}\{(a+b)*(1+x)\}\{5\}\{a,b,x\}\{5\}\{EX\_MLSimplifyQuestion1\}} erzeugt.
 Bei der Eingabe erhält der Benutzer einen Hinweis wenn er die geforderten Vereinfachungsregeln ($1$: Keine Klammern, $256$: Keine Brüche/Potenzen) verletzt.
 \begin{itemize}
 \item{Eingabe \texttt{a*(1+x)+b*(1+x)} wird als falsch gewertet, es gibt aber einen Hinweis, dass der Term richtig ist und nur die Vereinfachung fehlt.}
@@ -528,10 +528,10 @@ Geben Sie einen symbolischen Ausdruck ohne die Punkte-Schreibweise an:
 \ \\ \ \\
 \MEquationItem{$a\cdot a^2\cdot a^3\cdot\cdots\cdot a^{100}$}{\MLSimplifyQuestion{30}{prod_(k=1)^(100)a^k}{5}{a}{5}{0}{EX_MLSimplifyQuestion2}}.
 \ \\ \ \ \\
-Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLSimplifyQuestion\{30\}\{prod\_(k=1)\^{}(100)a\^{}k\}\{5\}\{a\}\{5\}\{0\}\{EX\_MLSimplifyQuestion2\}} erzeugt.
+Das Fragefeld wurde mit dem Kommando \texttt{{\textbackslash}MLSimplifyQuestion\{30\}\{prod\_(k=1)\^{}(100)a\^{}k\}\{5\}\{a\}\{5\}\{0\}\{EX\_MLSimplifyQuestion2\}} erzeugt.
  \ \\
 \begin{itemize}
-\item{Die Eingaben \texttt{prod\_(k=1)\^{}(100) a\^{}k} oder ähnliche Schreibweisen mit \texttt{produkt} oder \texttt{$\backslash$prod} werden akzeptiert, der Name der Laufvariablen ist frei wählbar (wobei sie nicht in der Variablenliste aufgeführt werden darf).}
+\item{Die Eingaben \texttt{prod\_(k=1)\^{}(100) a\^{}k} oder ähnliche Schreibweisen mit \texttt{produkt} oder \texttt{{\textbackslash}prod} werden akzeptiert, der Name der Laufvariablen ist frei wählbar (wobei sie nicht in der Variablenliste aufgeführt werden darf).}
 \item{Die Teilausdrücke für den Laufindex müssen mit runden Klammern geklammert werden, wenn es mehr als ein Symbol ist.}
 \item{Das Produkt wird tatsächlich ausgewertet, d.h. hier fallen $100$ Faktoren an die berechnet werden müssen.}
 \item{Die Eingabe $a^{5050}$ wird auch als richtig erkannt.}
@@ -544,7 +544,7 @@ Das Fragefeld wurde mit dem Kommando \texttt{$\backslash$MLSimplifyQuestion\{30\
 \MDeclareSiteUXID{BASE_SUBSECTION_EXERCISEELEMENTS_INPUTS3}
 
 \begin{MInfo}
-Das Kommando \texttt{$\backslash$MLSpecialQuestion\{ZEICHENZAHL\}\{LÖSUNG\}\{STÜTZSTELLENZAHL\}\{VARIABLE\}\{GENAUIGKEIT\}\{TYP\}\{UXID\}}
+Das Kommando \texttt{{\textbackslash}MLSpecialQuestion\{ZEICHENZAHL\}\{LÖSUNG\}\{STÜTZSTELLENZAHL\}\{VARIABLE\}\{GENAUIGKEIT\}\{TYP\}\{UXID\}}
 erzeugt ein spezielles Eingabefeld, dessen Korrektur durch den String \texttt{TYP} bestimmt wird. Es deckt Spezialfälle ab, die mit den
 Standardeingabefeldern nicht oder nur sehr umständlich realisiert werden können. Es gibt diese Typen:
 \begin{itemize}
@@ -582,7 +582,7 @@ Dieses Eingabefeld kann man nur mit \texttt{MLSpecialQuestion} erstellen:
 \ \\ \ \\
 Finden Sie irgend eine Lösung der Ungleichung $|x-5|<1$. Antwort: Beispielsweise \MEquationItem{$x$}{\MLSpecialQuestion{10}{(4,6)}{1}{}{5}{intervalelement}{EX_MLSpecialQuestion1}}.
 \ \\ \ \\
-Das Feld wurde mit dem Befehl \texttt{$\backslash$MLSpecialQuestion\{10\}\{(4,6)\}\{1\}\{\}\{5\}\{intervalelement\}\{EX\_MLSpecialQuestion1\}} erzeugt.
+Das Feld wurde mit dem Befehl \texttt{{\textbackslash}MLSpecialQuestion\{10\}\{(4,6)\}\{1\}\{\}\{5\}\{intervalelement\}\{EX\_MLSpecialQuestion1\}} erzeugt.
 \end{MExample}
 
 \begin{MExample}
@@ -590,7 +590,7 @@ Exakte Kürzung kann nur mit \texttt{MLSpecialQuestion} geprüft werden:
 \ \\ \ \\
 Kürzen Sie den Bruch $\frac{42}{-12}$ maximal. Antwort: \MEquationItem{$\frac{42}{-12}$}{\MLSpecialQuestion{10}{42/(-12)}{1}{}{5}{exactfraction}{EX_MLSpecialQuestion2}}.
 \ \\ \ \\
-Das Feld wurde mit dem Befehl \texttt{$\backslash$MLSpecialQuestion\{10\}\{42/(-12)\}\{1\}\{\}\{5\}\{exactfraction\}\{EX\_MLSpecialQuestion2\}} erzeugt.
+Das Feld wurde mit dem Befehl \texttt{{\textbackslash}MLSpecialQuestion\{10\}\{42/(-12)\}\{1\}\{\}\{5\}\{exactfraction\}\{EX\_MLSpecialQuestion2\}} erzeugt.
 \ \\ \ \\
 Hier ist \texttt{-7/2} die einzige richtige Antwort. Sowohl \texttt{7/(-2)} wie auch \texttt{(-7)/2} werden abgelehnt.
 \end{MExample}
@@ -718,15 +718,15 @@ Schreiben Sie diesen Potenz- und Wurzelausdruck als einfache Potenz mit einem ra
 
 \begin{MInfo}
 An jeder Stelle im Quelldokument kann die LaTeX-Konvertierung umgangen und direkt HTML5-Code eingefügt werden
-mithilfe des Kommandos \texttt{$\backslash$special\{html:\textit{HTML-Code}\}} (auch inline) oder mit der \texttt{html}-Umgebung.
+mithilfe des Kommandos \texttt{{\textbackslash}special\{html:\textit{HTML-Code}\}} (auch inline) oder mit der \texttt{html}-Umgebung.
 \ \\ \ \\
-Dabei sollte stets mit \texttt{$\backslash$ifttm} die HTML-Übersetzung abgefragt und im anderen Fall (PDF) ein Ersatztext angegeben werden.
+Dabei sollte stets mit \texttt{{\textbackslash}ifttm} die HTML-Übersetzung abgefragt und im anderen Fall (PDF) ein Ersatztext angegeben werden.
 \end{MInfo}
 
 \begin{MExample}
 \ifttm
 Dieses \special{html:<div style="background-color:rgb(255,0,0);">gefärbte&nbsp;div</div>} erscheint im HTML mit Hilfe
-des Befehl \texttt{$\backslash$special\{html:<div style="background-color:rgb(255,0,0);{"}>gefärbte\&nbsp;div</div>\}}.
+des Befehl \texttt{{\textbackslash}special\{html:<div style="background-color:rgb(255,0,0);{"}>gefärbte\&nbsp;div</div>\}}.
 Wie man sieht sind im Codebereich für HTML die üblichen LaTeX-Umsetzungen auch für Sonderzeichen deaktiviert.
 \else
 In der HTML-Ausgabe erscheint hier ein inline-div, aber im PDF kann man nur einen Ersatztext wie diesen schreiben.
@@ -767,8 +767,8 @@ function myButtonClick() {
 Im Optionen-Objekt (für dieses Modul ist es \texttt{Option\_BASE\_testing.py}) können zusätzliche JS-Dateien deklariert werden.
 Diese werden dann in \textit{jeder} Seite des HTML-Baums eingebunden. Falls nur eine Einbindung auf der aktuellen Seite gewünscht ist,
 kann man dies mit dem Befehl
-\texttt{$\backslash$special\{html:<script srcx="{}$:$directmaterial$:$dateiname.js"{} type="{}text/javascript"{}></script>\}}
-vornehmen. Dabei ist zu beachten, dass die JavaScript-Datei mit dem Befehl \texttt{$\backslash$MRegisterFile\{DATEINAME\}} registriert
+\texttt{{\textbackslash}special\{html:<script srcx="{}$:$directmaterial$:$dateiname.js"{} type="{}text/javascript"{}></script>\}}
+vornehmen. Dabei ist zu beachten, dass die JavaScript-Datei mit dem Befehl \texttt{{\textbackslash}MRegisterFile\{DATEINAME\}} registriert
 und der Dateiname mit dem Marker \texttt{$:$directmaterial$:$} versehen werden
 muss, damit sie vom Konverter im HTML-Baum an der richtigen Stelle eingesetzt wird.
 Auch wurde das \texttt{src}-Attribut im Einbindungsbefehl im LaTeX-Quellcode-Beispiel verstellt zu \texttt{srcx}, damit das Auftreten des Dateinamens
@@ -816,7 +816,7 @@ function doTheThing() {
 \MDeclareSiteUXID{BASE_SITE_PYTHON}
 
 \begin{MExample}
-Mit dem Befehl \texttt{$\backslash$MPythonScript\{DATEINAME\}} kann ein Pythonskript ausgeführt werden, seine Ausgabe wird als LaTeX-Code interpretiert
+Mit dem Befehl \texttt{{\textbackslash}MPythonScript\{DATEINAME\}} kann ein Pythonskript ausgeführt werden, seine Ausgabe wird als LaTeX-Code interpretiert
 und an Stelle des Kommandos eingesetzt. Hier ein Beispiel: \MPythonScript{blabla.py}
 \ \\ \ \\
 Diese Ausgabe wurde mit folgendem Python-Script erzeugt:
@@ -858,7 +858,7 @@ Bla2
 \begin{MXContent}{Einbinden von Videos}{Einbinden von Videos}{STD}
 \MDeclareSiteUXID{BASE_SITE_VIDEOS}
 
-Mit dem Befehl \texttt{$\backslash$MYoutubeVideo\{TITEL\}\{BREITE\}\{HÖHE\}\{URL\}} kann ein embedded-Youtubevideo eingebunden werden, dazu wird ein von YouTube erzeugter
+Mit dem Befehl \texttt{{\textbackslash}MYoutubeVideo\{TITEL\}\{BREITE\}\{HÖHE\}\{URL\}} kann ein embedded-Youtubevideo eingebunden werden, dazu wird ein von YouTube erzeugter
 Player auf der Seite eingeblendet, der bei Bedarf vergrößert werden kann.
 \ \\
 % TODO fix MYoutubeVideo
