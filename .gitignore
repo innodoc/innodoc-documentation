@@ -6,8 +6,6 @@ venv
 # latex include files
 mintmod.tex
 maxpage.sty
-de.tex
-en.tex
 
 # latex tmp build files
 tree_pdf.aux
