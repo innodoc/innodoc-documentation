@@ -27,3 +27,7 @@ module.idv
 module.lg
 module.log
 module_preprocessed.tex
+
+# build
+innoconv_output
+__panzer*
