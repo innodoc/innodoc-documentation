@@ -1,0 +1,41 @@
+- example course
+    - project
+        - folders
+        - language
+        - metadata
+        - building
+    - elements
+        - headers
+        - internal links
+        - external links
+        - index concepts
+        - enumeration
+        - bullet list
+        - table
+        - bilder
+            - statisch
+            - tikz
+        - content boxes
+            - example
+            - info
+            - exercise
+            - experiment
+        - videos
+        - formeln
+            - $$ syntax
+            - \frac erweiterung
+            - \decsep erweiterung
+        - interactive exercises
+            - questions
+                - simple input
+                - simplify
+                - formula
+                - questiongroup/checkbox
+                - interval
+                - dropdown
+                - drag n drop
+            - cloze test
+            - solution hint
+            - verify button
+            - test
+            - roulette
