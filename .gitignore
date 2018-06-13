@@ -1,32 +1,5 @@
 *~
-__pycache__
 .DS_Store
-venv
-
-# latex include files
-mintmod.tex
-maxpage.sty
-
-# latex tmp build files
-tree_pdf.aux
-tree_pdf.fdb_latexmk
-tree_pdf.fls
-tree_pdf.idx
-tree_pdf.log
-tree_pdf.out
-tree_pdf.toc
-tree_pdf.ilg
-tree_pdf.ind
-tree_pdf.pdf
-tree_pandoc.html
-
-# pandoc tmp files
-module.dvi
-module.html
-module.idv
-module.lg
-module.log
-module_preprocessed.tex
 
 # build
 innoconv_output

@@ -1,15 +1,16 @@
-# The base module of the [tex2x-converter](https://gitlab.tubit.tu-berlin.de/stefan.born/VEUNDMINT_TUB_Brueckenkurs)
+## Showcase module of the innoDoc converter
 
-This module is used to showcase the capabilities of the [tex2x-converter](https://gitlab.tubit.tu-berlin.de/stefan.born/VEUNDMINT_TUB_Brueckenkurs). Its goal
-is to offer developers / content editors as much guidance as possible in creating their own modules. It is also used for running the tests of the tex2x-converter.
+This module is used to showcase the capabilities of
+[innoconv](https://gitlab.tubit.tu-berlin.de/innodoc/innoconv).
 
-## Getting Started
+It shows sample markup for all elements and interactive exercises.
 
-Refer to the Getting started guide in [tex2x-converter](https://gitlab.tubit.tu-berlin.de/stefan.born/VEUNDMINT_TUB_Brueckenkurs)
+Build the course by typing:
 
-## Authors
+```shell
+$ innoconv -s -l de .
+```
 
-* **Daniel Haase** - *Initial work*
-* **Niklas Jurij Plessing** - Adaptations and improvements
-* **Alvaro Ortiz**
-* **Bjoern Jeschke**
+### Authors
+
+* **Mirko Dietrich** - *innoCampus, TU Berlin*
