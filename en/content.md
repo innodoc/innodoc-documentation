@@ -1,9 +1,6 @@
 ---
-lang: en
 title: Showcase Module for innoDoc
 ---
-
-# Showcase Module for innoDoc
 
 This is an example course.
 
