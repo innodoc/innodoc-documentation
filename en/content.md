@@ -2,8 +2,8 @@
 title: Showcase Module for innoDoc
 ---
 
-This is an example course.
+This is an example course. It
 
-- It illustrates the possibilities of the innoConv converter.
-
-- It serves as a reference for course authors.
+- illustrates the possibilities of innoDoc,
+- serves as a reference for course authors,
+- is a test case for auotmated software tests.

@@ -1,21 +1,21 @@
-# Aufgaben
-
-## Aufgabentypen {#SUBSECTION_EXERCISE_TYPES}
+---
+title: Interactive exercises
+---
 
 ### Checkbox {#SUBSUBSECTION_CHECKBOX}
 
-Eine Beispiel-Checkbox-Aufgabe inklusive Lösungsweg und richtigen
-Antworten.
+An example for a multiple choice exercise including the solution and
+correct answers.
 
 ::: {.exercise}
 Sind diese Ungleichungen richtig oder falsch?
 
 ::: {.question-group}
   ------------------------------------------------------------------------ ---- ---------------------------------------------------------------
-  ``{.exercise .checkbox solution="0" uxid="UG1" questionType="boolean"}        $\frac12>1-\frac13$
-  ``{.exercise .checkbox solution="1" uxid="UG2" questionType="boolean"}        $a^2\geq 2a b-b^2$ (wobei $a$ und $b$ unbekannte Zahlen sind)
-  ``{.exercise .checkbox solution="1" uxid="UG3" questionType="boolean"}        $\frac12<\frac23<\frac34$
-  ``{.exercise .checkbox solution="0" uxid="UG4" questionType="boolean"}        Angenommen $a<b$, dann ist immer auch $a^2<b^2$.
+  ` `{.exercise .checkbox solution="0" uxid="UG1" questionType="boolean"}        $\frac12>1-\frac13$
+  ` `{.exercise .checkbox solution="1" uxid="UG2" questionType="boolean"}        $a^2\geq 2a b-b^2$ (wobei $a$ und $b$ unbekannte Zahlen sind)
+  ` `{.exercise .checkbox solution="1" uxid="UG3" questionType="boolean"}        $\frac12<\frac23<\frac34$
+  ` `{.exercise .checkbox solution="0" uxid="UG4" questionType="boolean"}        Angenommen $a<b$, dann ist immer auch $a^2<b^2$.
   ------------------------------------------------------------------------ ---- ---------------------------------------------------------------
 :::
 
