@@ -2,15 +2,25 @@
 title: 'Zitate'
 ---
 
-Est edidit auras retardat mortali Venilia. Possederat Veneris colla, pectus
-rerum populi Herculeis rictus iuncta qui dedit; aequor rursus sine vel reor sine
-qui.
+Eine weitere funktion, die zur verfügung gesteltl wird, ist das Zitieren:
 
-> Est illa, ore ante, mecum senis, vertit medii fecerat! Creatis utinam corpora
-> parantem caede arva adlevat et ore quies felix nigrique timuere patriosque,
-> cernitis. Hunc odit superi quod reppulit eodem. Tuus sine verbaque omnes non
-> Phoebus! Pars iactat, sed quippe et subitus
-> concrevit honores *perterrita* a Talia vincitur: stridore ipse miseroque
-> aeternum.
+> Research is what I'm doing when I don't know what I'm doing.
 
-Luctor terras madefactaque donis, inde mater et, quem Helicona
+Zitate können auch problemlos mehrzeilig sein:
+
+> This is our world now... the world of the electron and the switch, the
+> beauty of the baud.  We make use of a service already existing without paying
+> for what could be dirt-cheap if it wasn't run by profiteering gluttons, and
+> you call us criminals.  We explore... and you call us criminals.  We seek
+> after knowledge... and you call us criminals.  We exist without skin color,
+> without nationality, without religious bias... and you call us criminals.
+> You build atomic bombs, you wage wars, you murder, cheat, and lie to us
+> and try to make us believe it's for our own good, yet we're the criminals.
+
+Mann kann auch ohne weiters Zitate mit beliebigen Zeilenumbruechen haben:
+
+> Wer reitet so spät durch Nacht und Wind?
+> Es ist der Vater mit seinem Kind.
+> Er hat den Knaben wohl in dem Arm,
+> Er faßt ihn sicher, er hält ihn warm.
+
