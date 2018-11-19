@@ -4,15 +4,15 @@ title: 'Bilder und Videos'
 
 Man kann auch Bilder und Videos in einbinden.
 
-Diese können statische Dateien in diesem Projekt sein, oder auf einem externen Server liegen.
+Diese können statische Dateien in diesem Kurs sein, oder auf einem externen Server liegen.
 
 Eine statische Bilddatei kann auf folgende Art und weise Eingebunden werden:
 ![Text-Beschreibung des Bildes](/adam.jpg "Bildtitel")
-Die Bilddatei selbst liegt hierbei im _static Ordner im Wurzelverzeichnis des Projekes.
+Die Bilddatei selbst liegt hierbei im [_static Ordner im Wurzelverzeichnis](/01-project/01-folders).
 
 Man kann auch lokalisierte Versionen einer Datei referenzieren:
 ![Deutsche Flagge](/flag.png "Es wird die Deutsche Flagge aus de/_static geladen")
-Diese Dateien liegen im _static Ordner der jeweiligen Sprache.
+Diese Dateien liegen im [_static Ordner der jeweiligen Sprache](/01-project/01-folders).
 
 Man kann die Bilddateien auch referenzieren, wenn diese auf Unterordner verteilt sind.
 ![Eine Mathe-Aufgabe](/subfolder/math.jpeg "Ein Beispiel-Bild aus einem Unterordner")
@@ -20,7 +20,8 @@ Man kann die Bilddateien auch referenzieren, wenn diese auf Unterordner verteilt
 Der Bildtitel kann auch weggelassen werden.
 ![Eine Mathe-Aufgabe](/subfolder/math.jpeg)
 
-Falls die Ordnerstruktur der statischen Daten die Ordnerstruktur dieses Inhalts wieder spiegelt, kann man auch den Pfad zu Bildern weglassen:
+Falls die Ordnerstruktur der statischen Daten die Ordnerstruktur des Kurses wiederspiegelt,
+kann man auch den Pfad zu Bildern weglassen:
 ![Logo der TU Berlin aus _static](TU_Logo_kurz.png)
 Dies funktioniert auch für die lokalisierten Ordner:
 ![Logo der TU Berlin aus de/_static](TU_Logo.png)

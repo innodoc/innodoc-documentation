@@ -1,8 +1,8 @@
 ---
-title: 'Zitate'
+title: Zitate
 ---
 
-Eine weitere funktion, die zur verfügung gesteltl wird, ist das Zitieren:
+Kapitel können auch Zitate beinhalten:
 
 > Research is what I'm doing when I don't know what I'm doing.
 

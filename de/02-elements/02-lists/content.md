@@ -1,15 +1,16 @@
 ---
-title: 'Listen und Aufzählungen'
+title: Listen und Aufzählungen
 ---
 
-Es ist selbstverständlich auch Problemlos möglich, Listen darzustellen:
+Ein Kapitel kann auch an jeder Stelle, an der Text vorhanden sein kann, Listen
+enthalten:
 
 - Listen sind nützlich
 - Es entsteht eine klar lesbare Struktur
 - Listen sind vielseitig einsetzbar
 - usw...
 
-Analog zu den Listen kann man auch genauso Problemlos Aufzählugnen verwenden:
+Analog zu den Listen kann man auch genauso Aufzählungen verwenden:
 
 1. Aufzählugnen sind ebenso nützlich
 2. Es entsteht eine klar lesbare Struktur

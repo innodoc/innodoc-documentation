@@ -2,19 +2,28 @@
 title: Lists
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla. Pellentesque ultrices viverra tristique. Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula. Duis at augue ipsum. Aenean sit amet pretium elit. Vivamus non metus convallis, auctor ipsum vitae, gravida nulla. Praesent bibendum mauris a lorem congue tincidunt.
+It is obviously also possible to represent lists:
 
-- Quam mirantum
-- Maeandros quaeque macies cognoscere digitos poenaeque vides
-- Paventque cacumina est modicisque modis
-- Peccasse ambitae cum quid
-- Ortae restabat duras
+- lists are useful
+- they create a clear and readable structure
+- lists can be used in many ways
+- ...
 
-Pectore socios, pro tinctas genus pabula; pavor arbore; scelus albente tabe
-tuae; lucosque. Sol duce, quam vimque rerum victa inpressa, dei ultimus naribus;
-me multa, coeptis?
+Similarly to just bullet lists it's also possible to have enumerated lists:
 
-1. Tethys quam deficiunt caput
-2. Ecce est terraque
-3. Nervis puerilibus
-4. Meus gemitu auras putes
+1. enumerations are useful too
+2. they create a clear and readable structure
+3. enumerations are equally flexible
+
+It's also possible to mix the two structures:
+
+1. combined approaches are even more useful!
+  - they can be more flexible
+  - they can represent ideas better
+2. they create a readable structure
+  1. whith good structure
+  2. with sublists
+    1. Which can have sublists themselves!
+3. and much more!
+
+

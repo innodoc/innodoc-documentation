@@ -2,15 +2,24 @@
     - project
         - folders
         - language
-        - metadata
+        - files/metadata
+	        - manifest
+	        - content
         - building
     - elements
         - headers
-        - internal links
-        - external links
+        - lists
+	        - bullet list
+        	- enumeration
+        - links and formatting
+        	- formatting
+	        - internal links
+        	- external links
+        	- anchor links
+        - media
+        	- images
+	        - videos
         - index concepts
-        - enumeration
-        - bullet list
         - table
         - bilder
             - statisch
@@ -20,11 +29,12 @@
             - info
             - exercise
             - experiment
-        - videos
         - formeln
+            - $ syntax
             - $$ syntax
-            - \frac erweiterung
-            - \decsep erweiterung
+            - \num erweiterung
+            - \decmarker erweiterung
+            - \coordsep erweiterung
         - interactive exercises
             - questions
                 - simple input

@@ -2,48 +2,57 @@
 title: Überschriften
 ---
 
-Mit dem innoConv-Konverter kann man eine einzelne Seite noch zusätzlich durch
-das verwenden von Überschriften in Sektionen aufteilen.
+Einzelne Kapitel des Kurses kann man durch Absätze strukturieren und lesbarer 
+gestalte.
 
-Natürlich ist es auch möglich, einfach durch Absätze ein Text zu strukturieren.
+Weiters kann man Kapitel durch das verwenden von Überschriften in Sektionen
+aufteilen. Dies ist aber nicht obligatorisch, es ist ohne weiteres auch möglich,
+ganze Kapitel - oder ganze Kurse - ganz ohne Überschriften innerhalb eines
+Kapitels zu gestalten.
 
-# Überschrift erster Ordnung
+# Überschrift
 
-So sieht eine Überschrift erster Ordnung aus, diese kann aber natürlich weiter
-unterteilt werden.
+Überschriften teilen ein Kapitel in Sektionen ein, die aber immer noch Teil des
+gleichen Dokumentes sind.
 
 ## Überschrift zweiter Ordnung
 
-Auch die zweite Ebene kann weiter unterteilt werden:
+Weiters sind Überschriften nicht auf eine Ebene beschränkt, jede Sektion kann
+durch weitere Überschriften (höherer Ordnung) in Unter-Sektionen aufgeteilt werden.
 
 ### Überschrift dritter Ordnung
 
-Mann sollte aber nicht weiter als drei Ebenen an Überschriften in einem Dokument
-haben.
+Diese Verschachtelung an Sektionen sollte aber - der Lesbarkeit halber - nicht
+über die dritte Ordnung hinausgehen.
 
 ### Weitere Überschrift dritter Ordnung
 
-Klarerweise kann man auch mehrere Parallele Überschriften haben
+Durch eine Überschrift gleicher Ordnung wird eine Sektion beendet und es fängt
+eine neue Sektion an.
 
 ## Noch eine Überschrift zweiter Ordnung
 
-Und mann kann auch beliebig wieder auf höhere Ebenen springen.
+Analog wird durch eine Überschrift niedrigerer Ordnung eine Sektion beendet, und
+es fängt eine neue Sektion niedriger Ordnung an.
 
-## Dritte Überschrift zweiter Ordnung
+## Leere Sektionen
 
+### Untersektion
 
-### Duis in Praesent
+Es kann manchmal nützlich sein, eine "leere" Sektion zu haben, die nur aus 
+Untersektionen besteht. Dafür reicht es, wenn direkt nach einer Überschrift eine
+Überschrift höherer Ordnung folgt.
 
-Es ist auch möglich, leere Überschriften zu haben
+# Überschrift erster Ordnung
 
-# Wieder erste Ordnung
+Mit einer Überschrift niedriger Ordnung beendet man immer alle Sektionen höherer
+Ordnung, und fängt mit einer Sektion niedrigerer Ordnung an.
 
+In einer Sektion hat man die gleichen Möglichkeiten, die man auch direkt in einem
+Kaptitel hat - z.B. kann man da auch Absätzte haben, man kann text formatieren, ...
 
-### Quisque tortor
+### Ordnungen überspringen
 
-Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula.
-
-
-# Decidit causam mirabilis dapes
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla.
+Falls man eine Sektion dritter Ordnung in einer Sektion erster Ordnung haben möchte,
+kann man dies einfach machen. Dies kann z.B. erforderlich sein, um interne
+Strukturen in einem Kapitel in ihrer Relevanz korrekt darzustellen.
