@@ -1,7 +1,4 @@
-languages:
-- de
-- en
-
 title:
-    de: TUB Basis-Kurs
-    en: TUB Base course
+  de: innoDoc-Showcase-Kurs
+  en: innoDoc Showcase Course
+languages: [de, en]
