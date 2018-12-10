@@ -15,11 +15,11 @@ title: Titel des Kapitels
 ```
 
 Die restliche Datei ist der eigentliche Inhalt des Kapitels, der dargestellt
-werden soll. Dabei stehen verschiedene [Elemente](/02-elements) zur Verfügung,
-um eine [Strukturierung des Kapitels](/02-elements/01-headers),
-[Texformatierung](/02-elements/03-links-and-formatting/01-formatting),
-[Verlinkung](/02-elements/03-links-and-formatting/02-links),
-[mediale Einbindung](/02-elements/06-media), usw. vorzunehmen.
+werden soll. Dabei stehen verschiedene [Elemente]{data-link-section="02-elements"} zur Verfügung,
+um eine [Strukturierung des Kapitels]{data-link-section="02-elements/01-headers"},
+[Texformatierung]{data-link-section="02-elements/03-links-and-formatting/01-formatting"},
+[Verlinkung]{data-link-section="02-elements/03-links-and-formatting/02-links"},
+[mediale Einbindung]{data-link-section="02-elements/06-media"}, usw. vorzunehmen.
 
 Hier Beispiel für den Inhalt einer Solchen Datei:
 

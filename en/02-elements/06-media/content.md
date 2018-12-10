@@ -36,7 +36,7 @@ External pictures - that means, pictures stored on external servers - can be inc
 
 Vidos can be embedded in a similar way. When doing so, there are some details to keep in mind:
 no "!" at the front of the statement, and it hast to have {.video .video-static} at the end
-["L'Arrivee d'un train en gare de la Ciotat, 1895" from _static](/train.ogv){.video .video-static}
+["L'Arrivee d'un train en gare de la Ciotat, 1895" from _static](/video.mp4){.video .video-static}
 
 It can be done like this for images from external servers too:
 ["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}

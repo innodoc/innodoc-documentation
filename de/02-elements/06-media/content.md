@@ -20,6 +20,8 @@ Man kann die Bilddateien auch referenzieren, wenn diese auf Unterordner verteilt
 Der Bildtitel kann auch weggelassen werden.
 ![Eine Mathe-Aufgabe](/subfolder/math.jpeg)
 
+![Eine Mathe-Aufgabe](/subfolder/math.jpeg)
+
 Falls die Ordnerstruktur der statischen Daten die Ordnerstruktur des Kurses wiederspiegelt,
 kann man auch den Pfad zu Bildern weglassen:
 ![Logo der TU Berlin aus _static](TU_Logo_kurz.png)

@@ -4,9 +4,9 @@ title: Formeln
 
 Es können in einem Kurs auch $\LaTeX$-Formeln verwendet werden.
 
-Alles, was zwischen zwei '$' steht, und dabei weder mit einem Leerzeichen beginnt
+Alles, was zwischen zwei '\$' steht, und dabei weder mit einem Leerzeichen beginnt
 noch mit einem Leerzeichen endet, wird als TeX-Mathe-Formel interpretiert (direkt
-nach dem Abschließenden '$' darf dabei keine Zahl stehen). Dadurch wird $123,456$
+nach dem Abschließenden '\$' darf dabei keine Zahl stehen). Dadurch wird $123,456$
 oder $( x_F \equiv p_z^{}/p^{\mathrm{MAX}}_z = p_z/(\sqrt{s}/2) = 2p_z/\sqrt s )$
 als $\LaTeX$ interpretiert, aber $100 und $200,00 nicht
 
