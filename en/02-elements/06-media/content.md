@@ -1,61 +1,144 @@
 ---
-title: 'Bilder und Videos'
+title: 'Images and Videos'
 ---
 
 It's possible to include images and videos.
 
-These can be either static files in the project or included form an external
-server.
+## Images
 
-A static file can be included liek this:
-![Description of the image](/adam.jpg "Image Title")
-In this case the image file is in the _static subfolder of the root of the
-project
+Images should be wrapped in a figure element. This way they are formatted
+properly and receive a caption.
 
-It's also possible to use localizzed version of the images:
-![Union Jack](/flag.png "British Falg loaded from en/_static")
-These files are in the _static subfolder of each language.
+```markdown
+::: {.figure}
+![The Creation of Adam by Michelangelo](adam.jpg "The Creation of Adam"){.img}
+:::
+```
 
-It's also possible to reference images in subfolders:.
-![A math problem](/subfolder/math.jpeg "Example image loaded from a subfolder")
+::: {.figure}
+![The Creation of Adam by Michelangelo](adam.jpg "The Creation of Adam"){.img}
+:::
 
-It's also possible to have no image title.
-![A math problem](/subfolder/math.jpeg)
+The image caption can be left empty while the title may be completely omitted.
 
-If the folder structure of the static files mirrors the content folder structure,
-it's possible to omit the path to the image:
-![Logo of the TU Berlin from _static](TU_Logo_kurz.png)
-This also works for localized files:
-![Logo of the TU Berlin from en/_static](TU_Logo.png)
+```markdown
+::: {.figure}
+![](adam.jpg){.img}
+:::
+```
 
-Of course it's also possible to have linked images.
-[![Logo of the TU Berlin from en/_static](TU_Logo.png)](https://www.tu-berlin.de "Homepage of the TU Berlin")
+::: {.figure}
+![](adam.jpg){.img}
+:::
 
-External pictures - that means, pictures stored on external servers - can be included in the same way:
+### Inline images
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla. Pellentesque ultrices viverra tristique. Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula. Duis at augue ipsum. Aenean sit amet pretium elit. Vivamus non metus convallis, auctor ipsum vitae, gravida nulla. Praesent bibendum mauris a lorem congue tincidunt.
-![external $\LaTeX$ *example* _file_](https://picsum.photos/200 "An **example** _picture_ $\LaTeX$ from an external server")
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla. Pellentesque ultrices viverra tristique. Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula. Duis at augue ipsum. Aenean sit amet pretium elit. Vivamus non metus convallis, auctor ipsum vitae, gravida nulla. Praesent bibendum mauris a lorem congue tincidunt.
-![external example file](https://picsum.photos/200 "An example picture from an external server")
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla. Pellentesque ultrices viverra tristique. Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula. Duis at augue ipsum. Aenean sit amet pretium elit. Vivamus non metus convallis, auctor ipsum vitae, gravida nulla. Praesent bibendum mauris a lorem congue tincidunt.
-![external example file](https://picsum.photos/200)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla. Pellentesque ultrices viverra tristique. Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula. Duis at augue ipsum. Aenean sit amet pretium elit. Vivamus non metus convallis, auctor ipsum vitae, gravida nulla. Praesent bibendum mauris a lorem congue tincidunt.
-![](https://picsum.photos/200 "An example picture from an external server")
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla. Pellentesque ultrices viverra tristique. Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula. Duis at augue ipsum. Aenean sit amet pretium elit. Vivamus non metus convallis, auctor ipsum vitae, gravida nulla. Praesent bibendum mauris a lorem congue tincidunt.
-![](https://picsum.photos/200)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla. Pellentesque ultrices viverra tristique. Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula. Duis at augue ipsum. Aenean sit amet pretium elit. Vivamus non metus convallis, auctor ipsum vitae, gravida nulla. Praesent bibendum mauris a lorem congue tincidunt.
+Beside images wrapped in figure elements they can also occur within text.
 
-Vidos can be embedded in a similar way. When doing so, there are some details to keep in mind:
-no "!" at the front of the statement, and it hast to have {.video .video-static} at the end
-<<<<<<< HEAD
-["L'Arrivee d'un train en gare de la Ciotat, 1895" from _static](/video.mp4){.video .video-static}
-=======
-["Test video" from _static](/video.mp4){.video .video-static}
->>>>>>> d17ad2d... fix video link
+```markdown
+An inline image ![Star](star.png) in the text.
+```
 
-It can be done like this for images from external servers too:
+An inline image ![Star](star.png) in the text.
+
+### Images as link
+
+Images can be links.
+
+```markdown
+[![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
+```
+
+[![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
+
+### Image formats
+
+TODO: SVG, PNG, JPG
+
+## Videos
+
+Videos can be used.
+
+### Lokale Videos
+
+```markdown
+["Test video" from _static](video.mp4){.video .video-static}
+```
+
+["Test video" from _static](video.mp4){.video .video-static}
+
+### Externe Videos
+
+```markdown
+["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
+```
+
 ["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
 
-Videos from youtube can be included in the same way. In this case we have to
-have {.video .video-youtube} at the end of the statement.
+### Videos von YouTube
+
+```markdown
 [Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
+```
+
+[Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
+
+## File locations
+
+All static files reside in the `_static` folder in the project root.
+
+It's possible to reference files from arbitrary subfolders:
+`/subfolder/math.jpg` refers to the file `_static/subfolder/math.jpg`.
+
+```markdown
+::: {.figure}
+![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
+:::
+```
+
+::: {.figure}
+![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
+:::
+
+An path specified without a leading slash it is considered relative to
+the section path. E.g. `tu-logo.png` refers to the image file
+`_static/02-elements/06-media/tu-logo.png` while `/tu-logo.png`
+refers to `_static/tu-logo.png`.
+
+```markdown
+::: {.figure}
+![Logo TU Berlin](tu-logo.png)
+:::
+```
+
+::: {.figure}
+![Logo TU Berlin](tu-logo.png)
+:::
+
+### External files
+
+Static files local to the project are the preferred way to include media. While
+external locations do work they are questionable from a privacy point-of-view
+and also might go offline or change at any time.
+
+### Translation of static files
+
+It's possible to use different versions of static files for different
+languages.
+
+For this example there are two versions of `lines.png`, one for each language:
+
+- `de/_static/02-elements/06-media/lines.png`
+- `en/_static/02-elements/06-media/lines.png`
+
+```markdown
+::: {.figure}
+![Lines](lines.png)
+:::
+```
+
+::: {.figure}
+![Lines](lines.png)
+:::
+
+(You can switch the language to see the other version of the file.)
