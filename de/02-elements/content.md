@@ -2,6 +2,5 @@
 title: Elemente
 ---
 
-In diesem Abschnitt werden die verschiedenen möglichen Formatierungselemente
-vorgestellt, die vom innoConv-Konverter verwaltet werden können.
-
+Dieser Abschnitt stellt die verschiedenen Elemente vor, die in Kursen verwendet
+werden können.

@@ -1,23 +1,50 @@
 ---
-title: Ordner
+title: Folders
 ---
 
-Die Struktur des Kurses ist durch Ordner und Unterordner definiert.
-Dabei entspricht jeder Ordner einem Kapitel.
+The root directory contains the
+[language folders]{data-link-section="01-project/02-languages"}.
 
-Dadurch wird nicht nur die Struktur (welcher Ordner liegt in welchem), sondern
-auch die Reihenfolge der Inhalte definiert: im Index tauchen die Kapitel nach
-Ordnernamen sortiert auf.
+The course structure is defined by folders and subfolders. Every folder
+corresponds to a section. The folder name is the section ID. The section order
+is determined by the alphanumerical sorting of the folder names.
 
-Die Namen der Ordner dürfen nicht mit einem "_" beginnen. Bis auf diese
-Einschränkung sind die Ordnernamen frei waehlbar.
+Every language folder must have the exact same folder structure.
 
-In jedem Ordner muss eine [content.md Datei](../03-files/02-content) definiert sein, die den Inhalt des
-Kapitels definiert.
+Section folder names should not start with a `_` or contain spaces.
 
-Im Wurzelverzeichnis des Kurses sollen sich dabei nur die [Sprachordner](../02-languages)
-befinden, und der Inhalt des Kurses soll sich in den jeweiligen Sprachordner befinden.
+```
+root
+├── de
+│   ├── 01-project
+│   │   ├── 01-folders
+│   │   ├── 02-languages
+│   │   └── …
+│   ├── 02-elements
+│   │   ├── 01-headers
+│   │   ├── 02-lists
+│   │   └── …
+│   └── …
+├── en
+│   ├── 01-project
+│   │   ├── 01-folders
+│   │   ├── 02-languages
+│   │   └── …
+│   ├── 02-elements
+│   │   ├── 01-headers
+│   │   ├── 02-lists
+│   │   └── …
+│   └── …
+└── …
+```
 
-Zusätzlich kann sich im Wurzelverzeichnis (sowie in jedem Sprachordner) ein "_static"
-Ordner befinden, in dem [statische Dateien](/02-elements/06-media) hinterlegt werden
-können.
+There is a `manifest.yml` in the root directory. It contains
+[course meta data]{data-link-section="01-project/03-files/01-manifest"}.
+
+Every section folder contains one `content.md`. It contains the
+[section content]{data-link-section="01-project/03-files/02-content"}.
+
+Additionally the root directory, as well as every language folder, can contain
+one `_static` folder. It contains
+[static files]{data-link-section="02-elements/06-media"} such as images and
+videos.

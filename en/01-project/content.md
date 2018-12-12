@@ -2,5 +2,15 @@
 title: Project structure
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, ultricies in sem et, volutpat dapibus tellus. Nulla sollicitudin scelerisque velit vitae sagittis. Praesent luctus est lectus, eget suscipit metus mattis sit amet. Aenean augue erat, rutrum nec sollicitudin sed, tristique id odio. Pellentesque cursus leo vel massa scelerisque fringilla. Pellentesque ultrices viverra tristique. Duis risus mi, vestibulum et molestie ut, elementum et leo. Quisque tortor lorem, mollis sit amet eros et, placerat egestas ligula. Duis at augue ipsum. Aenean sit amet pretium elit. Vivamus non metus convallis, auctor ipsum vitae, gravida nulla. Praesent bibendum mauris a lorem congue tincidunt.
+This sections describes the course structure.
 
+Content is written in
+[text files]{data-link-section="01-project/03-files/02-content"}. They are
+written in Markdown format and saved in a
+[directory structure]{data-link-section="01-project/01-folders"} that
+corresponds to the table of contents. The course can be translated into
+different [languages]{data-link-section="01-project/02-languages"}. Finally
+the course is [compiled]{data-link-section="01-project/04-building"} and can
+be viewed using the programs
+[innoDoc web app](https://gitlab.tu-berlin.de/innodoc/innodoc-webapp)
+and [innoDoc app](https://gitlab.tu-berlin.de/innodoc/innodoc-app).

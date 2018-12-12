@@ -1,12 +1,17 @@
 ---
-title: Home
+title: Projektstruktur
 ---
 
-Die Inhalte des Kurses werden durch [Textdateien]{data-link-section="01-project/03-files/02-content"}, die in
-einem [Verzeichnisbaum]{data-link-section="01-project/01-folders"} liegen, definiert. Dabei kann jeder Kurs in
-mehreren [Sprachen]{data-link-section="01-project/02-languages"} verfügbar sein, und es können noch verschiedene
-[zusätzliche informationen]{data-link-section="01-project/03-files/01-manifest"} definiert werden. Man kann
-anschließend auch den Kurs [bauen]{data-link-section="01-project/04-building"}, damit man ihn mit der
-[innoDoc web app](https://gitlab.tubit.tu-berlin.de/innodoc/innodoc-webapp) oder
-der [innoDoc app](https://gitlab.tubit.tu-berlin.de/innodoc/innodoc-app) anzeigen
-kann.
+Dieser Abschnitt bespricht die Stuktur eines Kurses.
+
+Die Inhalte des Kurses werden in
+[Textdateien]{data-link-section="01-project/03-files/02-content"} eingegeben.
+Diese werden im Markdown-Format geschrieben. Die einzelnen Abschnitte werden
+in einem [Verzeichnisbaum]{data-link-section="01-project/01-folders"} abgelegt,
+der dem Inhaltsverzeichnis des Kurses entspricht. Der Kurs kann in beliebige
+[Sprachen]{data-link-section="01-project/02-languages"} übersetzt werden. Er
+wird anschließend [kompiliert]{data-link-section="01-project/04-building"} und
+kann mit den Programmen
+[innoDoc web app](https://gitlab.tu-berlin.de/innodoc/innodoc-webapp)
+und [innoDoc app](https://gitlab.tu-berlin.de/innodoc/innodoc-app)
+angezeigt und benutzt werden.
