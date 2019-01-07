@@ -59,7 +59,7 @@ TODO: SVG, PNG, JPG
 
 Videos can be used.
 
-### Lokale Videos
+### Local Videos
 
 ```markdown
 ["Test video" from _static](video.mp4){.video .video-static}
@@ -67,7 +67,7 @@ Videos can be used.
 
 ["Test video" from _static](video.mp4){.video .video-static}
 
-### Externe Videos
+### External Videos
 
 ```markdown
 ["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
@@ -75,7 +75,7 @@ Videos can be used.
 
 ["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
 
-### Videos von YouTube
+### YouTube
 
 ```markdown
 [Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}

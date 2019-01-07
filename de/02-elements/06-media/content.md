@@ -75,7 +75,7 @@ Es können auch Videos eingebunden werden.
 
 ["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
 
-### Videos von YouTube
+### YouTube
 
 ```markdown
 [Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
