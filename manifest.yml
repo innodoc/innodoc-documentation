@@ -2,3 +2,6 @@ title:
   de: innoDoc-Showcase-Kurs
   en: innoDoc Showcase Course
 languages: [de, en]
+tikz_preamble: |
+  \usetikzlibrary{arrows,calc}
+  \newcommand{\sayhello}{Hello\ World!}
