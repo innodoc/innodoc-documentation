@@ -7,11 +7,7 @@ This module is used to showcase the capabilities of
 
 It shows sample markup for all elements and interactive exercises.
 
-Build the course by typing:
-
-```shell
-$ innoconv -s -l de .
-```
+You can see it live here: https://veundmint.innocampus.tu-berlin.de
 
 ### Authors
 
