@@ -1,29 +1,51 @@
 ---
-title: Lists
+title: Lists and Enumerations
 ---
 
-It is obviously also possible to represent lists:
+List can be ordered and unordered.
 
-- lists are useful
-- they create a clear and readable structure
-- lists can be used in many ways
-- ...
+```markdown
+- Lists are helpful.
+- They are clear and readable.
+- Lists are versatile.
+- etc.
+```
 
-Similarly to just bullet lists it's also possible to have enumerated lists:
+- Lists are helpful.
+- They are clear and readable.
+- Lists are versatile.
+- etc.
 
-1. enumerations are useful too
-2. they create a clear and readable structure
-3. enumerations are equally flexible
+The same way ordered lists can be used.
 
-It's also possible to mix the two structures:
+```markdown
+1. Ordered lists are also helpful.
+1. They are clear and readable.
+1. They are also versatile.
+```
 
-1. combined approaches are even more useful!
-  - they can be more flexible
-  - they can represent ideas better
-2. they create a readable structure
-  1. whith good structure
-  2. with sublists
-    1. Which can have sublists themselves!
-3. and much more!
+1. Ordered lists are also helpful.
+1. They are clear and readable.
+1. They are also versatile.
 
+And of course lists can be nested and combined.
 
+```markdown
+- Level 1
+   - Level 2
+      1. Level 3
+      1. Level 3
+   - Level 2
+- Level 1 again
+   1. Level 2
+   1. Level 2
+```
+
+- Level 1
+   - Level 2
+      1. Level 3
+      1. Level 3
+   - Level 2
+- Level 1 again
+   1. Level 2
+   1. Level 2

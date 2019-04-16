@@ -2,29 +2,50 @@
 title: Listen und Aufzählungen
 ---
 
-Ein Kapitel kann auch an jeder Stelle, an der Text vorhanden sein kann, Listen
-enthalten:
+Es können nummerierte und unnummerierte Listen angezeigt werden.
 
-- Listen sind nützlich
-- Es entsteht eine klar lesbare Struktur
-- Listen sind vielseitig einsetzbar
-- usw...
+```markdown
+- Listen sind nützlich.
+- Es entsteht eine klar lesbare Struktur.
+- Listen sind vielseitig einsetzbar.
+- usw…
+```
 
-Analog zu den Listen kann man auch genauso Aufzählungen verwenden:
+- Listen sind nützlich.
+- Es entsteht eine klar lesbare Struktur.
+- Listen sind vielseitig einsetzbar.
+- usw…
 
-1. Aufzählugnen sind ebenso nützlich
-2. Es entsteht eine klar lesbare Struktur
-3. Aufzählugnen sind genauso vielseitig einsetzbar
+Analog zu Listen können Aufzählungen verwenden werden.
 
-Mann kann auch die beiden Strukturen mischen:
+```markdown
+1. Aufzählungen sind ebenso nützlich.
+1. Es entsteht eine klar lesbare Struktur.
+1. Aufzählungen sind genauso vielseitig einsetzbar
+```
 
-1. Kombinierte Ansätze sind dann umso Nützlicher
-  - sie können sogar fleixbler sein
-  - sie können komplexe Ideene besser darstellen
-2. Es entsteht eine klar lesbare Struktur
-  1. Diese kann auch gut geglieder sein
-  2. Mit Unterpunken
-    1. Die ihrerseits unterpunkte haben!
-3. weiteres!
+1. Aufzählungen sind ebenso nützlich.
+1. Es entsteht eine klar lesbare Struktur.
+1. Aufzählungen sind genauso vielseitig einsetzbar
 
+Selbstverständlichen lassen sich Listen auch schachteln und kombinieren.
 
+```markdown
+- Level 1
+   - Level 2
+      1. Level 3
+      1. Level 3
+   - Level 2
+- Level 1 again
+   1. Level 2
+   1. Level 2
+```
+
+- Level 1
+   - Level 2
+      1. Level 3
+      1. Level 3
+   - Level 2
+- Level 1 again
+   1. Level 2
+   1. Level 2
