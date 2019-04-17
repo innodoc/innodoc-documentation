@@ -1,20 +1,43 @@
 ---
-title: Textformatierung
+title: Basic Text Formatting
 ---
 
-Der Text in einem Kapitel hat verschieden Formatierungsmöglichkeiten.
+This section demonstrates the possibilities of basic text formatting.
 
-Es ist möglich, *wichtige* Wörter hervorzuheben. Dafür gibt es _mehr als eine Möglichkeit_,
-die aber gleichwertig sind.
+```markdown
+It is possible to highlight *important words*. There are _two ways_ to
+accomplish this.
+```
 
-Es besteht auch die Möglichkeit, Wörter hervorzuheben, die **noch wichtiger** sind.
-Hierfür gibt es auch __mehrere gleichwertige Möglichkeiten__
+It is possible to highlight *important words*. There are _two ways_ to
+accomplish this.
 
-Eine weitere Formatierungsmöglichkeit ist das ~~Herausstreichen~~ Durchstreichen
-von Wörtern, oder ~~ganzen Sätzen~~ ganzen Satzteilen.
+```markdown
+**Even more important words are printed in bold. For this there are also two
+__different ways__.
+```
 
-Man kann die Formatierungsmöglichkeiten auch kombinieren, z.B. kann man
-*in einem wichtigen Satzteil ~~Wörter~~ teile davon durchstreichen*.
+**Even more important words are printed in bold. For this there are also two
+__different ways__.
 
-Durch diese Kombinationsmöglichkeiten kann man auch
-_in einem wichtigen Satzteil **noch wichtigere Wörter** hervorheben_.
+```markdown
+Another formatting option is crossing out ~~words~~ or ~~whole phrases~~.
+```
+
+Another formatting option is crossing out ~~words~~ or ~~whole phrases~~.
+
+```markdown
+The formatting options can of course be combined. For example, *in an important
+part of a sentence you can cross out ~~words~~*.
+```
+
+The formatting options can of course be combined. For example, *in an important
+part of a sentence you can cross out ~~words~~*.
+
+```markdown
+If a formatting character is to be printed, it must be prefixed with a
+\*Backslash\*.
+```
+
+If a formatting character is to be printed, it must be prefixed with a
+\*Backslash\*.

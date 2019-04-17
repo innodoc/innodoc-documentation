@@ -1,20 +1,47 @@
 ---
-title: Textformatierung
+title: Grundlegende Textformatierung
 ---
 
-Der Text in einem Kapitel hat verschieden Formatierungsmöglichkeiten.
+Dieser Abschnitt demonstriert Möglichkeiten der einfachen Textformatierung.
 
-Es ist möglich, *wichtige* Wörter hervorzuheben. Dafür gibt es _mehr als eine Möglichkeit_,
-die aber gleichwertig sind.
+```markdown
+Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
+_verschiedene Möglichkeiten_.
+```
 
-Es besteht auch die Möglichkeit, Wörter hervorzuheben, die **noch wichtiger** sind.
-Hierfür gibt es auch __mehrere gleichwertige Möglichkeiten__
+Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
+_verschiedene Möglichkeiten_.
 
-Eine weitere Formatierungsmöglichkeit ist das ~~Herausstreichen~~ Durchstreichen
-von Wörtern, oder ~~ganzen Sätzen~~ ganzen Satzteilen.
+```markdown
+**Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
+__verschiedene Möglichkeiten__.
+```
 
-Man kann die Formatierungsmöglichkeiten auch kombinieren, z.B. kann man
-*in einem wichtigen Satzteil ~~Wörter~~ teile davon durchstreichen*.
+**Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
+__verschiedene Möglichkeiten__.
 
-Durch diese Kombinationsmöglichkeiten kann man auch
-_in einem wichtigen Satzteil **noch wichtigere Wörter** hervorheben_.
+```markdown
+Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
+~~oder ganzen Satzteilen~~.
+```
+
+Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
+~~oder ganzen Satzteilen~~.
+
+```markdown
+Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
+Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
+durchstreichen*.
+```
+
+Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
+Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
+durchstreichen*.
+
+```markdown
+Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
+vorangestellt werden.
+```
+
+Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
+vorangestellt werden.
