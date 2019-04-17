@@ -8,7 +8,7 @@ stages:
   services:
     - docker:dind
   script:
-    - docker run -v $(pwd):/content -u `id -u $USER` gitlab-registry.tubit.tu-berlin.de/innodoc/innoconv --verbose --output-dir /content/innoconv_output /content
+    - docker run -v $(pwd):/content -u $(id -u $USER) gitlab-registry.tubit.tu-berlin.de/innodoc/innoconv --verbose .
 
 Build:
   <<: *build-content-base
