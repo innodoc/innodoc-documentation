@@ -1,5 +1,6 @@
 ---
-title: Elements
+title: Content elements
 ---
 
-This sections presents the different elements that can be used in courses.
+This section guides you through the available content elements. Using code
+examples you will learn how to use them.

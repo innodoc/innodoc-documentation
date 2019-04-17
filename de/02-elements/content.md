@@ -1,6 +1,6 @@
 ---
-title: Elemente
+title: Inhaltselemente
 ---
 
-Dieser Abschnitt stellt die verschiedenen Elemente vor, die in Kursen verwendet
-werden können.
+Dieser Abschnitt stellt die verfügbaren Inhaltselemente vor. Anhand von
+Codebeispielen lernen Sie, wie sie verwendet werden.
