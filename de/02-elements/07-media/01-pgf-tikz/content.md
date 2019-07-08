@@ -104,15 +104,15 @@ eines Ti*k*Z-Bildes.
 :::
 :::
 
-## $\LaTeX$-Präembel ändern
+## Die $\LaTeX$-Präembel anpassen
 
 PGF/Ti*k*Z ist ein äußerst umfangreiches $\LaTeX$-Paket. Um bestimmte
-Funktionen zu nutzen, müssen spezielle Ti*k*Z-Bibliotheken eingebungen werden.
+Funktionen zu nutzen, müssen zusätzliche Ti*k*Z-Bibliotheken eingebunden
+werden.
 
-Dafür müssen Kommandos in die Präembel des $\LaTeX$-Dokumentes eingefügt
-werden. Das ist möglich, indem man den Wert von `tikz_preamble` in der
-Manifest-Datei des Kurses setzt. Diese Zeichenkette wird dann in jedem
-Ti*k*Z-Bild automatisch eingefügt.
+Dafür werden Kommandos in der Präembel des $\LaTeX$-Dokumentes eingefügt. Das
+ist möglich, indem man den Wert von `tikz_preamble` in der Manifest-Datei des
+Kurses setzt.
 
 ```yml
 # manifest.yml
@@ -123,7 +123,7 @@ tikz_preamble: |
 
 ::: {.info}
 Diese Technik erlaubt es beliebige Kommandos in die Präembel einzufügen. So
-können beispielsweise auch eigene $\LaTeX$-Befehle definiert werden.
+können beispielsweise eigene $\LaTeX$-Befehle definiert werden.
 :::
 
 ::: {.example}

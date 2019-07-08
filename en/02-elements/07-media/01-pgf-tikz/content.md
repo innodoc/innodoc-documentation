@@ -102,13 +102,11 @@ Another example shows the usage of $\LaTeX$ formulae inside a picture.
 
 ## Overriding the $\LaTeX$ preamble
 
-PGF/Ti*k*Z is a complex and extensive $\LaTeX$ package. Sometimes it's
-necessary to include special Ti*k*Z libaries in order to use specific features.
+PGF/Ti*k*Z is a complex and extensive $\LaTeX$ package. In order to support
+specific features it might be necessary to include additional Ti*k*Z libaries.
 
 To do so one must add directives to the preamble of the corresponding $\LaTeX$
-document. innoConv lets you do so by adding a `tikz_preamble` key to your
-manifest file. The value of this key is added to the preamble of every Ti*k*Z
-image that is processed.
+document. To do so add `tikz_preamble` key to your manifest file.
 
 ```yml
 # manifest.yml
@@ -119,7 +117,7 @@ tikz_preamble: |
 
 ::: {.info}
 As this technique allows you to add arbitrary commands to the preamble you can
-also use it to define custom $\LaTeX$ commands for convenience.
+use it to define custom $\LaTeX$ commands for convenience.
 :::
 
 ::: {.example}
