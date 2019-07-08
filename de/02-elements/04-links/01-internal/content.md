@@ -50,3 +50,6 @@ Links zu anderen Abschnitten funktionieren auch mit Ankerpunkten.
 ```
 
 []{data-link-section="02-elements/07-media#videos"}
+
+Dies ist ein [Link]{data-link-section="does-not-exist"} zu einem
+nicht existierendem Kapitel.

@@ -48,3 +48,5 @@ Links to other sections can also have IDs.
 ```
 
 []{data-link-section="02-elements/07-media#videos"}
+
+This is a [Link]{data-link-section="does-not-exist"} to a non-existent chapter.
