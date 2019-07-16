@@ -5,3 +5,12 @@ languages: [de, en]
 tikz_preamble: |
   \usetikzlibrary{arrows,calc}
   \newcommand{\sayhello}{Hello\ World!}
+pages:
+  - id: about
+    icon: info-circle
+    link_in_nav: true
+    link_in_footer: true
+  - id: license
+    icon: copyright
+    link_in_nav: true
+    link_in_footer: true
