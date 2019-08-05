@@ -1,9 +1,16 @@
 ---
-title: About
+title: About this course
+short_title: About
 ---
 
-This is an example course. It
+This content is a showcase for the [innoDoc software package][innoDoc]. It
+was developed at [innoCampus][innoCampus],
+[Technische Universität Berlin][tu-berlin].
 
-- illustrates the possibilities of innoDoc.
-- serves as a reference for course authors.
-- is a test case for auotmated software tests.
+- The course Kurs illustrates the possibilities of innoDoc.
+- It serves as a reference for course authors.
+- It is used for automated software tests.
+
+[innoDoc]: https://www.innocampus.tu-berlin.de/projekte/innodoc/
+[innoCampus]: https://www.innocampus.tu-berlin.de/
+[tu-berlin]: https://www.tu-berlin.de/
