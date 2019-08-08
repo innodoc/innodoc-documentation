@@ -36,20 +36,20 @@ angegeben werden. Wird der Linktext leer gelassen, erscheint der Titel des
 Abschnitts.
 
 ```markdown
-[]{data-link-section="02-elements/07-media"}  
-[anderer Kapitel]{data-link-section="02-elements/07-media"}
+[](/section/02-elements/07-media)  
+[anderer Kapitel](/section/02-elements/07-media)
 ```
 
-[]{data-link-section="02-elements/07-media"}  
-[anderes Kapitel]{data-link-section="02-elements/07-media"}
+[](/section/02-elements/07-media)  
+[anderes Kapitel](/section/02-elements/07-media)
 
 Links zu anderen Abschnitten funktionieren auch mit Ankerpunkten.
 
 ```markdown
-[]{data-link-section="02-elements/07-media#videos"}
+[](/section/02-elements/07-media#videos)
 ```
 
-[]{data-link-section="02-elements/07-media#videos"}
+[](/section/02-elements/07-media#videos)
 
-Dies ist ein [Link]{data-link-section="does-not-exist"} zu einem
+Dies ist ein [Link](/section/does-not-exist) zu einem
 nicht existierendem Kapitel.

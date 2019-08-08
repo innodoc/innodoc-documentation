@@ -28,7 +28,7 @@ It is displayed when somebody hovers with the mouse over the link.
 [TU Berlin](https://www.tu-berlin.de "Homepage of TU Berlin")
 
 ::: {.info}
-Section []{data-link-section="02-elements/07-media#images-as-link"} describes
+Section [](/section/02-elements/07-media#images-as-link) describes
 how an image can be linked.
 :::
 

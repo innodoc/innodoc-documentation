@@ -3,7 +3,7 @@ title: Links
 ---
 
 Es gibt verschiede Möglichkeiten, Links einzufügen. Es können einzelne Wörter,
-ganze Satzteile oder auch [Bilder]{data-link-section="02-elements/07-media"}
+ganze Satzteile oder auch [Bilder](/section/02-elements/07-media)
 zu Links gemacht werden.
 
 Bei Links werden zwischen externen und internen Links unterschieden. Interne

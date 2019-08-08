@@ -34,19 +34,19 @@ To create a link to another section, you need to specify the section ID. You
 can leave the link text blank to show the section title or add a custom one.
 
 ```markdown
-[]{data-link-section="02-elements/07-media"}  
-[other section]{data-link-section="02-elements/07-media"}
+[](/section/02-elements/07-media)  
+[other section](/section/02-elements/07-media)
 ```
 
-[]{data-link-section="02-elements/07-media"}  
-[other section]{data-link-section="02-elements/07-media"}
+[](/section/02-elements/07-media)  
+[other section](/section/02-elements/07-media)
 
 Links to other sections can also have IDs.
 
 ```markdown
-[]{data-link-section="02-elements/07-media#videos"}
+[](/section/02-elements/07-media#videos)
 ```
 
-[]{data-link-section="02-elements/07-media#videos"}
+[](/section/02-elements/07-media#videos)
 
-This is a [Link]{data-link-section="does-not-exist"} to a non-existent chapter.
+This is a [Link](/section/does-not-exist) to a non-existent chapter.
