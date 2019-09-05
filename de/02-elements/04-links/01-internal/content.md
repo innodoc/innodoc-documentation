@@ -37,7 +37,7 @@ Abschnitts.
 
 ```markdown
 [](/section/02-elements/07-media)  
-[anderer Kapitel](/section/02-elements/07-media)
+[anderes Kapitel](/section/02-elements/07-media)
 ```
 
 [](/section/02-elements/07-media)  
