@@ -2,6 +2,7 @@ title:
   de: innoDoc-Showcase-Kurs
   en: innoDoc Showcase Course
 languages: [de, en]
+home_link: /page/about
 tikz_preamble: |
   \usetikzlibrary{arrows,calc}
   \newcommand{\sayhello}{Hello\ World!}
