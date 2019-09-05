@@ -2,15 +2,10 @@
 title: Project structure
 ---
 
-This sections describes the course structure.
+A course consists of a number of chapters, sections and subsections. Also it
+can contain a number of additional pages to add content like list of authors
+or license information.
 
-Content is written in
-[text files](/section/01-project/03-files/02-content). They are
-written in Markdown format and saved in a
-[directory structure](/section/01-project/01-folders) that
-corresponds to the table of contents. The course can be translated into
-different [languages](/section/01-project/02-languages). Finally
-the course is [compiled](/section/01-project/04-building) and can
-be viewed using the programs
-[innoDoc web app](https://gitlab.tu-berlin.de/innodoc/innodoc-webapp)
-and [innoDoc app](https://gitlab.tu-berlin.de/innodoc/innodoc-app).
+All content is written using the [Markdown format]{data-index-term="Markdown"}.
+A file [`content.md`](/section/01-project/02-files/02-content) is created in
+a specific folder. Also static files, like images and videos can be included.

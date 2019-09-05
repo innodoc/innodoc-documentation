@@ -2,16 +2,12 @@
 title: Projektstruktur
 ---
 
-Dieser Abschnitt bespricht die Stuktur eines Kurses.
+Ein Kurs besteht aus einer Anzahl von Kapiteln, Abschnitten und
+Unterabschnitten. Außerdem kann ein Kurs eine beliebige Anzahl zusätzlicher
+Seiten beinhalten, beispielsweise um eine Liste der Autor*innen,
+Lizenzinformationen o.ä. anzufügen.
 
-Die Inhalte des Kurses werden in
-[Textdateien](/section/01-project/03-files/02-content) eingegeben.
-Diese werden im Markdown-Format geschrieben. Die einzelnen Abschnitte werden
-in einem [Verzeichnisbaum](/section/01-project/01-folders) abgelegt,
-der dem Inhaltsverzeichnis des Kurses entspricht. Der Kurs kann in beliebige
-[Sprachen](/section/01-project/02-languages) übersetzt werden. Er
-wird anschließend [kompiliert](/section/01-project/04-building) und
-kann mit den Programmen
-[innoDoc web app](https://gitlab.tu-berlin.de/innodoc/innodoc-webapp)
-und [innoDoc app](https://gitlab.tu-berlin.de/innodoc/innodoc-app)
-angezeigt und benutzt werden.
+Alle Inhalte werden in Form von [Markdown-Dateien]{data-index-term="Markdown"}
+angelegt. Dafür wird im entsprechenden Ordner eine Datei namens
+[`content.md`](/section/01-project/02-files/02-content) erstellt. Außerdem gibt
+es die Möglichkeiten statische Dateien, wie Bilder und Videos einzubinden.

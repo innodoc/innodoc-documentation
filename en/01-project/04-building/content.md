@@ -1,13 +1,12 @@
 ---
-title: Bauen
+title: Building
 ---
 
-Der Kurs kann mit [innoConv](https://github.com/innodoc/innoconv) gebaut werden,
-d.h. in ein Format übersetzen, sodass er dann von der [innoDoc web app](https://gitlab.tubit.tu-berlin.de/innodoc/innodoc-webapp)
-oder der [innoDoc app](https://gitlab.tubit.tu-berlin.de/innodoc/innodoc-app) 
-angezeigt werden kann.
+In order to view and use a course it needs to be compiled into an intermediate
+format which is accepted by the viewer programs. Also graphics are being
+translated and an index and table of contents are generated.
 
-Wenn man mit innoConv den Kurs gebaut hat, müssen die resultierenden Daten von
-einem (Web)Server so zur Verfügung gestellt werden, dass man über HTTP darauf
-zugreifen kann. Die URL der Daten muss dann der CONTENT_ROOT der innoDoc web app
-entsprechen.
+The program
+[[innoConv](https://github.com/innodoc/innoconv)]{data-index-term="innoConv"}
+does capable of this job and also comes with its own
+[documentation](https://innoconv.readthedocs.io/).

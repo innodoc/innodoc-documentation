@@ -100,7 +100,7 @@ Another example shows the usage of $\LaTeX$ formulae inside a picture.
 :::
 :::
 
-## Overriding the $\LaTeX$ preamble
+## Overriding the $\LaTeX$ preamble {#tikz_preamble}
 
 PGF/Ti*k*Z is a complex and extensive $\LaTeX$ package. In order to support
 specific features it might be necessary to include additional Ti*k*Z libaries.

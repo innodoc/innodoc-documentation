@@ -104,7 +104,7 @@ eines Ti*k*Z-Bildes.
 :::
 :::
 
-## Die $\LaTeX$-Präembel anpassen
+## Die $\LaTeX$-Präembel anpassen {#tikz_preamble}
 
 PGF/Ti*k*Z ist ein äußerst umfangreiches $\LaTeX$-Paket. Um bestimmte
 Funktionen zu nutzen, müssen zusätzliche Ti*k*Z-Bibliotheken eingebunden
