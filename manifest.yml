@@ -1,6 +1,6 @@
 title:
-  de: innoDoc-Showcase-Kurs
-  en: innoDoc Showcase Course
+  de: innoDoc
+  en: innoDoc
 languages: [de, en]
 home_link: /page/about
 tikz_preamble: |
@@ -13,5 +13,5 @@ pages:
     link_in_footer: true
   - id: license
     icon: copyright
-    link_in_nav: true
+    link_in_nav: false
     link_in_footer: true
