@@ -1,0 +1,19 @@
+{
+  "name": "tub_base",
+  "description": "Example content for innoDoc",
+  "private": true,
+  "scripts": {
+    "build": "innoconv .",
+    "serve": "http-server innoconv_output -a localhost -p 8001 --cors",
+    "watch": "nodemon --exec 'innoconv -f .' --ext md --ignore innoconv_output"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.tubit.tu-berlin.de:innodoc/tub_base.git"
+  },
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "nodemon": "^1.19.2"
+  }
+}

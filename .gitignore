@@ -1,6 +1,5 @@
 *~
 .DS_Store
-
-# build
-innoconv_output
+/node_modules
+/innoconv_output
 __panzer*
