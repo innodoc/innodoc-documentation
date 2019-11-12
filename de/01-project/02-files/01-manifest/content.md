@@ -92,3 +92,26 @@ tikz_preamble: |
   \usetikzlibrary{arrows,calc}
   \newcommand{\sayhello}{Hello\ World!}
 ```
+
+## `mathjax` (optional) {#mathjax}
+
+Um spezielle Erweiterungen zu verwenden, kann die
+[MathJax-Konfiguration](https://docs.mathjax.org/en/latest/options/index.html)
+angepasst werden.
+
+In folgendem Beispiel fügen wir die
+[`innodoc-mathjax`-Erweiterung](/section/02-elements/06-formulas#innodoc-mathjax)
+hinzu.
+
+```yaml
+mathjax:
+  loader:
+    load:
+      - "[innodoc]/innodoc-mathjax.min.js"
+    paths:
+      innodoc: http://localhost:8005
+  tex:
+    packages:
+      "[+]":
+        - innodoc-mathjax
+```

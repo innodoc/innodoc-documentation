@@ -15,3 +15,13 @@ pages:
     icon: copyright
     link_in_nav: false
     link_in_footer: true
+mathjax:
+  loader:
+    load:
+      - "[innodoc]/innodoc-mathjax.min.js"
+    paths:
+      innodoc: http://localhost:8005
+  tex:
+    packages:
+      "[+]":
+        - innodoc-mathjax

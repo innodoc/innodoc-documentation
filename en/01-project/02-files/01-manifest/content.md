@@ -91,3 +91,25 @@ tikz_preamble: |
   \usetikzlibrary{arrows,calc}
   \newcommand{\sayhello}{Hello\ World!}
 ```
+
+## `mathjax` (optional) {#mathjax}
+
+In order to use custom extensions with MathJax you can override parts of the
+MathJax configuration. It uses the
+[MathJax configuation format](https://docs.mathjax.org/en/latest/options/index.html).
+
+In this example we add the custom extension
+[`innodoc-mathjax`](/section/02-elements/06-formulas#innodoc-mathjax).
+
+```yaml
+mathjax:
+  loader:
+    load:
+      - "[innodoc]/innodoc-mathjax.min.js"
+    paths:
+      innodoc: http://localhost:8005
+  tex:
+    packages:
+      "[+]":
+        - innodoc-mathjax
+```
