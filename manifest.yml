@@ -18,10 +18,13 @@ pages:
 mathjax:
   loader:
     load:
-      - "[innodoc]/innodoc-mathjax.min.js"
+      - "[mathjaxcoordsep]/coordsep.min.js"
+      - "[mathjaxnum]/num.min.js"
     paths:
-      innodoc: http://localhost:8005
+      mathjaxcoordsep: https://cdn.jsdelivr.net/npm/@innodoc/mathjax-coordsep@latest/dist
+      mathjaxnum: https://cdn.jsdelivr.net/npm/@innodoc/mathjax-num@latest/dist
   tex:
     packages:
       "[+]":
-        - innodoc-mathjax
+        - coordsep
+        - num
