@@ -2,8 +2,8 @@
 title: Formulas
 ---
 
-Im Text können $\LaTeX$-Formeln verwendet werden. Sie werden mittels der
-[MathJax library](https://www.mathjax.org/) gesetzt.
+Im Text können $\LaTeX$-Formeln verwendet werden. Sie werden durch die Software
+[MathJax](https://www.mathjax.org/) dargestellt.
 
 ## Verwendung
 
@@ -65,9 +65,12 @@ Um Erweiterungen hinzuzufügen, wird das Kurs-Manifest angepasst. In Abschnitt
 [](/section/01-project/02-files/01-manifest#mathjax) findet sich ein Beispiel.
 
 ::: {.info #innodoc-mathjax}
-Es gibt eine Erweiterung **innodoc-mathjax**. Sie implementiert einen
-lokalisierten Dezimalseparator (`$\num{3.45}$` → $\num{3.45}$) und einen
-anpassbaren Separator für Koordinaten (`$(6\coordsep 5)$` → $(6\coordsep 5)$).
-Der Quellcode ist
-[öffentlich verfügbar](https://gitlab.tu-berlin.de/innodoc/innodoc-mathjax).
+Es existieren die Erweiterungen
+[**\@innodoc/mathjax-num**](https://gitlab.tu-berlin.de/innodoc/mathjax-num)
+und
+[**\@innodoc/mathjax-coordsep**](https://gitlab.tu-berlin.de/innodoc/mathjax-coordsep).
+
+Sie implementieren einen lokalisierten Dezimalseparator
+(`$\num{3.45}$` → $\num{3.45}$) und einen anpassbaren Trenner für Koordinaten
+(`$(6\coordsep 5)$` → $(6\coordsep 5)$).
 :::

@@ -62,9 +62,12 @@ custom extensions to the mix. Please refer to the section
 [](/section/01-project/02-files/01-manifest#mathjax) for an example.
 
 ::: {.info #innodoc-mathjax}
-There is an extension called **innodoc-mathjax**. It implements a localized
-decimal separator (`$\num{3.45}$` → $\num{3.45}$) and a customizable
-coordinates seperator (`$(6\coordsep 5)$` → $(6\coordsep 5)$). The source code
-repository is
-[publicly available](https://gitlab.tu-berlin.de/innodoc/innodoc-mathjax).
+Two extensions
+[**\@innodoc/mathjax-num**](https://gitlab.tu-berlin.de/innodoc/mathjax-num)
+and
+[**\@innodoc/mathjax-coordsep**](https://gitlab.tu-berlin.de/innodoc/mathjax-coordsep)
+are available.
+
+They implement a localized decimaler marker (`$\num{3.45}$` → $\num{3.45}$) and
+a coordinates separator (`$(6\coordsep 5)$` → $(6\coordsep 5)$).
 :::
