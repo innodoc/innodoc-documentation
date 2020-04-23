@@ -6,12 +6,12 @@ stages:
   stage: build
   image: docker
   services:
-    - docker:18.09.7-dind # TODO: should be docker:dind (https://gitlab.com/gitlab-org/gitlab-runner/issues/4501)
+    - docker:dind
   script:
     - docker run -v $(pwd):/content -u $(id -u $USER) gitlab-registry.tubit.tu-berlin.de/innodoc/innoconv --verbose .
 
 variables:
-  DOCKER_DRIVER: overlay # TODO: should be removed (overlay2) (https://github.com/docker/for-linux/issues/711)
+  DOCKER_DRIVER: overlay2
 
 Build:
   <<: *build-content-base
