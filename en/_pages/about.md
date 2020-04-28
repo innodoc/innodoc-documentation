@@ -7,7 +7,7 @@ This content is a showcase for the [innoDoc software package][innoDoc]. It
 was developed at [innoCampus][innoCampus],
 [Technische Universität Berlin][tu-berlin].
 
-- The course Kurs illustrates the possibilities of innoDoc.
+- The course illustrates the possibilities of innoDoc.
 - It serves as a reference for course authors.
 - It is used for automated software tests.
 
