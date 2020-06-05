@@ -95,16 +95,56 @@ Aussage mit $L=\lbrace\rbrace$.
 
 > `validation="function"`
 
-Die Eingabe wird als mathematische Funktion interpretiert.
+Die Eingabe wird als mathematische Funktion interpretiert. Er wird an einer
+Anzahl Stützstellen ausgewertet und mit der Lösung verglichen. Das Ergebnis
+muss innerhalb einer konfigurierbaren Distanz (`precision`) richtig sein.
 
 --------------------- --------------------------------------------------------------------------------------
 `supporting-points`   Anzahl Stützstellen
 `variables`           Funktionsvariablen durch Kommata getrennt (Groß-/Kleinschreibung wird nicht beachtet)
 `precision`           Anzahl Nachkommastellen für Vergleich
-`simplification-code` TODO
+`simplification`      Spezifische Vereinfachung erforderlich (see [below](#simplification))
 --------------------- --------------------------------------------------------------------------------------
 
-TODO: `simplification-code` table
+### Vereinfachungen {#simplification}
+
+Die Form der Eingabe kann auf verschiedene Vereinfachungen hin überprüft werden.
+Um mehrere Vereinfachungen zu fordern, können die Werte durch Kommata getrennt
+angegeben werden (z. B. `simplification="no-brackets,no-sqrt"`).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Wert                        Bedingung
+--------------------------- -------------------------------------------------------------------------------------------------------------------------
+`""` or ausgelassen         Keine Vereinfachung erforderlich.
+
+`no-brackets`               Keine Klammern erlaubt.
+
+`only-one-slash`            Nur ein Schrägstrich (Bruchstrich) erlaubt.
+
+`antiderivative`            Stammfunktion gefordert: Beide Terme werden zu $f(1.234) = 0$ normiert (und nur eine Variable wird angenommen).
+
+`no-sqrt`                   Keine Wurzelfunktion erlaubt (`sqrt(…)`), allerdings ist bspw. `x^(1/2)` weiterhin erlaubt.
+
+`no-abs`                    Keine Betragsfunktion erlaubt (`abs(…)`). Muss als Fallunterscheidung geschrieben werden.
+
+`no-fractions-no-powers`    Keine Brüche und keine Potenzen erlaubt.
+
+`special-support-points`    Besondere Stützstellen (nur $>1$ und schwach rational, sonst symmetrisch um Nullpunkt und ganze Zahlen)
+
+`only-natural-number`       Nur natürliche Zahlen erlaubt.
+
+`one-power-no-mult-or-div`  Nur hoechstens ein `^` und kein `/` und `*` erlaubt.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!--
+NOT IMPLEMENTED BUT 'factor-notation' is actually used in tub_mathe:
+
+`factor-notation`     Faktordarstellung erfordert
+
+`sum-notation`        Summendarstellung erfordert
+-->
+
+### Beispiele
 
 ::: {.example}
 ```
@@ -162,7 +202,7 @@ Am sichersten ist es, die Variablen vor der Termeinsetzung zu klammern, wenn der
 ```
 ::: {.exercise #EX_FUNCTION_1}
 Formen Sie in eine Summendarstellung um:
-$a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification-code="1" points="4"}.
+$a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
 :::: {.hint caption="Lösung"}
 $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
@@ -172,7 +212,7 @@ $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 
 :::: {.exercise #EX_FUNCTION_1}
 Formen Sie in eine Summendarstellung um:
-$a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification-code="1" points="4"}.
+$a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
 ::::: {.hint caption="Lösung"}
 $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
@@ -185,12 +225,12 @@ $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 ::: {.exercise #EX_FUNCTION_2}
 Schreiben Sie diesen Potenz- und Wurzelausdruck als einfache Potenz mit einem rationalen Exponenten:
 
-$\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification-code="576" points="4"}.
+$\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
 
 [Beispielsweise tippen Sie $\sqrt{x}\cdot x^2$ = `x^(5/2)` oder auch `x^(2.5)`, vergessen Sie die Klammern um den Bruch nicht.]{.hint-text}
 
 :::: {.hint caption="Lösung"}
-$$x^{1.5}$$
+$$x^{\frac32}$$
 ::::
 :::
 ```
@@ -198,12 +238,12 @@ $$x^{1.5}$$
 :::: {.exercise #EX_FUNCTION_2}
 Schreiben Sie diesen Potenz- und Wurzelausdruck als einfache Potenz mit einem rationalen Exponenten:
 
-$\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification-code="576" points="4"}.
+$\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
 
 [Beispielsweise tippen Sie $\sqrt{x}\cdot x^2$ = `x^(5/2)` oder auch `x^(2.5)`, vergessen Sie die Klammern um den Bruch nicht.]{.hint-text}
 
 ::::: {.hint caption="Lösung"}
-$$x^{1.5}$$
+$$x^{\frac32}$$
 :::::
 ::::
 :::

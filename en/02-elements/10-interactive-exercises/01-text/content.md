@@ -97,16 +97,56 @@ hence $L=\lbrace\rbrace$.
 
 > `validation="function"`
 
-The input is interpreted as a mathematical function.
+The input is interpreted as a mathematical function. It is evaluated at a number
+of supporting points and compared to the solution. The results must be correct
+within a configurable margin (`precision`).
 
---------------------- ------------------------------------------------------------------
-`supporting-points`   Number of support points
-`variables`           Function variables separated by comma (not case-sensitive)
-`precision`           Number of decimal places for comparison
-`simplification-code` TODO
---------------------- ------------------------------------------------------------------
+------------------- ---------------------------------------------------------------
+`supporting-points` Number of support points
+`variables`         Function variables separated by comma (not case-sensitive)
+`precision`         Number of decimal places for comparison
+`simplification`    Require specific simplification (see [below](#simplification))
+------------------- ---------------------------------------------------------------
 
-TODO: `simplification-code` table
+### Require simplification {#simplification}
+
+It is possible to require certain simplifications for the input to be accepted
+as correct. Multiple simplifications can be specified by separating the values
+with a comma (e. g. `simplification="no-brackets,no-sqrt"`).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Value                       Requirement
+--------------------------- -------------------------------------------------------------------------------------------------------------------------
+`""` or omitted             No simplification required.
+
+`no-brackets`               No brackets allowed.
+
+`only-one-slash`            Only one slash (fraction line) allowed.
+
+`antiderivative`            Antiderivative requested: Normalize both terms to $f(1.234) = 0$ (and assume its just one variable).
+
+`no-sqrt`                   No root expression allowed (`sqrt(…)`). Note that e. g. `x^(1/2)` can still be used.
+
+`no-abs`                    No absolute value allowed (`abs(…)`). Individual cases needs to be written down.
+
+`no-fractions-no-powers`    No fractions or powers allowed.
+
+`special-support-points`    Special support points requested: only positive ones and weakly rational, separate variables get separate support points.
+
+`only-natural-number`       Only natural number allowed.
+
+`one-power-no-mult-or-div`  At most one `^` and neither `/` nor `*` allowed.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!--
+NOT IMPLEMENTED BUT 'factor-notation' is actually used in tub_mathe:
+
+`factor-notation`     Require linear factor notation
+
+`sum-notation`        Require summation notation
+-->
+
+### Examples
 
 ::: {.example}
 ```
@@ -164,7 +204,7 @@ It is safest to bracket the variables before inserting, if the new term contains
 ```
 ::: {.exercise #EX_FUNCTION_1}
 Transform into a sum:
-$a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification-code="1" points="4"}.
+$a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
 :::: {.hint caption="Solution"}
 $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
@@ -174,7 +214,7 @@ $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 
 :::: {.exercise #EX_FUNCTION_1}
 Transform into a sum:
-$a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification-code="1" points="4"}.
+$a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
 ::::: {.hint caption="Solution"}
 $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
@@ -187,12 +227,12 @@ $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 ::: {.exercise #EX_FUNCTION_2}
 Rewrite the following expression containing powers and roots as a simple power with a rational exponent:
 
-$\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification-code="576" points="4"}.
+$\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
 
 [For example, enter $\sqrt{x}\cdot x^2$ = `x^(5/2)` or alternatively as `x^(2.5)`, mind the brackets around the fraction.]{.hint-text}
 
 :::: {.hint caption="Solution"}
-$$x^{1.5}$$
+$$x^{\frac32}$$
 ::::
 :::
 ```
@@ -200,12 +240,12 @@ $$x^{1.5}$$
 :::: {.exercise #EX_FUNCTION_2}
 Rewrite the following expression containing powers and roots as a simple power with a rational exponent:
 
-$\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification-code="576" points="4"}.
+$\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
 
 [For example, enter $\sqrt{x}\cdot x^2$ = `x^(5/2)` or alternatively as `x^(2.5)`, mind the brackets around the fraction.]{.hint-text}
 
 ::::: {.hint caption="Solution"}
-$$x^{1.5}$$
+$$x^{\frac32}$$
 :::::
 ::::
 :::
