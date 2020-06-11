@@ -288,7 +288,7 @@ the absolute value term is non-negative.
 If $x$ is in the interval $\left[3; \infty\right[$ the absolute value term is
 non-negative.
 
-Type `[3,infty)`.
+Type `[3;infty)`.
 ::::
 :::
 

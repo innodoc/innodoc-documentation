@@ -272,7 +272,7 @@ so ist der Term im Betrag nicht negativ.
 Ist $x$ aus dem Intervall $\left[3; \infty\right[$, so ist der Term im Betrag
 nicht negativ.
 
-Lösung: `[3,infty)`.
+Lösung: `[3;infty)`.
 :::
 ```
 
