@@ -43,11 +43,11 @@ Die Eingabe wird als mathematischer Ausdruck interpretiert.
 ::: {.example}
 ```
 ::: {.exercise #EX_PARSED_0}
-$\tfrac{\alpha+\beta}{\alpha-\beta}$ nimmt den Wert []{.question .text length="10" solution="5" precision="3" points="4"} an für $\alpha=6$ und $\beta=4$.
+$\tfrac{\alpha+\beta}{\alpha-\beta}$ nimmt den Wert []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} an für $\alpha=6$ und $\beta=4$.
 :::
 ```
 ::: {.exercise #EX_PARSED_0}
-$\tfrac{\alpha+\beta}{\alpha-\beta}$ nimmt den Wert []{.question .text length="10" solution="5" precision="3" points="4"} an für $\alpha=6$ und $\beta=4$.
+$\tfrac{\alpha+\beta}{\alpha-\beta}$ nimmt den Wert []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} an für $\alpha=6$ und $\beta=4$.
 :::
 :::
 
