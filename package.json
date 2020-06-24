@@ -1,6 +1,6 @@
 {
   "name": "tub_base",
-  "description": "Example content for innoDoc",
+  "description": "Sources for the innoDoc documentation",
   "private": true,
   "scripts": {
     "build": "innoconv .",

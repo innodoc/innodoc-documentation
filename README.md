@@ -1,12 +1,14 @@
 [![pipeline status](https://gitlab.tubit.tu-berlin.de/innodoc/tub_base/badges/master/pipeline.svg)](https://gitlab.tubit.tu-berlin.de/innodoc/tub_base/commits/master)
 
-# Example content for innoDoc
+# innoDoc
 
-This module is used to showcase the capabilities of
-[innoConv](https://gitlab.tubit.tu-berlin.de/innodoc/innoconv).
+> Sources for the innoDoc documentation.
 
-It includes sample markup for all elements and interactive exercises. There's
-also a [live version](https://veundmint.innocampus.tu-berlin.de) to look at.
+[Live version](https://innodoc.innocampus.tu-berlin.de)
+
+This repository includes information on setting up and structuring an innoDoc
+project. Also descriptions and sample markup for all elements and interactive
+exercises can be found.
 
 ## Scripts
 
@@ -26,4 +28,4 @@ You need to run `npm install` before using the scripts.
 
 ## Authors
 
-* **Mirko Dietrich** - *innoCampus, TU Berlin*
+- **Mirko Dietrich** - _innoCampus, TU Berlin_
