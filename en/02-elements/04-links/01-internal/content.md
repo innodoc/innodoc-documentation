@@ -2,51 +2,87 @@
 title: Internal Links
 ---
 
-In order to link to another element, anchor points need to be defined. Elements
-can be referenced by attaching an ID to them. IDs need to be unique within one
-document.
+You can link to other sections, specific elements within sections and "special"
+pages.
+
+## Link to other sections
+
+To create a link to another section, you need to specify the section ID. If you
+leave out the link text the section number and title will be shown.
+
+::: {.example}
 
 ```markdown
-## Heading with ID {#my-id}
-
-[Link to heading](#my-id)
+[](/section/02-elements/07-media)  
+[other section](/section/02-elements/07-media)
 ```
 
-## Heading with ID {#my-id}
-
-[Link to heading](#my-id)
-
-:::info
-Each heading is automatically assigned an ID, derived from the text.
-
-```markdown
-## This is a test
-
-[Link to implicit ID](#this-is-a-test)
-```
-
-## This is a test
-
-[Link to implicit ID](#this-is-a-test)
+[](/section/02-elements/07-media)  
+[other section](/section/02-elements/07-media)
 :::
 
-To create a link to another section, you need to specify the section ID. You
-can leave the link text blank to show the section title or add a custom one.
+If you specify a non-existent section the link will still be shown but leads to
+an error page:  
+[This is a Link to a non-existent chapter.](/section/does-not-exist)
 
-```markdown
-[](/section/02-elements/07-media)  
-[other section](/section/02-elements/07-media)
-```
+## Link with anchors
 
-[](/section/02-elements/07-media)  
-[other section](/section/02-elements/07-media)
+In order to link to a particular element within a section you can use anchor
+IDs. These IDs need to be unique within one page and can be assigned manually.
 
-Links to other sections can also have IDs.
+::: {.example}
+Link to heading _Videos_ in another section:
 
 ```markdown
 [](/section/02-elements/07-media#videos)
 ```
 
 [](/section/02-elements/07-media#videos)
+:::
 
-This is a [Link](/section/does-not-exist) to a non-existent chapter.
+You can assign IDs by adding the identifier preceded by a `#` symbol.
+
+::: {.example}
+
+```markdown
+## Heading with ID {#my-id}
+
+[Link to heading](#my-id)
+```
+
+## Heading with ID {#my-id}
+
+[Link to heading](#my-id)
+:::
+
+::: {.info}
+Each heading is automatically assigned an ID if not explicitly given. The
+generated ID is derived from the text.
+
+```markdown
+## This is a test
+
+[Link to heading](#this-is-a-test)
+```
+
+## This is a test
+
+[Link to heading](#this-is-a-test)
+:::
+
+## Link to special pages
+
+Every course includes the special pages _Index Page_ and _Table of contents_.
+They don't have a section ID but you can still link to them using special
+identifiers `___INDEX_PAGE___` and `___TOC___`.
+
+::: {.example}
+
+```markdown
+[](___INDEX_PAGE___)  
+[](___TOC___)
+```
+
+[](___INDEX_PAGE___)  
+[](___TOC___)
+:::
