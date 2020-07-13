@@ -54,7 +54,7 @@ Section folder names must not start with a `_` or contain spaces.
 :::
 
 Additionally the root directory, as well as any language folder, can contain
-one `_static` folder. It holds [static files](/section/02-elements/06-media)
+one `_static` folder. It holds [static files](/section/02-elements/07-media)
 such as images and videos.
 
 In every language directory there can be a `_pages` folder. It holds the
