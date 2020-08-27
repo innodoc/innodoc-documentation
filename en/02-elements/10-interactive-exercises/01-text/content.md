@@ -1,5 +1,6 @@
 ---
 title: Text input
+type: exercises
 ---
 
 An input field is presented for text input questions.

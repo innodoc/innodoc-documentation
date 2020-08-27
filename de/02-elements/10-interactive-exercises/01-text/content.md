@@ -1,5 +1,6 @@
 ---
 title: Texteingabe
+type: exercises
 ---
 
 Für Texteingabefragen wird ein Eingabefeld angezeigt.
