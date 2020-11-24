@@ -77,17 +77,19 @@ Text abgeleitete ID.
 ## Verweise auf spezielle Seiten
 
 In jedem Kurs gibt es die speziellen Seiten für das _Stichwort-_ und
-_Inhaltsverzeichnis_. Diese haben keine Abschnitts-ID, aber können mittels der
-speziellen Bezeichner `___INDEX_PAGE___` und `___TOC___` trotzdem referenziert
-werden.
+_Inhaltsverzeichnis_ sowie _Lernfortschritt_. Diese haben keine Abschnitts-ID,
+aber können mittels der speziellen Bezeichner `___INDEX_PAGE___`, `___TOC___`
+und `___PROGRESS___` referenziert werden.
 
 ::: {.example}
 
 ```markdown
 [](___INDEX_PAGE___)  
 [](___TOC___)
+[](___PROGRESS___)  
 ```
 
 [](___INDEX_PAGE___)  
 [](___TOC___)
+[](___PROGRESS___)  
 :::

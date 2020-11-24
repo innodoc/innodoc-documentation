@@ -2,21 +2,28 @@
 title: Inhaltsdateien
 ---
 
-In jedem Inhaltsordner eines Abschnitts befindet sich eine Datei `content.md`.
-Diese Datei wird im [Markdown-Format]{data-index-term="Markdown"} verfasst.
+Inhalte werden im [Markdown-Format]{data-index-term="Markdown"} geschrieben. Es
+braucht genau eine Inhaltsdatei pro Abschnitt/Seite und Sprache. Inhaltsdateien
+bestehen aus einem [Metablock](#meta-data) am Anfang der Datei sowie dem
+eigentlichen Inhalt. Eine ausführliche Besprechung der einzelnen
+Inhaltselemente folgt in Kapitel [](/section/02-elements).
 
-Für Seiten gibt es eine Markdown-Datei im `_pages`-Ordner der jeweiligen
-Sprache. Der Dateiname hier entspricht der Seiten-ID, wie im
-[Kursmanifest](/section/01-project/02-files/01-manifest#pages) angegeben, also
-beispielsweise `about.md` für die Seite mit der ID `about`.
+Für jeden **Abschnitt** muss eine Datei `content.md` im entsprechenden Ordner
+der jeweiligen Sprache abgelegt sein, bspw. die Datei
+`en/01-project/02-files/02-content/content.md` für die Englische Version des
+Abschnitts `01-project/02-files/02-content`.
 
-Am Anfang jeder Inhaltsdatei befindet sich ein sogenannter
-[YAML-Block]{data-index-term="YAML"}, in dem per `title` der Titel eines
-Dokumentes definiert wird. Dies ist auch der Name, unter dem ein Kapitel im
-[Inhaltsverzeichnis]{data-index-term="Inhaltsverzeichnis"} erscheint bzw. der
-Eintrag im Menü im Falle einer Seite. Bei Seiten kann optional außerdem noch
-`short_title` angegeben werden. Der Kurztitel wird nur für Menüs verwendet, da
-hier der Platz begrenzt ist.
+Für jede **Seite** muss eine Inhaltsdatei im Ordner `_pages` der jeweiligen
+Sprache abgelegt sein. Der Dateiname entspricht der Seiten-ID, wie im
+[Kursmanifest](/section/01-project/02-files/01-manifest#pages) definiert.
+Beispielsweise ist der Englische Inhalt für die Seite `about` in der Datei
+`en/_pages/about.md` gespeichert.
+
+## Metadaten {#meta-data}
+
+Jede Inhaltsdatei benötigt einen sogenannten
+[YAML-Block]{data-index-term="YAML"} am Anfang der Datei, der mindestens den
+Eintrag `title` enthält.
 
 :::{.example}
 ```yaml
@@ -27,5 +34,30 @@ short_title: Über
 ```
 :::
 
-Darauf folgt der eigentliche Inhalt des Kapitels. Eine ausführliche Besprechung
-der Möglichkeiten gibt es in Kapitel [](/section/02-elements).
+## `title` (Pflichtfeld)
+
+> Seiten- bzw. Abschnittstitel
+
+Jede Inhaltsdatei muss einen Titel definieren. Dieser Name erscheint als
+Überschrift über dem Inhalt, im
+[Inhaltsverzeichnis]{data-index-term="Inhaltsverzeichnis"} und anderen Menüs.
+
+## `short_title` (optional)
+
+> Seiten- bzw. Abschnittstitel (Kurzform)
+
+Eine kurze Version des Titels kann angegeben werden. Diese wird an Stellen mit
+begrenztem Platz verwendet.
+
+## `type` (optional)
+
+> [Abschnittstyp]{data-index-term="Abschnittstyp"}
+
+Abschnitte können vom Typ `regular` (normal), `exercises` (Aufgaben), `test`
+(Test) sein. Wenn nicht explizit angegeben, ist die Vorgabe `regular`.
+Seiten unterstützen dieses Attribut nicht.
+
+Abschnitte des Typs `exercises` und `test` erhalten ein spezielles Icon im
+Inhaltsverzeichnis. Abschnitte des Typs `test` werden separat im
+[Lernfortschritt](___PROGRESS___) aufgeführt. Außerdem werden die Aufgaben
+erst nach dem Ausfüllen des gesamten Tests korrigiert.

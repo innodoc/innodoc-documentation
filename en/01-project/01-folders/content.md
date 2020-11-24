@@ -73,3 +73,6 @@ created. For every page a Markdown file is placed inside the `_pages` folder.
 The name of the file equals the page ID as specified in the
 [`pages` field](/section/01-project/02-files/01-manifest#pages) in the course
 manifest.
+
+See section [](/section/01-project/02-files/02-content) for a detailed
+description.

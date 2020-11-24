@@ -72,17 +72,19 @@ generated ID is derived from the text.
 
 ## Link to special pages
 
-Every course includes the special pages _Index Page_ and _Table of contents_.
-They don't have a section ID but you can still link to them using special
-identifiers `___INDEX_PAGE___` and `___TOC___`.
+Every course includes the special pages _Index Page_, _Progress_ and _Table of
+contents_. They don't have a section ID but you can still link to them using
+special identifiers `___INDEX_PAGE___`, `___PROGRESS___` and `___TOC___`.
 
 ::: {.example}
 
 ```markdown
 [](___INDEX_PAGE___)  
+[](___PROGRESS___)  
 [](___TOC___)
 ```
 
 [](___INDEX_PAGE___)  
+[](___PROGRESS___)  
 [](___TOC___)
 :::

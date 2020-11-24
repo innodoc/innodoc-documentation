@@ -76,3 +76,6 @@ angelegt werden. Für jede Seite wird eine Markdown-Datei im `_pages`-Ordner
 abgelegt. Der Name dieser Datei entspricht der Seiten-ID, wie im
 [`pages`-Feld](/section/01-project/02-files/01-manifest#pages) des
 Kurs-Manifests angegeben.
+
+Siehe Abschnitt [](/section/01-project/02-files/02-content) für eine
+detaillierte Beschreibung.

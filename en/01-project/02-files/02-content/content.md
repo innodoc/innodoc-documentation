@@ -2,20 +2,28 @@
 title: Content files
 ---
 
-Every content folder of a section needs to have file `content.md`. This file is
-written in [Markdown format]{data-index-term="Markdown"}.
+Content is written using the [Markdown format]{data-index-term="Markdown"}.
+There needs to be one content file for every section/page and language. Content
+files consist of a [meta block](#meta-data) at the top of the file followed by
+the actual content. A detailed explanation of the various content elements can
+be found in section [](/section/02-elements).
 
-For pages there is a Markdown file in the `_pages` folder of the respective
-language. The filename corresponds to the page ID as specified in the
-[course manifest](/section/01-project/02-files/01-manifest#pages), e.g.
-`about.md` for a page with the ID `about`.
+For every **section** there must be a file `content.md` in the corresponding
+section folder of the respective language. For example, the English content for
+the section `01-project/02-files/02-content` is contained in the file
+`en/01-project/02-files/02-content/content.md`.
 
-At the top of every content file there is a so-called
-[YAML block]{data-index-term="YAML"}. The document title is specified by using
-the `title` field. This is also the name used in the
-[table of contents]{data-index-term="table of contents"} or, for a page, in the
-menus. For pages another field `short_title` can be specified. It's being used
-for menus where space is limited.
+For every **page** there must be a content file in the `_pages` folder of the
+respective language. The filename corresponds to the page ID as specified in the
+[course manifest](/section/01-project/02-files/01-manifest#pages). For example
+the English content for the page `about` is contained in the file
+`en/_pages/about.md`.
+
+## Meta data {#meta-data}
+
+Every content file needs to have a so-called [YAML
+block]{data-index-term="YAML"} at the top of the file with at least a `title`
+key.
 
 :::{.example}
 ```yaml
@@ -26,5 +34,29 @@ short_title: About
 ```
 :::
 
-After that the actual content follows. A detailed explanation of different
-possibilities can be found in section [](/section/02-elements).
+## `title` (mandatory)
+
+> Page/section title
+
+Every content file needs to have a title defined. This is the name that will
+show up in the main header at the top of the page but also in the [table of
+contents]{data-index-term="table of contents"} and other menus.
+
+## `short_title` (optional)
+
+> Page/section title (short)
+
+A shorter version of the title may be specified using the field `short_title`.
+It is used in places with limited space.
+
+## `type` (optional)
+
+> [Section type]{data-index-term="Section type"}
+
+Sections can be one of the following types: `regular`, `exercises`, `test`. If
+not specified the value defaults to `regular`. Pages do not support this key.
+
+Exercise and test sections will be marked with a recognizable icon in the table
+of contents. Test sections are shown separately in the [progress
+overview](___PROGRESS___). Furthermore feedback for test exercises is only given
+after finishing an entire test section.
