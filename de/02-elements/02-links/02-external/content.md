@@ -30,7 +30,7 @@ wird.
 [TU Berlin](https://www.tu-berlin.de "Homepage der TU Berlin")
 
 ::: {.info}
-In Abschnitt [](/section/02-elements/07-media#bilder-als-links)
+In Abschnitt [](/section/02-elements/04-media#bilder-als-links)
 ist beschrieben, wie Bilder als Link verwendet werden können.
 :::
 

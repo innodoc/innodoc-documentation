@@ -40,7 +40,7 @@ languages: [de, en]
 > Startseite
 
 Der Wert des Feldes `home_link` muss ein gültiger interner Link sein, wie im
-Abschnitt [](/section/02-elements/04-links/01-internal) beschrieben. Wird
+Abschnitt [](/section/02-elements/02-links/01-internal) beschrieben. Wird
 dieses Feld ausgelassen, so wird als Startseite automatisch der erste Abschnitt
 des Kurses gesetzt.
 
@@ -84,7 +84,7 @@ Gibt an, ob die Seite in der Hauptnavigation bzw. im Footer verlinkt wird.
 
 > $\LaTeX$-Präembel
 
-Siehe Abschnitt [](/section/02-elements/07-media/01-pgf-tikz#tikz_preamble) für
+Siehe Abschnitt [](/section/02-elements/04-media/01-pgf-tikz#tikz_preamble) für
 eine detaillierte Beschreibung.
 
 ```yaml
@@ -100,7 +100,7 @@ Um spezielle Erweiterungen zu verwenden, kann die
 angepasst werden.
 
 In folgendem Beispiel fügen wir die
-[`innodoc-mathjax`-Erweiterung](/section/02-elements/06-formulas#innodoc-mathjax)
+[`innodoc-mathjax`-Erweiterung](/section/02-elements/03-formulas#innodoc-mathjax)
 hinzu.
 
 ```yaml

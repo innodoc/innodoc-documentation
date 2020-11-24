@@ -14,12 +14,12 @@ und der Titel angezeigt.
 ::: {.example}
 
 ```markdown
-[](/section/02-elements/07-media)  
-[anderer Abschnitt](/section/02-elements/07-media)
+[](/section/02-elements/04-media)  
+[anderer Abschnitt](/section/02-elements/04-media)
 ```
 
-[](/section/02-elements/07-media)  
-[anderer Abschnitt](/section/02-elements/07-media)
+[](/section/02-elements/04-media)  
+[anderer Abschnitt](/section/02-elements/04-media)
 :::
 
 Wenn ein verlinkter Abschnitt nicht existiert, wird der Link trotzdem
@@ -37,17 +37,16 @@ können manuell zugewiesen werden.
 Link zur Überschrift _Videos_ in einem anderen Kapitel:
 
 ```markdown
-[](/section/02-elements/07-media#videos)
+[](/section/02-elements/04-media#videos)
 ```
 
-[](/section/02-elements/07-media#videos)
+[](/section/02-elements/04-media#videos)
 :::
 
 IDs können zugewiesen werden, indem der Bezeichner mit einem vorangestelltem `#`
 angegeben wird.
 
-::: {.example}
-
+::: {.example #heading-example}
 ```markdown
 ## Überschrift mit ID {#my-id}
 

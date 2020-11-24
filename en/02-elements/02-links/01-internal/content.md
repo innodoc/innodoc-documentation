@@ -13,12 +13,12 @@ leave out the link text the section number and title will be shown.
 ::: {.example}
 
 ```markdown
-[](/section/02-elements/07-media)  
-[other section](/section/02-elements/07-media)
+[](/section/02-elements/04-media)  
+[other section](/section/02-elements/04-media)
 ```
 
-[](/section/02-elements/07-media)  
-[other section](/section/02-elements/07-media)
+[](/section/02-elements/04-media)  
+[other section](/section/02-elements/04-media)
 :::
 
 If you specify a non-existent section the link will still be shown but leads to
@@ -34,16 +34,15 @@ IDs. These IDs need to be unique within one page and can be assigned manually.
 Link to heading _Videos_ in another section:
 
 ```markdown
-[](/section/02-elements/07-media#videos)
+[](/section/02-elements/04-media#videos)
 ```
 
-[](/section/02-elements/07-media#videos)
+[](/section/02-elements/04-media#videos)
 :::
 
 You can assign IDs by adding the identifier preceded by a `#` symbol.
 
-::: {.example}
-
+::: {.example #heading-example}
 ```markdown
 ## Heading with ID {#my-id}
 

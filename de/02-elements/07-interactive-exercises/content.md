@@ -85,8 +85,8 @@ Parametern.
 
 Derzeit sind zwei Arten von Fragen implementiert: `text` und `checkbox`. Sie
 werden in den Unterabschnitten
-[](/section/02-elements/10-interactive-exercises/01-text) und
-[](/section/02-elements/10-interactive-exercises/02-checkbox) beschrieben.
+[](/section/02-elements/07-interactive-exercises/01-text) und
+[](/section/02-elements/07-interactive-exercises/02-checkbox) beschrieben.
 
 Alle Fragetypen akzeptieren mindestens folgende Parameter.
 

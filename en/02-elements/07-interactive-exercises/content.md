@@ -80,8 +80,8 @@ parameters.
 
 Currently two types of questions are implemented: `text` and `checkbox`. They
 are described in the subsections
-[](/section/02-elements/10-interactive-exercises/01-text) and
-[](/section/02-elements/10-interactive-exercises/02-checkbox).
+[](/section/02-elements/07-interactive-exercises/01-text) and
+[](/section/02-elements/07-interactive-exercises/02-checkbox).
 
 The following parameters are common to all question types.
 

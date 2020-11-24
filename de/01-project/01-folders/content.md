@@ -56,7 +56,7 @@ Ordnernamen dürfen nicht mit einem `_` beginnen oder Leerzeichen beinhalten.
 
 Zusätzlich kann sich im Wurzelverzeichnis, sowie in jedem Sprachordner, ein
 Ordner `_static` befinden, in dem
-[statische Dateien](/section/02-elements/07-media), also Bilder
+[statische Dateien](/section/02-elements/04-media), also Bilder
 und Videos abgelegt werden.
 
 In jedem Sprachordner kann außerdem ein Verzeichnis `_pages` existieren, in dem

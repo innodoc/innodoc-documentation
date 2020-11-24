@@ -40,7 +40,7 @@ languages: [de, en]
 > Home link
 
 The value of the field `home_link` needs to a valid internal link as described
-in section [](/section/02-elements/04-links/01-internal). If it is omitted the
+in section [](/section/02-elements/02-links/01-internal). If it is omitted the
 home link will be the first section of the course.
 
 ```yaml
@@ -83,7 +83,7 @@ If there should be link in the main navigation and footer.
 
 > $\LaTeX$-Präembel
 
-See section [](/section/02-elements/07-media/01-pgf-tikz#tikz_preamble) for a
+See section [](/section/02-elements/04-media/01-pgf-tikz#tikz_preamble) for a
 detailed description.
 
 ```yaml
@@ -99,7 +99,7 @@ MathJax configuration. It uses the
 [MathJax configuation format](https://docs.mathjax.org/en/latest/options/index.html).
 
 In this example we add the custom extension
-[`innodoc-mathjax`](/section/02-elements/06-formulas#innodoc-mathjax).
+[`innodoc-mathjax`](/section/02-elements/03-formulas#innodoc-mathjax).
 
 ```yaml
 mathjax:

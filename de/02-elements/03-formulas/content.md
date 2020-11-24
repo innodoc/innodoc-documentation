@@ -1,5 +1,5 @@
 ---
-title: Formulas
+title: Formeldarstellung
 ---
 
 Im Text können $\LaTeX$-Formeln verwendet werden. Sie werden durch die Software
