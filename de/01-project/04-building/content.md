@@ -9,7 +9,7 @@ Stichwort- sowie ein Inhaltsverzeichnis generiert.
 
 Das Programm
 [[innoConv](https://github.com/innodoc/innoconv)]{data-index-term="innoConv"}
-wird dazu benutzt Inhalte in das intermediäre Format zu übersetzen.
+wird dazu benutzt, Inhalte in das intermediäre Format zu übersetzen.
 
 :::{.info}
 Das Konverterprogramm besitzt eine eigene
