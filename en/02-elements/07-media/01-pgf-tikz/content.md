@@ -106,7 +106,7 @@ PGF/Ti*k*Z is a complex and extensive $\LaTeX$ package. In order to support
 specific features it might be necessary to include additional Ti*k*Z libaries.
 
 To do so one must add directives to the preamble of the corresponding $\LaTeX$
-document. To do so add `tikz_preamble` key to your manifest file.
+document. Add a `tikz_preamble` key to the manifest file.
 
 ```yml
 # manifest.yml
