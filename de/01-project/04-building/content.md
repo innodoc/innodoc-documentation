@@ -1,5 +1,5 @@
 ---
-title: Kompilierung
+title: Übersetzung
 ---
 
 Um einen Kurs anzuzeigen und benutzen zu können, muss er zuvor kompiliert

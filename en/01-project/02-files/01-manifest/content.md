@@ -1,5 +1,5 @@
 ---
-title: manifest.yml
+title: Course manifest
 ---
 
 Every course needs a [`manifest.yml`]{data-index-term="manifest.yml"} file in

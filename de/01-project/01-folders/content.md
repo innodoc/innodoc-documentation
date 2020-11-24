@@ -1,5 +1,5 @@
 ---
-title: Ordnerstruktur
+title: Verzeichnisse
 ---
 
 Die Verzechnisstruktur eines Kurse folgt einem festen Schema.

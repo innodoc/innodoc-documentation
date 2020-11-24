@@ -1,5 +1,5 @@
 ---
-title: manifest.yml
+title: Kursmanifest
 ---
 
 Jeder Kurs benötigt eine
