@@ -2,7 +2,7 @@
 title: Grundlagen
 ---
 
-## Absätze und Zeilenumbrüche
+## Absätze und Zeilenumbrüche {#paragraphs-and-line-breaks}
 
 Absätze werden automatisch erstellt, indem zwischen dem Text eine Leerzeile
 Abstand gelassen wird. Das Hinzufügen von mehr als einer Leerzeile führt nicht

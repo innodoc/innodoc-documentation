@@ -2,7 +2,7 @@
 title: Basics
 ---
 
-## Paragraphs and line breaks
+## Paragraphs and line breaks {#paragraphs-and-line-breaks}
 
 Paragraphs are automatically created simply by leaving an empty line between
 text. Adding more than one empty line will not create a larger distance between

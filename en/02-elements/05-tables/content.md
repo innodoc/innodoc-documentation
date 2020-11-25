@@ -1,94 +1,282 @@
 ---
-title: 'Tabellen'
+title: Tables
 ---
 
-TODO
+This section describes the different ways to create tables. Further details on
+the topic can be found in the [Pandoc
+documentation](https://pandoc.org/MANUAL.html#tables).
 
-Ein Kapitel kann auch Tabellen enthalten.
+::: {.info}
+Besides text, tables can contain images, exercises and all other elements.
+However, for creating layout, e.g. to arrange elements next to each other, the
+use of [grids](/section/02-elements/06-grids) is recommended. Unlike tables,
+grids adapt to different screen sizes.
+:::
 
-|Tab|ell|en!|
-|---|---|---|
-| 1 | 2 | 3 |
-| 4 | 5 | 6 |
-| 7 | 8 | 9 |
+## Table caption
 
-Die Spaltenbreite beim Schreiben einer Tabelle ist beliebig, aber bei der
-Trennlinie zwischen Tabellenkopf und Tabellenkörper müssen mindestens 3 '-'
-vorhanden sein. Genauso sind die '|' an den äusseren Rändern optional..
+Each table can optionally have a caption. For this purpose, a line with the
+content `Table: [Caption text]` is inserted below the table. Alternatively this
+can be shortened to `: [Caption text].
 
-Tabellen|mit|loser Syntax
----|---|---
-Wenn man tabellen | lieber | mit dieser losen
-syntax | schreiben| möchte, dann ist
-dies auch kein | problem |
+::: {.example}
+**Markdown**
 
-Die horizontale Ausrichtung innerhalb der Spalten einer Tabelle kann man durch
-':' an der Trennlinie zwischen Tabellenkopf und Tabellenkörper definieren.
----
-title: 'Tabellen'
----
+```markdown
+A   B   C
+--- --- --
+11  21  31
 
-Ein Kapitel kann auch Tabellen enthalten.
+Table: Simple table with caption
+```
 
-|Tab|ell|en!|
-|---|---|---|
-| 1 | 2 | 3 |
-| 4 | 5 | 6 |
-| 7 | 8 | 9 |
+**Result**
 
-Die Spaltenbreite beim Schreiben einer Tabelle ist beliebig, aber bei der
-Trennlinie zwischen Tabellenkopf und Tabellenkörper müssen mindestens 3 '-'
-vorhanden sein. Genauso sind die '|' an den äusseren Rändern optional..
+A   B   C
+--- --- --
+11  21  31
 
-Tabellen|mit|loser Syntax
----|---|---
-Wenn man tabellen | lieber | mit dieser losen
-syntax | schreiben| möchte, dann ist
-dies auch kein | problem |
+Table: Simple table with caption
+:::
 
-Die horizontale Ausrichtung innerhalb der Spalten einer Tabelle kann man durch
-':' an der Trennlinie zwischen Tabellenkopf und Tabellenkörper definieren.
+## Table types
 
-|Linksbündig|Zentriert|Rechtsbündig|
-|:----------|:-------:|-----------:|
-| 1 | 2 | 3 |
-| 4 | 5 | 6 |
-| 7 | 8 | 9 |
+There are four different kinds of tables. They differ in the way to write them
+down but also in their functionality.
 
-Innerhalb einer Tabelle kann man auch ohne weiteres Textformatierungen vornehmen:
+- [Simple](#simple)
+- [Multiline](#multiline)
+- [Grid](#grid)
+- [Pipe](#pipe)
 
-| _Name_  | Wert1 | Wert2 |
-|:--------|------:|------:|
-| Alice   |**13** |   7   | 
-|~~_Bob_~~|~~4~~  | ~~9~~ | 
-| Chuck   |  6    |**11** | 
-| **Eve** |  _1_  |_**1**_| 
+### Simple {#simple}
 
-Genauso kann man Formeln, Links oder Bilder in einer Tabelle verwenden:
+Simple tables consist of a header row and the cell contents. The alignment of
+the contents can be influenced. The header line can also be omitted completely.
+However, the table must then be closed with a line of hyphens.
 
-|Name/Link| Wert  | Funktion | Bild |
-|:--------|------:|:--------:|------|
-|[TU Berlin](https://www.tu-berlin.de)| 17 | $f(u,t,b) := u^2 +t_1^2-t_2 + b$ | ![Placeholder](http://lorempixel.com/48/48/abstract/3)
-|[InnoDoc](https://gitlab.tubit.tu-berlin.de/innodoc/)| 13 | $f(i,d) := i^2*d$ | ![Placeholder](http://lorempixel.com/48/48/abstract/2)
+::: {.example}
+**Markdown**
 
-|Linksbündig|Zentriert|Rechtsbündig|
-|:----------|:-------:|-----------:|
-| 1 | 2 | 3 |
-| 4 | 5 | 6 |
-| 7 | 8 | 9 |
+```markdown
+   Align center   Default   Right Left
+----------------- ------- ------- ---------------------------------------------
+        11             21      31 Line breaks within a cell are not possible.
+        12             22      32 42
 
-Innerhalb einer Tabelle kann man auch ohne weiteres Textformatierungen vornehmen:
+: Simple table with header row
+```
 
-| _Name_  | Wert1 | Wert2 |
-|:--------|------:|------:|
-| Alice   |**13** |   7   | 
-|~~_Bob_~~|~~4~~  | ~~9~~ | 
-| Chuck   |  6    |**11** | 
-| **Eve** |  _1_  |_**1**_| 
+**Result**
 
-Genauso kann man Formeln, Links oder Bilder in einer Tabelle verwenden:
+   Align center   Default   Right Left
+----------------- ------- ------- ---------------------------------------------
+        11             21      31 Line breaks within a cell are not possible.
+        12             22      32 42
 
-|Name/Link| Wert  | Funktion | Bild |
-|:--------|------:|:--------:|------|
-|[TU Berlin](https://www.tu-berlin.de)| 17 | $f(u,t,b) := u^2 +t_1^2-t_2 + b$ | ![Placeholder](http://lorempixel.com/48/48/abstract/3)
-|[InnoDoc](https://gitlab.tubit.tu-berlin.de/innodoc/)| 13 | $f(i,d) := i^2*d$ | ![Placeholder](http://lorempixel.com/48/48/abstract/2)
+: Simple table with header row
+
+**Markdown**
+
+```markdown
+------ -- ---- ---------------------------------------------
+  11   21   31 Line breaks within a cell are not possible.
+  12   22   32 42
+------ -- ---- ---------------------------------------------
+
+: Simple table without header row
+```
+
+**Result**
+
+------ -- ---- ---------------------------------------------
+  11   21   31 Line breaks within a cell are not possible.
+  12   22   32 42
+------ -- ---- ---------------------------------------------
+
+: Simple table without header row
+:::
+
+### Multiline {#multiline}
+
+Multiline tables can be used for better readability. Here you can wrap text
+within a cell. In the display, the text wrap depends on the available width.
+
+Multiline tables are similar to simple tables, but must be enclosed by a line
+of dashes and a blank line.
+
+::: {.example}
+**Markdown**
+
+```markdown
+--------------------------------------------------
+  Align    Default    Right Left
+  center
+---------- ------- -------- ----------------------
+    11     21            31 Line breaks within
+                            a cell are possible.
+
+    12     22            32 42
+--------------------------------------------------
+
+: Multiline table with header row
+```
+
+**Result**
+
+--------------------------------------------------
+  Align    Default    Right Left
+  center
+---------- ------- -------- ----------------------
+    11     21            31 Line breaks within
+                            a cell are possible.
+
+    12     22            32 42
+--------------------------------------------------
+
+: Multiline table with header row
+
+**Markdown**
+
+```markdown
+-------- ----- ----- ----------------------
+   11    21       31 Line breaks within
+                     a cell are possible.
+
+   12    22       32 42
+-------- ----- ----- ----------------------
+
+: Multiline table without header row
+```
+
+**Result**
+
+-------- ----- ----- ----------------------
+   11    21       31 Line breaks within
+                     a cell are possible.
+
+   12    22       32 42
+-------- ----- ----- ----------------------
+
+: Multiline table without header row
+:::
+
+
+### Grid {#grid}
+
+Grid tables are another way of writing tables. They allow the arbitrary use
+of block elements, such as several paragraphs, lists, etc., within a cell.
+
+The table is created with a combination of the symbols `-`, `+`, `|`, `=` and
+`:`. The header is separated from the other rows by using a dashed line. The
+colon can be used to change the column alignment.
+
+::: {.example}
+**Markdown**
+
+```markdown
++--------+---------+-------+----------------------------+
+| Align  | Default | Right | Left                       |
+| center |         |       |                            |
++:======:+=========+======:+:===========================+
+| 11     | 21      | 31    | Line breaks within         |
+|        |         |       | a cell are possible.       |
++--------+---------+-------+----------------------------+
+| 12     | 22      | 32    | - Arbitrary block elements |
+|        |         |       | - are possible.            |
++--------+---------+-------+----------------------------+
+
+: Grid table with header row
+```
+
+**Result**
+
++--------+---------+-------+----------------------------+
+| Align  | Default | Right | Left                       |
+| center |         |       |                            |
++:======:+=========+======:+:===========================+
+| 11     | 21      | 31    | Line breaks within         |
+|        |         |       | a cell are possible.       |
++--------+---------+-------+----------------------------+
+| 12     | 22      | 32    | - Arbitrary block elements |
+|        |         |       | - are possible.            |
++--------+---------+-------+----------------------------+
+
+: Grid table with header row
+
+**Markdown**
+
+```markdown
++:------:+---------+------:+:---------------------------+
+| 11     | 21      | 31    | Line breaks within         |
+|        |         |       | a cell are possible.       |
++--------+---------+-------+----------------------------+
+| 12     | 22      | 32    | - Arbitrary block elements |
+|        |         |       | - are possible.            |
++--------+---------+-------+----------------------------+
+
+: Grid table without header row
+```
+
+**Result**
+
++:------:+---------+------:+:---------------------------+
+| 11     | 21      | 31    | Line breaks within         |
+|        |         |       | a cell are possible.       |
++--------+---------+-------+----------------------------+
+| 12     | 22      | 32    | - Arbitrary block elements |
+|        |         |       | - are possible.            |
++--------+---------+-------+----------------------------+
+
+: Grid table without header row
+:::
+
+### Pipe {#pipe}
+
+Another way to format tables is to use pipe tables. They are created with the
+help of the pipe symbol `|`.
+
+Pipe tables do not allow multiline cells or block elements. They use the colon
+symbol to specify the alignment. Columns do not need to be vertically aligned.
+
+::: {.example}
+**Markdown**
+
+```markdown
+| Align center | Default | Right | Left                                        |
+|:------------:|---------|------:|:--------------------------------------------|
+| 11           | 21      | 31    | Line breaks within a cell are not possible. |
+| 12           | 22      | 32    | 42                                          |
+
+: Pipe table with vertical alignment
+```
+
+**Result**
+
+| Align center | Default | Right | Left                                        |
+|:------------:|---------|------:|:--------------------------------------------|
+| 11           | 21      | 31    | Line breaks within a cell are not possible. |
+| 12           | 22      | 32    | 42                                          |
+
+: Pipe table with vertical alignment
+
+**Markdown**
+
+```markdown
+|Align center|Default|Right|Left|
+:--:|--|--:|:--|
+|11|21|31|Line breaks within a cell are not possible.|
+|12|22|32|42|
+
+: Pipe table without vertical alignment
+```
+
+**Result**
+
+|Align center|Default|Right|Left|
+:--:|--|--:|:--|
+|11|21|31|Line breaks within a cell are not possible.|
+|12|22|32|42|
+
+: Pipe table without vertical alignment
+:::
