@@ -5,7 +5,7 @@ languages: [de, en]
 min_score: 90
 home_link: /page/about
 tikz_preamble: |
-  \usetikzlibrary{arrows,calc}
+  \usetikzlibrary{arrows,calc,decorations.pathreplacing}
   \newcommand{\sayhello}{Hello\ World!}
 pages:
   - id: about
