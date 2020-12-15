@@ -10,6 +10,9 @@ It is possible to use $\LaTeX$ formulas. They are rendered using the
 Formulas use the `$` sign as delimiter. They can be displayed inline (single
 `$`) or as a block (double `$`).
 
+::: {.example}
+**Markdown**
+
 ```markdown
 Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
 
@@ -18,14 +21,19 @@ Or they can stand alone as a block element:
 $$\sum_{n=1}^{\infty} 2^{-n} = 1$$
 ```
 
+**Result**
+
 Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
 
 Or they can stand alone as a block element:
 
 $$\sum_{n=1}^{\infty} 2^{-n} = 1$$
+:::
 
 ::: {.example}
 Another more complicated example using an `align` environment.
+
+**Markdown**
 
 ```markdown
 $$
@@ -38,6 +46,8 @@ $$
 \end{align*}
 $$
 ```
+
+**Result**
 
 $$
 \begin{align*}

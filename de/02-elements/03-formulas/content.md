@@ -11,6 +11,9 @@ Um Formeln auszuzeichnen wird das `$`-Zeichen verwendet. Sie können entweder
 direkt im Fließtext (einfaches `$`) oder freistehend (doppeltes `$`)
 dargestellt werden.
 
+::: {.example}
+**Markdown**
+
 ```markdown
 Formeln, wie $\sum_{n=1}^{\infty} 2^{-n} = 1$ können direkt im Fließtext
 stehen.
@@ -20,15 +23,20 @@ Sie können aber auch freistehend verwendet werden:
 $$\sum_{n=1}^{\infty} 2^{-n} = 1$$
 ```
 
+**Result**
+
 Formeln, wie $\sum_{n=1}^{\infty} 2^{-n} = 1$ können direkt im Fließtext
 stehen.
 
 Sie können aber auch freistehend verwendet werden:
 
 $$\sum_{n=1}^{\infty} 2^{-n} = 1$$
+:::
 
 ::: {.example}
 Ein weiteres, komplizierteres Beispiel mit `align`-Umgebung.
+
+**Markdown**
 
 ```markdown
 $$
@@ -41,6 +49,8 @@ $$
 \end{align*}
 $$
 ```
+
+**Result**
 
 $$
 \begin{align*}

@@ -13,10 +13,14 @@ und der Titel angezeigt.
 
 ::: {.example}
 
+**Markdown**
+
 ```markdown
 [](/section/02-elements/04-media)  
 [anderer Abschnitt](/section/02-elements/04-media)
 ```
+
+**Ergebnis**
 
 [](/section/02-elements/04-media)  
 [anderer Abschnitt](/section/02-elements/04-media)
@@ -36,9 +40,13 @@ können manuell zugewiesen werden.
 ::: {.example}
 Link zur Überschrift _Videos_ in einem anderen Kapitel:
 
+**Markdown**
+
 ```markdown
 [](/section/02-elements/04-media#videos)
 ```
+
+**Ergebnis**
 
 [](/section/02-elements/04-media#videos)
 :::
@@ -47,11 +55,15 @@ IDs können zugewiesen werden, indem der Bezeichner mit einem vorangestelltem `#
 angegeben wird.
 
 ::: {.example #heading-example}
+**Markdown**
+
 ```markdown
 ## Überschrift mit ID {#my-id}
 
 [Link zur Überschrift](#my-id)
 ```
+
+**Ergebnis**
 
 ## Überschrift mit ID {#my-id}
 
@@ -62,11 +74,15 @@ angegeben wird.
 Wird kein Bezeichner angegeben, erhalten Überschriften automatisch eine vom
 Text abgeleitete ID.
 
+**Markdown**
+
 ```markdown
 ## Das ist ein test
 
 [Link zur Überschrift](#das-ist-ein-test)
 ```
+
+**Ergebnis**
 
 ## Das ist ein test
 
@@ -82,13 +98,17 @@ und `___PROGRESS___` referenziert werden.
 
 ::: {.example}
 
+**Markdown**
+
 ```markdown
 [](___INDEX_PAGE___)  
-[](___TOC___)
 [](___PROGRESS___)  
+[](___TOC___)
 ```
 
+**Ergebnis**
+
 [](___INDEX_PAGE___)  
-[](___TOC___)
 [](___PROGRESS___)  
+[](___TOC___)
 :::
