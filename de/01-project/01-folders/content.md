@@ -2,7 +2,7 @@
 title: Verzeichnisse
 ---
 
-Die Verzechnisstruktur eines Kurse folgt einem festen Schema.
+Die Verzeichnisstruktur eines Kurses folgt einem festen Schema.
 
 :::{.example}
 ```
