@@ -11,7 +11,7 @@ Folgenden finden sich Beschreibungen der möglichen Angaben in dieser Datei.
 
 :::{.info}
 Eine
-[beispielhafte Manifestdatei](https://gitlab.tu-berlin.de/innodoc/tub_base/blob/master/manifest.yml)
+[beispielhafte Manifestdatei](https://git.tu-berlin.de/innodoc/tub_base/blob/master/manifest.yml)
 befindet sich im Repository dieses Kurses.
 :::
 

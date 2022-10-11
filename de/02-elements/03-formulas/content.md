@@ -76,9 +76,9 @@ Um Erweiterungen hinzuzufügen, wird das Kurs-Manifest angepasst. In Abschnitt
 
 ::: {.info #innodoc-mathjax}
 Es existieren die Erweiterungen
-[**\@innodoc/mathjax-num**](https://gitlab.tu-berlin.de/innodoc/mathjax-num)
+[**\@innodoc/mathjax-num**](https://git.tu-berlin.de/innodoc/mathjax-num)
 und
-[**\@innodoc/mathjax-coordsep**](https://gitlab.tu-berlin.de/innodoc/mathjax-coordsep).
+[**\@innodoc/mathjax-coordsep**](https://git.tu-berlin.de/innodoc/mathjax-coordsep).
 
 Sie implementieren einen lokalisierten Dezimalseparator
 (`$\num{3.45}$` → $\num{3.45}$) und einen anpassbaren Trenner für Koordinaten

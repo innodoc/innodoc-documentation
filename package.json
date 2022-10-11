@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.tubit.tu-berlin.de:innodoc/tub_base.git"
+    "url": "git@git.tu-berlin.de:innodoc/innodoc-documentation.git"
   },
   "license": "CC-BY-SA-4.0",
   "dependencies": {

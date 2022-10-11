@@ -70,7 +70,7 @@ Put a link list at the very end of your document.
 
 ```markdown
 [TU Berlin]: https://www.tu-berlin.de
-[innoConv]: https://gitlab.tu-berlin.de/innodoc/innoconv
+[innoConv]: https://git.tu-berlin.de/innodoc/innoconv
 ```
 
 **Result**
@@ -80,4 +80,4 @@ Put a link list at the very end of your document.
 :::
 
 [TU Berlin]: https://www.tu-berlin.de
-[innoConv]: https://gitlab.tu-berlin.de/innodoc/innoconv
+[innoConv]: https://git.tu-berlin.de/innodoc/innoconv

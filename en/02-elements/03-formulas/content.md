@@ -73,9 +73,9 @@ custom extensions to the mix. Please refer to the section
 
 ::: {.info #innodoc-mathjax}
 Two extensions
-[**\@innodoc/mathjax-num**](https://gitlab.tu-berlin.de/innodoc/mathjax-num)
+[**\@innodoc/mathjax-num**](https://git.tu-berlin.de/innodoc/mathjax-num)
 and
-[**\@innodoc/mathjax-coordsep**](https://gitlab.tu-berlin.de/innodoc/mathjax-coordsep)
+[**\@innodoc/mathjax-coordsep**](https://git.tu-berlin.de/innodoc/mathjax-coordsep)
 are available.
 
 They implement a localized decimaler marker (`$\num{3.45}$` → $\num{3.45}$) and

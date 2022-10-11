@@ -69,7 +69,7 @@ Ganz am Ende des Dokuments wird eine Linkliste angefügt.
 
 ```markdown
 [TU Berlin]: https://www.tu-berlin.de
-[innoConv]: https://gitlab.tu-berlin.de/innodoc/innoconv
+[innoConv]: https://git.tu-berlin.de/innodoc/innoconv
 ```
 
 **Ergebnis**
@@ -79,4 +79,4 @@ Ganz am Ende des Dokuments wird eine Linkliste angefügt.
 :::
 
 [TU Berlin]: https://www.tu-berlin.de
-[innoConv]: https://gitlab.tu-berlin.de/innodoc/innoconv
+[innoConv]: https://git.tu-berlin.de/innodoc/innoconv
