@@ -120,7 +120,7 @@ It's possible to reference files from arbitrary subfolders. E.g.
 
 A path specified without a leading slash is considered relative to the `_static`
 folder plus the section path for easy file management, e.g. `tu-logo.png` refers
-to the image file `_static/02-elements/06-media/tu-logo.png` while
+to the image file `_static/02-elements/04-media/tu-logo.png` while
 `/tu-logo.png` refers to `_static/tu-logo.png`.
 
 ::: {.example}
@@ -140,7 +140,7 @@ An image stored in a sub-folder of `_static`.
 ![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
 :::
 
-An image stored in `_static/02-elements/06-media`.
+An image stored in `_static/02-elements/04-media`.
 
 **Markdown**
 
@@ -177,8 +177,8 @@ folder of the respective language.
 ::: {.example}
 For this example there are two versions of `lines.png`, one for each language:
 
-- `de/_static/02-elements/06-media/lines.png`
-- `en/_static/02-elements/06-media/lines.png`
+- `de/_static/02-elements/04-media/lines.png`
+- `en/_static/02-elements/04-media/lines.png`
 
 **Markdown**
 

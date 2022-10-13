@@ -127,7 +127,7 @@ verweist z. B. `/subfolder/math.jpg` auf die Datei
 Ein ohne führenden Schrägstrich angegebener Pfad wird als relativ zum Ordner
 `_static` und dem Abschnittspfad betrachtet, um die Dateiverwaltung zu
 vereinfachen. Beispielsweise bezieht sich `tu-logo.png` auf die Bilddatei
-`_static/02-elements/06-media/tu-logo.png`, während sich `/tu-logo.png` auf
+`_static/02-elements/04-media/tu-logo.png`, während sich `/tu-logo.png` auf
 `_static/tu-logo.png` bezieht.
 
 ::: {.example}
@@ -147,7 +147,7 @@ Ein Bild, das in einem Unterordner von `_static` gespeichert ist.
 ![Bild aus Unterordner](/subfolder/math.jpg "Beispiel Unterordner"){.img}
 :::
 
-Ein Bild, das in `_static/02-elements/06-media` gespeichert ist.
+Ein Bild, das in `_static/02-elements/04-media` gespeichert ist.
 
 **Markdown**
 
@@ -186,8 +186,8 @@ jeweiligen Sprache abgelegt werden.
 In diesem Beispiel gibt es zwei Versionen von `lines.png`, eine für jede
 Sprache:
 
-- `de/_static/02-elements/06-media/lines.png`
-- `en/_static/02-elements/06-media/lines.png`
+- `de/_static/02-elements/04-media/lines.png`
+- `en/_static/02-elements/04-media/lines.png`
 
 **Markdown**
 
