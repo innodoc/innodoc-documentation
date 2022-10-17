@@ -25,8 +25,7 @@ leave out the link text the section number and title will be shown.
 [other section](/section/02-elements/04-media)
 :::
 
-If you specify a non-existent section the link will still be shown but leads to
-an error page:  
+If you specify a non-existent section an error message is shown:  
 [This is a Link to a non-existent chapter.](/section/does-not-exist)
 
 ## Link with anchors

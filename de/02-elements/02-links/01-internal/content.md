@@ -26,8 +26,7 @@ und der Titel angezeigt.
 [anderer Abschnitt](/section/02-elements/04-media)
 :::
 
-Wenn ein verlinkter Abschnitt nicht existiert, wird der Link trotzdem
-dargestellt, führt aber zu einer Fehlerseite:  
+Wenn ein verlinkter Abschnitt nicht existiert, wird ein Fehlertext dargestellt:  
 [Dies ist ein Link zu einem nicht existierendem
 Kapitel.](/section/does-not-exist)
 
