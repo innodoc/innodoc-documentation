@@ -23,7 +23,7 @@ eines Absatzes angezeigt.
 Ein Bild ![Stern](star.png) im Fließtext.
 ```
 
-**Result**
+**Ergebnis**
 
 Ein Bild ![Stern](star.png) im Fließtext.
 :::
@@ -42,7 +42,7 @@ diesem Fall automatisch aus dem Bildtitel erzeugt.
 :::
 ```
 
-**Result**
+**Ergebnis**
 
 ::: {.figure}
 ![Die Erschaffung Adams von Michelangelo](adam.jpg "Die Erschaffung Adams"){.img}
@@ -58,7 +58,7 @@ Bilder können auch innerhalb von Links benutzt werden.
 [![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
 ```
 
-**Result**
+**Ergebnis**
 
 [![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
 :::
@@ -84,7 +84,7 @@ Titel angegeben wird.
 [Test video](video.mp4){.video .video-static}
 ```
 
-**Result**
+**Ergebnis**
 
 [Test video](video.mp4){.video .video-static}
 
@@ -97,7 +97,7 @@ verweisen.
 ["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
 ```
 
-**Result**
+**Ergebnis**
 
 ["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
 
@@ -109,7 +109,7 @@ Das folgende Beispiel bettet ein Video von YouTube ein.
 [Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
 ```
 
-**Result**
+**Ergebnis**
 
 [Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
 :::
@@ -141,7 +141,7 @@ Ein Bild, das in einem Unterordner von `_static` gespeichert ist.
 :::
 ```
 
-**Result**
+**Ergebnis**
 
 ::: {.figure}
 ![Bild aus Unterordner](/subfolder/math.jpg "Beispiel Unterordner"){.img}
@@ -157,7 +157,7 @@ Ein Bild, das in `_static/02-elements/04-media` gespeichert ist.
 :::
 ```
 
-**Result**
+**Ergebnis**
 
 ::: {.figure}
 ![Logo TU Berlin](tu-logo.png)
@@ -197,7 +197,7 @@ Sprache:
 :::
 ```
 
-**Result**
+**Ergebnis**
 
 ::: {.figure}
 ![Lines](lines.png)

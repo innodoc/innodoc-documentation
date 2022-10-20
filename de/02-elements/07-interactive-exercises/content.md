@@ -9,11 +9,15 @@ Außerdem muss jede Aufgabe eine ID haben. Die ID muss innerhalb des Dokumentes
 eindeutig sein. Sie kann verwendet werden, um aus anderen Teilen des Kurses
 zur Aufgabe zu verweisen.
 
+**Markdown**
+
 ```markdown
 ::: {.exercise #EX_DUMMY}
 [INHALT]
 :::
 ```
+
+**Ergebnis**
 
 ::: {.exercise #EX_DUMMY}
 [INHALT]
@@ -28,6 +32,8 @@ enthaltenen Fragen.
 
 ::: {.example}
 Unten finden Sie ein vollständiges Beispiel für eine Aufgabe.
+
+**Markdown**
 
 ```markdown
 ::: {.exercise #EX_FULL}
@@ -48,6 +54,8 @@ $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
 ::::
 :::
 ```
+
+**Ergebnis**
 
 ::: {.exercise #EX_FULL}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie

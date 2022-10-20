@@ -8,11 +8,15 @@ more question elements are placed.
 Also an ID needs to be added per exercise. The ID has to be unique within the
 document. It can be used to reference questions from other parts of the course.
 
+**Markdown**
+
 ```markdown
 ::: {.exercise #EX_DUMMY}
 [CONTENT]
 :::
 ```
+
+**Result**
 
 ::: {.exercise #EX_DUMMY}
 [CONTENT]
@@ -27,6 +31,8 @@ containing questions.
 
 ::: {.example}
 Below is a complete example of an exercise.
+
+**Markdown**
 
 ```markdown
 ::: {.exercise #EX_FULL}
@@ -45,6 +51,8 @@ $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
 ::::
 :::
 ```
+
+**Result**
 
 ::: {.exercise #EX_FULL}
 Which term is formed if the following object is inserted into the term
