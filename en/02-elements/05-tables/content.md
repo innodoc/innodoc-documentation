@@ -17,7 +17,7 @@ grids adapt to different screen sizes.
 
 Each table can optionally have a caption. For this purpose, a line with the
 content `Table: [Caption text]` is inserted below the table. Alternatively this
-can be shortened to `: [Caption text].
+can be shortened to `: [Caption text]`.
 
 ::: {.example}
 **Markdown**
@@ -113,7 +113,7 @@ of dashes and a blank line.
   Align    Default    Right Left
   center
 ---------- ------- -------- ----------------------
-    11     21            31 Line breaks within
+    11     21            31 Line breaks within\
                             a cell are possible.
 
     12     22            32 42
@@ -128,7 +128,7 @@ of dashes and a blank line.
   Align    Default    Right Left
   center
 ---------- ------- -------- ----------------------
-    11     21            31 Line breaks within
+    11     21            31 Line breaks within\
                             a cell are possible.
 
     12     22            32 42
@@ -140,7 +140,7 @@ of dashes and a blank line.
 
 ```markdown
 -------- ----- ----- ----------------------
-   11    21       31 Line breaks within
+   11    21       31 Line breaks within\
                      a cell are possible.
 
    12    22       32 42
@@ -152,7 +152,7 @@ of dashes and a blank line.
 **Result**
 
 -------- ----- ----- ----------------------
-   11    21       31 Line breaks within
+   11    21       31 Line breaks within\
                      a cell are possible.
 
    12    22       32 42
@@ -179,7 +179,7 @@ colon can be used to change the column alignment.
 | Align  | Default | Right | Left                       |
 | center |         |       |                            |
 +:======:+=========+======:+:===========================+
-| 11     | 21      | 31    | Line breaks within         |
+| 11     | 21      | 31    | Line breaks within\        |
 |        |         |       | a cell are possible.       |
 +--------+---------+-------+----------------------------+
 | 12     | 22      | 32    | - Arbitrary block elements |
@@ -195,7 +195,7 @@ colon can be used to change the column alignment.
 | Align  | Default | Right | Left                       |
 | center |         |       |                            |
 +:======:+=========+======:+:===========================+
-| 11     | 21      | 31    | Line breaks within         |
+| 11     | 21      | 31    | Line breaks within\        |
 |        |         |       | a cell are possible.       |
 +--------+---------+-------+----------------------------+
 | 12     | 22      | 32    | - Arbitrary block elements |
@@ -208,7 +208,7 @@ colon can be used to change the column alignment.
 
 ```markdown
 +:------:+---------+------:+:---------------------------+
-| 11     | 21      | 31    | Line breaks within         |
+| 11     | 21      | 31    | Line breaks within\        |
 |        |         |       | a cell are possible.       |
 +--------+---------+-------+----------------------------+
 | 12     | 22      | 32    | - Arbitrary block elements |
@@ -221,7 +221,7 @@ colon can be used to change the column alignment.
 **Result**
 
 +:------:+---------+------:+:---------------------------+
-| 11     | 21      | 31    | Line breaks within         |
+| 11     | 21      | 31    | Line breaks within\        |
 |        |         |       | a cell are possible.       |
 +--------+---------+-------+----------------------------+
 | 12     | 22      | 32    | - Arbitrary block elements |
