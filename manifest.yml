@@ -9,11 +9,11 @@ tikz_preamble: |
   \newcommand{\sayhello}{Hello\ World!}
 pages:
   - id: about
-    icon: info-circle
+    icon: mdi:information-outline
     link_in_nav: true
     link_in_footer: true
   - id: license
-    icon: copyright
+    icon: mdi:copyright
     link_in_nav: false
     link_in_footer: true
 mathjax:
