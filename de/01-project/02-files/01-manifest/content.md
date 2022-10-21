@@ -59,8 +59,7 @@ zusätzliche Kursseiten angegeben werden.
 pages:
   - id: about
     icon: info-circle
-    link_in_nav: true
-    link_in_footer: true
+    linked: [nav, footer]
 ```
 
 Jede Seite benötigt zumindest eine `id`. Aus dieser Angabe ergibt sich der
@@ -74,7 +73,7 @@ Der Bezeichner eines Icons zur Darstellung in Menüs. Eine Liste von Bezeichnern
 ist auf der [Webseite von Ant Design](https://ant.design/components/icon/) zu
 finden.
 
-### `link_in_nav`/`link_in_footer` (optional)
+### `linked`
 
 > Verlinkung in Hauptnavigation und Footer
 

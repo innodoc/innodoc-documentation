@@ -10,12 +10,10 @@ tikz_preamble: |
 pages:
   - id: about
     icon: mdi:information-outline
-    link_in_nav: true
-    link_in_footer: true
+    linked: [nav, footer]
   - id: license
     icon: mdi:copyright
-    link_in_nav: false
-    link_in_footer: true
+    linked: [footer]
 mathjax:
   loader:
     load:

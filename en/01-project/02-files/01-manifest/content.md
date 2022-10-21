@@ -58,8 +58,7 @@ additional course pages can be specified.
 pages:
   - id: about
     icon: info-circle
-    link_in_nav: true
-    link_in_footer: true
+    linked: [nav, footer]
 ```
 
 Every page needs at least the `id` field. The name of the corresponding
@@ -73,7 +72,7 @@ The identifier of the icon that is used for menus. A list of valid identifiers
 can be found on the
 [website of Ant Design](https://ant.design/components/icon/).
 
-### `link_in_nav`/`link_in_footer` (optional)
+### `linked`
 
 > Link in site navigation and footer
 
