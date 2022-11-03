@@ -104,6 +104,41 @@ eines Ti*k*Z-Bildes.
 :::
 :::
 
+## Dunkler Modus
+
+Ti*k*Z-Bilder sollten auch im dunklen Modus gut lesbar sein. Insbesondere sollte
+der Kontrast für die relevanten Elemente nicht zu gering sein.
+
+Hierfür steht eine Kontrastfarbe bereit, die je nach Modus hell oder dunkel ist.
+Wird einem Element keine Farbe explizit zugewiesen, wird automatisch die
+Kontrastfarbe angezeigt, in der auch der herkömmliche Text dargestellt wird.
+Außerdem kann diese Farbe auch von Verwendung von `currentcolor` explizit
+ausgewählt werden.
+
+::: {.example}
+````markdown
+```tikz
+\begin{tikzpicture}
+\fill (0,0) circle (0.5) node[yshift=-22]{\emph{default}};
+\fill[currentcolor] (2,0) circle (0.5) node[yshift=-22]{currentcolor};
+\fill[black] (4,0) circle (0.5) node[yshift=-22]{black};
+\fill[white] (6,0) circle (0.5) node[yshift=-22]{white};
+\end{tikzpicture}
+```
+````
+
+```tikz
+\begin{tikzpicture}
+\fill (0,0) circle (0.5) node[yshift=-22]{\emph{default}};
+\fill[currentcolor] (2,0) circle (0.5) node[yshift=-22]{currentcolor};
+\fill[black] (4,0) circle (0.5) node[yshift=-22]{black};
+\fill[white] (6,0) circle (0.5) node[yshift=-22]{white};
+\end{tikzpicture}
+```
+
+*Um den Wechsel der Farbe zu sehen, bitte den Farbmodus umstellen.*
+:::
+
 ## Die $\LaTeX$-Präembel anpassen {#tikz_preamble}
 
 PGF/Ti*k*Z ist ein äußerst umfangreiches $\LaTeX$-Paket. Um bestimmte

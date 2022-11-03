@@ -100,6 +100,40 @@ Another example shows the usage of $\LaTeX$ formulae inside a picture.
 :::
 :::
 
+## Dark mode
+
+Ti*k*Z images should be easy to read even in dark mode. In particular the
+contrast for the relevant elements should not be too low.
+
+A contrast color is available for this, which is light or dark depending on the
+mode. This color is also used for regular text. If no color is explicitly
+assigned to an element, the contrasting color is automatically selected. This
+color can also be selected by using `currentcolor` explicitly.
+
+::: {.example}
+````markdown
+```tikz
+\begin{tikzpicture}
+\fill (0,0) circle (0.5) node[yshift=-22]{\emph{default}};
+\fill[currentcolor] (2,0) circle (0.5) node[yshift=-22]{currentcolor};
+\fill[black] (4,0) circle (0.5) node[yshift=-22]{black};
+\fill[white] (6,0) circle (0.5) node[yshift=-22]{white};
+\end{tikzpicture}
+```
+````
+
+```tikz
+\begin{tikzpicture}
+\fill (0,0) circle (0.5) node[yshift=-22]{\emph{default}};
+\fill[currentcolor] (2,0) circle (0.5) node[yshift=-22]{currentcolor};
+\fill[black] (4,0) circle (0.5) node[yshift=-22]{black};
+\fill[white] (6,0) circle (0.5) node[yshift=-22]{white};
+\end{tikzpicture}
+```
+
+*To see the change, please switch the color mode.*
+:::
+
 ## Overriding the $\LaTeX$ preamble {#tikz_preamble}
 
 PGF/Ti*k*Z is a complex and extensive $\LaTeX$ package. In order to support
