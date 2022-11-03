@@ -38,7 +38,7 @@ labels or other language specific features can be realized.
 ````
 
 ::: {.figure}
-Example of a TikZ image that includes a translated node.
+TikZ image with translated content.
 ```tikz
 \begin{tikzpicture}
 \shade[left color=blue,right color=red,rounded corners=8pt] (-0.5,-0.5) rectangle (2.5,3.45);
@@ -59,13 +59,13 @@ Another example shows the usage of $\LaTeX$ formulae inside a picture.
 % coordinate system
 \node (xMAX) at (2.8,0){};
 \node (yMAX) at (0,4.8){};
-\draw[->,color=black] (-2.5,0) -- (xMAX);
+\draw[->] (-2.5,0) -- (xMAX);
 \foreach \x in {-2,-1,1,2}
-\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
-\draw[->,color=black] (0,-0.5) -- (yMAX);
+\draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->] (0,-0.5) -- (yMAX);
 \foreach \y in {1,2,3,4}
-\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
-\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw (0pt,-10pt) node[right] {\footnotesize $0$};
 % axis labels
 \draw (xMAX) node[anchor=north east] {$x$};
 \draw (yMAX) node[anchor=east] {$f(x)$};
@@ -82,13 +82,13 @@ Another example shows the usage of $\LaTeX$ formulae inside a picture.
 % coordinate system
 \node (xMAX) at (2.8,0){};
 \node (yMAX) at (0,4.8){};
-\draw[->,color=black] (-2.5,0) -- (xMAX);
+\draw[->] (-2.5,0) -- (xMAX);
 \foreach \x in {-2,-1,1,2}
-\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
-\draw[->,color=black] (0,-0.5) -- (yMAX);
+\draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->] (0,-0.5) -- (yMAX);
 \foreach \y in {1,2,3,4}
-\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
-\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw (0pt,-10pt) node[right] {\footnotesize $0$};
 % axis labels
 \draw (xMAX) node[anchor=north east] {$x$};
 \draw (yMAX) node[anchor=east] {$f(x)$};
@@ -129,7 +129,7 @@ tip kind.
 \begin{tikzpicture}
 \node (A) at (0, 0) {A};
 \node (B) at (1, 0) {B};
-\draw[-diamond,black] (A) -- (B);
+\draw[-diamond] (A) -- (B);
 \end{tikzpicture}
 ```
 ````
@@ -139,7 +139,7 @@ tip kind.
 \begin{tikzpicture}
 \node (A) at (0, 0) {A};
 \node (B) at (1, 0) {B};
-\draw[-diamond,black] (A) -- (B);
+\draw[-diamond] (A) -- (B);
 \end{tikzpicture}
 ```
 :::

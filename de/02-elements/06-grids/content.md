@@ -17,7 +17,7 @@ In diesem Beispiel wird ein einfaches Raster mit drei Zeilen erzeugt. Die
 folgende Zeichnung veranschaulicht die Spaltenplätze, Zeilen und Spalten.
 
 ::: {.figure}
-Grid schema
+Rasterschema
 ```tikz
 \begin{tikzpicture}[y=-1cm]
     \def \padding {0.15}
@@ -26,9 +26,9 @@ Grid schema
             rectangle (#3+#2-\padding,#1+1-\padding)
             node[pos=0.5,color=black] {\texttt{#5}};
     }
-    \draw [yshift=10, decorate, decoration={brace, amplitude=10}]
-        (0,0) -- (24,0) node [black,midway,above=10] {24 slots};
-    \draw (0,0) grid (24,3);
+    \draw [draw=currentcolor, yshift=10, decorate, decoration={brace, amplitude=10}]
+        (0,0) -- (24,0) node [midway,above=10,color=currentcolor] {24 Slots};
+    \draw [draw=currentcolor] (0,0) grid (24,3);
     \addrow{0}{0}{24}{green}{span=24};
     \addrow{1}{0}{12}{red}{span=12};
     \addrow{1}{12}{12}{blue}{span=12};
