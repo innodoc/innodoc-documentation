@@ -20,7 +20,9 @@ stehen.
 
 Sie können aber auch freistehend verwendet werden:
 
-$$\sum_{n=1}^{\infty} 2^{-n} = 1$$
+$$
+\sum_{n=1}^{\infty} 2^{-n} = 1
+$$
 ```
 
 **Ergebnis**
@@ -30,7 +32,9 @@ stehen.
 
 Sie können aber auch freistehend verwendet werden:
 
-$$\sum_{n=1}^{\infty} 2^{-n} = 1$$
+$$
+\sum_{n=1}^{\infty} 2^{-n} = 1
+$$
 :::
 
 ::: {.example}

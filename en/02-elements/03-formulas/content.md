@@ -18,7 +18,9 @@ Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
 
 Or they can stand alone as a block element:
 
-$$\sum_{n=1}^{\infty} 2^{-n} = 1$$
+$$
+\sum_{n=1}^{\infty} 2^{-n} = 1
+$$
 ```
 
 **Result**
@@ -27,7 +29,9 @@ Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
 
 Or they can stand alone as a block element:
 
-$$\sum_{n=1}^{\infty} 2^{-n} = 1$$
+$$
+\sum_{n=1}^{\infty} 2^{-n} = 1
+$$
 :::
 
 ::: {.example}
