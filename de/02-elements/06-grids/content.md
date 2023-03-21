@@ -12,11 +12,11 @@ gesamte verfügbare Breite ein. Es können beliebig viele Zeilen hinzugefügt
 werden. Jede Zeile beherbergt eine Anzahl von Spalten. Spalten können sich über
 mehrere Spaltenplätze erstrecken. Sie können auch verschoben werden (Offset).
 
-::: {.example}
+::::: {.example}
 In diesem Beispiel wird ein einfaches Raster mit drei Zeilen erzeugt. Die
 folgende Zeichnung veranschaulicht die Spaltenplätze, Zeilen und Spalten.
 
-::: {.figure}
+:::: {.figure}
 Rasterschema
 ```tikz
 \begin{tikzpicture}[y=-1cm]
@@ -38,7 +38,7 @@ Rasterschema
     \addrow{2}{20}{3}{pink}{span=3};
 \end{tikzpicture}
 ```
-:::
+::::
 
 **Markdown**
 
@@ -46,69 +46,69 @@ Um dieses Raster in Markdown umzusetzen, fügen wir drei Zeilen mit Spalten
 hinzu. Die Spalten verwenden die Attribute `span` und `offset`.
 
 ```markdown
-::: {.row}
-:::: {.col span="24"}
+:::: {.row}
+::: {.col span="24"}
 `span=24`
-::::
 :::
+::::
 
-::: {.row}
-:::: {.col span="12"}
+:::: {.row}
+::: {.col span="12"}
 `span=12`
-::::
-:::: {.col span="12"}
-`span=12`
-::::
 :::
+::: {.col span="12"}
+`span=12`
+:::
+::::
 
-::: {.row}
-:::: {.col span="2"}
+:::: {.row}
+::: {.col span="2"}
 `span=2`
-::::
-:::: {.col span="3"}
-`span=3`
-::::
-:::: {.col span="7" offset="8"}
-`span=7 offset=8`
-::::
-:::: {.col span="3"}
-`span=3`
-::::
 :::
+::: {.col span="3"}
+`span=3`
+:::
+::: {.col span="7" offset="8"}
+`span=7 offset=8`
+:::
+::: {.col span="3"}
+`span=3`
+:::
+::::
 ```
 
 **Ergebnis**
 
-::: {.row}
-:::: {.col span="24"}
+:::: {.row}
+::: {.col span="24"}
 `span=24`
-::::
 :::
+::::
 
-::: {.row}
-:::: {.col span="12"}
+:::: {.row}
+::: {.col span="12"}
 `span=12`
-::::
-:::: {.col span="12"}
-`span=12`
-::::
 :::
+::: {.col span="12"}
+`span=12`
+:::
+::::
 
-::: {.row}
-:::: {.col span="2"}
+:::: {.row}
+::: {.col span="2"}
 `span=2`
-::::
-:::: {.col span="3"}
+:::
+::: {.col span="3"}
 `span=3`
-::::
-:::: {.col span="7" offset="8"}
+:::
+::: {.col span="7" offset="8"}
 `span=7 offset=8`
-::::
-:::: {.col span="3"}
+:::
+::: {.col span="3"}
 `span=3`
+:::
 ::::
-:::
-:::
+:::::
 
 ## Repsonsives Raster
 
@@ -116,7 +116,7 @@ Die Anzahl an Spaltenplätze können abhängig von der Bildschirmgröße gesetzt
 werden. Dadurch wird das Layout *responsiv*, d.h. es passt sich verschiedenen
 Ausgabegeräten wie Smartphone oder Desktop-Computer an.
 
-::: {.example}
+::::: {.example}
 In diesem praktischen Beispiel wird ein Raster verwendet, um ein Bild
 neben einem erläuternden Text anzuzeigen. Dies funktioniert gut auf größeren
 Bildschirmen. Auf kleineren Bildschirmen reicht die Breite jedoch nicht aus, um
@@ -126,35 +126,35 @@ Bildschirmen den Text unterhalb des Bildes.
 **Markdown**
 
 ```markdown
-::: {.row}
-:::: {.col xs="24" md="16"}
+:::: {.row}
+::: {.col xs="24" md="16"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
-::::
-:::: {.col xs="24" md="8"}
+:::
+::: {.col xs="24" md="8"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
 fringilla porta massa. In posuere, elit ut congue tempor, erat enim ultricies
 ipsum.
-::::
 :::
+::::
 ```
 
 **Ergebnis**
 
-::: {.row}
-:::: {.col xs="24" md="16"}
+:::: {.row}
+::: {.col xs="24" md="16"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
-::::
-:::: {.col xs="24" md="8"}
+:::
+::: {.col xs="24" md="8"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
 fringilla porta massa. In posuere, elit ut congue tempor, erat enim ultricies
 ipsum.
+:::
 ::::
-:::
-:::
+:::::
 
 ::: {.info}
 Um zu sehen, wie das Layout auf verschiedene Größen reagiert, kann die Größe des
@@ -176,7 +176,7 @@ Extra extra groß `xxl`    ≥ 1600            Großer Desktop
 
 : Breakpoints
 
-::: {.example}
+::::: {.example}
 Dieses Beispiel enthält eine Zeile mit drei Spalten. Auf einem großen Bildschirm
 werden die Spalten nebeneinander angeordnet und nehmen je ein Drittel der Breite
 ein. Auf einem mittleren Bildschirm nehmen die ersten beiden Spalten jeweils die
@@ -186,30 +186,30 @@ kleinen Bildschirmen füllt jede Spalte eine Zeile aus.
 **Markdown**
 
 ```markdown
-::: {.row}
-:::: {.col xs="24" md="12" lg="8"}
+:::: {.row}
+::: {.col xs="24" md="12" lg="8"}
 Column `xs=24 md=12 lg=8`
-::::
-:::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
-::::
-:::: {.col xs="24" md="24" lg="8"}
-Column `xs=24 md=12 lg=8`
-::::
 :::
+::: {.col xs="24" md="12" lg="8"}
+Column `xs=24 md=12 lg=8`
+:::
+::: {.col xs="24" md="24" lg="8"}
+Column `xs=24 md=12 lg=8`
+:::
+::::
 ```
 
 **Ergebnis**
 
-::: {.row}
-:::: {.col xs="24" md="12" lg="8"}
+:::: {.row}
+::: {.col xs="24" md="12" lg="8"}
 Column `xs=24 md=12 lg=8`
-::::
-:::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
-::::
-:::: {.col xs="24" md="24" lg="8"}
-Column `xs=24 md=12 lg=8`
-::::
 :::
+::: {.col xs="24" md="12" lg="8"}
+Column `xs=24 md=12 lg=8`
 :::
+::: {.col xs="24" md="24" lg="8"}
+Column `xs=24 md=12 lg=8`
+:::
+::::
+:::::

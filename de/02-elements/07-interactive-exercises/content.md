@@ -30,13 +30,13 @@ Fragen. Optional können auch Hinweise, der Lösungsweg, ein Button zur
 Die erreichbare Gesamtpunktzahl einer Aufgabe ist die Summe der Punkte aller
 enthaltenen Fragen.
 
-::: {.example}
+::::: {.example}
 Unten finden Sie ein vollständiges Beispiel für eine Aufgabe.
 
 **Markdown**
 
 ```markdown
-::: {.exercise #EX_FULL}
+:::: {.exercise #EX_FULL}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie
 möglich vereinfacht:
 
@@ -45,19 +45,19 @@ $x^2+y^2$$\;\;=\;$[]{.question .text length="13"
 solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5"
 validation="mathExpression" points="4"}.
 
-:::: {.hint-text}
+::: {.hint-text}
 Der griechische Buchstabe $\alpha$ kann als `alpha` eingetippt werden.
-::::
-
-:::: {.hint}
-$x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
-::::
 :::
+
+::: {.hint}
+$x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
+:::
+::::
 ```
 
 **Ergebnis**
 
-::: {.exercise #EX_FULL}
+:::: {.exercise #EX_FULL}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie
 möglich vereinfacht:
 
@@ -66,15 +66,15 @@ $x^2+y^2$$\;\;=\;$[]{.question .text length="13"
 solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5"
 validation="mathExpression" points="4"}.
 
-:::: {.hint-text}
+::: {.hint-text}
 Der griechische Buchstabe $\alpha$ kann als `alpha` eingetippt werden.
-::::
+:::
 
-:::: {.hint}
+::: {.hint}
 $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
+:::
 ::::
-:::
-:::
+:::::
 
 ## Aufbau einer Frage
 

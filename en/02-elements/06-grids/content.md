@@ -12,11 +12,11 @@ the available width. As many rows as necessary can be added to the grid. Every
 row can hold a number of columns. Columns can span several slots. Also they can
 be shifted (offset).
 
-::: {.example}
+::::: {.example}
 In this example a simple grid with three rows is shown. The following drawing
 illustrates the grid slots, rows and columns.
 
-::: {.figure}
+:::: {.figure}
 Grid schema
 ```tikz
 \begin{tikzpicture}[y=-1cm]
@@ -38,7 +38,7 @@ Grid schema
     \addrow{2}{20}{3}{pink}{span=3};
 \end{tikzpicture}
 ```
-:::
+::::
 
 **Markdown**
 
@@ -46,69 +46,69 @@ To realize such a grid in Markdown, we add three rows with columns inside. The
 colums use the `span` and `offset` attributes.
 
 ```markdown
-::: {.row}
-:::: {.col span="24"}
+:::: {.row}
+::: {.col span="24"}
 `span=24`
-::::
 :::
+::::
 
-::: {.row}
-:::: {.col span="12"}
+:::: {.row}
+::: {.col span="12"}
 `span=12`
-::::
-:::: {.col span="12"}
-`span=12`
-::::
 :::
+::: {.col span="12"}
+`span=12`
+:::
+::::
 
-::: {.row}
-:::: {.col span="2"}
+:::: {.row}
+::: {.col span="2"}
 `span=2`
-::::
-:::: {.col span="3"}
-`span=3`
-::::
-:::: {.col span="7" offset="8"}
-`span=7 offset=8`
-::::
-:::: {.col span="3"}
-`span=3`
-::::
 :::
+::: {.col span="3"}
+`span=3`
+:::
+::: {.col span="7" offset="8"}
+`span=7 offset=8`
+:::
+::: {.col span="3"}
+`span=3`
+:::
+::::
 ```
 
 **Result**
 
-::: {.row}
-:::: {.col span="24"}
+:::: {.row}
+::: {.col span="24"}
 `span=24`
-::::
 :::
+::::
 
-::: {.row}
-:::: {.col span="12"}
+:::: {.row}
+::: {.col span="12"}
 `span=12`
-::::
-:::: {.col span="12"}
-`span=12`
-::::
 :::
+::: {.col span="12"}
+`span=12`
+:::
+::::
 
-::: {.row}
-:::: {.col span="2"}
+:::: {.row}
+::: {.col span="2"}
 `span=2`
-::::
-:::: {.col span="3"}
+:::
+::: {.col span="3"}
 `span=3`
-::::
-:::: {.col span="7" offset="8"}
+:::
+::: {.col span="7" offset="8"}
 `span=7 offset=8`
-::::
-:::: {.col span="3"}
+:::
+::: {.col span="3"}
 `span=3`
+:::
 ::::
-:::
-:::
+:::::
 
 ## Repsonsive Grid
 
@@ -116,7 +116,7 @@ A grid column can have different span values depending on the screen size. This
 way the layout becomes *responsive*, adjusting to different devices, like
 desktop computer or mobile phone.
 
-::: {.example}
+::::: {.example}
 In this practical example, a grid layout is used to show an image next to an
 explanatory text. This works well on larger screens. On smaller screens,
 however, the width is not sufficient to accommodate both elements. Our solution
@@ -125,35 +125,35 @@ therefore places the text below the image for small screen sizes.
 **Markdown**
 
 ```markdown
-::: {.row}
-:::: {.col xs="24" md="16"}
+:::: {.row}
+::: {.col xs="24" md="16"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
-::::
-:::: {.col xs="24" md="8"}
+:::
+::: {.col xs="24" md="8"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
 fringilla porta massa. In posuere, elit ut congue tempor, erat enim ultricies
 ipsum.
-::::
 :::
+::::
 ```
 
 **Result**
 
-::: {.row}
-:::: {.col xs="24" md="16"}
+:::: {.row}
+::: {.col xs="24" md="16"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
-::::
-:::: {.col xs="24" md="8"}
+:::
+::: {.col xs="24" md="8"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
 fringilla porta massa. In posuere, elit ut congue tempor, erat enim ultricies
 ipsum.
+:::
 ::::
-:::
-:::
+:::::
 
 ::: {.info}
 To see the layout respond to different viewport sizes, try adjusting the size of
@@ -174,7 +174,7 @@ Extra extra large `xxl`     ≥ 1600                     Large desktop
 
 : Viewport breakpoints
 
-::: {.example}
+::::: {.example}
 In this example there is one row with three colums. On a large screen the
 columns will arrange next to each other occupying one third of the width. On
 medium screens the first two columns will take one half each while the last
@@ -183,30 +183,30 @@ column will fill an entire row. On very small screens each column fills a row.
 **Markdown**
 
 ```markdown
-::: {.row}
-:::: {.col xs="24" md="12" lg="8"}
+:::: {.row}
+::: {.col xs="24" md="12" lg="8"}
 Column `xs=24 md=12 lg=8`
-::::
-:::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
-::::
-:::: {.col xs="24" md="24" lg="8"}
-Column `xs=24 md=12 lg=8`
-::::
 :::
+::: {.col xs="24" md="12" lg="8"}
+Column `xs=24 md=12 lg=8`
+:::
+::: {.col xs="24" md="24" lg="8"}
+Column `xs=24 md=12 lg=8`
+:::
+::::
 ```
 
 **Result**
 
-::: {.row}
-:::: {.col xs="24" md="12" lg="8"}
+:::: {.row}
+::: {.col xs="24" md="12" lg="8"}
 Column `xs=24 md=12 lg=8`
-::::
-:::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
-::::
-:::: {.col xs="24" md="24" lg="8"}
-Column `xs=24 md=12 lg=8`
-::::
 :::
+::: {.col xs="24" md="12" lg="8"}
+Column `xs=24 md=12 lg=8`
 :::
+::: {.col xs="24" md="24" lg="8"}
+Column `xs=24 md=12 lg=8`
+:::
+::::
+:::::

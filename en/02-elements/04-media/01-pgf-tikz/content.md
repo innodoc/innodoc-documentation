@@ -5,7 +5,7 @@ title: 'PGF/TikZ Images'
 [PGF/Ti*k*Z](https://sourceforge.net/projects/pgf/) is a language to create
 vector graphics. It is embedded using code blocks of type `tikz`.
 
-::: {.info}
+:::: {.info}
 While these images work by itself it is considered good practice to wrap them
 in a figure. You can also add a caption to the figure by prepending a paragraph
 just before the Ti*k*Z code block.
@@ -20,9 +20,9 @@ Untertitel
 ```
 :::
 ````
-:::
+::::
 
-::: {.example}
+:::: {.example}
 This code is slightly different for the German version. That way translated
 labels or other language specific features can be realized.
 
@@ -48,9 +48,9 @@ TikZ image with translated content.
 \end{tikzpicture}
 ```
 :::
-:::
+::::
 
-::: {.example}
+:::: {.example}
 Another example shows the usage of $\LaTeX$ formulae inside a picture.
 
 ````markdown
@@ -98,7 +98,7 @@ Another example shows the usage of $\LaTeX$ formulae inside a picture.
 \end{tikzpicture}
 ```
 :::
-:::
+::::
 
 ## Dark mode
 
@@ -154,7 +154,7 @@ As this technique allows you to add arbitrary commands to the preamble you can
 use it to define custom $\LaTeX$ commands for convenience.
 :::
 
-::: {.example}
+:::: {.example}
 This examples uses the `arrows` library. It allows us to use `diamond` as arrow
 tip kind.
 
@@ -177,9 +177,9 @@ tip kind.
 \end{tikzpicture}
 ```
 :::
-:::
+::::
 
-::: {.example}
+:::: {.example}
 Here we're using the custom command `\sayhello`.
 
 ````markdown
@@ -197,4 +197,4 @@ Here we're using the custom command `\sayhello`.
 \end{tikzpicture}
 ```
 :::
-:::
+::::

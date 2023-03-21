@@ -12,7 +12,7 @@ realisiert, wobei jede Frage eine einzelne Checkbox ergibt.
 Zu Beginn sind die Checkboxen nicht ausgefüllt, also weder ausgewählt noch
 nicht ausgewählt.
 
-::: {.exercise}
+:::: {.exercise}
 Sind diese Ungleichungen richtig oder falsch?
 
 ------------------------------------------------------------------ ---------------------------------------------------------------
@@ -21,7 +21,7 @@ Sind diese Ungleichungen richtig oder falsch?
 []{.question .checkbox #EX_CB_3 solution="1" validation="boolean"} $\frac12<\frac23<\frac34$
 ------------------------------------------------------------------ ---------------------------------------------------------------
 
-:::: {.verify-input-button}
+::: {.verify-input-button}
 Eingabe überprüfen
-::::
 :::
+::::

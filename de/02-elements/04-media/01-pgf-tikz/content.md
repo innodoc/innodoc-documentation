@@ -6,7 +6,7 @@ Die Sprache [PGF/Ti*k*Z](https://sourceforge.net/projects/pgf/) kann benutzt
 werden um Vektorgrafiken zu erstellen. Dafür wird ein Codeblock vom Typ `tikz`
 verwendet.
 
-::: {.info}
+:::: {.info}
 Ti*k*Z-Bilder können problemlos für sich alleine stehen, allerdings ist es
 empfehlenswert diese innerhalb in einer Abbildung zu verwenden. So kann
 optional auch ein Bilduntertitel angefügt werden, indem ein Paragraph direkt
@@ -22,9 +22,9 @@ Untertitel
 ```
 :::
 ````
-:::
+::::
 
-::: {.example}
+:::: {.example}
 Der folgende Code ist für die Englische Version leicht abgewandelt. So können
 Beschriftungen übersetzt und andere sprachspezifische Unterschiede realisiert
 werden.
@@ -51,9 +51,9 @@ Ti*k*Z-Bild mit übersetztem Inhalt.
 \end{tikzpicture}
 ```
 :::
-:::
+::::
 
-::: {.example}
+:::: {.example}
 Ein weiteres Beispiel zeigt die Verwendung von $\LaTeX$-Formeln innerhalb
 eines Ti*k*Z-Bildes.
 
@@ -102,7 +102,7 @@ eines Ti*k*Z-Bildes.
 \end{tikzpicture}
 ```
 :::
-:::
+::::
 
 ## Dunkler Modus
 
@@ -161,7 +161,7 @@ Diese Technik erlaubt es beliebige Kommandos in die Präembel einzufügen. So
 können beispielsweise eigene $\LaTeX$-Befehle definiert werden.
 :::
 
-::: {.example}
+:::: {.example}
 Das folgende Beispiel nutzt die `arrows`-Bibliothek. So können wir nun
 `diamond` als spezielle Pfeilspitze verwenden.
 
@@ -184,9 +184,9 @@ Das folgende Beispiel nutzt die `arrows`-Bibliothek. So können wir nun
 \end{tikzpicture}
 ```
 :::
-:::
+::::
 
-::: {.example}
+:::: {.example}
 In diesem Beispiel greifen wir auf das selbst erstellte Makro `\sayhello`
 zurück.
 
@@ -205,4 +205,4 @@ zurück.
 \end{tikzpicture}
 ```
 :::
-:::
+::::

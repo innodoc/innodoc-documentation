@@ -41,7 +41,7 @@ The input is interpreted as a mathematical expression.
 `precision` Accuracy behind the decimal point (further digits are mathematically rounded before comparison)
 ----------- ----------------------------------------------------------------------------------------------------
 
-::: {.example}
+:::: {.example}
 ```
 ::: {.exercise #EX_PARSED_0}
 $\tfrac{\alpha+\beta}{\alpha-\beta}$ takes the value []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} for $\alpha=6$ and $\beta=4$.
@@ -50,11 +50,11 @@ $\tfrac{\alpha+\beta}{\alpha-\beta}$ takes the value []{.question .text validati
 ::: {.exercise #EX_PARSED_0}
 $\tfrac{\alpha+\beta}{\alpha-\beta}$ takes the value []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} for $\alpha=6$ and $\beta=4$.
 :::
-:::
+::::
 
-::: {.example}
+::::: {.example}
 ```
-::: {.exercise #EX_PARSED_1}
+:::: {.exercise #EX_PARSED_1}
 Transform the following linear equations and specify their solution sets:
 
 [Enter simply `{a}` for a unit set and `{}` for an empty set.]{.hint-text}
@@ -65,16 +65,16 @@ Transform the following linear equations and specify their solution sets:
 
 3.  The equation $2x-6=2x-10$ has the solution set $L$$\;\;=\;$[]{.question .text validation="parsed" length="4" solution="" precision="4" points="4"}.
 
-:::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 The first equation can be transformed into $2x=2$ or $x=1$, respectively, so
 the solution set is $L=\lbrace 1\rbrace$. The second equation can be transformed into $2x=4$ and the solution set is
 $L=\lbrace 2\rbrace$. The third equation can be transformed into $-6=-10$ which is a false statement,
 hence $L=\lbrace\rbrace$.
-::::
 :::
+::::
 ```
 
-::: {.exercise #EX_PARSED_1}
+:::: {.exercise #EX_PARSED_1}
 Transform the following linear equations and specify their solution sets:
 
 [Enter simply `{a}` for a unit set and `{}` for an empty set.]{.hint-text}
@@ -85,14 +85,14 @@ Transform the following linear equations and specify their solution sets:
 
 3.  The equation $2x-6=2x-10$ has the solution set $L$$\;\;=\;$[]{.question .text validation="parsed" length="4" solution="" precision="4" points="4"}.
 
-:::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 The first equation can be transformed into $2x=2$ or $x=1$, respectively, so
 the solution set is $L=\lbrace 1\rbrace$. The second equation can be transformed into $2x=4$ and the solution set is
 $L=\lbrace 2\rbrace$. The third equation can be transformed into $-6=-10$ which is a false statement,
 hence $L=\lbrace\rbrace$.
+:::
 ::::
-:::
-:::
+:::::
 
 ## Function
 
@@ -149,9 +149,9 @@ NOT IMPLEMENTED BUT 'factor-notation' is actually used in tub_mathe:
 
 ### Examples
 
-::: {.example}
+::::: {.example}
 ```
-::: {.exercise #EX_FUNCTION_0}
+:::: {.exercise #EX_FUNCTION_0}
 Which term is formed if the following object is inserted into the term $x^2+y^2$?
 
 1.  The angle $\alpha$ both for $x$ and $y$: Then $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" points="4"}.
@@ -160,11 +160,11 @@ Which term is formed if the following object is inserted into the term $x^2+y^2$
 
 3.  The term $z+1$ for $x$ and the term $z-1$ for $y$: Then $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*z*z+2" supporting-points="5" variables="z" precision="5" points="4"}.
 
-:::: {.hint-text}
+::: {.hint-text}
 The Greek letter $\alpha$ can be entered as `alpha`.
-::::
+:::
 
-:::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 It is safest to bracket the variables before inserting, if the new term contains several symbols:
 
 1.  $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$.
@@ -172,8 +172,8 @@ It is safest to bracket the variables before inserting, if the new term contains
 2.  $x^2+y^2=(x)^2+y^2=(t+1)^2+2^2=t^2+2t+5$.
 
 3.  $x^2+y^2=(x)^2+(y)^2=(z+1)^2+(z-1)^2=z^2+2z+1+z^2-2z+1=2z^2+2$.
-::::
 :::
+::::
 ```
 
 :::: {.exercise #EX_FUNCTION_0}
@@ -185,11 +185,11 @@ Which term is formed if the following object is inserted into the term $x^2+y^2$
 
 3.  The term $z+1$ for $x$ and the term $z-1$ for $y$: Then $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*z*z+2" supporting-points="5" variables="z" precision="5" points="4"}.
 
-::::: {.hint-text}
+::: {.hint-text}
 The Greek letter $\alpha$ can be entered as `alpha`.
-:::::
+:::
 
-::::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 It is safest to bracket the variables before inserting, if the new term contains several symbols:
 
 1.  $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$.
@@ -197,45 +197,45 @@ It is safest to bracket the variables before inserting, if the new term contains
 2.  $x^2+y^2=(x)^2+y^2=(t+1)^2+2^2=t^2+2t+5$.
 
 3.  $x^2+y^2=(x)^2+(y)^2=(z+1)^2+(z-1)^2=z^2+2z+1+z^2-2z+1=2z^2+2$.
-:::::
-::::
 :::
+::::
+:::::
 
-::: {.example}
+::::: {.example}
 ```
-::: {.exercise #EX_FUNCTION_1}
+:::: {.exercise #EX_FUNCTION_1}
 Transform into a sum:
 $a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
-:::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
-::::
 :::
+::::
 ```
 
 :::: {.exercise #EX_FUNCTION_1}
 Transform into a sum:
 $a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
-::::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
-:::::
-::::
 :::
+::::
+:::::
 
-::: {.example}
+::::: {.example}
 ```
-::: {.exercise #EX_FUNCTION_2}
+:::: {.exercise #EX_FUNCTION_2}
 Rewrite the following expression containing powers and roots as a simple power with a rational exponent:
 
 $\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
 
 [For example, enter $\sqrt{x}\cdot x^2$ = `x^(5/2)` or alternatively as `x^(2.5)`, mind the brackets around the fraction.]{.hint-text}
 
-:::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 $$x^{\frac32}$$
-::::
 :::
+::::
 ```
 
 :::: {.exercise #EX_FUNCTION_2}
@@ -245,11 +245,11 @@ $\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="
 
 [For example, enter $\sqrt{x}\cdot x^2$ = `x^(5/2)` or alternatively as `x^(2.5)`, mind the brackets around the fraction.]{.hint-text}
 
-::::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 $$x^{\frac32}$$
-:::::
-::::
 :::
+::::
+:::::
 
 ## Interval
 
@@ -261,20 +261,20 @@ The input is interpreted as an interval.
 `precision`         Accuracy of the numerical value check
 ------------------- --------------------------------------
 
-::: {.example}
+::::: {.example}
 ```
-::: {.exercise #EX_INTERVAL}
+:::: {.exercise #EX_INTERVAL}
 Find the solution set of the mixed equation $|x-3|\cdot x=9$.
 
 If $x$ is in the interval
 []{.question .text validation="interval" length="14" solution="[3,infty)" precision="5" points="4"}
 the absolute value term is non-negative.
-:::
 
 ::: {.hint caption="Solution"}
 If $x$ is in the interval $\left[3; \infty\right[$ (`[3,infty)`) the absolute
 value term is non-negative.
 :::
+::::
 ```
 
 :::: {.exercise #EX_INTERVAL}
@@ -283,15 +283,15 @@ Find the solution set of the mixed equation $|x-3|\cdot x=9$.
 If $x$ is in the interval
 []{.question .text validation="interval" length="14" solution="[3,infty)" precision="5" points="4"}
 the absolute value term is non-negative.
-::::
 
-:::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 If $x$ is in the interval $\left[3; \infty\right[$ the absolute value term is
 non-negative.
 
 Type `[3;infty)`.
-::::
 :::
+::::
+:::::
 
 ## Exact fraction
 
@@ -304,9 +304,9 @@ positiven Nenner haben.
 `precision`         Accuracy of the numerical value check
 ------------------- --------------------------------------
 
-::: {.example}
+::::: {.example}
 ```
-::: {.exercise #EX_EXACT_FRACTION}
+:::: {.exercise #EX_EXACT_FRACTION}
 Calculate the following numbers by finding the least common denominator and
 reducing as much as possible:
 
@@ -314,7 +314,7 @@ reducing as much as possible:
 
 2.  $\dfrac{1+2}{5+6}$$\;\;=\;$[]{.question .text validation="exact-fraction" length="12" solution="3/11" precision="5" points="4"} but $\dfrac15+\dfrac26$$\;\;=\;$[]{.question .text validation="exact-fraction" length="12" solution="8/15" precision="5" points="4"}.
 
-:::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 Sums of denominators may not be collected, not even in the case of like numerators. Here, we have
 
 $$\dfrac12+\dfrac13\;=\; \dfrac{3}{6}+\dfrac26 \;=\; \dfrac56\;\;\text{but}\;\;\dfrac{1}{2+3} \;=\; \dfrac15\, .$$
@@ -322,8 +322,8 @@ $$\dfrac12+\dfrac13\;=\; \dfrac{3}{6}+\dfrac26 \;=\; \dfrac56\;\;\text{but}\;\;\
 Also, the simple "splitting" of fraction parts is not allowed, here we have
 
 $$\dfrac{1+2}{5+6} \;=\; \dfrac{3}{11}  \;\;\text{but}\;\; \dfrac15+\dfrac26 \;=\; \dfrac{6}{30}+\dfrac{10}{30} \;=\; \dfrac{16}{30}\;=\; \dfrac{8}{15}\, .$$
-::::
 :::
+::::
 ```
 
 :::: {.exercise #EX_EXACT_FRACTION}
@@ -334,7 +334,7 @@ reducing as much as possible:
 
 2.  $\dfrac{1+2}{5+6}$$\;\;=\;$[]{.question .text validation="exact-fraction" length="12" solution="3/11" precision="5" points="4"} but $\dfrac15+\dfrac26$$\;\;=\;$[]{.question .text validation="exact-fraction" length="12" solution="8/15" precision="5" points="4"}.
 
-::::: {.hint caption="Solution"}
+::: {.hint caption="Solution"}
 Sums of denominators may not be collected, not even in the case of like numerators. Here, we have
 
 $$\dfrac12+\dfrac13\;=\; \dfrac{3}{6}+\dfrac26 \;=\; \dfrac56\;\;\text{but}\;\;\dfrac{1}{2+3} \;=\; \dfrac15\, .$$
@@ -342,6 +342,6 @@ $$\dfrac12+\dfrac13\;=\; \dfrac{3}{6}+\dfrac26 \;=\; \dfrac56\;\;\text{but}\;\;\
 Also, the simple "splitting" of fraction parts is not allowed, here we have
 
 $$\dfrac{1+2}{5+6} \;=\; \dfrac{3}{11}  \;\;\text{but}\;\; \dfrac15+\dfrac26 \;=\; \dfrac{6}{30}+\dfrac{10}{30} \;=\; \dfrac{16}{30}\;=\; \dfrac{8}{15}\, .$$
-:::::
-::::
 :::
+::::
+:::::
