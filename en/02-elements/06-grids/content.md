@@ -12,11 +12,11 @@ the available width. As many rows as necessary can be added to the grid. Every
 row can hold a number of columns. Columns can span several slots. Also they can
 be shifted (offset).
 
-::::: {.example}
+::::::: {.example}
 In this example a simple grid with three rows is shown. The following drawing
 illustrates the grid slots, rows and columns.
 
-:::: {.figure}
+:::::: {.figure}
 Grid schema
 ```tikz
 \begin{tikzpicture}[y=-1cm]
@@ -38,93 +38,110 @@ Grid schema
     \addrow{2}{20}{3}{pink}{span=3};
 \end{tikzpicture}
 ```
-::::
-
-**Markdown**
+::::::
 
 To realize such a grid in Markdown, we add three rows with columns inside. The
 colums use the `span` and `offset` attributes.
 
-````markdown
-:::: {.row}
-::: {.col span="12"}
-```
-span="12"
-```
-:::
-::: {.col span="6"}
-```
-span="6"
-```
-:::
-::: {.col span="6"}
-```
-span="6"
-```
-:::
-::: {.col span="2"}
-```
-span="2"
-```
-:::
-::: {.col span="3"}
-```
-span="3"
-```
-:::
-::: {.col span="3" xs-offset="1"}
-```
-span="3" xs-offset="1"
-```
-:::
-::: {.col span="3"}
-```
-span="3"
-```
-:::
-::::
-````
+::::::tabs{labels="Result,Markdown"}
 
-**Result**
+:::::tab-item{index="1"}
+::::grid
+:::grid-item{xs="12"}
+```
+xs=12
+```
+:::
 
-:::: {.row}
-::: {.col span="12"}
+:::grid-item{xs="6"}
 ```
-span="12"
-```
-:::
-::: {.col span="6"}
-```
-span="6"
+xs=6
 ```
 :::
-::: {.col span="6"}
+
+:::grid-item{xs="6"}
 ```
-span="6"
-```
-:::
-::: {.col span="2"}
-```
-span="2"
+xs=6
 ```
 :::
-::: {.col span="3"}
+
+:::grid-item{xs="2"}
 ```
-span="3"
-```
-:::
-::: {.col span="3" xs-offset="1"}
-```
-span="3" xs-offset="1"
+xs=2
 ```
 :::
-::: {.col span="3"}
+
+:::grid-item{xs="3"}
 ```
-span="3"
+xs=3
+```
+:::
+
+:::grid-item{xs="3" xs-offset="1"}
+```
+xs=3 xs-offset=1
+```
+:::
+
+:::grid-item{xs="3"}
+```
+xs=3
 ```
 :::
 ::::
 :::::
+
+:::::tab-item{index="2"}
+````markdown
+::::grid
+:::grid-item{xs="12"}
+```
+xs=12
+```
+:::
+
+:::grid-item{xs="6"}
+```
+xs=6
+```
+:::
+
+:::grid-item{xs="6"}
+```
+xs=6
+```
+:::
+
+:::grid-item{xs="2"}
+```
+xs=2
+```
+:::
+
+:::grid-item{xs="3"}
+```
+xs=3
+```
+:::
+
+:::grid-item{xs="3" xs-offset="1"}
+```
+xs=3 xs-offset=1
+```
+:::
+
+:::grid-item{xs="3"}
+```
+xs=3
+```
+:::
+::::
+````
+:::::
+
+::::::
+
+:::::::
 
 ## Repsonsive Grid
 
@@ -137,36 +154,21 @@ To see the layout respond to different viewport sizes, try adjusting the size of
 your browser window.
 :::
 
-::::: {.example}
+::::::: {.example}
 In this practical example, a grid layout is used to show an image next to an
 explanatory text. This works well on larger screens. On smaller screens,
 however, the width is not sufficient to accommodate both elements. Our solution
 therefore places the text below the image for small screen sizes.
 
-**Markdown**
+::::::tabs{labels="Result,Markdown"}
 
-```markdown
-:::: {.row}
-::: {.col xs="12" md="8"}
+:::::tab-item{index="1"}
+::::grid
+:::grid-item{xs="12" md="8"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
 :::
-::: {.col xs="12" md="4"}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
-mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
-fringilla porta massa. In posuere, elit ut congue tempor, erat enim ultricies
-ipsum.
-:::
-::::
-```
 
-**Result**
-
-:::: {.row}
-::: {.col xs="12" md="8"}
-![Lake side](lake-side.jpg "Lake side"){.img}
-:::
-::: {.col xs="12" md="4"}
+:::grid-item{xs="12" md="4"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
@@ -176,65 +178,95 @@ ipsum.
 ::::
 :::::
 
+:::::tab-item{index="2"}
+```markdown
+::::grid
+:::grid-item{xs="12" md="8"}
+![Lake side](lake-side.jpg "Lake side"){.img}
+:::
+
+:::grid-item{xs="12" md="4"}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
+mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
+fringilla porta massa. In posuere, elit ut congue tempor, erat enim ultricies
+ipsum.
+:::
+::::
+```
+:::::
+
+::::::
+
+:::::::
+
 Instead of using a single `span` attribute per column, different span values can
 be used. The boundaries when the layout should switch are called *breakpoints*.
 
-Name              Attribute Viewport width (in pixels) Device example
------------------ --------- -------------------------- ------------------
-Extra small       `xs`      < 576                      Small mobile phone
-Small             `sm`      ≥ 576                      Mobile phone
-Medium            `md`      ≥ 768                      Mobile phone/Tablet
-Large             `lg`      ≥ 992                      Tablet/Desktop
-Extra large       `xl`      ≥ 1200                     Desktop
-Extra extra large `xxl`     ≥ 1600                     Large desktop
+| Name              | Attribute | Viewport width (in pixels) | Device example      |
+| ----------------- | --------- | -------------------------- | ------------------- |
+| Extra small       | `xs`      | < 600                      | Small mobile phone  |
+| Small             | `sm`      | ≥ 600                      | Mobile phone        |
+| Medium            | `md`      | ≥ 900                      | Mobile phone/Tablet |
+| Large             | `lg`      | ≥ 1200                     | Tablet/Desktop      |
+| Extra large       | `xl`      | ≥ 1536                     | Desktop             |
 
 : Viewport breakpoints
 
-::::: {.example}
+::::::: {.example}
 In this example there is one row with three colums. On a large screen the
 columns will arrange next to each other occupying one third of the width. On
 medium screens the first two columns will take one half each while the last
 column will fill an entire row. On very small screens each column fills a row.
 
-**Markdown**
+::::::tabs{labels="Result,Markdown"}
 
+:::::tab-item{index="1"}
+::::grid
+:::grid-item{xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
+:::
+
+:::grid-item{xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
+:::
+
+:::grid-item{xs="12" md="12" lg="4"}
+```
+xs=12 md=12 lg=4
+```
+:::
+::::
+:::::
+
+:::::tab-item{index="2"}
 ````markdown
-:::: {.row}
-::: {.col xs="12" md="6" lg="4"}
+::::grid
+:::grid-item{xs="12" md="6" lg="4"}
 ```
 xs=12 md=6 lg=4
 ```
 :::
-::: {.col xs="12" md="6" lg="4"}
+
+:::grid-item{xs="12" md="6" lg="4"}
 ```
 xs=12 md=6 lg=4
 ```
 :::
-::: {.col xs="12" md="12" lg="4"}
+
+:::grid-item{xs="12" md="12" lg="4"}
 ```
 xs=12 md=12 lg=4
 ```
 :::
 ::::
 ````
-
-**Result**
-
-:::: {.row}
-::: {.col xs="12" md="6" lg="4"}
-```
-xs=12 md=6 lg=4
-```
-:::
-::: {.col xs="12" md="6" lg="4"}
-```
-xs=12 md=6 lg=4
-```
-:::
-::: {.col xs="12" md="12" lg="4"}
-```
-xs=12 md=12 lg=4
-```
-:::
-::::
 :::::
+
+::::::
+
+:::::::

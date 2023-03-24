@@ -12,11 +12,11 @@ gesamte verfügbare Breite ein. Es können beliebig viele Zeilen hinzugefügt
 werden. Jede Zeile beherbergt eine Anzahl von Spalten. Spalten können sich über
 mehrere Spaltenplätze erstrecken. Sie können auch verschoben werden (Offset).
 
-::::: {.example}
+::::::: {.example}
 In diesem Beispiel wird ein einfaches Raster mit drei Zeilen erzeugt. Die
 folgende Zeichnung veranschaulicht die Spaltenplätze, Zeilen und Spalten.
 
-:::: {.figure}
+:::::: {.figure}
 Rasterschema
 ```tikz
 \begin{tikzpicture}[y=-1cm]
@@ -38,93 +38,110 @@ Rasterschema
     \addrow{2}{20}{3}{pink}{span=3};
 \end{tikzpicture}
 ```
-::::
-
-**Markdown**
+::::::
 
 Um dieses Raster in Markdown umzusetzen, fügen wir drei Zeilen mit Spalten
 hinzu. Die Spalten verwenden die Attribute `span` und `offset`.
 
-````markdown
-:::: {.row}
-::: {.col span="12"}
-```
-span="12"
-```
-:::
-::: {.col span="6"}
-```
-span="6"
-```
-:::
-::: {.col span="6"}
-```
-span="6"
-```
-:::
-::: {.col span="2"}
-```
-span="2"
-```
-:::
-::: {.col span="3"}
-```
-span="3"
-```
-:::
-::: {.col span="3" xs-offset="1"}
-```
-span="3" xs-offset="1"
-```
-:::
-::: {.col span="3"}
-```
-span="3"
-```
-:::
-::::
-````
+::::::tabs{labels="Ergebnis,Markdown"}
 
-**Ergebnis**
+:::::tab-item{index="1"}
+::::grid
+:::grid-item{xs="12"}
+```
+xs=12
+```
+:::
 
-:::: {.row}
-::: {.col span="12"}
+:::grid-item{xs="6"}
 ```
-span="12"
-```
-:::
-::: {.col span="6"}
-```
-span="6"
+xs=6
 ```
 :::
-::: {.col span="6"}
+
+:::grid-item{xs="6"}
 ```
-span="6"
-```
-:::
-::: {.col span="2"}
-```
-span="2"
+xs=6
 ```
 :::
-::: {.col span="3"}
+
+:::grid-item{xs="2"}
 ```
-span="3"
-```
-:::
-::: {.col span="3" xs-offset="1"}
-```
-span="3" xs-offset="1"
+xs=2
 ```
 :::
-::: {.col span="3"}
+
+:::grid-item{xs="3"}
 ```
-span="3"
+xs=3
+```
+:::
+
+:::grid-item{xs="3" xs-offset="1"}
+```
+xs=3 xs-offset=1
+```
+:::
+
+:::grid-item{xs="3"}
+```
+xs=3
 ```
 :::
 ::::
 :::::
+
+:::::tab-item{index="2"}
+````markdown
+::::grid
+:::grid-item{xs="12"}
+```
+xs=12
+```
+:::
+
+:::grid-item{xs="6"}
+```
+xs=6
+```
+:::
+
+:::grid-item{xs="6"}
+```
+xs=6
+```
+:::
+
+:::grid-item{xs="2"}
+```
+xs=2
+```
+:::
+
+:::grid-item{xs="3"}
+```
+xs=3
+```
+:::
+
+:::grid-item{xs="3" xs-offset="1"}
+```
+xs=3 xs-offset=1
+```
+:::
+
+:::grid-item{xs="3"}
+```
+xs=3
+```
+:::
+::::
+````
+:::::
+
+::::::
+
+:::::::
 
 ## Repsonsives Raster
 
@@ -137,37 +154,22 @@ Um zu sehen, wie das Layout auf verschiedene Größen reagiert, kann die Größe
 Browserfensters verändert werden.
 :::
 
-::::: {.example}
+::::::: {.example}
 In diesem praktischen Beispiel wird ein Raster verwendet, um ein Bild
 neben einem erläuternden Text anzuzeigen. Dies funktioniert gut auf größeren
 Bildschirmen. Auf kleineren Bildschirmen reicht die Breite jedoch nicht aus, um
 beide Elemente unterzubringen. Unsere Lösung platziert daher bei kleinen
 Bildschirmen den Text unterhalb des Bildes.
 
-**Markdown**
+::::::tabs{labels="Result,Markdown"}
 
-```markdown
-:::: {.row}
-::: {.col xs="12" md="8"}
+:::::tab-item{index="1"}
+::::grid
+:::grid-item{xs="12" md="8"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
 :::
-::: {.col xs="12" md="4"}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
-mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
-fringilla porta massa. In posuere, elit ut congue tempor, erat enim ultricies
-ipsum.
-:::
-::::
-```
 
-**Ergebnis**
-
-:::: {.row}
-::: {.col xs="12" md="8"}
-![Lake side](lake-side.jpg "Lake side"){.img}
-:::
-::: {.col xs="12" md="4"}
+:::grid-item{xs="12" md="4"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
@@ -177,67 +179,97 @@ ipsum.
 ::::
 :::::
 
+:::::tab-item{index="2"}
+```
+::::grid
+:::grid-item{xs="12" md="8"}
+![Lake side](lake-side.jpg "Lake side"){.img}
+:::
+
+:::grid-item{xs="12" md="4"}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
+mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
+fringilla porta massa. In posuere, elit ut congue tempor, erat enim ultricies
+ipsum.
+:::
+::::
+```
+:::::
+
+::::::
+
+:::::::
+
 Anstatt ein einzelnes `span`-Attribut pro Spalte zu verwenden, können
 verschiedene Werte angegeben werden. Die Grenzen, an denen das Layout wechseln
 soll, werden als *Breakpoints* bezeichnet.
 
-Name             Attribut Breite (in Pixel) Beispielgerät
----------------- -------- ----------------- ------------------
-Extra klein      `xs`     < 576             Kleines Smartphone
-Klein            `sm`     ≥ 576             Smartphone
-Medium           `md`     ≥ 768             Smartphone/Tablet
-Groß             `lg`     ≥ 992             Tablet/Desktop
-Extra groß       `xl`     ≥ 1200            Desktop
-Extra extra groß `xxl`    ≥ 1600            Großer Desktop
+| Name              | Attribut  | Breite (in Pixel) | Beispielgerät      |
+| ----------------- | --------- | ----------------- | ------------------ |
+| Extra klein       | `xs`      | < 600             | Kleines Smartphone |
+| Klein             | `sm`      | ≥ 600             | Smartphone         |
+| Medium            | `md`      | ≥ 900             | Smartphone/Tablet  |
+| Groß              | `lg`      | ≥ 1200            | Tablet/Desktop     |
+| Extra groß        | `xl`      | ≥ 1536            | Desktop            |
 
 : Breakpoints
 
-::::: {.example}
+::::::: {.example}
 Dieses Beispiel enthält eine Zeile mit drei Spalten. Auf einem großen Bildschirm
 werden die Spalten nebeneinander angeordnet und nehmen je ein Drittel der Breite
 ein. Auf einem mittleren Bildschirm nehmen die ersten beiden Spalten jeweils die
 Hälfte ein, während die letzte Spalte eine ganze Zeile ausfüllt. Auf sehr
 kleinen Bildschirmen füllt jede Spalte eine Zeile aus.
 
-**Markdown**
+::::::tabs{labels="Result,Markdown"}
 
-````markdown
-:::: {.row}
-::: {.col xs="12" md="6" lg="4"}
+:::::tab-item{index="1"}
+::::grid
+:::grid-item{xs="12" md="6" lg="4"}
 ```
 xs=12 md=6 lg=4
 ```
 :::
-::: {.col xs="12" md="6" lg="4"}
-```
-xs=12 md=6 lg=4
-```
-:::
-::: {.col xs="12" md="12" lg="4"}
-```
-xs=12 md=12 lg=4
-```
-:::
-::::
-````
 
-**Ergebnis**
+:::grid-item{xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
+:::
 
-:::: {.row}
-::: {.col xs="12" md="6" lg="4"}
-```
-xs=12 md=6 lg=4
-```
-:::
-::: {.col xs="12" md="6" lg="4"}
-```
-xs=12 md=6 lg=4
-```
-:::
-::: {.col xs="12" md="12" lg="4"}
+:::grid-item{xs="12" md="12" lg="4"}
 ```
 xs=12 md=12 lg=4
 ```
 :::
 ::::
 :::::
+
+:::::tab-item{index="2"}
+````
+::::grid
+:::grid-item{xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
+:::
+
+:::grid-item{xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
+:::
+
+:::grid-item{xs="12" md="12" lg="4"}
+```
+xs=12 md=12 lg=4
+```
+:::
+::::
+````
+:::::
+
+::::::
+
+:::::::
