@@ -7,7 +7,7 @@ system and allows for flexible arrangements of elements while supporting
 different screen sizes. Grids are the method of choice when it comes to align
 elements for layout purposes.
 
-The grid has a fixed amount of *24 column slots*. It will always occupy all of
+The grid has a fixed amount of *12 column slots*. It will always occupy all of
 the available width. As many rows as necessary can be added to the grid. Every
 row can hold a number of columns. Columns can span several slots. Also they can
 be shifted (offset).
@@ -45,67 +45,83 @@ Grid schema
 To realize such a grid in Markdown, we add three rows with columns inside. The
 colums use the `span` and `offset` attributes.
 
-```markdown
-:::: {.row}
-::: {.col span="24"}
-`span=24`
-:::
-::::
-
+````markdown
 :::: {.row}
 ::: {.col span="12"}
-`span=12`
-:::
-::: {.col span="12"}
-`span=12`
-:::
-::::
-
-:::: {.row}
-::: {.col span="2"}
-`span=2`
-:::
-::: {.col span="3"}
-`span=3`
-:::
-::: {.col span="7" offset="8"}
-`span=7 offset=8`
-:::
-::: {.col span="3"}
-`span=3`
-:::
-::::
 ```
+span="12"
+```
+:::
+::: {.col span="6"}
+```
+span="6"
+```
+:::
+::: {.col span="6"}
+```
+span="6"
+```
+:::
+::: {.col span="2"}
+```
+span="2"
+```
+:::
+::: {.col span="3"}
+```
+span="3"
+```
+:::
+::: {.col span="3" xs-offset="1"}
+```
+span="3" xs-offset="1"
+```
+:::
+::: {.col span="3"}
+```
+span="3"
+```
+:::
+::::
+````
 
 **Result**
 
 :::: {.row}
-::: {.col span="24"}
-`span=24`
-:::
-::::
-
-:::: {.row}
 ::: {.col span="12"}
-`span=12`
+```
+span="12"
+```
 :::
-::: {.col span="12"}
-`span=12`
+::: {.col span="6"}
+```
+span="6"
+```
 :::
-::::
-
-:::: {.row}
+::: {.col span="6"}
+```
+span="6"
+```
+:::
 ::: {.col span="2"}
-`span=2`
+```
+span="2"
+```
 :::
 ::: {.col span="3"}
-`span=3`
+```
+span="3"
+```
 :::
-::: {.col span="7" offset="8"}
-`span=7 offset=8`
+::: {.col span="3" xs-offset="1"}
+```
+span="3" xs-offset="1"
+```
 :::
 ::: {.col span="3"}
-`span=3`
+```
+span="3"
+```
 :::
 ::::
 :::::
@@ -115,6 +131,11 @@ colums use the `span` and `offset` attributes.
 A grid column can have different span values depending on the screen size. This
 way the layout becomes *responsive*, adjusting to different devices, like
 desktop computer or mobile phone.
+
+::: {.info}
+To see the layout respond to different viewport sizes, try adjusting the size of
+your browser window.
+:::
 
 ::::: {.example}
 In this practical example, a grid layout is used to show an image next to an
@@ -126,10 +147,10 @@ therefore places the text below the image for small screen sizes.
 
 ```markdown
 :::: {.row}
-::: {.col xs="24" md="16"}
+::: {.col xs="12" md="8"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
 :::
-::: {.col xs="24" md="8"}
+::: {.col xs="12" md="4"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
@@ -142,10 +163,10 @@ ipsum.
 **Result**
 
 :::: {.row}
-::: {.col xs="24" md="16"}
+::: {.col xs="12" md="8"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
 :::
-::: {.col xs="24" md="8"}
+::: {.col xs="12" md="4"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
@@ -154,11 +175,6 @@ ipsum.
 :::
 ::::
 :::::
-
-::: {.info}
-To see the layout respond to different viewport sizes, try adjusting the size of
-your browser window.
-:::
 
 Instead of using a single `span` attribute per column, different span values can
 be used. The boundaries when the layout should switch are called *breakpoints*.
@@ -182,31 +198,43 @@ column will fill an entire row. On very small screens each column fills a row.
 
 **Markdown**
 
-```markdown
+````markdown
 :::: {.row}
-::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
 :::
-::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
 :::
-::: {.col xs="24" md="24" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="12" lg="4"}
+```
+xs=12 md=12 lg=4
+```
 :::
 ::::
-```
+````
 
 **Result**
 
 :::: {.row}
-::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
 :::
-::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
 :::
-::: {.col xs="24" md="24" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="12" lg="4"}
+```
+xs=12 md=12 lg=4
+```
 :::
 ::::
 :::::

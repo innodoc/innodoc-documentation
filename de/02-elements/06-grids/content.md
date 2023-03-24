@@ -7,7 +7,7 @@ Koordinatensystem und ermöglicht eine flexible Anordnung der Elemente für
 verschiedene Bildschirmgrößen. Es ist die Methode der Wahl um Elemente
 auszurichten.
 
-Das Raster hat eine feste Anzahl von *24 Spaltenplätzen*. Es nimmt immer die
+Das Raster hat eine feste Anzahl von *12 Spaltenplätzen*. Es nimmt immer die
 gesamte verfügbare Breite ein. Es können beliebig viele Zeilen hinzugefügt
 werden. Jede Zeile beherbergt eine Anzahl von Spalten. Spalten können sich über
 mehrere Spaltenplätze erstrecken. Sie können auch verschoben werden (Offset).
@@ -45,67 +45,83 @@ Rasterschema
 Um dieses Raster in Markdown umzusetzen, fügen wir drei Zeilen mit Spalten
 hinzu. Die Spalten verwenden die Attribute `span` und `offset`.
 
-```markdown
-:::: {.row}
-::: {.col span="24"}
-`span=24`
-:::
-::::
-
+````markdown
 :::: {.row}
 ::: {.col span="12"}
-`span=12`
-:::
-::: {.col span="12"}
-`span=12`
-:::
-::::
-
-:::: {.row}
-::: {.col span="2"}
-`span=2`
-:::
-::: {.col span="3"}
-`span=3`
-:::
-::: {.col span="7" offset="8"}
-`span=7 offset=8`
-:::
-::: {.col span="3"}
-`span=3`
-:::
-::::
 ```
+span="12"
+```
+:::
+::: {.col span="6"}
+```
+span="6"
+```
+:::
+::: {.col span="6"}
+```
+span="6"
+```
+:::
+::: {.col span="2"}
+```
+span="2"
+```
+:::
+::: {.col span="3"}
+```
+span="3"
+```
+:::
+::: {.col span="3" xs-offset="1"}
+```
+span="3" xs-offset="1"
+```
+:::
+::: {.col span="3"}
+```
+span="3"
+```
+:::
+::::
+````
 
 **Ergebnis**
 
 :::: {.row}
-::: {.col span="24"}
-`span=24`
-:::
-::::
-
-:::: {.row}
 ::: {.col span="12"}
-`span=12`
+```
+span="12"
+```
 :::
-::: {.col span="12"}
-`span=12`
+::: {.col span="6"}
+```
+span="6"
+```
 :::
-::::
-
-:::: {.row}
+::: {.col span="6"}
+```
+span="6"
+```
+:::
 ::: {.col span="2"}
-`span=2`
+```
+span="2"
+```
 :::
 ::: {.col span="3"}
-`span=3`
+```
+span="3"
+```
 :::
-::: {.col span="7" offset="8"}
-`span=7 offset=8`
+::: {.col span="3" xs-offset="1"}
+```
+span="3" xs-offset="1"
+```
 :::
 ::: {.col span="3"}
-`span=3`
+```
+span="3"
+```
 :::
 ::::
 :::::
@@ -115,6 +131,11 @@ hinzu. Die Spalten verwenden die Attribute `span` und `offset`.
 Die Anzahl an Spaltenplätze können abhängig von der Bildschirmgröße gesetzt
 werden. Dadurch wird das Layout *responsiv*, d.h. es passt sich verschiedenen
 Ausgabegeräten wie Smartphone oder Desktop-Computer an.
+
+::: {.info}
+Um zu sehen, wie das Layout auf verschiedene Größen reagiert, kann die Größe des
+Browserfensters verändert werden.
+:::
 
 ::::: {.example}
 In diesem praktischen Beispiel wird ein Raster verwendet, um ein Bild
@@ -127,10 +148,10 @@ Bildschirmen den Text unterhalb des Bildes.
 
 ```markdown
 :::: {.row}
-::: {.col xs="24" md="16"}
+::: {.col xs="12" md="8"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
 :::
-::: {.col xs="24" md="8"}
+::: {.col xs="12" md="4"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
@@ -143,10 +164,10 @@ ipsum.
 **Ergebnis**
 
 :::: {.row}
-::: {.col xs="24" md="16"}
+::: {.col xs="12" md="8"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
 :::
-::: {.col xs="24" md="8"}
+::: {.col xs="12" md="4"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tempus
 mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 inceptos himenaeos. Ut vitae sodales mi. Nulla dolor dui, faucibus non mi et,
@@ -155,11 +176,6 @@ ipsum.
 :::
 ::::
 :::::
-
-::: {.info}
-Um zu sehen, wie das Layout auf verschiedene Größen reagiert, kann die Größe des
-Browserfensters verändert werden.
-:::
 
 Anstatt ein einzelnes `span`-Attribut pro Spalte zu verwenden, können
 verschiedene Werte angegeben werden. Die Grenzen, an denen das Layout wechseln
@@ -185,31 +201,43 @@ kleinen Bildschirmen füllt jede Spalte eine Zeile aus.
 
 **Markdown**
 
-```markdown
+````markdown
 :::: {.row}
-::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
 :::
-::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
 :::
-::: {.col xs="24" md="24" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="12" lg="4"}
+```
+xs=12 md=12 lg=4
+```
 :::
 ::::
-```
+````
 
 **Ergebnis**
 
 :::: {.row}
-::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
 :::
-::: {.col xs="24" md="12" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="6" lg="4"}
+```
+xs=12 md=6 lg=4
+```
 :::
-::: {.col xs="24" md="24" lg="8"}
-Column `xs=24 md=12 lg=8`
+::: {.col xs="12" md="12" lg="4"}
+```
+xs=12 md=12 lg=4
+```
 :::
 ::::
 :::::
