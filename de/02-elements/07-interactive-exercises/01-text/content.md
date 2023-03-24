@@ -20,7 +20,7 @@ Die Antwort kann auf verschiedene Arten ausgewertet werden (Parameter
 Bei diesem Fragetypen muss der eingetippte Wert exakt der Lösung entsprechen
 (Groß-/Kleinschreibung wird beachtet).
 
-::: {.exercise #EX_TEXT_EXACT}
+:::exercise {#EX_TEXT_EXACT}
 Für die korrekte Beantwortung der Frage muss das Lösungswort *Lösung* exakt
 eingegeben werden.
 
@@ -41,20 +41,20 @@ Die Eingabe wird als mathematischer Ausdruck interpretiert.
 `precision` Genauigkeit hinter dem Dezimalpunkt (weitere Stellen werden vor dem Vergleich mathematisch gerundet)
 ----------- ----------------------------------------------------------------------------------------------------
 
-:::: {.example}
+::::example
 ```
-::: {.exercise #EX_PARSED_0}
+:::exercise {#EX_PARSED_0}
 $\tfrac{\alpha+\beta}{\alpha-\beta}$ nimmt den Wert []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} an für $\alpha=6$ und $\beta=4$.
 :::
 ```
-::: {.exercise #EX_PARSED_0}
+:::exercise {#EX_PARSED_0}
 $\tfrac{\alpha+\beta}{\alpha-\beta}$ nimmt den Wert []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} an für $\alpha=6$ und $\beta=4$.
 :::
 ::::
 
-::::: {.example}
+:::::example
 ```
-:::: {.exercise #EX_PARSED_1}
+::::exercise {#EX_PARSED_1}
 Formen Sie um und geben Sie die Lösungsmengen dieser linearen Gleichungen an:
 
 [Schreiben Sie einfach `{a}` für eine einelementige Menge und `{}` für die leere Menge.]{.hint-text}
@@ -65,7 +65,7 @@ Formen Sie um und geben Sie die Lösungsmengen dieser linearen Gleichungen an:
 
 3.  $2x-6=2x-10$ hat die Lösungsmenge $L$$\;\;=\;$[]{.question .text validation="parsed" length="4" solution="" precision="4" points="4"}.
 
-::: {.hint caption="Lösung"}
+:::solution
 Die erste Gleichung kann man zu $2x=2$ bzw. $x=1$ umformen, also ist $L=\lbrace 1\rbrace$ die Lösungsmenge. Die zweite Gleichung
 kann zu $2x=4$ mit $L=\lbrace 2\rbrace$ umgeformt werden. Die dritte Gleichung kann zu $-6=-10$ umgeformt werden, einer an sich falschen
 Aussage mit $L=\lbrace\rbrace$.
@@ -73,7 +73,7 @@ Aussage mit $L=\lbrace\rbrace$.
 ::::
 ```
 
-:::: {.exercise #EX_PARSED_1}
+::::exercise {#EX_PARSED_1}
 Formen Sie um und geben Sie die Lösungsmengen dieser linearen Gleichungen an:
 
 [Schreiben Sie einfach `{a}` für eine einelementige Menge und `{}` für die leere Menge.]{.hint-text}
@@ -84,7 +84,7 @@ Formen Sie um und geben Sie die Lösungsmengen dieser linearen Gleichungen an:
 
 3.  $2x-6=2x-10$ hat die Lösungsmenge $L$$\;\;=\;$[]{.question .text validation="parsed" length="4" solution="" precision="4" points="4"}.
 
-::: {.hint caption="Lösung"}
+:::solution
 Die erste Gleichung kann man zu $2x=2$ bzw. $x=1$ umformen, also ist $L=\lbrace 1\rbrace$ die Lösungsmenge. Die zweite Gleichung
 kann zu $2x=4$ mit $L=\lbrace 2\rbrace$ umgeformt werden. Die dritte Gleichung kann zu $-6=-10$ umgeformt werden, einer an sich falschen
 Aussage mit $L=\lbrace\rbrace$.
@@ -147,9 +147,9 @@ NOT IMPLEMENTED BUT 'factor-notation' is actually used in tub_mathe:
 
 ### Beispiele
 
-::::: {.example}
+:::::example
 ```
-:::: {.exercise #EX_FUNCTION_0}
+::::exercise {#EX_FUNCTION_0}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie möglich vereinfacht?
 
 1.  Den Winkel $\alpha$ sowohl für $x$ als auch für $y$: Dann ist $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" points="4"}.
@@ -158,11 +158,11 @@ Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie m
 
 3.  Den Term $z+1$ für $x$ und der Term $z-1$ für $y$: Dann ist $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*z*z+2" supporting-points="5" variables="z" precision="5" points="4"}.
 
-::: {.hint-text}
+:::hint-text
 Der griechische Buchstabe $\alpha$ kann als `alpha` eingetippt werden.
 :::
 
-::: {.hint caption="Lösung"}
+:::solution
 Am sichersten ist es, die Variablen vor der Termeinsetzung zu klammern, wenn der neue Term mehrere Symbole enthält:
 
 1.  $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$.
@@ -174,7 +174,7 @@ Am sichersten ist es, die Variablen vor der Termeinsetzung zu klammern, wenn der
 ::::
 ```
 
-:::: {.exercise #EX_FUNCTION_0}
+::::exercise {#EX_FUNCTION_0}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie möglich vereinfacht?
 
 1.  Den Winkel $\alpha$ sowohl für $x$ als auch für $y$: Dann ist $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" points="4"}.
@@ -183,11 +183,11 @@ Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie m
 
 3.  Den Term $z+1$ für $x$ und der Term $z-1$ für $y$: Dann ist $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*z*z+2" supporting-points="5" variables="z" precision="5" points="4"}.
 
-::: {.hint-text}
+:::hint-text
 Der griechische Buchstabe $\alpha$ kann als `alpha` eingetippt werden.
 :::
 
-::: {.hint caption="Lösung"}
+:::solution
 Am sichersten ist es, die Variablen vor der Termeinsetzung zu klammern, wenn der neue Term mehrere Symbole enthält:
 
 1.  $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$.
@@ -199,51 +199,51 @@ Am sichersten ist es, die Variablen vor der Termeinsetzung zu klammern, wenn der
 ::::
 :::::
 
-::::: {.example}
+:::::example
 ```
-:::: {.exercise #EX_FUNCTION_1}
+::::exercise {#EX_FUNCTION_1}
 Formen Sie in eine Summendarstellung um:
 $a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
-::: {.hint caption="Lösung"}
+:::solution
 $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 :::
 ::::
 ```
 
-:::: {.exercise #EX_FUNCTION_1}
+::::exercise {#EX_FUNCTION_1}
 Formen Sie in eine Summendarstellung um:
 $a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
-::: {.hint caption="Lösung"}
+:::solution
 $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 :::
 ::::
 :::::
 
-::::: {.example}
+:::::example
 ```
-:::: {.exercise #EX_FUNCTION_2}
+::::exercise {#EX_FUNCTION_2}
 Schreiben Sie diesen Potenz- und Wurzelausdruck als einfache Potenz mit einem rationalen Exponenten:
 
 $\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
 
 [Beispielsweise tippen Sie $\sqrt{x}\cdot x^2$ = `x^(5/2)` oder auch `x^(2.5)`, vergessen Sie die Klammern um den Bruch nicht.]{.hint-text}
 
-::: {.hint caption="Lösung"}
+:::solution
 $$x^{\frac32}$$
 :::
 ::::
 ```
 
-:::: {.exercise #EX_FUNCTION_2}
+::::exercise {#EX_FUNCTION_2}
 Schreiben Sie diesen Potenz- und Wurzelausdruck als einfache Potenz mit einem rationalen Exponenten:
 
 $\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
 
 [Beispielsweise tippen Sie $\sqrt{x}\cdot x^2$ = `x^(5/2)` oder auch `x^(2.5)`, vergessen Sie die Klammern um den Bruch nicht.]{.hint-text}
 
-::: {.hint caption="Lösung"}
+:::solution
 $$x^{\frac32}$$
 :::
 ::::
@@ -259,16 +259,16 @@ Die Eingabe wird als Intervall interpretiert.
 `precision`         Genauigkeit der Zahlenwertprüfung
 ------------------- ----------------------------------
 
-::::: {.example}
+:::::example
 ```
-:::: {.exercise #EX_INTERVAL}
+::::exercise {#EX_INTERVAL}
 Wie lautet die Lösungsmenge für die gemischte Gleichung $|x-3|\cdot x=9$?
 
 Ist $x$ aus dem Intervall
 []{.question .text validation="interval" length="14" solution="[3,infty)" precision="5" points="4"},
 so ist der Term im Betrag nicht negativ.
 
-::: {.hint caption="Lösung"}
+:::solution
 Ist $x$ aus dem Intervall $\left[3; \infty\right[$, so ist der Term im Betrag
 nicht negativ.
 
@@ -277,14 +277,14 @@ Lösung: `[3;infty)`.
 ::::
 ```
 
-:::: {.exercise #EX_INTERVAL}
+::::exercise {#EX_INTERVAL}
 Wie lautet die Lösungsmenge für die gemischte Gleichung $|x-3|\cdot x=9$?
 
 Ist $x$ aus dem Intervall
 []{.question .text validation="interval" length="14" solution="[3,infty)" precision="5" points="4"},
 so ist der Term im Betrag nicht negativ.
 
-::: {.hint caption="Lösung"}
+:::solution
 Ist $x$ aus dem Intervall $\left[3; \infty\right[$, so ist der Term im Betrag
 nicht negativ.
 
@@ -300,9 +300,9 @@ Lösung: `[3,infty)`.
 Input must be equivalent to the solution, irreducible and with positive
 denominator.
 
-::::: {.example}
+:::::example
 ```
-:::: {.exercise #EX_EXACT_FRACTION}
+::::exercise {#EX_EXACT_FRACTION}
 Berechnen Sie die folgenden Zahlenwerte, indem Sie den Hauptnenner bilden und
 soweit wie möglich kürzen:
 
@@ -310,7 +310,7 @@ soweit wie möglich kürzen:
 
 2.  $\dfrac{1+2}{5+6}$$\;\;=\;$[]{.question .text validation="exact-fraction" length="12" solution="3/11" precision="5" points="4"} aber $\dfrac15+\dfrac26$$\;\;=\;$[]{.question .text validation="exact-fraction" length="12" solution="8/15" precision="5" points="4"}.
 
-::: {.hint caption="Lösung"}
+:::solution
 Summen von Nennern darf man nicht zusammenfassen, auch nicht bei gleichem Zähler, hier ist
 
 $$\dfrac12+\dfrac13\;=\; \dfrac{3}{6}+\dfrac26 \;=\; \dfrac56\;\;\text{aber}\;\;\dfrac{1}{2+3} \;=\; \dfrac15\, .$$
@@ -322,7 +322,7 @@ $$\dfrac{1+2}{5+6} \;=\; \dfrac{3}{11}  \;\;\text{aber}\;\; \dfrac15+\dfrac26 \;
 ::::
 ```
 
-:::: {.exercise #EX_EXACT_FRACTION}
+::::exercise {#EX_EXACT_FRACTION}
 Berechnen Sie die folgenden Zahlenwerte, indem Sie den Hauptnenner bilden und
 soweit wie möglich kürzen:
 
@@ -330,7 +330,7 @@ soweit wie möglich kürzen:
 
 2.  $\dfrac{1+2}{5+6}$$\;\;=\;$[]{.question .text validation="exact-fraction" length="12" solution="3/11" precision="5" points="4"} aber $\dfrac15+\dfrac26$$\;\;=\;$[]{.question .text validation="exact-fraction" length="12" solution="8/15" precision="5" points="4"}.
 
-::: {.hint caption="Lösung"}
+:::solution
 Summen von Nennern darf man nicht zusammenfassen, auch nicht bei gleichem Zähler, hier ist
 
 $$\dfrac12+\dfrac13\;=\; \dfrac{3}{6}+\dfrac26 \;=\; \dfrac56\;\;\text{aber}\;\;\dfrac{1}{2+3} \;=\; \dfrac15\, .$$

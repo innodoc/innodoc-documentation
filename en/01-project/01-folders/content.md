@@ -4,7 +4,7 @@ title: Folders
 
 The course folder structure is determined by a fixed schema.
 
-:::{.example}
+:::example
 ```
 [root]
 ├── _static
@@ -40,7 +40,7 @@ The root directory contains exactly one
 [language folder](/section/01-project/03-languages) for every supported
 language.
 
-:::{.info}
+:::info
 Every language folder must have the exact same section folder structure.
 :::
 
@@ -49,7 +49,7 @@ corresponds to a section. The folder name is the section ID. The section order
 is determined by the alphanumerical sorting of the folder names. Therefore
 it is advised to use a number prefix for folder names.
 
-:::{.info}
+:::info
 Section folder names must not start with a `_` or contain spaces.
 :::
 

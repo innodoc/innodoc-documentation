@@ -11,7 +11,7 @@ Um einen Link zu einem anderen Abschnitt zu erstellen, muss die Abschnitts-ID
 angeben werden. Wenn der Linktext weglassen wird, werden die Abschnittsnummer
 und der Titel angezeigt.
 
-::: {.example}
+:::example
 
 **Markdown**
 
@@ -36,7 +36,7 @@ Um auf ein bestimmtes Element innerhalb eines Abschnitts zu verweisen, werden
 IDs verwendet. Diese müssen innerhalb eines Dokuments einzigartig sein und
 können manuell zugewiesen werden.
 
-::: {.example}
+:::example
 Link zur Überschrift _Videos_ in einem anderen Kapitel:
 
 **Markdown**
@@ -53,7 +53,7 @@ Link zur Überschrift _Videos_ in einem anderen Kapitel:
 IDs können zugewiesen werden, indem der Bezeichner mit einem vorangestelltem `#`
 angegeben wird.
 
-::: {.example #heading-example}
+:::example {#heading-example}
 **Markdown**
 
 ```markdown
@@ -69,7 +69,7 @@ angegeben wird.
 [Link zur Überschrift](#my-id)
 :::
 
-::: {.info}
+:::info
 Wird kein Bezeichner angegeben, erhalten Überschriften automatisch eine vom
 Text abgeleitete ID.
 
@@ -95,7 +95,7 @@ _Inhaltsverzeichnis_ sowie _Lernfortschritt_. Diese haben keine Abschnitts-ID,
 aber können mittels der speziellen Bezeichner `___INDEX_PAGE___`, `___TOC___`
 und `___PROGRESS___` referenziert werden.
 
-::: {.example}
+:::example
 
 **Markdown**
 

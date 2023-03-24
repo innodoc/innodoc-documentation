@@ -7,7 +7,7 @@ specified.
 
 To create an entry in the index a position in the text needs to be marked.
 
-::: {.example}
+:::example
 ```markdown
 This sentence contains an entry for the [index]{data-index-term="index"}.
 ```
@@ -20,7 +20,7 @@ be appended with an attribute `data-index-term`. The value of this attribute is
 the term as it appears in the index. Naturally any number of references can
 exist for a single index term.
 
-::: {.info}
+:::info
 You can also use $\LaTeX$ inside the index term.
 
 ```markdown

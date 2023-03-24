@@ -6,7 +6,7 @@ This section describes the different ways to create tables. Further details on
 the topic can be found in the [Pandoc
 documentation](https://pandoc.org/MANUAL.html#tables).
 
-::: {.info}
+:::info
 Besides text, tables can contain images, exercises and all other elements.
 However, for creating layout, e.g. to arrange elements next to each other, the
 use of [grids](/section/02-elements/06-grids) is recommended. Unlike tables,
@@ -19,7 +19,7 @@ Each table can optionally have a caption. For this purpose, a line with the
 content `Table: [Caption text]` is inserted below the table. Alternatively this
 can be shortened to `: [Caption text]`.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -55,7 +55,7 @@ Simple tables consist of a header row and the cell contents. The alignment of
 the contents can be influenced. The header line can also be omitted completely.
 However, the table must then be closed with a line of hyphens.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -105,7 +105,7 @@ within a cell. In the display, the text wrap depends on the available width.
 Multiline tables are similar to simple tables, but must be enclosed by a line
 of dashes and a blank line.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -171,7 +171,7 @@ The table is created with a combination of the symbols `-`, `+`, `|`, `=` and
 `:`. The header is separated from the other rows by using a dashed line. The
 colon can be used to change the column alignment.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -239,7 +239,7 @@ help of the pipe symbol `|`.
 Pipe tables do not allow multiline cells or block elements. They use the colon
 symbol to specify the alignment. Columns do not need to be vertically aligned.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown

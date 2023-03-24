@@ -6,14 +6,14 @@ Die Sprache [PGF/Ti*k*Z](https://sourceforge.net/projects/pgf/) kann benutzt
 werden um Vektorgrafiken zu erstellen. Dafür wird ein Codeblock vom Typ `tikz`
 verwendet.
 
-:::: {.info}
+::::info
 Ti*k*Z-Bilder können problemlos für sich alleine stehen, allerdings ist es
 empfehlenswert diese innerhalb in einer Abbildung zu verwenden. So kann
 optional auch ein Bilduntertitel angefügt werden, indem ein Paragraph direkt
 vor dem Codeblock hinzugefügt wird.
 
 ````markdown
-::: {.figure}
+:::figure
 Untertitel
 ```tikz
 \begin{tikzpicture}
@@ -24,7 +24,7 @@ Untertitel
 ````
 ::::
 
-:::: {.example}
+::::example
 Der folgende Code ist für die Englische Version leicht abgewandelt. So können
 Beschriftungen übersetzt und andere sprachspezifische Unterschiede realisiert
 werden.
@@ -40,7 +40,7 @@ werden.
 ```
 ````
 
-::: {.figure}
+:::figure
 Ti*k*Z-Bild mit übersetztem Inhalt.
 ```tikz
 \begin{tikzpicture}
@@ -53,7 +53,7 @@ Ti*k*Z-Bild mit übersetztem Inhalt.
 :::
 ::::
 
-:::: {.example}
+::::example
 Ein weiteres Beispiel zeigt die Verwendung von $\LaTeX$-Formeln innerhalb
 eines Ti*k*Z-Bildes.
 
@@ -80,7 +80,7 @@ eines Ti*k*Z-Bildes.
 ```
 ````
 
-::: {.figure}
+:::figure
 ```tikz
 \begin{tikzpicture}
 % coordinate system
@@ -115,7 +115,7 @@ Kontrastfarbe angezeigt, in der auch der herkömmliche Text dargestellt wird.
 Außerdem kann diese Farbe auch von Verwendung von `currentcolor` explizit
 ausgewählt werden.
 
-::: {.example}
+:::example
 ````markdown
 ```tikz
 \begin{tikzpicture}
@@ -156,12 +156,12 @@ tikz_preamble: |
   \newcommand{\sayhello}{Hello\ World!}
 ```
 
-::: {.info}
+:::info
 Diese Technik erlaubt es beliebige Kommandos in die Präembel einzufügen. So
 können beispielsweise eigene $\LaTeX$-Befehle definiert werden.
 :::
 
-:::: {.example}
+::::example
 Das folgende Beispiel nutzt die `arrows`-Bibliothek. So können wir nun
 `diamond` als spezielle Pfeilspitze verwenden.
 
@@ -175,7 +175,7 @@ Das folgende Beispiel nutzt die `arrows`-Bibliothek. So können wir nun
 ```
 ````
 
-::: {.figure}
+:::figure
 ```tikz
 \begin{tikzpicture}
 \node (A) at (0, 0) {A};
@@ -186,7 +186,7 @@ Das folgende Beispiel nutzt die `arrows`-Bibliothek. So können wir nun
 :::
 ::::
 
-:::: {.example}
+::::example
 In diesem Beispiel greifen wir auf das selbst erstellte Makro `\sayhello`
 zurück.
 
@@ -198,7 +198,7 @@ zurück.
 ```
 ````
 
-::: {.figure}
+:::figure
 ```tikz
 \begin{tikzpicture}
 \node {$\sayhello$};

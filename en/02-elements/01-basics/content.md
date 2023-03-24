@@ -8,12 +8,12 @@ Paragraphs are automatically created simply by leaving an empty line between
 text. Adding more than one empty line will not create a larger distance between
 the paragraphs.
 
-::: {.info}
+:::info
 Line breaks within a paragraph are not displayed in the result. To force a line
 break, a double space must be used at the end of the line.
 :::
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -64,7 +64,7 @@ consectetur adipiscing elit.
 
 This section demonstrates the possibilities of basic text formatting.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -131,11 +131,11 @@ Individual sections can be further structured by using headings.
 See also the [example for adding IDs to
 headers](/section/02-elements/02-links/01-internal#heading-example).
 
-::: {.info}
+:::info
 First-order headings should not be used as they are reserved for the page title.
 :::
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -155,7 +155,7 @@ First-order headings should not be used as they are reserved for the page title.
 
 Numbered and unnumbered lists can be displayed.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -209,7 +209,7 @@ Lists can be nested and combined.
 
 By prefixing lines with the character `>` block quotations can be displayed.
 
-:::{.example}
+:::example
 **Markdown**
 
 ```markdown

@@ -5,7 +5,7 @@ title: External Links
 The easiest way to create a link is to enclose the URL in the characters `<` and
 `>`.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -19,7 +19,7 @@ The easiest way to create a link is to enclose the URL in the characters `<` and
 
 Usually, however, it is desirable to specify a link text.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -34,7 +34,7 @@ Usually, however, it is desirable to specify a link text.
 Links can also be provided with a title. This increases the Accessibility.
 It is displayed when somebody hovers with the mouse over the link.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -46,7 +46,7 @@ It is displayed when somebody hovers with the mouse over the link.
 [TU Berlin](https://www.tu-berlin.de "Homepage of TU Berlin")
 :::
 
-::: {.info}
+:::info
 Section [](/section/02-elements/04-media#images-as-link) describes
 how an image can be linked.
 :::
@@ -56,7 +56,7 @@ purpose an identifier in square brackets is used instead of an address in round
 brackets. At the end of the document, a link list must be written that maps
 link identifiers to addresses.
 
-::: {.example}
+:::example
 **Markdown**
 
 Use links like so in your document.

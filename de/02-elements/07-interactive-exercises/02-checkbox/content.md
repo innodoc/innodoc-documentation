@@ -12,7 +12,7 @@ realisiert, wobei jede Frage eine einzelne Checkbox ergibt.
 Zu Beginn sind die Checkboxen nicht ausgefüllt, also weder ausgewählt noch
 nicht ausgewählt.
 
-::: {.exercise}
+:::exercise
 Sind diese Ungleichungen richtig oder falsch?
 
 ------------------------------------------------------------------ ---------------------------------------------------------------

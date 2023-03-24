@@ -9,7 +9,7 @@ The file contains meta data for the course. It is written in
 [[YAML format](http://yaml.org/)]{data-index-term="YAML"}. In this section you
 will find descriptions of the possible fields in this file.
 
-:::{.info}
+:::info
 An
 [example manifest file](https://git.tu-berlin.de/innodoc/tub_base/blob/master/manifest.yml)
 can be found in the repository of this course.

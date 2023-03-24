@@ -8,7 +8,7 @@ zumindest ein Eintrag angelegt wurde.
 Um Einträge im Stichwortverzeichnis zu erzeugen, werden einzelne Stellen im
 Text markiert.
 
-::: {.example}
+:::example
 ```markdown
 In diesem Satz befindet sich ein Wort, welches im
 [Stichwortverzeichnis]{data-index-term="Stichwortverzeichnis"} erscheint.
@@ -24,7 +24,7 @@ des Attributs ist der Ausdruck, so wie er im Stichwortverzeichnis erscheint.
 Natürlich können eine beliebige Anzahl von Verweisen zu einem einzelnen
 Ausdruck erstellt werden.
 
-::: {.info}
+:::info
 Es können auch $\LaTeX$-Formeln im Ausdruck verwendet werden.
 
 ```markdown

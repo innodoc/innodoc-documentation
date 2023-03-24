@@ -16,7 +16,7 @@ Für Rastergrafiken sollte PNG oder JPG, für Vektorgrafiken SVG als Bildformat
 gewählt werden. Standardmäßig werden Bilder inline, d. h. im Textfluss innerhalb
 eines Absatzes angezeigt.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -33,23 +33,23 @@ werden sie mit einem umgebenden Rahmen angezeigt. Außerdem können sie so auch
 eine Beschriftung und eine Referenz-ID erhalten. Der Alternativtext wird in
 diesem Fall automatisch aus dem Bildtitel erzeugt.
 
-:::: {.example}
+::::example
 **Markdown**
 
 ```markdown
-::: {.figure}
+:::figure
 ![Die Erschaffung Adams von Michelangelo](adam.jpg "Die Erschaffung Adams"){.img}
 :::
 ```
 
 **Ergebnis**
 
-::: {.figure}
+:::figure
 ![Die Erschaffung Adams von Michelangelo](adam.jpg "Die Erschaffung Adams"){.img}
 :::
 ::::
 
-::: {.example}
+:::example
 Bilder können auch innerhalb von Links benutzt werden.
 
 **Markdown**
@@ -74,7 +74,7 @@ kann die Klasse `video-youtube` verwendet werden. Für die Videodateien sollten
 die von Browsern unterstützten gängigen Codecs und Containerformate verwendet
 werden.
 
-::: {.example}
+:::example
 Eine Videodatei wird eingebettet, indem auf den Dateinamen verwiesen und ein
 Titel angegeben wird.
 
@@ -130,20 +130,20 @@ vereinfachen. Beispielsweise bezieht sich `tu-logo.png` auf die Bilddatei
 `_static/02-elements/04-media/tu-logo.png`, während sich `/tu-logo.png` auf
 `_static/tu-logo.png` bezieht.
 
-:::: {.example}
+::::example
 Ein Bild, das in einem Unterordner von `_static` gespeichert ist.
 
 **Markdown**
 
 ```markdown
-::: {.figure}
+:::figure
 ![Bild aus Unterordner](/subfolder/math.jpg "Beispiel Unterordner"){.img}
 :::
 ```
 
 **Ergebnis**
 
-::: {.figure}
+:::figure
 ![Bild aus Unterordner](/subfolder/math.jpg "Beispiel Unterordner"){.img}
 :::
 
@@ -152,19 +152,19 @@ Ein Bild, das in `_static/02-elements/04-media` gespeichert ist.
 **Markdown**
 
 ```markdown
-::: {.figure}
+:::figure
 ![Logo TU Berlin](tu-logo.png)
 :::
 ```
 
 **Ergebnis**
 
-::: {.figure}
+:::figure
 ![Logo TU Berlin](tu-logo.png)
 :::
 ::::
 
-::: {.info}
+:::info
 Wenn Medien von externen Servern verwenden werden, ist es wichtig zu bedenken,
 dass diese
 
@@ -182,7 +182,7 @@ anzuzeigen. innoDoc benutzt automatisch die sprachspezifische Datei, wenn sie
 vorhanden ist. Die übersetzte Version der Datei muss im Ordner `_static` der
 jeweiligen Sprache abgelegt werden.
 
-:::: {.example}
+::::example
 In diesem Beispiel gibt es zwei Versionen von `lines.png`, eine für jede
 Sprache:
 
@@ -192,14 +192,14 @@ Sprache:
 **Markdown**
 
 ```markdown
-::: {.figure}
+:::figure
 ![Lines](lines.png)
 :::
 ```
 
 **Ergebnis**
 
-::: {.figure}
+:::figure
 ![Lines](lines.png)
 :::
 

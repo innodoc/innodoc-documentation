@@ -11,7 +11,7 @@ Um Formeln auszuzeichnen wird das `$`-Zeichen verwendet. Sie können entweder
 direkt im Fließtext (einfaches `$`) oder freistehend (doppeltes `$`)
 dargestellt werden.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -37,7 +37,7 @@ $$
 $$
 :::
 
-::: {.example}
+:::example
 Ein weiteres, komplizierteres Beispiel mit `align`-Umgebung.
 
 **Markdown**
@@ -78,7 +78,7 @@ verwiesen.
 Um Erweiterungen hinzuzufügen, wird das Kurs-Manifest angepasst. In Abschnitt
 [](/section/01-project/02-files/01-manifest#mathjax) findet sich ein Beispiel.
 
-::: {.info #innodoc-mathjax}
+:::info {#innodoc-mathjax}
 Es existieren die Erweiterungen
 [**\@innodoc/mathjax-num**](https://git.tu-berlin.de/innodoc/mathjax-num)
 und

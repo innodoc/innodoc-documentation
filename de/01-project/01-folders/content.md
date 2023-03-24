@@ -4,7 +4,7 @@ title: Verzeichnisse
 
 Die Verzeichnisstruktur eines Kurses folgt einem festen Schema.
 
-:::{.example}
+:::example
 ```
 [Wurzel]
 ├── _static
@@ -39,7 +39,7 @@ Die Verzeichnisstruktur eines Kurses folgt einem festen Schema.
 Im Wurzelverzeichnis des Kurses befindet sich exakt ein
 [Sprachordner](/section/01-project/03-languages) für jede unterstützte Sprache.
 
-:::{.info}
+:::info
 Jeder Sprachordner muss die exakt gleiche Unterordnerstruktur an Abschnitten
 enthalten.
 :::
@@ -50,7 +50,7 @@ entspricht der Abschnitts-ID. Die Reihenfolge der Abschnitte im
 Inhaltsverzeichnis ergibt sich aus der alphanumerischen Sortierung der
 Ordnernamen. Daher wird empfohlen den Ordnernamen eine Nummer voranzustellen.
 
-:::{.info}
+:::info
 Ordnernamen dürfen nicht mit einem `_` beginnen oder Leerzeichen beinhalten.
 :::
 

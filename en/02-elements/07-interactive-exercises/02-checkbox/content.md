@@ -11,7 +11,7 @@ checkbox that is displayed.
 At the beginning, the checkbox are not filled in, i. e. meaning neither
 selected nor not selected.
 
-::: {.exercise}
+:::exercise
 Are the following inequalities true or false?
 
 ------------------------------------------------------------------ -----------------------------------------------------------

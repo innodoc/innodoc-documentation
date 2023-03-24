@@ -10,7 +10,7 @@ pages.
 To create a link to another section, you need to specify the section ID. If you
 leave out the link text the section number and title will be shown.
 
-::: {.example}
+:::example
 
 **Markdown**
 
@@ -33,7 +33,7 @@ If you specify a non-existent section an error message is shown:
 In order to link to a particular element within a section you can use anchor
 IDs. These IDs need to be unique within one page and can be assigned manually.
 
-::: {.example}
+:::example
 Link to heading _Videos_ in another section:
 
 **Markdown**
@@ -49,7 +49,7 @@ Link to heading _Videos_ in another section:
 
 You can assign IDs by adding the identifier preceded by a `#` symbol.
 
-::: {.example #heading-example}
+:::example {#heading-example}
 **Markdown**
 
 ```markdown
@@ -65,7 +65,7 @@ You can assign IDs by adding the identifier preceded by a `#` symbol.
 [Link to heading](#my-id)
 :::
 
-::: {.info}
+:::info
 Each heading is automatically assigned an ID if not explicitly given. The
 generated ID is derived from the text.
 
@@ -90,7 +90,7 @@ Every course includes the special pages _Index Page_, _Progress_ and _Table of
 contents_. They don't have a section ID but you can still link to them using
 special identifiers `___INDEX_PAGE___`, `___PROGRESS___` and `___TOC___`.
 
-::: {.example}
+:::example
 
 **Markdown**
 

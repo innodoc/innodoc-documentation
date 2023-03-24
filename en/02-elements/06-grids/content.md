@@ -12,11 +12,11 @@ the available width. As many rows as necessary can be added to the grid. Every
 row can hold a number of columns. Columns can span several slots. Also they can
 be shifted (offset).
 
-::::::: {.example}
+:::::::example
 In this example a simple grid with three rows is shown. The following drawing
 illustrates the grid slots, rows and columns.
 
-:::::: {.figure}
+::::::figure
 Grid schema
 ```tikz
 \begin{tikzpicture}[y=-1cm]
@@ -149,12 +149,12 @@ A grid column can have different span values depending on the screen size. This
 way the layout becomes *responsive*, adjusting to different devices, like
 desktop computer or mobile phone.
 
-::: {.info}
+:::info
 To see the layout respond to different viewport sizes, try adjusting the size of
 your browser window.
 :::
 
-::::::: {.example}
+:::::::example
 In this practical example, a grid layout is used to show an image next to an
 explanatory text. This works well on larger screens. On smaller screens,
 however, the width is not sufficient to accommodate both elements. Our solution
@@ -213,7 +213,7 @@ be used. The boundaries when the layout should switch are called *breakpoints*.
 
 : Viewport breakpoints
 
-::::::: {.example}
+:::::::example
 In this example there is one row with three colums. On a large screen the
 columns will arrange next to each other occupying one third of the width. On
 medium screens the first two columns will take one half each while the last

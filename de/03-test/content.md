@@ -3,7 +3,7 @@ title: Beispiel-Test
 type: test
 ---
 
-:::{.exercise}
+:::exercise
 Dies ist die einzige Aufgabe in diesem Beispiel-Test. Sie wird nur ausgewertet
 wenn der Test eingereicht wurde.
 

@@ -8,13 +8,13 @@ Absätze werden automatisch erstellt, indem zwischen dem Text eine Leerzeile
 Abstand gelassen wird. Das Hinzufügen von mehr als einer Leerzeile führt nicht
 zu einem größeren Abstand zwischen den Absätzen.
 
-::: {.info}
+:::info
 Zeilenumbrüche innerhalb eines Absatzes werden nicht im Ergebnis angezeigt. Um
 einen Zeilenumbruch zu erzwingen, muss ein doppeltes Leerzeichen am Ende der
 Zeile verwendet werden.
 :::
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -65,7 +65,7 @@ consectetur adipiscing elit.
 
 Dieser Abschnitt demonstriert Möglichkeiten der einfachen Textformatierung.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -136,12 +136,12 @@ Einzelne Abschnitte können durch Überschriften weiter strukturiert werden.
 Siehe auch das [Beispiel für die Vergabe von
 IDs](/section/02-elements/02-links/01-internal#heading-example).
 
-::: {.info}
+:::info
 Die Verwendung von Überschriften erster Ordnung sollte vermieden werden, da
 diese dem Seitentitel vorbehalten ist.
 :::
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -161,7 +161,7 @@ diese dem Seitentitel vorbehalten ist.
 
 Es können nummerierte und unnummerierte Listen angezeigt werden.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -215,7 +215,7 @@ Listen können untergliedert und kombiniert werden.
 
 Durch ein Voranstellen des Zeichens `>` lassen sich Blockzitate umsetzen.
 
-:::{.example}
+:::example
 **Markdown**
 
 ```markdown

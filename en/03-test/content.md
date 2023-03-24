@@ -3,7 +3,7 @@ title: Example test
 type: test
 ---
 
-:::{.exercise}
+:::exercise
 This is a single exercise in this test section. It will only be evaluated after
 the test is submitted.
 

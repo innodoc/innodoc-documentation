@@ -5,7 +5,7 @@ title: Externe Links
 Der einfachste Weg einen Link zu erstellen ist, die URL mit den Zeichen `<` und
 `>` zu umschließen.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -19,7 +19,7 @@ Der einfachste Weg einen Link zu erstellen ist, die URL mit den Zeichen `<` und
 
 In der Regel ist es aber wünschenswert einen Linktext anzugeben.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -35,7 +35,7 @@ Links können zusätzlich auch mit einem Titel versehen werden. Das erhöht die
 Barrierefreiheit. Er wird angezeigt, wenn mit der Maus über dem Link verweilt
 wird.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -47,7 +47,7 @@ wird.
 [TU Berlin](https://www.tu-berlin.de "Homepage der TU Berlin")
 :::
 
-::: {.info}
+:::info
 In Abschnitt [](/section/02-elements/04-media#bilder-als-links)
 ist beschrieben, wie Bilder als Link verwendet werden können.
 :::
@@ -57,7 +57,7 @@ Dazu wird anstatt einer Adresse in runden Klammern ein Bezeichner in eckigen
 Klammern angegeben. Am Ende des Dokumentes muss dann eine Linkliste
 stehen, die Bezeichnern Adressen zuweist.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown

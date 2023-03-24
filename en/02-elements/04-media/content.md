@@ -16,7 +16,7 @@ The preferred image formats are PNG or JPG for raster graphics and SVG for
 vector graphics. By default an image is an inline element, meaning it will be
 displayed inside of a paragraph.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -33,23 +33,23 @@ formatted with a surrounding frame and can also receive a caption and a
 reference ID. The alternate text is referred automatically from the image title
 in this case.
 
-:::: {.example}
+::::example
 **Markdown**
 
 ```markdown
-::: {.figure}
+:::figure
 ![The Creation of Adam by Michelangelo](adam.jpg "The Creation of Adam"){.img}
 :::
 ```
 
 **Result**
 
-::: {.figure}
+:::figure
 ![The Creation of Adam by Michelangelo](adam.jpg "The Creation of Adam"){.img}
 :::
 ::::
 
-::: {.example}
+:::example
 Images can also be used inside links.
 
 **Markdown**
@@ -73,7 +73,7 @@ folder or on a remote server. For embedding videos from YouTube, the
 `video-youtube` class is supported. Use browser-supported codecs and container
 format for optimal compatibility.
 
-::: {.example}
+:::example
 Embed a video file simply by referencing its filename and adding a title.
 
 **Markdown**
@@ -123,20 +123,20 @@ folder plus the section path for easy file management, e.g. `tu-logo.png` refers
 to the image file `_static/02-elements/04-media/tu-logo.png` while
 `/tu-logo.png` refers to `_static/tu-logo.png`.
 
-:::: {.example}
+::::example
 An image stored in a sub-folder of `_static`.
 
 **Markdown**
 
 ```markdown
-::: {.figure}
+:::figure
 ![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
 :::
 ```
 
 **Result**
 
-::: {.figure}
+:::figure
 ![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
 :::
 
@@ -145,19 +145,19 @@ An image stored in `_static/02-elements/04-media`.
 **Markdown**
 
 ```markdown
-::: {.figure}
+:::figure
 ![Logo TU Berlin](tu-logo.png)
 :::
 ```
 
 **Result**
 
-::: {.figure}
+:::figure
 ![Logo TU Berlin](tu-logo.png)
 :::
 ::::
 
-::: {.info}
+:::info
 When using media from external servers, please keep in mind that these
 
 1. might go offline or change at any time without notice, and
@@ -174,7 +174,7 @@ languages. innoDoc will always display the language-specific file if it is
 present. The translated version of the file needs to be placed in the `_static`
 folder of the respective language.
 
-:::: {.example}
+::::example
 For this example there are two versions of `lines.png`, one for each language:
 
 - `de/_static/02-elements/04-media/lines.png`
@@ -183,14 +183,14 @@ For this example there are two versions of `lines.png`, one for each language:
 **Markdown**
 
 ```markdown
-::: {.figure}
+:::figure
 ![Lines](lines.png)
 :::
 ```
 
 **Result**
 
-::: {.figure}
+:::figure
 ![Lines](lines.png)
 :::
 

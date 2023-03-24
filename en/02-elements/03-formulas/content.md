@@ -10,7 +10,7 @@ It is possible to use $\LaTeX$ formulas. They are rendered using the
 Formulas use the `$` sign as delimiter. They can be displayed inline (single
 `$`) or as a block (double `$`).
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -34,7 +34,7 @@ $$
 $$
 :::
 
-::: {.example}
+:::example
 Another more complicated example using an `align` environment.
 
 **Markdown**
@@ -75,7 +75,7 @@ The course manifest lets you override parts of the MathJax configuration to add
 custom extensions to the mix. Please refer to the section
 [](/section/01-project/02-files/01-manifest#mathjax) for an example.
 
-::: {.info #innodoc-mathjax}
+:::info {#innodoc-mathjax}
 Two extensions
 [**\@innodoc/mathjax-num**](https://git.tu-berlin.de/innodoc/mathjax-num)
 and

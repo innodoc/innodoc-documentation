@@ -8,6 +8,6 @@ Der Inhalt inklusive der statischen Dateien können in andere Sprachen
 
 Für jede unterstützte Sprache existiert genau ein Ordner im Wurzelverzeichnis.
 
-:::{.info}
+:::info
 Der Verzeichnisbaum der Abschnitte muss für jeden Sprachordner identisch sein.
 :::

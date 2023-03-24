@@ -12,11 +12,11 @@ gesamte verfügbare Breite ein. Es können beliebig viele Zeilen hinzugefügt
 werden. Jede Zeile beherbergt eine Anzahl von Spalten. Spalten können sich über
 mehrere Spaltenplätze erstrecken. Sie können auch verschoben werden (Offset).
 
-::::::: {.example}
+:::::::example
 In diesem Beispiel wird ein einfaches Raster mit drei Zeilen erzeugt. Die
 folgende Zeichnung veranschaulicht die Spaltenplätze, Zeilen und Spalten.
 
-:::::: {.figure}
+::::::figure
 Rasterschema
 ```tikz
 \begin{tikzpicture}[y=-1cm]
@@ -149,12 +149,12 @@ Die Anzahl an Spaltenplätze können abhängig von der Bildschirmgröße gesetzt
 werden. Dadurch wird das Layout *responsiv*, d.h. es passt sich verschiedenen
 Ausgabegeräten wie Smartphone oder Desktop-Computer an.
 
-::: {.info}
+:::info
 Um zu sehen, wie das Layout auf verschiedene Größen reagiert, kann die Größe des
 Browserfensters verändert werden.
 :::
 
-::::::: {.example}
+:::::::example
 In diesem praktischen Beispiel wird ein Raster verwendet, um ein Bild
 neben einem erläuternden Text anzuzeigen. Dies funktioniert gut auf größeren
 Bildschirmen. Auf kleineren Bildschirmen reicht die Breite jedoch nicht aus, um
@@ -215,7 +215,7 @@ soll, werden als *Breakpoints* bezeichnet.
 
 : Breakpoints
 
-::::::: {.example}
+:::::::example
 Dieses Beispiel enthält eine Zeile mit drei Spalten. Auf einem großen Bildschirm
 werden die Spalten nebeneinander angeordnet und nehmen je ein Drittel der Breite
 ein. Auf einem mittleren Bildschirm nehmen die ersten beiden Spalten jeweils die

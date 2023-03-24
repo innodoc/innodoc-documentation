@@ -6,7 +6,7 @@ Dieser Abschnitt beschreibt die verschiedenen Arten Tabellen zu erstellen.
 Weitere Details zum Thema sind der
 [Pandoc-Dokumentation](https://pandoc.org/MANUAL.html#tables) zu entnehmen.
 
-::: {.info}
+:::info
 Tabellen neben Text auch Bilder, Aufgaben und alle anderen Elemente enthalten.
 Für Layoutaufgaben, also um beispielsweise Elemente nebeneinander anzuordnen,
 wird allerdings der Einsatz eines [Rasters](/section/02-elements/06-grids)
@@ -20,7 +20,7 @@ Jede Tabelle kann optional eine Beschriftung erhalten. Dafür wird unter der
 Tabelle eine Zeile mit dem Inhalt `Table: [Beschriftungstext]` eingefügt.
 Alternativ kann dies auch auf `: [Beschriftungstext]` verkürzt werden.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -57,7 +57,7 @@ Ausrichtung der Inhalte kann Einfluss genommen werden. Die Kopfzeile kann auch
 ganz weggelassen werden. Allerdings muss die Tabelle dann mit einer Zeile aus
 Bindestrichen abeschlossen werden.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -108,7 +108,7 @@ Textumbruch von der verfügbaren Breite abhängig.
 Mehrzeilige Tabellen sind ähnlich zu einfachen Tabellen, müssen aber von einer
 durchgängigen Linie aus Bindestrichen und einer Leerzeile umschlossen sein.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -176,7 +176,7 @@ Die Tabelle wird hier aus einer Kombination der Zeichen `-`, `+`, `|`, `=` und
 Rest der Zeilen getrennt. Die Textausrichtung der Spalten wird durch das
 Doppelpunktsymbol in der Linie unterhalb der Kopfzeile definiert.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown
@@ -245,7 +245,7 @@ Pipe-Tabellen erlauben keine mehrzeiligen Zellen oder Blockelemente. Sie
 verwenden das Doppelpunktsymbol, um die Ausrichtung festzulegen. Außerdem
 müssen sie nicht zwingend vertikal exakt ausgerichtet werden.
 
-::: {.example}
+:::example
 **Markdown**
 
 ```markdown

@@ -5,13 +5,13 @@ title: 'PGF/TikZ Images'
 [PGF/Ti*k*Z](https://sourceforge.net/projects/pgf/) is a language to create
 vector graphics. It is embedded using code blocks of type `tikz`.
 
-:::: {.info}
+::::info
 While these images work by itself it is considered good practice to wrap them
 in a figure. You can also add a caption to the figure by prepending a paragraph
 just before the Ti*k*Z code block.
 
 ````markdown
-::: {.figure}
+:::figure
 Untertitel
 ```tikz
 \begin{tikzpicture}
@@ -22,7 +22,7 @@ Untertitel
 ````
 ::::
 
-:::: {.example}
+::::example
 This code is slightly different for the German version. That way translated
 labels or other language specific features can be realized.
 
@@ -37,7 +37,7 @@ labels or other language specific features can be realized.
 ```
 ````
 
-::: {.figure}
+:::figure
 TikZ image with translated content.
 ```tikz
 \begin{tikzpicture}
@@ -50,7 +50,7 @@ TikZ image with translated content.
 :::
 ::::
 
-:::: {.example}
+::::example
 Another example shows the usage of $\LaTeX$ formulae inside a picture.
 
 ````markdown
@@ -76,7 +76,7 @@ Another example shows the usage of $\LaTeX$ formulae inside a picture.
 ```
 ````
 
-::: {.figure}
+:::figure
 ```tikz
 \begin{tikzpicture}
 % coordinate system
@@ -110,7 +110,7 @@ mode. This color is also used for regular text. If no color is explicitly
 assigned to an element, the contrasting color is automatically selected. This
 color can also be selected by using `currentcolor` explicitly.
 
-::: {.example}
+:::example
 ````markdown
 ```tikz
 \begin{tikzpicture}
@@ -149,12 +149,12 @@ tikz_preamble: |
   \newcommand{\sayhello}{Hello\ World!}
 ```
 
-::: {.info}
+:::info
 As this technique allows you to add arbitrary commands to the preamble you can
 use it to define custom $\LaTeX$ commands for convenience.
 :::
 
-:::: {.example}
+::::example
 This examples uses the `arrows` library. It allows us to use `diamond` as arrow
 tip kind.
 
@@ -168,7 +168,7 @@ tip kind.
 ```
 ````
 
-::: {.figure}
+:::figure
 ```tikz
 \begin{tikzpicture}
 \node (A) at (0, 0) {A};
@@ -179,7 +179,7 @@ tip kind.
 :::
 ::::
 
-:::: {.example}
+::::example
 Here we're using the custom command `\sayhello`.
 
 ````markdown
@@ -190,7 +190,7 @@ Here we're using the custom command `\sayhello`.
 ```
 ````
 
-::: {.figure}
+:::figure
 ```tikz
 \begin{tikzpicture}
 \node {$\sayhello$};

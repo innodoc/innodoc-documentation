@@ -25,7 +25,7 @@ Jede Inhaltsdatei benötigt einen sogenannten
 [YAML-Block]{data-index-term="YAML"} am Anfang der Datei, der mindestens den
 Eintrag `title` enthält.
 
-:::{.example}
+:::example
 ```yaml
 ---
 title: Über diesen Kurs
@@ -62,7 +62,7 @@ Inhaltsverzeichnis. Abschnitte des Typs `test` werden separat im
 [Lernfortschritt](___PROGRESS___) aufgeführt. Außerdem werden die Aufgaben
 erst nach dem Einreichen des Tests ausgewertet.
 
-:::{.info}
+:::info
 Der Abschnitt [](/section/02-elements/07-interactive-exercises/01-text) ist als
 Aufgabenabschnitt gekennzeichnet. In Abschnitt [](/section/03-test) ist ein
 Beispieltest zu finden.

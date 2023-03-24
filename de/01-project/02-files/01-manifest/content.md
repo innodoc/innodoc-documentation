@@ -9,7 +9,7 @@ Die Datei beinhaltet Metadaten für den jeweiligen Kurs. Sie wird im
 [[YAML-Format](http://yaml.org/)]{data-index-term="YAML"} verfasst. Im
 Folgenden finden sich Beschreibungen der möglichen Angaben in dieser Datei.
 
-:::{.info}
+:::info
 Eine
 [beispielhafte Manifestdatei](https://git.tu-berlin.de/innodoc/tub_base/blob/master/manifest.yml)
 befindet sich im Repository dieses Kurses.
