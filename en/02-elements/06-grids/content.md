@@ -45,7 +45,7 @@ colums use the `span` and `offset` attributes.
 
 ::::::tabs{labels="Result,Markdown"}
 
-:::::tab-item{index="1"}
+:::::tab-item
 ::::grid
 :::grid-item{xs="12"}
 ```
@@ -91,7 +91,7 @@ xs=3
 ::::
 :::::
 
-:::::tab-item{index="2"}
+:::::tab-item
 ````markdown
 ::::grid
 :::grid-item{xs="12"}
@@ -162,7 +162,7 @@ therefore places the text below the image for small screen sizes.
 
 ::::::tabs{labels="Result,Markdown"}
 
-:::::tab-item{index="1"}
+:::::tab-item
 ::::grid
 :::grid-item{xs="12" md="8"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
@@ -178,7 +178,7 @@ ipsum.
 ::::
 :::::
 
-:::::tab-item{index="2"}
+:::::tab-item
 ```markdown
 ::::grid
 :::grid-item{xs="12" md="8"}
@@ -221,7 +221,7 @@ column will fill an entire row. On very small screens each column fills a row.
 
 ::::::tabs{labels="Result,Markdown"}
 
-:::::tab-item{index="1"}
+:::::tab-item
 ::::grid
 :::grid-item{xs="12" md="6" lg="4"}
 ```
@@ -243,7 +243,7 @@ xs=12 md=12 lg=4
 ::::
 :::::
 
-:::::tab-item{index="2"}
+:::::tab-item
 ````markdown
 ::::grid
 :::grid-item{xs="12" md="6" lg="4"}

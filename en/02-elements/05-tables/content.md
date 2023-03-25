@@ -7,14 +7,14 @@ colon symbol to specify alignment.
 
 :::::example
 ::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item{index="1"}
+:::tab-item
 | Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
 |:--------------------:|----------|-------------:|:------------|
 | 11                   | 21       | 31           | 32          |
 | 12                   | 22       | 32           | 42          |
 :::
 
-:::tab-item{index="2"}
+:::tab-item
 ```markdown
 | Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
 |:--------------------:|----------|-------------:|:------------|
@@ -40,7 +40,7 @@ as well as a caption.
 
 ::::::example
 :::::tabs{labels="Result,Markdown"}
-::::tab-item{index="1"}
+::::tab-item
 :::table[Simple table with caption]{#example-table}
 | A  | B   | C  |
 |----|-----|----|
@@ -48,7 +48,7 @@ as well as a caption.
 :::
 ::::
 
-::::tab-item{index="2"}
+::::tab-item
 ```markdown
 :::table[Simple table with caption]{#example-table}
 | A  | B   | C  |

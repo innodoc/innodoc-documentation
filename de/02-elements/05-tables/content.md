@@ -7,14 +7,14 @@ das Doppelpunktsymbol, um die Ausrichtung festzulegen.
 
 :::::example
 ::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item{index="1"}
+:::tab-item
 | Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
 |:--------------------:|----------|-------------:|:------------|
 | 11                   | 21       | 31           | 32          |
 | 12                   | 22       | 32           | 42          |
 :::
 
-:::tab-item{index="2"}
+:::tab-item
 ```markdown
 | Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
 |:--------------------:|----------|-------------:|:------------|
@@ -41,7 +41,7 @@ sowie eine Beschriftung erhalten.
 
 ::::::example
 :::::tabs{labels="Ergebnis,Markdown"}
-::::tab-item{index="1"}
+::::tab-item
 :::table[Einfache Tabelle mit Beschriftung]{#example-table}
 | A  | B   | C  |
 |----|-----|----|
@@ -49,7 +49,7 @@ sowie eine Beschriftung erhalten.
 :::
 ::::
 
-::::tab-item{index="2"}
+::::tab-item
 ```markdown
 :::table[Einfache Tabelle mit Beschriftung]{#example-table}
 | A  | B   | C  |

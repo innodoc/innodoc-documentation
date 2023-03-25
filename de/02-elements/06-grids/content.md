@@ -45,7 +45,7 @@ hinzu. Die Spalten verwenden die Attribute `span` und `offset`.
 
 ::::::tabs{labels="Ergebnis,Markdown"}
 
-:::::tab-item{index="1"}
+:::::tab-item
 ::::grid
 :::grid-item{xs="12"}
 ```
@@ -91,7 +91,7 @@ xs=3
 ::::
 :::::
 
-:::::tab-item{index="2"}
+:::::tab-item
 ````markdown
 ::::grid
 :::grid-item{xs="12"}
@@ -163,7 +163,7 @@ Bildschirmen den Text unterhalb des Bildes.
 
 ::::::tabs{labels="Result,Markdown"}
 
-:::::tab-item{index="1"}
+:::::tab-item
 ::::grid
 :::grid-item{xs="12" md="8"}
 ![Lake side](lake-side.jpg "Lake side"){.img}
@@ -179,7 +179,7 @@ ipsum.
 ::::
 :::::
 
-:::::tab-item{index="2"}
+:::::tab-item
 ```
 ::::grid
 :::grid-item{xs="12" md="8"}
@@ -224,7 +224,7 @@ kleinen Bildschirmen füllt jede Spalte eine Zeile aus.
 
 ::::::tabs{labels="Result,Markdown"}
 
-:::::tab-item{index="1"}
+:::::tab-item
 ::::grid
 :::grid-item{xs="12" md="6" lg="4"}
 ```
@@ -246,7 +246,7 @@ xs=12 md=12 lg=4
 ::::
 :::::
 
-:::::tab-item{index="2"}
+:::::tab-item
 ````
 ::::grid
 :::grid-item{xs="12" md="6" lg="4"}
