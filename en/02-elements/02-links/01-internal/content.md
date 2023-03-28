@@ -48,20 +48,22 @@ automatically inserted.
 ::::
 :::::
 
-If a linked section or page does not exist, an error message will be displayed:  
+:::info
+If a linked section or page does not exist, an error message is shown:  
 [This is a link to a non-existent chapter.](/section/does-not-exist)
+:::
 
 ## Referencing elements {#referencing-elements}
 
-To refer to a specific element within a section, anchor IDs are used. These must
-be unique within a document and can be assigned manually.
+To refer to a specific element within a section, *anchor IDs* are used. These
+must be unique within a document and can be assigned manually.
 
 Anchor IDs can be assigned to content elements by specifying the identifier with
 a preceding `#`. This allows for referencing headings, as well as other
 elements.
 
 :::::example
-Link to heading with manually assigned ID..
+Link to heading with manually assigned ID.
 
 ::::tabs{labels="Result,Markdown"}
 :::tab-item
@@ -81,7 +83,7 @@ Link to heading with manually assigned ID..
 
 If no ID is explicitly assigned, headings are automatically assigned an ID
 derived from the text. For consistency, especially in multilingual texts, it is
-recommended to manually assign an explicit ID to referenced headings.
+recommended to manually assign an explicit ID when referencing headings.
 
 ::::tabs{labels="Result,Markdown"}
 :::tab-item
@@ -141,7 +143,7 @@ contents. These are referenced by using the corresponding route.
 
 Below is an overview of the available application routes.
 
-:::table[Applikationsrouten]
+:::table[Application routes]
 | Name                   | Destination       | Parameter    |
 |------------------------|-------------------|--------------|
 | `page`                 | Content page      | Page name    |

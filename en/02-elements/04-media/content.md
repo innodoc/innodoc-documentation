@@ -49,7 +49,7 @@ in this case.
 :::
 ::::
 
-:::example
+:::example{#images-as-link}
 Images can also be used inside links.
 
 **Markdown**

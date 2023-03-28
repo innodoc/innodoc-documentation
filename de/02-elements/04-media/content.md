@@ -49,7 +49,7 @@ diesem Fall automatisch aus dem Bildtitel erzeugt.
 :::
 ::::
 
-:::example
+:::example{#images-as-link}
 Bilder können auch innerhalb von Links benutzt werden.
 
 **Markdown**

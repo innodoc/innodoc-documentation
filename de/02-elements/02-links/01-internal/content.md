@@ -2,8 +2,8 @@
 title: Interne Links
 ---
 
-Es können Links zu jeder internen Applikationsseite gesetzt werden. Bei der
-Erstellung des Links wird nach dem Schema `app:ROUTE|PARAMETER` vorgegangen.
+Es können Links zu jeder internen Applikationsseite gesetzt werden. Das Linkziel
+folgt dabei dem Schema `app:ROUTE|PARAMETER`.
 
 ::::grid
 :::grid-item{xs="4" md="2"}
@@ -32,35 +32,39 @@ eingefügt.
 :::::example
 ::::tabs{labels="Ergebnis,Markdown"}
 :::tab-item
+<app:section|02-elements/03-formulas>  
 [](app:section|02-elements/04-media)  
 [anderer Abschnitt](app:section|02-elements/04-media)  
-[](app:page|about)  
+<app:page|about>  
 [andere Seite](app:page|about)
 :::
 
 :::tab-item
 ```markdown
+<app:section|02-elements/03-formulas>  
 [](app:section|02-elements/04-media)  
 [anderer Abschnitt](app:section|02-elements/04-media)  
-[](app:page|about)  
-[andere Seite](app:page|about)
+<app:page|about>  
+[andere Seite](app:page|about "Link zu anderer Seite")
 ```
 :::
 ::::
 :::::
 
+:::info
 Wenn ein verlinkter Abschnitt bzw. eine Seite nicht existiert, wird ein
 Fehlertext dargestellt:  
 [Dies ist ein Link zu einem nicht existierendem
 Kapitel.](/section/does-not-exist)
+:::
 
 ## Verweise auf Elemente {#referencing-elements}
 
 Um auf ein bestimmtes Element innerhalb eines Abschnitts zu verweisen, werden
-Anker-IDs verwendet. Diese müssen innerhalb eines Dokuments einzigartig sein und
-können manuell zugewiesen werden.
+*Anker-IDs* verwendet. Diese müssen innerhalb eines Dokuments einzigartig sein
+und können manuell zugewiesen werden.
 
-Inhaltselementen können *Anker-IDs* zugewiesen werden, indem der Bezeichner mit
+Inhaltselementen können Anker-IDs zugewiesen werden, indem der Bezeichner mit
 einem vorangestelltem `#` angegeben wird. So lassen sich etwa Überschriften,
 aber auch andere Elemente referenzieren.
 
@@ -127,16 +131,16 @@ Diese werden durch die Verwendung der entsprechenden Route referenziert.
 :::::example
 ::::tabs{labels="Ergebnis,Markdown"}
 :::tab-item
-[](app:home)  
-[](app:progress)  
-[](app:toc)
+<app:home>  
+<app:progress>  
+<app:toc>
 :::
 
 :::tab-item
 ```markdown
-[](app:home)  
-[](app:progress)  
-[](app:toc)
+<app:home>  
+<app:progress>  
+<app:toc>
 ```
 :::
 ::::
