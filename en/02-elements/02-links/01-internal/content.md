@@ -51,7 +51,7 @@ automatically inserted.
 If a linked section or page does not exist, an error message will be displayed:  
 [This is a link to a non-existent chapter.](/section/does-not-exist)
 
-## References to elements
+## Referencing elements {#referencing-elements}
 
 To refer to a specific element within a section, anchor IDs are used. These must
 be unique within a document and can be assigned manually.

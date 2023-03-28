@@ -14,9 +14,18 @@ einen Zeilenumbruch zu erzwingen, muss ein doppeltes Leerzeichen am Ende der
 Zeile verwendet werden.
 :::
 
-:::example
-**Markdown**
+:::::example
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc velit, dictum
+at tristique sit amet, aliquet id urna. Praesent aliquam ligula id urna
+vestibulum.
 
+Consectetur adipiscing elit. Proin nec tincidunt nunc. Curabitur orci eros,
+vestibulum eu elementum ac, semper eget metus. Vivamus nulla sem.
+:::
+
+:::tab-item
 ```markdown
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc velit, dictum
 at tristique sit amet, aliquet id urna. Praesent aliquam ligula id urna
@@ -25,18 +34,21 @@ vestibulum.
 Consectetur adipiscing elit. Proin nec tincidunt nunc. Curabitur orci eros,
 vestibulum eu elementum ac, semper eget metus. Vivamus nulla sem.
 ```
+:::
+::::
 
-**Ergebnis**
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+Lorem ipsum
+dolor sit amet,
+consectetur adipiscing elit.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc velit, dictum
-at tristique sit amet, aliquet id urna. Praesent aliquam ligula id urna
-vestibulum.
+Lorem ipsum  
+dolor sit amet,  
+consectetur adipiscing elit.
+:::
 
-Consectetur adipiscing elit. Proin nec tincidunt nunc. Curabitur orci eros,
-vestibulum eu elementum ac, semper eget metus. Vivamus nulla sem.
-
-**Markdown**
-
+:::tab-item
 ```markdown
 Lorem ipsum
 dolor sit amet,
@@ -49,121 +61,135 @@ consectetur adipiscing elit.
 
 *Hinweis: Am Ende der Zeilen des zweiten Absatzes befindet sich ein doppeltes
 Leerzeichen.*
-
-**Ergebnis**
-
-Lorem ipsum
-dolor sit amet,
-consectetur adipiscing elit.
-
-Lorem ipsum  
-dolor sit amet,  
-consectetur adipiscing elit.
 :::
+::::
+:::::
 
 ## Textformatierung {#formatting}
 
 Dieser Abschnitt demonstriert Möglichkeiten der einfachen Textformatierung.
 
-:::example
-**Markdown**
+:::::example
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
+_verschiedene Möglichkeiten_.
+:::
 
+:::tab-item
 ```markdown
 Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
 _verschiedene Möglichkeiten_.
 ```
+:::
+::::
 
-**Ergebnis**
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+**Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
+__verschiedene Möglichkeiten__.
+:::
 
-Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
-_verschiedene Möglichkeiten_.
-
-**Markdown**
-
+:::tab-item
 ```markdown
 **Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
 __verschiedene Möglichkeiten__.
 ```
+:::
+::::
 
-**Ergebnis**
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
+~~oder ganzen Satzteilen~~.
+:::
 
-**Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
-__verschiedene Möglichkeiten__.
-
-**Markdown**
-
+:::tab-item
 ```markdown
 Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
 ~~oder ganzen Satzteilen~~.
 ```
+:::
+::::
 
-**Ergebnis**
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
+Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
+durchstreichen*.
+:::
 
-Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
-~~oder ganzen Satzteilen~~.
-
-**Markdown**
-
+:::tab-item
 ```markdown
 Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
 Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
 durchstreichen*.
 ```
+:::
+::::
 
-**Ergebnis**
-
-Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
-Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
-durchstreichen*.
-
-**Markdown**
-
-```markdown
-Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
-vorangestellt werden.
-```
-
-**Ergebnis**
-
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
 Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
 vorangestellt werden.
 :::
+
+:::tab-item
+```markdown
+Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
+vorangestellt werden.
+```
+:::
+::::
+:::::
 
 ## Überschriften
 
 Einzelne Abschnitte können durch Überschriften weiter strukturiert werden.
 
 Siehe auch das [Beispiel für die Vergabe von
-IDs](/section/02-elements/02-links/01-internal#heading-example).
+IDs](/section/02-elements/02-links/01-internal#referencing-elements).
 
 :::info
 Die Verwendung von Überschriften erster Ordnung sollte vermieden werden, da
 diese dem Seitentitel vorbehalten ist.
 :::
 
-:::example
-**Markdown**
-
-```markdown
-## Überschrift zweiter Ordnung
-### Überschrift dritter Ordnung
-#### Überschrift vierter Ordnung
-```
-
-**Ergebnis**
-
+:::::example
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
 ## Überschrift zweiter Ordnung
 ### Überschrift dritter Ordnung
 #### Überschrift vierter Ordnung
 :::
 
+:::tab-item
+```markdown
+## Überschrift zweiter Ordnung
+### Überschrift dritter Ordnung
+#### Überschrift vierter Ordnung
+```
+:::
+::::
+:::::
+
 ## Listen und Aufzählungen
 
 Es können nummerierte und unnummerierte Listen angezeigt werden.
 
-:::example
-**Markdown**
+:::::example
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+- A
+- B
+- C
 
+1. A
+2. B
+3. C
+:::
+
+:::tab-item
 ```markdown
 - A
 - B
@@ -173,34 +199,13 @@ Es können nummerierte und unnummerierte Listen angezeigt werden.
 1. B
 1. C
 ```
-
-**Ergebnis**
-
-- A
-- B
-- C
-
-1. A
-2. B
-3. C
+:::
+::::
 
 Listen können untergliedert und kombiniert werden.
 
-**Markdown**
-
-```markdown
-- I
-   - II
-      1. III
-      1. III
-   - II
-- I
-   1. II
-   1. II
-```
-
-**Ergebnis**
-
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
 - I
    - II
       1. III
@@ -210,21 +215,37 @@ Listen können untergliedert und kombiniert werden.
    1. II
    1. II
 :::
+
+:::tab-item
+```markdown
+- I
+   - II
+      1. III
+      1. III
+   - II
+- I
+   1. II
+   1. II
+`:::
+::::
+:::::
 
 ## Blockzitate
 
 Durch ein Voranstellen des Zeichens `>` lassen sich Blockzitate umsetzen.
 
-:::example
-**Markdown**
-
-```markdown
-> Ich würde gerne auf dem Mars sterben. Aber nicht bei der Landung.  
-> *Elon Musk*
-```
-
-**Ergebnis**
-
-> Ich würde gerne auf dem Mars sterben. Aber nicht bei der Landung.  
-> *Elon Musk*
+:::::example
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+> Sein oder Nichtsein: das ist die Frage  
+> —William Shakespeare
 :::
+
+:::tab-item
+```markdown
+> Sein oder Nichtsein: das ist die Frage  
+> —William Shakespeare
+```
+:::
+::::
+:::::
