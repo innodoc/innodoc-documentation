@@ -2,29 +2,19 @@
 title: Formulas
 ---
 
-It is possible to use $\LaTeX$ formulas. They are rendered using the
-[MathJax library](https://www.mathjax.org/).
+It is possible to use $\LaTeX$ formulas. They are rendered using the software
+[$\KaTeX$](https://katex.org/).
 
 ## Basic usage
 
 Formulas use the `$` sign as delimiter. They can be displayed inline (single
 `$`) or as a block (double `$`).
 
-:::example
-**Markdown**
+:::::example
+A simple example for `inline` and `display` presentation.
 
-```markdown
-Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
-
-Or they can stand alone as a block element:
-
-$$
-\sum_{n=1}^{\infty} 2^{-n} = 1
-$$
-```
-
-**Result**
-
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
 Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
 
 Or they can stand alone as a block element:
@@ -34,25 +24,23 @@ $$
 $$
 :::
 
-:::example
+:::tab-item
+```markdown
+Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
+
+Or they can stand alone as a block element:
+
+$$
+\sum_{n=1}^{\infty} 2^{-n} = 1
+$$
+```
+:::
+::::
+
 Another more complicated example using an `align` environment.
 
-**Markdown**
-
-```markdown
-$$
-\begin{align*}
-  \sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) + (k+1) \\
-  & = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis}) \\
-  & = \frac{k(k+1)+2(k+1)}{2} \\
-  & = \frac{(k+1)(k+2)}{2} \\
-  & = \frac{(k+1)((k+1)+1)}{2}
-\end{align*}
-$$
-```
-
-**Result**
-
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
 $$
 \begin{align*}
   \sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) + (k+1) \\
@@ -64,7 +52,25 @@ $$
 $$
 :::
 
+:::tab-item
+```markdown
+$$
+\begin{align*}
+  \sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) + (k+1) \\
+  & = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis}) \\
+  & = \frac{k(k+1)+2(k+1)}{2} \\
+  & = \frac{(k+1)(k+2)}{2} \\
+  & = \frac{(k+1)((k+1)+1)}{2}
+\end{align*}
+$$
+```
+:::
+::::
+:::::
+
 ## Using custom extensions
+
+<!-- TODO -->
 
 Sometimes it is desirable to use custom macros that add functionality. Writing
 extensions for MathJax is out of scope for this document. Please refer to the
@@ -75,7 +81,7 @@ The course manifest lets you override parts of the MathJax configuration to add
 custom extensions to the mix. Please refer to the section
 [](/section/01-project/02-files/01-manifest#mathjax) for an example.
 
-:::info {#innodoc-mathjax}
+:::info{#innodoc-mathjax}
 Two extensions
 [**\@innodoc/mathjax-num**](https://git.tu-berlin.de/innodoc/mathjax-num)
 and
