@@ -61,7 +61,7 @@ dolor sit amet,
 consectetur adipiscing elit.
 :::
 
-## Textformatierung
+## Textformatierung {#formatting}
 
 Dieser Abschnitt demonstriert Möglichkeiten der einfachen Textformatierung.
 

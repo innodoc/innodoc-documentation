@@ -205,6 +205,7 @@ Anstatt ein einzelnes `span`-Attribut pro Spalte zu verwenden, können
 verschiedene Werte angegeben werden. Die Grenzen, an denen das Layout wechseln
 soll, werden als *Breakpoints* bezeichnet.
 
+:::table[Breakpoints]
 | Name              | Attribut  | Breite (in Pixel) | Beispielgerät      |
 | ----------------- | --------- | ----------------- | ------------------ |
 | Extra klein       | `xs`      | < 600             | Kleines Smartphone |
@@ -212,8 +213,7 @@ soll, werden als *Breakpoints* bezeichnet.
 | Medium            | `md`      | ≥ 900             | Smartphone/Tablet  |
 | Groß              | `lg`      | ≥ 1200            | Tablet/Desktop     |
 | Extra groß        | `xl`      | ≥ 1536            | Desktop            |
-
-: Breakpoints
+:::
 
 :::::::example
 Dieses Beispiel enthält eine Zeile mit drei Spalten. Auf einem großen Bildschirm

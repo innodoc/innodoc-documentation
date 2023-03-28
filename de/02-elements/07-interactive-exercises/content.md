@@ -12,14 +12,14 @@ zur Aufgabe zu verweisen.
 **Markdown**
 
 ```markdown
-:::exercise {#EX_DUMMY}
+:::exercise{#EX_DUMMY}
 [INHALT]
 :::
 ```
 
 **Ergebnis**
 
-:::exercise {#EX_DUMMY}
+:::exercise{#EX_DUMMY}
 [INHALT]
 :::
 
@@ -36,7 +36,7 @@ Unten finden Sie ein vollständiges Beispiel für eine Aufgabe.
 **Markdown**
 
 ```markdown
-::::exercise {#EX_FULL}
+::::exercise{#EX_FULL}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie
 möglich vereinfacht:
 
@@ -57,7 +57,7 @@ $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
 
 **Ergebnis**
 
-::::exercise {#EX_FULL}
+::::exercise{#EX_FULL}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie
 möglich vereinfacht:
 

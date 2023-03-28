@@ -60,7 +60,7 @@ dolor sit amet,
 consectetur adipiscing elit.
 :::
 
-## Text Formatting
+## Text Formatting {#formatting}
 
 This section demonstrates the possibilities of basic text formatting.
 

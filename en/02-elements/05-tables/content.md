@@ -6,7 +6,7 @@ Tables do not allow for multi-line cells or block-level elements. They use the
 colon symbol to specify alignment.
 
 :::::example
-::::tabs{labels="Ergebnis,Markdown"}
+::::tabs{labels="Result,Markdown"}
 :::tab-item
 | Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
 |:--------------------:|----------|-------------:|:------------|

@@ -20,7 +20,7 @@ Die Antwort kann auf verschiedene Arten ausgewertet werden (Parameter
 Bei diesem Fragetypen muss der eingetippte Wert exakt der Lösung entsprechen
 (Groß-/Kleinschreibung wird beachtet).
 
-:::exercise {#EX_TEXT_EXACT}
+:::exercise{#EX_TEXT_EXACT}
 Für die korrekte Beantwortung der Frage muss das Lösungswort *Lösung* exakt
 eingegeben werden.
 
@@ -43,18 +43,18 @@ Die Eingabe wird als mathematischer Ausdruck interpretiert.
 
 ::::example
 ```
-:::exercise {#EX_PARSED_0}
+:::exercise{#EX_PARSED_0}
 $\tfrac{\alpha+\beta}{\alpha-\beta}$ nimmt den Wert []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} an für $\alpha=6$ und $\beta=4$.
 :::
 ```
-:::exercise {#EX_PARSED_0}
+:::exercise{#EX_PARSED_0}
 $\tfrac{\alpha+\beta}{\alpha-\beta}$ nimmt den Wert []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} an für $\alpha=6$ und $\beta=4$.
 :::
 ::::
 
 :::::example
 ```
-::::exercise {#EX_PARSED_1}
+::::exercise{#EX_PARSED_1}
 Formen Sie um und geben Sie die Lösungsmengen dieser linearen Gleichungen an:
 
 [Schreiben Sie einfach `{a}` für eine einelementige Menge und `{}` für die leere Menge.]{.hint-text}
@@ -73,7 +73,7 @@ Aussage mit $L=\lbrace\rbrace$.
 ::::
 ```
 
-::::exercise {#EX_PARSED_1}
+::::exercise{#EX_PARSED_1}
 Formen Sie um und geben Sie die Lösungsmengen dieser linearen Gleichungen an:
 
 [Schreiben Sie einfach `{a}` für eine einelementige Menge und `{}` für die leere Menge.]{.hint-text}
@@ -149,7 +149,7 @@ NOT IMPLEMENTED BUT 'factor-notation' is actually used in tub_mathe:
 
 :::::example
 ```
-::::exercise {#EX_FUNCTION_0}
+::::exercise{#EX_FUNCTION_0}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie möglich vereinfacht?
 
 1.  Den Winkel $\alpha$ sowohl für $x$ als auch für $y$: Dann ist $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" points="4"}.
@@ -174,7 +174,7 @@ Am sichersten ist es, die Variablen vor der Termeinsetzung zu klammern, wenn der
 ::::
 ```
 
-::::exercise {#EX_FUNCTION_0}
+::::exercise{#EX_FUNCTION_0}
 Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie möglich vereinfacht?
 
 1.  Den Winkel $\alpha$ sowohl für $x$ als auch für $y$: Dann ist $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" points="4"}.
@@ -201,7 +201,7 @@ Am sichersten ist es, die Variablen vor der Termeinsetzung zu klammern, wenn der
 
 :::::example
 ```
-::::exercise {#EX_FUNCTION_1}
+::::exercise{#EX_FUNCTION_1}
 Formen Sie in eine Summendarstellung um:
 $a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
@@ -211,7 +211,7 @@ $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 ::::
 ```
 
-::::exercise {#EX_FUNCTION_1}
+::::exercise{#EX_FUNCTION_1}
 Formen Sie in eine Summendarstellung um:
 $a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
@@ -223,7 +223,7 @@ $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 
 :::::example
 ```
-::::exercise {#EX_FUNCTION_2}
+::::exercise{#EX_FUNCTION_2}
 Schreiben Sie diesen Potenz- und Wurzelausdruck als einfache Potenz mit einem rationalen Exponenten:
 
 $\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
@@ -236,7 +236,7 @@ $$x^{\frac32}$$
 ::::
 ```
 
-::::exercise {#EX_FUNCTION_2}
+::::exercise{#EX_FUNCTION_2}
 Schreiben Sie diesen Potenz- und Wurzelausdruck als einfache Potenz mit einem rationalen Exponenten:
 
 $\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
@@ -261,7 +261,7 @@ Die Eingabe wird als Intervall interpretiert.
 
 :::::example
 ```
-::::exercise {#EX_INTERVAL}
+::::exercise{#EX_INTERVAL}
 Wie lautet die Lösungsmenge für die gemischte Gleichung $|x-3|\cdot x=9$?
 
 Ist $x$ aus dem Intervall
@@ -277,7 +277,7 @@ Lösung: `[3;infty)`.
 ::::
 ```
 
-::::exercise {#EX_INTERVAL}
+::::exercise{#EX_INTERVAL}
 Wie lautet die Lösungsmenge für die gemischte Gleichung $|x-3|\cdot x=9$?
 
 Ist $x$ aus dem Intervall
@@ -302,7 +302,7 @@ denominator.
 
 :::::example
 ```
-::::exercise {#EX_EXACT_FRACTION}
+::::exercise{#EX_EXACT_FRACTION}
 Berechnen Sie die folgenden Zahlenwerte, indem Sie den Hauptnenner bilden und
 soweit wie möglich kürzen:
 
@@ -322,7 +322,7 @@ $$\dfrac{1+2}{5+6} \;=\; \dfrac{3}{11}  \;\;\text{aber}\;\; \dfrac15+\dfrac26 \;
 ::::
 ```
 
-::::exercise {#EX_EXACT_FRACTION}
+::::exercise{#EX_EXACT_FRACTION}
 Berechnen Sie die folgenden Zahlenwerte, indem Sie den Hauptnenner bilden und
 soweit wie möglich kürzen:
 

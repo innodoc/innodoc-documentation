@@ -11,14 +11,14 @@ document. It can be used to reference questions from other parts of the course.
 **Markdown**
 
 ```markdown
-:::exercise {#EX_DUMMY}
+:::exercise{#EX_DUMMY}
 [CONTENT]
 :::
 ```
 
 **Result**
 
-:::exercise {#EX_DUMMY}
+:::exercise{#EX_DUMMY}
 [CONTENT]
 :::
 
@@ -35,7 +35,7 @@ Below is a complete example of an exercise.
 **Markdown**
 
 ```markdown
-::::exercise {#EX_FULL}
+::::exercise{#EX_FULL}
 Which term is formed if the following object is inserted into the term
 $x^2+y^2$?
 
@@ -54,18 +54,18 @@ $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
 
 **Result**
 
-::::exercise {#EX_FULL}
+::::exercise{#EX_FULL}
 Which term is formed if the following object is inserted into the term
 $x^2+y^2$?
 
 The angle $\alpha$ both for $x$ and $y$: Then
-$x^2+y^2$$\;\;=\;$[]{.question .text length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" validation="mathExpression" points="4"}.
+$x^2+y^2\;=\;$[]{.question .text length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" validation="mathExpression" points="4"}.
 
-:::hint-text
+:::input-hint
 The Greek letter $\alpha$ can be entered as `alpha`.
 :::
 
-:::hint
+:::solution
 $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
 :::
 ::::

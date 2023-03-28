@@ -20,7 +20,7 @@ Furthermore all text inputs accept the parameter `length`.
 For this type of question, the entered value must match the solution character
 by character (case-sensitive).
 
-:::exercise {#EX_TEXT_EXACT}
+:::exercise{#EX_TEXT_EXACT}
 For the correct answer of the question the word *solution* must be entered
 exactly.
 
@@ -43,18 +43,18 @@ The input is interpreted as a mathematical expression.
 
 ::::example
 ```
-:::exercise {#EX_PARSED_0}
+:::exercise{#EX_PARSED_0}
 $\tfrac{\alpha+\beta}{\alpha-\beta}$ takes the value []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} for $\alpha=6$ and $\beta=4$.
 :::
 ```
-:::exercise {#EX_PARSED_0}
+:::exercise{#EX_PARSED_0}
 $\tfrac{\alpha+\beta}{\alpha-\beta}$ takes the value []{.question .text validation="parsed" length="10" solution="5" precision="3" points="4"} for $\alpha=6$ and $\beta=4$.
 :::
 ::::
 
 :::::example
 ```
-::::exercise {#EX_PARSED_1}
+::::exercise{#EX_PARSED_1}
 Transform the following linear equations and specify their solution sets:
 
 [Enter simply `{a}` for a unit set and `{}` for an empty set.]{.hint-text}
@@ -74,7 +74,7 @@ hence $L=\lbrace\rbrace$.
 ::::
 ```
 
-::::exercise {#EX_PARSED_1}
+::::exercise{#EX_PARSED_1}
 Transform the following linear equations and specify their solution sets:
 
 [Enter simply `{a}` for a unit set and `{}` for an empty set.]{.hint-text}
@@ -151,7 +151,7 @@ NOT IMPLEMENTED BUT 'factor-notation' is actually used in tub_mathe:
 
 :::::example
 ```
-::::exercise {#EX_FUNCTION_0}
+::::exercise{#EX_FUNCTION_0}
 Which term is formed if the following object is inserted into the term $x^2+y^2$?
 
 1.  The angle $\alpha$ both for $x$ and $y$: Then $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" points="4"}.
@@ -176,7 +176,7 @@ It is safest to bracket the variables before inserting, if the new term contains
 ::::
 ```
 
-::::exercise {#EX_FUNCTION_0}
+::::exercise{#EX_FUNCTION_0}
 Which term is formed if the following object is inserted into the term $x^2+y^2$?
 
 1.  The angle $\alpha$ both for $x$ and $y$: Then $x^2+y^2$$\;\;=\;$[]{.question .text validation="function" length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" points="4"}.
@@ -203,7 +203,7 @@ It is safest to bracket the variables before inserting, if the new term contains
 
 :::::example
 ```
-::::exercise {#EX_FUNCTION_1}
+::::exercise{#EX_FUNCTION_1}
 Transform into a sum:
 $a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
@@ -213,7 +213,7 @@ $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 ::::
 ```
 
-::::exercise {#EX_FUNCTION_1}
+::::exercise{#EX_FUNCTION_1}
 Transform into a sum:
 $a\cdot(b+c)+c\cdot(a+b)$$\;\;=\;$[]{.question .text validation="function" length="20" solution="a*(b+c)+c*(a+b)" supporting-points="3" variables="a,b,c" precision="3" simplification="no-brackets" points="4"}.
 
@@ -225,7 +225,7 @@ $$a\cdot(b+c)+c\cdot(a+b) \;=\; a b + a c + c a + c b \;=\; a b + 2 a c + b c$$
 
 :::::example
 ```
-::::exercise {#EX_FUNCTION_2}
+::::exercise{#EX_FUNCTION_2}
 Rewrite the following expression containing powers and roots as a simple power with a rational exponent:
 
 $\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
@@ -238,7 +238,7 @@ $$x^{\frac32}$$
 ::::
 ```
 
-::::exercise {#EX_FUNCTION_2}
+::::exercise{#EX_FUNCTION_2}
 Rewrite the following expression containing powers and roots as a simple power with a rational exponent:
 
 $\dfrac{x^3}{\left({\sqrt{x}}\right)^3}$$\;\;=\;$[]{.question .text validation="function" length="25" solution="x^(3/2)" supporting-points="10" variables="x" precision="5" simplification="one-power-no-mult-or-div,special-support-points" points="4"}.
@@ -263,7 +263,7 @@ The input is interpreted as an interval.
 
 :::::example
 ```
-::::exercise {#EX_INTERVAL}
+::::exercise{#EX_INTERVAL}
 Find the solution set of the mixed equation $|x-3|\cdot x=9$.
 
 If $x$ is in the interval
@@ -277,7 +277,7 @@ value term is non-negative.
 ::::
 ```
 
-::::exercise {#EX_INTERVAL}
+::::exercise{#EX_INTERVAL}
 Find the solution set of the mixed equation $|x-3|\cdot x=9$.
 
 If $x$ is in the interval
@@ -306,7 +306,7 @@ positiven Nenner haben.
 
 :::::example
 ```
-::::exercise {#EX_EXACT_FRACTION}
+::::exercise{#EX_EXACT_FRACTION}
 Calculate the following numbers by finding the least common denominator and
 reducing as much as possible:
 
@@ -326,7 +326,7 @@ $$\dfrac{1+2}{5+6} \;=\; \dfrac{3}{11}  \;\;\text{but}\;\; \dfrac15+\dfrac26 \;=
 ::::
 ```
 
-::::exercise {#EX_EXACT_FRACTION}
+::::exercise{#EX_EXACT_FRACTION}
 Calculate the following numbers by finding the least common denominator and
 reducing as much as possible:
 

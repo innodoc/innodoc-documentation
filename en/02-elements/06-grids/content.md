@@ -203,6 +203,7 @@ ipsum.
 Instead of using a single `span` attribute per column, different span values can
 be used. The boundaries when the layout should switch are called *breakpoints*.
 
+:::table[Viewport breakpoints]
 | Name              | Attribute | Viewport width (in pixels) | Device example      |
 | ----------------- | --------- | -------------------------- | ------------------- |
 | Extra small       | `xs`      | < 600                      | Small mobile phone  |
@@ -210,8 +211,7 @@ be used. The boundaries when the layout should switch are called *breakpoints*.
 | Medium            | `md`      | ≥ 900                      | Mobile phone/Tablet |
 | Large             | `lg`      | ≥ 1200                     | Tablet/Desktop      |
 | Extra large       | `xl`      | ≥ 1536                     | Desktop             |
-
-: Viewport breakpoints
+:::
 
 :::::::example
 In this example there is one row with three colums. On a large screen the
