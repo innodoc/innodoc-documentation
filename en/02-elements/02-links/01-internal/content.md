@@ -2,107 +2,155 @@
 title: Internal Links
 ---
 
-You can link to other sections, specific elements within sections and "special"
-pages.
+It is possible to create links to any internal application page using the
+`app:ROUTE|PARAMETER` schema.
 
-## Link to other sections
+::::grid
+:::grid-item{xs="4" md="2"}
+`ROUTE`
+:::
+:::grid-item{xs="8" md="10"}
+The name of the route. An [overview of all routes](#routes) can be found at the
+end of this section.
+:::
+:::grid-item{xs="4" md="2"}
+`PARAMETER`
+:::
+:::grid-item{xs="8" md="10"}
+The parameter of the route is only specified for links to pages and sections.
+:::
+::::
 
-To create a link to another section, you need to specify the section ID. If you
-leave out the link text the section number and title will be shown.
+## Links to Sections and Pages
 
-:::example
+To create a link to a section or a page, the *section path* or *page name* must
+be provided as a parameter. The route and parameter are separated by a pipe
+symbol `|`. If no link text is specified, the title of the link destination is
+automatically inserted.
 
-**Markdown**
-
-```markdown
-[](/section/02-elements/04-media)  
-[other section](/section/02-elements/04-media)
-```
-
-**Result**
-
-[](/section/02-elements/04-media)  
-[other section](/section/02-elements/04-media)
+:::::example
+::::tabs{labels="Result,Markdown"}
+:::tab-item
+[](app:section|02-elements/04-media)  
+[other section](app:section|02-elements/04-media)  
+[](app:page|about)  
+[other page](app:page|about)
 :::
 
-If you specify a non-existent section an error message is shown:  
-[This is a Link to a non-existent chapter.](/section/does-not-exist)
-
-## Link with anchors
-
-In order to link to a particular element within a section you can use anchor
-IDs. These IDs need to be unique within one page and can be assigned manually.
-
-:::example
-Link to heading _Videos_ in another section:
-
-**Markdown**
-
+:::tab-item
 ```markdown
-[](/section/02-elements/04-media#videos)
+[](app:section|02-elements/04-media)  
+[other section](app:section|02-elements/04-media)  
+[](app:page|about)  
+[other page](app:page|about)
 ```
+:::
+::::
+:::::
 
-**Result**
+If a linked section or page does not exist, an error message will be displayed:  
+[This is a link to a non-existent chapter.](/section/does-not-exist)
 
-[](/section/02-elements/04-media#videos)
+## References to elements
+
+To refer to a specific element within a section, anchor IDs are used. These must
+be unique within a document and can be assigned manually.
+
+Anchor IDs can be assigned to content elements by specifying the identifier with
+a preceding `#`. This allows for referencing headings, as well as other
+elements.
+
+:::::example
+Link to heading with manually assigned ID..
+
+::::tabs{labels="Result,Markdown"}
+:::tab-item
+### Heading with ID {#my-id}
+
+[Link to heading](#my-id)
 :::
 
-You can assign IDs by adding the identifier preceded by a `#` symbol.
-
-:::example {#heading-example}
-**Markdown**
-
+:::tab-item
 ```markdown
-## Heading with ID {#my-id}
+### Heading with ID {#my-id}
 
 [Link to heading](#my-id)
 ```
+:::
+::::
 
-**Result**
+If no ID is explicitly assigned, headings are automatically assigned an ID
+derived from the text. For consistency, especially in multilingual texts, it is
+recommended to manually assign an explicit ID to referenced headings.
 
-## Heading with ID {#my-id}
+::::tabs{labels="Result,Markdown"}
+:::tab-item
+### Heading with automatic ID
 
-[Link to heading](#my-id)
+[Link to heading](#heading-with-automatic-id)
 :::
 
-:::info
-Each heading is automatically assigned an ID if not explicitly given. The
-generated ID is derived from the text.
-
-**Markdown**
-
+:::tab-item
 ```markdown
-## This is a test
+### Heading with automatic ID
 
-[Link to heading](#this-is-a-test)
+[Link to heading](#heading-with-automatic-id)
 ```
+:::
+::::
 
-**Result**
+Link to heading _Videos_ in another chapter:
 
-## This is a test
-
-[Link to heading](#this-is-a-test)
+::::tabs{labels="Result,Markdown"}
+:::tab-item
+[Subsection _Videos_ in chapter _Images and Videos_](/section/02-elements/04-media#videos)
 :::
 
-## Link to special pages
-
-Every course includes the special pages _Index Page_, _Progress_ and _Table of
-contents_. They don't have a section ID but you can still link to them using
-special identifiers `___INDEX_PAGE___`, `___PROGRESS___` and `___TOC___`.
-
-:::example
-
-**Markdown**
-
+:::tab-item
 ```markdown
-[](___INDEX_PAGE___)  
-[](___PROGRESS___)  
-[](___TOC___)
+[Subsection _Videos_ in chapter _Images and Videos_](/section/02-elements/04-media#videos)
 ```
+:::
+::::
+:::::
 
-**Result**
+## References to Other Pages
 
-[](___INDEX_PAGE___)  
-[](___PROGRESS___)  
-[](___TOC___)
+In every course, there are additional pages such as the glossary and table of
+contents. These are referenced by using the corresponding route.
+
+:::::example
+::::tabs{labels="Result,Markdown"}
+:::tab-item
+[](app:home)  
+[](app:progress)  
+[](app:toc)
+:::
+
+:::tab-item
+```markdown
+[](app:home)  
+[](app:progress)  
+[](app:toc)
+```
+:::
+::::
+:::::
+
+### Overview of Routes {#routes}
+
+Below is an overview of the available application routes.
+
+:::table[Applikationsrouten]
+| Name                   | Destination       | Parameter    |
+|------------------------|-------------------|--------------|
+| `page`                 | Content page      | Page name    |
+| `section`              | Content section   | Section path |
+| `home`                 | Course homepage   |              |
+| `progress`             | Learning progress |              |
+| `toc`                  | Table of contents |              |
+| `glossary`             | Glossary          |              |
+| `user:login`           | Login             |              |
+| `user:forgot-password` | Password recovery |              |
+| `user:sign-up`         | Create account    |              |
 :::

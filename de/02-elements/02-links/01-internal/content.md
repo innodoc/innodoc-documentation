@@ -2,112 +2,160 @@
 title: Interne Links
 ---
 
-Es kann auf andere Abschnitte, bestimmte Elemente innerhalb von Abschnitten und
-"spezielle" Seiten verweist werden.
+Es können Links zu jeder internen Applikationsseite gesetzt werden. Bei der
+Erstellung des Links wird nach dem Schema `app:ROUTE|PARAMETER` vorgegangen.
 
-## Verweise auf andere Abschnitte
+::::grid
+:::grid-item{xs="4" md="2"}
+`ROUTE`
+:::
+:::grid-item{xs="8" md="10"}
+Der Name der Route. Am Ende dieses Abschnitts ist eine
+[Übersicht aller Routen](#routes) zu finden.
+:::
+:::grid-item{xs="4" md="2"}
+`PARAMETER`
+:::
+:::grid-item{xs="8" md="10"}
+Der Parameter der Route wird nur bei Links zu Seiten und Abschnitten angegeben.
+:::
+::::
 
-Um einen Link zu einem anderen Abschnitt zu erstellen, muss die Abschnitts-ID
-angeben werden. Wenn der Linktext weglassen wird, werden die Abschnittsnummer
-und der Titel angezeigt.
+## Verweise auf Abschnitte und Seiten
 
-:::example
+Um einen Link zu einem Abschnitt oder einer Seite zu erstellen, muss der
+*Abschnittspfad* bzw. der *Seitenname* als Parameter angegebenen werden. Die
+Route und der Parameter werden mit dem Pipe-Symbol `|` voneinander getrennt.
+Wird kein Linktext angegeben, so wird automatisch der Titel des Linkziels
+eingefügt.
 
-**Markdown**
-
-```markdown
-[](/section/02-elements/04-media)  
-[anderer Abschnitt](/section/02-elements/04-media)
-```
-
-**Ergebnis**
-
-[](/section/02-elements/04-media)  
-[anderer Abschnitt](/section/02-elements/04-media)
+:::::example
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+[](app:section|02-elements/04-media)  
+[anderer Abschnitt](app:section|02-elements/04-media)  
+[](app:page|about)  
+[andere Seite](app:page|about)
 :::
 
-Wenn ein verlinkter Abschnitt nicht existiert, wird ein Fehlertext dargestellt:  
+:::tab-item
+```markdown
+[](app:section|02-elements/04-media)  
+[anderer Abschnitt](app:section|02-elements/04-media)  
+[](app:page|about)  
+[andere Seite](app:page|about)
+```
+:::
+::::
+:::::
+
+Wenn ein verlinkter Abschnitt bzw. eine Seite nicht existiert, wird ein
+Fehlertext dargestellt:  
 [Dies ist ein Link zu einem nicht existierendem
 Kapitel.](/section/does-not-exist)
 
-## Verweise auf einzelne Elemente innerhalb eines Abschnitts
+## Verweise auf Elemente
 
 Um auf ein bestimmtes Element innerhalb eines Abschnitts zu verweisen, werden
-IDs verwendet. Diese müssen innerhalb eines Dokuments einzigartig sein und
+Anker-IDs verwendet. Diese müssen innerhalb eines Dokuments einzigartig sein und
 können manuell zugewiesen werden.
 
-:::example
+Inhaltselementen können *Anker-IDs* zugewiesen werden, indem der Bezeichner mit
+einem vorangestelltem `#` angegeben wird. So lassen sich etwa Überschriften,
+aber auch andere Elemente referenzieren.
+
+:::::example
+Link zu Überschrift mit händisch vergebener ID.
+
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+### Überschrift mit ID {#my-id}
+
+[Link zur Überschrift](#my-id)
+:::
+
+:::tab-item
+```markdown
+### Überschrift mit ID {#my-id}
+
+[Link zur Überschrift](#my-id)
+```
+:::
+::::
+
+Wird keine explizit angegeben, so erhalten Überschriften automatisch eine vom
+Text abgeleitete ID. Aus Konsistenzgründen vor allem bei mehrsprachigen Texten
+wird dazu geraten, referenzierten Überschriften manuell eine explizite ID
+zuzuweisen.
+
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+### Überschrift mit automatischer ID
+
+[Link zur Überschrift](#überschrift-mit-automatischer-id)
+:::
+
+:::tab-item
+```markdown
+### Überschrift mit automatischer ID
+
+[Link zur Überschrift](#überschrift-mit-automatischer-id)
+```
+:::
+::::
+
 Link zur Überschrift _Videos_ in einem anderen Kapitel:
 
-**Markdown**
-
-```markdown
-[](/section/02-elements/04-media#videos)
-```
-
-**Ergebnis**
-
-[](/section/02-elements/04-media#videos)
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+[Unterabschnitt _Videos_ im Kapitel _Bilder und Videos_](/section/02-elements/04-media#videos)
 :::
 
-IDs können zugewiesen werden, indem der Bezeichner mit einem vorangestelltem `#`
-angegeben wird.
-
-:::example {#heading-example}
-**Markdown**
-
+:::tab-item
 ```markdown
-## Überschrift mit ID {#my-id}
-
-[Link zur Überschrift](#my-id)
+[Unterabschnitt _Videos_ im Kapitel _Bilder und Videos_](/section/02-elements/04-media#videos)
 ```
+:::
+::::
+:::::
 
-**Ergebnis**
+## Verweise auf andere Seiten
 
-## Überschrift mit ID {#my-id}
+In jedem Kurs gibt es weitere Seiten, wie das Stichwort- und Inhaltsverzeichnis.
+Diese werden durch die Verwendung der entsprechenden Route referenziert.
 
-[Link zur Überschrift](#my-id)
+:::::example
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+[](app:home)  
+[](app:progress)  
+[](app:toc)
 :::
 
-:::info
-Wird kein Bezeichner angegeben, erhalten Überschriften automatisch eine vom
-Text abgeleitete ID.
-
-**Markdown**
-
+:::tab-item
 ```markdown
-## Das ist ein test
-
-[Link zur Überschrift](#das-ist-ein-test)
+[](app:home)  
+[](app:progress)  
+[](app:toc)
 ```
-
-**Ergebnis**
-
-## Das ist ein test
-
-[Link zur Überschrift](#das-ist-ein-test)
 :::
+::::
+:::::
 
-## Verweise auf spezielle Seiten
+### Übersicht der Routen {#routes}
 
-In jedem Kurs gibt es die speziellen Seiten für das _Stichwort-_ und
-_Inhaltsverzeichnis_ sowie _Lernfortschritt_. Diese haben keine Abschnitts-ID,
-aber können mittels der speziellen Bezeichner `___INDEX_PAGE___`, `___TOC___`
-und `___PROGRESS___` referenziert werden.
+Nachfolgend eine Übersicht der verfügbaren Applikationsrouten.
 
-:::example
-
-**Markdown**
-
-```markdown
-[](___INDEX_PAGE___)  
-[](___PROGRESS___)  
-[](___TOC___)
-```
-
-**Ergebnis**
-
-[](___INDEX_PAGE___)  
-[](___PROGRESS___)  
-[](___TOC___)
+:::table[Applikationsrouten]
+| Name                   | Ziel                       | Parameter      |
+|------------------------|----------------------------|----------------|
+| `page`                 | Inhaltsseite               | Seitenname     |
+| `section`              | Inhaltsabschnitt           | Abschnittspfad |
+| `home`                 | Startseite des Kurses      |                |
+| `progress`             | Lernfortschritt            |                |
+| `toc`                  | Inhaltsverzeichnis         |                |
+| `glossary`             | Stichwortverzeichnis       |                |
+| `user:login`           | Anmeldung                  |                |
+| `user:forgot-password` | Passwort-Wiederherstellung |                |
+| `user:sign-up`         | Konto erstellen            |                |
 :::
