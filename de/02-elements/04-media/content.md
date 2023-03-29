@@ -74,45 +74,51 @@ kann die Klasse `video-youtube` verwendet werden. Für die Videodateien sollten
 die von Browsern unterstützten gängigen Codecs und Containerformate verwendet
 werden.
 
-:::example
+:::::example
 Eine Videodatei wird eingebettet, indem auf den Dateinamen verwiesen und ein
 Titel angegeben wird.
 
-**Markdown**
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+::video[Test video]{src="video.mp4"}
+:::
 
+:::tab-item
 ```markdown
-[Test video](video.mp4){.video .video-static}
+::video[Test video]{src="video.mp4"}
 ```
-
-**Ergebnis**
-
-[Test video](video.mp4){.video .video-static}
+:::
+::::
 
 Videoelemente können auch auf eine Videodatei von einem externen Server
 verweisen.
 
-**Markdown**
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+::video["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia]{src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"}
+:::
 
+:::tab-item
 ```markdown
-["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
+::video["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia]{src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"}
 ```
-
-**Ergebnis**
-
-["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
+:::
+::::
 
 Das folgende Beispiel bettet ein Video von YouTube ein.
 
-**Markdown**
-
-```markdown
-[Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
-```
-
-**Ergebnis**
-
-[Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
+::::tabs{labels="Ergebnis,Markdown"}
+:::tab-item
+::youtube[Wir sind TU Berlin - Weitersagen]{videoId="OlH6bqv5Z-c"}
 :::
+
+:::tab-item
+```markdown
+::youtube[Wir sind TU Berlin - Weitersagen]{videoId="OlH6bqv5Z-c"}
+```
+:::
+::::
+:::::
 
 ## Speicherorte der Mediendateien  {#file-locations}
 

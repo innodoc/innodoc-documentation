@@ -73,43 +73,49 @@ folder or on a remote server. For embedding videos from YouTube, the
 `video-youtube` class is supported. Use browser-supported codecs and container
 format for optimal compatibility.
 
-:::example
+:::::example
 Embed a video file simply by referencing its filename and adding a title.
 
-**Markdown**
+::::tabs{labels="Result,Markdown"}
+:::tab-item
+::video[Test video]{src="video.mp4"}
+:::
 
+:::tab-item
 ```markdown
-[Test video](video.mp4){.video .video-static}
+::video[Test video]{src="video.mp4"}
 ```
-
-**Result**
-
-[Test video](video.mp4){.video .video-static}
+:::
+::::
 
 Video elements can also reference a video file from an external server.
 
-**Markdown**
+::::tabs{labels="Result,Markdown"}
+:::tab-item
+::video["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia]{src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"}
+:::
 
+:::tab-item
 ```markdown
-["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
+::video["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia]{src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"}
 ```
-
-**Result**
-
-["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia](https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv){.video .video-static}
+:::
+::::
+:::::
 
 The following example embeds a video from YouTube.
 
-**Markdown**
-
-```markdown
-[Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
-```
-
-**Result**
-
-[Wir sind TU Berlin - Weitersagen](https://www.youtube.com/watch?v=OlH6bqv5Z-c){.video .video-youtube}
+::::tabs{labels="Result,Markdown"}
+:::tab-item
+::youtube[Wir sind TU Berlin - Weitersagen]{videoId="OlH6bqv5Z-c"}
 :::
+
+:::tab-item
+```markdown
+::youtube[Wir sind TU Berlin - Weitersagen]{videoId="OlH6bqv5Z-c"}
+```
+:::
+::::
 
 ## File locations {#file-locations}
 
