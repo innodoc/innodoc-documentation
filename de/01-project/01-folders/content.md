@@ -4,45 +4,44 @@ title: Verzeichnisse
 
 Die Verzeichnisstruktur eines Kurses folgt einem festen Schema.
 
-:::example
-```
-[Wurzel]
-├── _static
-├── de
-│   ├── _pages
-│   ├── _static
-│   ├── 01-project
-│   │   ├── 01-folders
-│   │   ├── 02-files
-│   │   └── …
-│   ├── 02-elements
-│   │   ├── 01-headers
-│   │   ├── 02-lists
-│   │   └── …
-│   └── …
-├── en
-│   ├── _pages
-│   ├── _static
-│   ├── 01-project
-│   │   ├── 01-folders
-│   │   ├── 02-files
-│   │   └── …
-│   ├── 02-elements
-│   │   ├── 01-headers
-│   │   ├── 02-lists
-│   │   └── …
-│   └── …
-└── …
-```
-:::
+<Example>
+  ```
+  [Wurzel]
+  ├── _static
+  ├── de
+  │   ├── _pages
+  │   ├── _static
+  │   ├── 01-project
+  │   │   ├── 01-folders
+  │   │   ├── 02-files
+  │   │   └── …
+  │   ├── 02-elements
+  │   │   ├── 01-headers
+  │   │   ├── 02-lists
+  │   │   └── …
+  │   └── …
+  ├── en
+  │   ├── _pages
+  │   ├── _static
+  │   ├── 01-project
+  │   │   ├── 01-folders
+  │   │   ├── 02-files
+  │   │   └── …
+  │   ├── 02-elements
+  │   │   ├── 01-headers
+  │   │   ├── 02-lists
+  │   │   └── …
+  │   └── …
+  └── …
+</Example>
 
 Im Wurzelverzeichnis des Kurses befindet sich exakt ein
 [Sprachordner](/section/01-project/03-languages) für jede unterstützte Sprache.
 
-:::info
-Jeder Sprachordner muss die exakt gleiche Unterordnerstruktur an Abschnitten
-enthalten.
-:::
+<Info>
+  Jeder Sprachordner muss die exakt gleiche Unterordnerstruktur an Abschnitten
+  enthalten.
+</Info>
 
 Die Struktur des Kurses selbst ist durch Ordner und Unterordner definiert.
 Dabei entspricht jeder Ordner einem Abschnitt. Der Name des jeweiligen Ordners
@@ -50,9 +49,9 @@ entspricht der Abschnitts-ID. Die Reihenfolge der Abschnitte im
 Inhaltsverzeichnis ergibt sich aus der alphanumerischen Sortierung der
 Ordnernamen. Daher wird empfohlen den Ordnernamen eine Nummer voranzustellen.
 
-:::info
-Ordnernamen dürfen nicht mit einem `_` beginnen oder Leerzeichen beinhalten.
-:::
+<Info>
+  Ordnernamen dürfen nicht mit einem `_` beginnen oder Leerzeichen beinhalten.
+</Info>
 
 Zusätzlich kann sich im Wurzelverzeichnis, sowie in jedem Sprachordner, ein
 Ordner `_static` befinden, in dem

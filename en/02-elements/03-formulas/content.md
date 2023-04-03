@@ -10,67 +10,63 @@ It is possible to use $\LaTeX$ formulas. They are rendered using the software
 Formulas use the `$` sign as delimiter. They can be displayed inline (single
 `$`) or as a block (double `$`).
 
-:::::example
-A simple example for `inline` and `display` presentation.
+<Example>
+  A simple example for `inline` and `display` presentation.
 
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
+  <Tabs>
+    <TabItem label="Result">
+      Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
 
-Or they can stand alone as a block element:
+      Or they can stand alone as a block element:
 
-$$
-\sum_{n=1}^{\infty} 2^{-n} = 1
-$$
-:::
+      $$
+      \sum_{n=1}^{\infty} 2^{-n} = 1
+      $$
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
 
-:::tab-item
-```markdown
-Formulas like $\sum_{n=1}^{\infty} 2^{-n} = 1$ can be inlined into text.
+      Or they can stand alone as a block element:
 
-Or they can stand alone as a block element:
+      $$
+      \sum_{n=1}^{\infty} 2^{-n} = 1
+      $$
+      ```
+    </TabItem>
+  </Tabs>
 
-$$
-\sum_{n=1}^{\infty} 2^{-n} = 1
-$$
-```
-:::
-::::
+  Another more complicated example using an `align` environment.
 
-Another more complicated example using an `align` environment.
-
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-$$
-\begin{align*}
-  \sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) + (k+1) \\
-  & = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis}) \\
-  & = \frac{k(k+1)+2(k+1)}{2} \\
-  & = \frac{(k+1)(k+2)}{2} \\
-  & = \frac{(k+1)((k+1)+1)}{2}
-\end{align*}
-$$
-:::
-
-:::tab-item
-```markdown
-$$
-\begin{align*}
-  \sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) + (k+1) \\
-  & = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis}) \\
-  & = \frac{k(k+1)+2(k+1)}{2} \\
-  & = \frac{(k+1)(k+2)}{2} \\
-  & = \frac{(k+1)((k+1)+1)}{2}
-\end{align*}
-$$
-```
-:::
-::::
-:::::
+  <Tabs>
+    <TabItem label="Result">
+      $$
+      \begin{align*}
+        \sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) + (k+1) \\
+        & = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis}) \\
+        & = \frac{k(k+1)+2(k+1)}{2} \\
+        & = \frac{(k+1)(k+2)}{2} \\
+        & = \frac{(k+1)((k+1)+1)}{2}
+      \end{align*}
+      $$
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      $$
+      \begin{align*}
+        \sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) + (k+1) \\
+        & = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis}) \\
+        & = \frac{k(k+1)+2(k+1)}{2} \\
+        & = \frac{(k+1)(k+2)}{2} \\
+        & = \frac{(k+1)((k+1)+1)}{2}
+      \end{align*}
+      $$
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
 ## Using custom extensions
-
-<!-- TODO -->
 
 Sometimes it is desirable to use custom macros that add functionality. Writing
 extensions for MathJax is out of scope for this document. Please refer to the
@@ -81,13 +77,13 @@ The course manifest lets you override parts of the MathJax configuration to add
 custom extensions to the mix. Please refer to the section
 [](/section/01-project/02-files/01-manifest#mathjax) for an example.
 
-:::info{#innodoc-mathjax}
-Two extensions
-[**\@innodoc/mathjax-num**](https://git.tu-berlin.de/innodoc/mathjax-num)
-and
-[**\@innodoc/mathjax-coordsep**](https://git.tu-berlin.de/innodoc/mathjax-coordsep)
-are available.
+<Info id="innodoc-mathjax">
+  Two extensions
+  [**\@innodoc/mathjax-num**](https://git.tu-berlin.de/innodoc/mathjax-num)
+  and
+  [**\@innodoc/mathjax-coordsep**](https://git.tu-berlin.de/innodoc/mathjax-coordsep)
+  are available.
 
-They implement a localized decimaler marker (`$\num{3.45}$` → $\num{3.45}$) and
-a coordinates separator (`$(6\coordsep 5)$` → $(6\coordsep 5)$).
-:::
+  They implement a localized decimaler marker (`$\num{3.45}$` → $\num{3.45}$) and
+  a coordinates separator (`$(6\coordsep 5)$` → $(6\coordsep 5)$).
+</Info>

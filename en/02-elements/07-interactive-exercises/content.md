@@ -8,19 +8,20 @@ more question elements are placed.
 Also an ID needs to be added per exercise. The ID has to be unique within the
 document. It can be used to reference questions from other parts of the course.
 
-**Markdown**
-
-```markdown
-:::exercise{#EX_DUMMY}
-[CONTENT]
-:::
-```
-
-**Result**
-
-:::exercise{#EX_DUMMY}
-[CONTENT]
-:::
+<Tabs>
+  <TabItem label="Result">
+    <Exercise id="ex-dummy">
+      [CONTENT]
+    </Exercise>
+  </TabItem>
+  <TabItem label="Markdown">
+    ```markdown
+    <Exercise id="ex-dummy">
+      [CONTENT]
+    </Exercise>
+    ```
+  </TabItem>
+</Tabs>
 
 The box typically includes the exercise text and one or more questions.
 Optionally, hints, the solution, a button for checking the answer and other
@@ -29,47 +30,46 @@ content can be presented.
 The total achievable score of an exercise is the sum of the points of all the
 containing questions.
 
-:::::example
-Below is a complete example of an exercise.
+<Example>
+  Below is a complete example of an exercise.
 
-**Markdown**
+  <Tabs>
+    <TabItem label="Result">
+      <Exercise id="ex-full">
+        Which term is formed if the following object is inserted into the term
+        $x^2+y^2$?
 
-```markdown
-::::exercise{#EX_FULL}
-Which term is formed if the following object is inserted into the term
-$x^2+y^2$?
+        The angle $\alpha$ both for $x$ and $y$: Then $x^2+y^2\;=\;$ <TextQuestion length="13" points="4" precision="5" solution="2*alpha^2" supporting-points="5" validation="mathExpression" variables="alpha" />
 
-The angle $\alpha$ both for $x$ and $y$: Then
-$x^2+y^2$$\;\;=\;$[]{.question .text length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" validation="mathExpression" points="4"}.
+        <InputHint>
+          The Greek letter $\alpha$ can be entered as `alpha`.
+        </InputHint>
 
-:::hint-text
-The Greek letter $\alpha$ can be entered as `alpha`.
-:::
+        <Solution>
+          $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
+        </Solution>
+      </Exercise>
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      <Exercise id="ex-full">
+        Which term is formed if the following object is inserted into the term
+        $x^2+y^2$?
 
-:::hint
-$x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
-:::
-::::
-```
+        The angle $\alpha$ both for $x$ and $y$: Then $x^2+y^2\;=\;$ <TextQuestion length="13" points="4" precision="5" solution="2*alpha^2" supporting-points="5" validation="mathExpression" variables="alpha" />
 
-**Result**
+        <InputHint>
+          The Greek letter $\alpha$ can be entered as `alpha`.
+        </InputHint>
 
-::::exercise{#EX_FULL}
-Which term is formed if the following object is inserted into the term
-$x^2+y^2$?
-
-The angle $\alpha$ both for $x$ and $y$: Then
-$x^2+y^2\;=\;$[]{.question .text length="13" solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5" validation="mathExpression" points="4"}.
-
-:::input-hint
-The Greek letter $\alpha$ can be entered as `alpha`.
-:::
-
-:::solution
-$x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
-:::
-::::
-:::::
+        <Solution>
+          $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
+        </Solution>
+      </Exercise>
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
 ## Structure of a question
 
@@ -93,10 +93,8 @@ are described in the subsections
 
 The following parameters are common to all question types.
 
-------------------- -----------------------------------------------------------
-`solution`          The solution.
-
-`validation`        Type of verification.
-
-`points`            Achievable points if the answer is correct.
-------------------- -----------------------------------------------------------
+| Parameter    | Description                                 |
+|--------------|---------------------------------------------|
+| `solution`   | The solution                                |
+| `validation` | Type of verification                        |
+| `points`     | Achievable points if the answer is correct  |

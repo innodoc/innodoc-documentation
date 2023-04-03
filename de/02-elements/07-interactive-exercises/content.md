@@ -12,16 +12,16 @@ zur Aufgabe zu verweisen.
 **Markdown**
 
 ```markdown
-:::exercise{#EX_DUMMY}
-[INHALT]
-:::
+<Exercise id="ex-dummy">
+  [INHALT]
+</Exercise>
 ```
 
 **Ergebnis**
 
-:::exercise{#EX_DUMMY}
-[INHALT]
-:::
+<Exercise id="ex-dummy">
+  [INHALT]
+</Exercise>
 
 Die Box enthält typischerweise die Aufgabenstellung und eine oder mehrere
 Fragen. Optional können auch Hinweise, der Lösungsweg, ein Button zur
@@ -30,51 +30,51 @@ Fragen. Optional können auch Hinweise, der Lösungsweg, ein Button zur
 Die erreichbare Gesamtpunktzahl einer Aufgabe ist die Summe der Punkte aller
 enthaltenen Fragen.
 
-:::::example
-Unten finden Sie ein vollständiges Beispiel für eine Aufgabe.
+<Example>
+  Unten finden Sie ein vollständiges Beispiel für eine Aufgabe.
 
-**Markdown**
+  **Markdown**
 
-```markdown
-::::exercise{#EX_FULL}
-Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie
-möglich vereinfacht:
+  ```markdown
+  <Exercise id="ex-full">
+    Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie
+    möglich vereinfacht:
 
-Den Winkel $\alpha$ sowohl für $x$ als auch für $y$: Dann ist
-$x^2+y^2$$\;\;=\;$[]{.question .text length="13"
-solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5"
-validation="mathExpression" points="4"}.
+    Den Winkel $\alpha$ sowohl für $x$ als auch für $y$: Dann ist
+    $x^2+y^2$$\;\;=\;$[]{.question .text length="13"
+    solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5"
+    validation="mathExpression" points="4"}.
 
-:::hint-text
-Der griechische Buchstabe $\alpha$ kann als `alpha` eingetippt werden.
-:::
+    <InputHint>
+      Der griechische Buchstabe $\alpha$ kann als `alpha` eingetippt werden.
+    </InputHint>
 
-:::hint
-$x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
-:::
-::::
-```
+    <Hint>
+      $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
+    </Hint>
+  </Exercise>
+  ```
 
-**Ergebnis**
+  **Ergebnis**
 
-::::exercise{#EX_FULL}
-Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie
-möglich vereinfacht:
+  <Exercise id="ex-full">
+    Welcher Term entsteht, wenn man in $x^2+y^2$ Folgendes einsetzt und soweit wie
+    möglich vereinfacht:
 
-Den Winkel $\alpha$ sowohl für $x$ als auch für $y$: Dann ist
-$x^2+y^2$$\;\;=\;$[]{.question .text length="13"
-solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5"
-validation="mathExpression" points="4"}.
+    Den Winkel $\alpha$ sowohl für $x$ als auch für $y$: Dann ist
+    $x^2+y^2$$\;\;=\;$[]{.question .text length="13"
+    solution="2*alpha^2" supporting-points="5" variables="alpha" precision="5"
+    validation="mathExpression" points="4"}.
 
-:::hint-text
-Der griechische Buchstabe $\alpha$ kann als `alpha` eingetippt werden.
-:::
+    <InputHint>
+      Der griechische Buchstabe $\alpha$ kann als `alpha` eingetippt werden.
+    </InputHint>
 
-:::hint
-$x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
-:::
-::::
-:::::
+    <Hint>
+      $x^2+y^2=\alpha^2+\alpha^2=2\alpha^2$
+    </Hint>
+  </Exercise>
+</Example>
 
 ## Aufbau einer Frage
 
@@ -98,10 +98,8 @@ werden in den Unterabschnitten
 
 Alle Fragetypen akzeptieren mindestens folgende Parameter.
 
-------------------- -----------------------------------------------------------
-`solution`          Die Lösung.
-
-`validation`        Art der Überprüfung.
-
-`points`            Erreichbare Punkte bei korrekter Antwort.
-------------------- -----------------------------------------------------------
+| Parameter    | Beschreibungen      |
+|--------------|---------------------|
+| `solution`   | Der Lösungswert     |
+| `validation` | Art der Überprüfung |
+| `points`     | Erreichbare Punkte  |

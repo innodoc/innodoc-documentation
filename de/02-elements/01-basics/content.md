@@ -8,140 +8,132 @@ Absätze werden automatisch erstellt, indem zwischen dem Text eine Leerzeile
 Abstand gelassen wird. Das Hinzufügen von mehr als einer Leerzeile führt nicht
 zu einem größeren Abstand zwischen den Absätzen.
 
-:::info
-Zeilenumbrüche innerhalb eines Absatzes werden nicht im Ergebnis angezeigt. Um
-einen Zeilenumbruch zu erzwingen, muss ein doppeltes Leerzeichen am Ende der
-Zeile verwendet werden.
-:::
+<Info>
+  Zeilenumbrüche innerhalb eines Absatzes werden nicht im Ergebnis angezeigt. Um
+  einen Zeilenumbruch zu erzwingen, muss ein doppeltes Leerzeichen am Ende der
+  Zeile verwendet werden.
+</Info>
 
-:::::example
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc velit, dictum
-at tristique sit amet, aliquet id urna. Praesent aliquam ligula id urna
-vestibulum.
+<Example>
+  <Tabs>
+    <TabItem label="Ergebnis">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc velit, dictum
+      at tristique sit amet, aliquet id urna. Praesent aliquam ligula id urna
+      vestibulum.
 
-Consectetur adipiscing elit. Proin nec tincidunt nunc. Curabitur orci eros,
-vestibulum eu elementum ac, semper eget metus. Vivamus nulla sem.
-:::
+      Consectetur adipiscing elit. Proin nec tincidunt nunc. Curabitur orci eros,
+      vestibulum eu elementum ac, semper eget metus. Vivamus nulla sem.
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc velit, dictum
+      at tristique sit amet, aliquet id urna. Praesent aliquam ligula id urna
+      vestibulum.
 
-:::tab-item
-```markdown
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc velit, dictum
-at tristique sit amet, aliquet id urna. Praesent aliquam ligula id urna
-vestibulum.
+      Consectetur adipiscing elit. Proin nec tincidunt nunc. Curabitur orci eros,
+      vestibulum eu elementum ac, semper eget metus. Vivamus nulla sem.
+      ```
+    </TabItem>
+  </Tabs>
 
-Consectetur adipiscing elit. Proin nec tincidunt nunc. Curabitur orci eros,
-vestibulum eu elementum ac, semper eget metus. Vivamus nulla sem.
-```
-:::
-::::
+  <Tabs>
+    <TabItem label="Ergebnis">
+      Lorem ipsum
+      dolor sit amet,
+      consectetur adipiscing elit.
 
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-Lorem ipsum
-dolor sit amet,
-consectetur adipiscing elit.
+      Lorem ipsum  
+      dolor sit amet,  
+      consectetur adipiscing elit.
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      Lorem ipsum
+      dolor sit amet,
+      consectetur adipiscing elit.
 
-Lorem ipsum  
-dolor sit amet,  
-consectetur adipiscing elit.
-:::
+      Lorem ipsum  
+      dolor sit amet,  
+      consectetur adipiscing elit.
+      ```
 
-:::tab-item
-```markdown
-Lorem ipsum
-dolor sit amet,
-consectetur adipiscing elit.
-
-Lorem ipsum  
-dolor sit amet,  
-consectetur adipiscing elit.
-```
-
-*Hinweis: Am Ende der Zeilen des zweiten Absatzes befindet sich ein doppeltes
-Leerzeichen.*
-:::
-::::
-:::::
+      *Hinweis: Am Ende der Zeilen des zweiten Absatzes befindet sich ein doppeltes Leerzeichen.*
+    </TabItem>
+  </Tabs>
+</Example>
 
 ## Textformatierung {#formatting}
 
 Dieser Abschnitt demonstriert Möglichkeiten der einfachen Textformatierung.
 
-:::::example
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
-_verschiedene Möglichkeiten_.
-:::
+<Example>
+  <Tabs>
+    <TabItem label="Ergebnis">
+      Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
+      _verschiedene Möglichkeiten_.
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
+      _verschiedene Möglichkeiten_.
+      ```
+    </TabItem>
+  </Tabs>
 
-:::tab-item
-```markdown
-Es ist möglich, *wichtige Wörter* hervorzuheben. Dafür gibt es zwei
-_verschiedene Möglichkeiten_.
-```
-:::
-::::
+  <Tabs>
+    <TabItem label="Ergebnis">
+      **Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
+      __verschiedene Möglichkeiten__.
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      **Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
+      __verschiedene Möglichkeiten__.
+      ```
+    </TabItem>
+  </Tabs>
 
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-**Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
-__verschiedene Möglichkeiten__.
-:::
+  <Tabs>
+    <TabItem label="Ergebnis">
+      Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
+      ~~oder ganzen Satzteilen~~.
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
+      ~~oder ganzen Satzteilen~~.
+      ```
+    </TabItem>
+  </Tabs>
 
-:::tab-item
-```markdown
-**Noch wichtigere Wörter** werden fett gedruckt. Auch dafür gibt es zwei
-__verschiedene Möglichkeiten__.
-```
-:::
-::::
+  <Tabs>
+    <TabItem label="Ergebnis">
+      Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
+      Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
+      durchstreichen*.
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
+      Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
+      durchstreichen*.
+      ```
+    </TabItem>
+  </Tabs>
 
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
-~~oder ganzen Satzteilen~~.
-:::
-
-:::tab-item
-```markdown
-Eine weitere Formatierungsmöglichkeit ist das ~~Durchstreichen~~ von Wörtern
-~~oder ganzen Satzteilen~~.
-```
-:::
-::::
-
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
-Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
-durchstreichen*.
-:::
-
-:::tab-item
-```markdown
-Die Formatierungsmöglichkeiten können natürlich kombiniert werden.
-Beispielsweise lassen sich *in einem wichtigen Satzteil ~~Wörter~~
-durchstreichen*.
-```
-:::
-::::
-
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
-vorangestellt werden.
-:::
-
-:::tab-item
-```markdown
-Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
-vorangestellt werden.
-```
-:::
-::::
-:::::
+  <Tabs>
+    <TabItem label="Ergebnis">
+      Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
+      vorangestellt werden.
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      Soll ein Formatierungszeichen gedruckt werden, so kann ein \*Backslash\*
+      vorangestellt werden.
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
 ## Überschriften
 
@@ -150,102 +142,99 @@ Einzelne Abschnitte können durch Überschriften weiter strukturiert werden.
 Siehe auch das [Beispiel für die Vergabe von
 IDs](/section/02-elements/02-links/01-internal#referencing-elements).
 
-:::info
-Die Verwendung von Überschriften erster Ordnung sollte vermieden werden, da
-diese dem Seitentitel vorbehalten ist.
-:::
+<Info>
+  Die Verwendung von Überschriften erster Ordnung sollte vermieden werden, da
+  diese dem Seitentitel vorbehalten ist.
+</Info>
 
-:::::example
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-## Überschrift zweiter Ordnung
-### Überschrift dritter Ordnung
-#### Überschrift vierter Ordnung
-:::
-
-:::tab-item
-```markdown
-## Überschrift zweiter Ordnung
-### Überschrift dritter Ordnung
-#### Überschrift vierter Ordnung
-```
-:::
-::::
-:::::
+<Example>
+  <Tabs>
+    <TabItem label="Ergebnis">
+      ## Überschrift zweiter Ordnung
+      ### Überschrift dritter Ordnung
+      #### Überschrift vierter Ordnung
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      ## Überschrift zweiter Ordnung
+      ### Überschrift dritter Ordnung
+      #### Überschrift vierter Ordnung
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
 ## Listen und Aufzählungen
 
 Es können nummerierte und unnummerierte Listen angezeigt werden.
 
-:::::example
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-- A
-- B
-- C
+<Example>
+  <Tabs>
+    <TabItem label="Ergebnis">
+      - A
+      - B
+      - C
 
-1. A
-2. B
-3. C
-:::
+      1. A
+      2. B
+      3. C
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      - A
+      - B
+      - C
 
-:::tab-item
-```markdown
-- A
-- B
-- C
+      1. A
+      1. B
+      1. C
+      ```
+    </TabItem>
+  </Tabs>
 
-1. A
-1. B
-1. C
-```
-:::
-::::
+  Listen können untergliedert und kombiniert werden.
 
-Listen können untergliedert und kombiniert werden.
-
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-- I
-   - II
-      1. III
-      1. III
-   - II
-- I
-   1. II
-   1. II
-:::
-
-:::tab-item
-```markdown
-- I
-   - II
-      1. III
-      1. III
-   - II
-- I
-   1. II
-   1. II
-`:::
-::::
-:::::
+  <Tabs>
+    <TabItem label="Ergebnis">
+      - I
+        - II
+            1. III
+            1. III
+        - II
+      - I
+        1. II
+        1. II
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      - I
+        - II
+            1. III
+            1. III
+        - II
+      - I
+        1. II
+        1. II
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
 ## Blockzitate
 
 Durch ein Voranstellen des Zeichens `>` lassen sich Blockzitate umsetzen.
 
-:::::example
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-> Sein oder Nichtsein: das ist die Frage  
-> —William Shakespeare
-:::
-
-:::tab-item
-```markdown
-> Sein oder Nichtsein: das ist die Frage  
-> —William Shakespeare
-```
-:::
-::::
-:::::
+<Example>
+  <Tabs>
+    <TabItem label="Ergebnis">
+      > Sein oder Nichtsein: das ist die Frage  
+      > —William Shakespeare
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      > Sein oder Nichtsein: das ist die Frage  
+      > —William Shakespeare
+      ```
+    </TabItem>
+  </Tabs>
+</Example>

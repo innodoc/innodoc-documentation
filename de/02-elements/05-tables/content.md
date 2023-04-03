@@ -5,58 +5,58 @@ title: Tabellen
 Tabellen erlauben keine mehrzeiligen Zellen oder Blockelemente. Sie verwenden
 das Doppelpunktsymbol, um die Ausrichtung festzulegen.
 
-:::::example
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-| Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
-|:--------------------:|----------|-------------:|:------------|
-| 11                   | 21       | 31           | 32          |
-| 12                   | 22       | 32           | 42          |
-:::
+<Example>
+  <Tabs>
+    <TabItem label="Ergebnis">
+      | Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
+      |:--------------------:|----------|-------------:|:------------|
+      | 11                   | 21       | 31           | 32          |
+      | 12                   | 22       | 32           | 42          |
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      | Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
+      |:--------------------:|----------|-------------:|:------------|
+      | 11                   | 21       | 31           | 32          |
+      | 12                   | 22       | 32           | 42          |
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
-:::tab-item
-```markdown
-| Zentrierte Kopfzeile | Standard | Rechtsbündig | Linksbündig |
-|:--------------------:|----------|-------------:|:------------|
-| 11                   | 21       | 31           | 32          |
-| 12                   | 22       | 32           | 42          |
-```
-:::
-::::
-:::::
+<Info>
+  Tabellen eignen sich zur Darstellung von tabellarischen Daten. Für
+  Layoutaufgaben, also um beispielsweise Elemente nebeneinander anzuordnen, wird
+  der Einsatz eines [Rasters](/section/02-elements/06-grids) empfohlen. Im
+  Gegensatz zu Tabellen passen sich Raster an unterschiedliche Bildschirmgrößen
+  an.
+</Info>
 
-:::info
-Tabellen eignen sich zur Darstellung von tabellarischen Daten. Für
-Layoutaufgaben, also um beispielsweise Elemente nebeneinander anzuordnen, wird
-allerdings der Einsatz eines [Rasters](/section/02-elements/06-grids) empfohlen.
-Im Gegensatz zu Tabellen passen sich Raster an unterschiedliche Bildschirmgrößen
-an.
-:::
+## `table`-Umgebung
 
-## `table`-Direktive
-
-In der Regel werden Tabellen mit einer `table`-Direktive umschlossen. Dadurch
+In der Regel werden Tabellen mit einer `table`-Umgebung umschlossen. Dadurch
 werden sie optisch vom Hintergrund abgesetzt, können eine `id` zum Verlinken
 sowie eine Beschriftung erhalten.
 
-::::::example
-:::::tabs{labels="Ergebnis,Markdown"}
-::::tab-item
-:::table[Einfache Tabelle mit Beschriftung]{#example-table}
-| A  | B   | C  |
-|----|-----|----|
-| 11 | 21  | 31 |
-:::
-::::
-
-::::tab-item
-```markdown
-:::table[Einfache Tabelle mit Beschriftung]{#example-table}
-| A  | B   | C  |
-|----|-----|----|
-| 11 | 21  | 31 |
-:::
-```
-::::
-:::::
-::::::
+<Example>
+  <Tabs>
+    <TabItem label="Ergebnis">
+      <Table id="example-table">
+        <Caption>Einfache Tabelle mit Beschriftung</Caption>
+        | A  | B   | C  |
+        |----|-----|----|
+        | 11 | 21  | 31 |
+      </Table>
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      <Table id="example-table">
+        <Caption>Einfache Tabelle mit Beschriftung</Caption>
+        | A  | B   | C  |
+        |----|-----|----|
+        | 11 | 21  | 31 |
+      </Table>
+      ```
+    </TabItem>
+  </Tabs>
+</Example>

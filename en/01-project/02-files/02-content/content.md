@@ -25,14 +25,14 @@ Every content file needs to have a so-called [YAML
 block]{data-index-term="YAML"} at the top of the file with at least a `title`
 key.
 
-:::example
-```yaml
----
-title: About this course
-short_title: About
----
-```
-:::
+<Example>
+  ```yaml
+  ---
+  title: About this course
+  short_title: About
+  ---
+  ```
+</Example>
 
 ## `title` (mandatory)
 
@@ -58,11 +58,12 @@ not specified the value defaults to `regular`. Pages do not support this key.
 
 Exercise and test sections will be marked with a recognizable icon in the table
 of contents. Test sections are shown separately in the [progress
-overview](___PROGRESS___). Furthermore test exercises are only evaluated after
+overview](app:progress). Furthermore test exercises are only evaluated after
 the test is submitted.
 
-:::info
-[](/section/02-elements/07-interactive-exercises/01-text) is marked as an
-exercise section. In section [](/section/03-test) an example test section can
-be found.
-:::
+<Info>
+  [](/section/02-elements/07-interactive-exercises/01-text) is marked as an
+  exercise section. In section [](/section/03-test) an example test section can
+  be found.
+</Info>
+

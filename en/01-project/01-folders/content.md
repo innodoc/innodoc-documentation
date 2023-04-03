@@ -4,54 +4,55 @@ title: Folders
 
 The course folder structure is determined by a fixed schema.
 
-:::example
-```
-[root]
-├── _static
-├── de
-│   ├── _pages
-│   ├── _static
-│   ├── 01-project
-│   │   ├── 01-folders
-│   │   ├── 02-files
-│   │   └── …
-│   ├── 02-elements
-│   │   ├── 01-headers
-│   │   ├── 02-lists
-│   │   └── …
-│   └── …
-├── en
-│   ├── _pages
-│   ├── _static
-│   ├── 01-project
-│   │   ├── 01-folders
-│   │   ├── 02-files
-│   │   └── …
-│   ├── 02-elements
-│   │   ├── 01-headers
-│   │   ├── 02-lists
-│   │   └── …
-│   └── …
-└── …
-```
-:::
+<Example>
+  ```
+  [root]
+  ├── _static
+  ├── de
+  │   ├── _pages
+  │   ├── _static
+  │   ├── 01-project
+  │   │   ├── 01-folders
+  │   │   ├── 02-files
+  │   │   └── …
+  │   ├── 02-elements
+  │   │   ├── 01-headers
+  │   │   ├── 02-lists
+  │   │   └── …
+  │   └── …
+  ├── en
+  │   ├── _pages
+  │   ├── _static
+  │   ├── 01-project
+  │   │   ├── 01-folders
+  │   │   ├── 02-files
+  │   │   └── …
+  │   ├── 02-elements
+  │   │   ├── 01-headers
+  │   │   ├── 02-lists
+  │   │   └── …
+  │   └── …
+  └── …
+  ```
+</Example>
 
 The root directory contains exactly one
 [language folder](/section/01-project/03-languages) for every supported
 language.
 
-:::info
-Every language folder must have the exact same section folder structure.
-:::
+<Info>
+  Every language folder must have the exact same section folder structure.
+</Info>
 
 The course structure is defined by folders and subfolders. Every folder
 corresponds to a section. The folder name is the section ID. The section order
 is determined by the alphanumerical sorting of the folder names. Therefore
 it is advised to use a number prefix for folder names.
 
-:::info
-Section folder names must not start with a `_` or contain spaces.
-:::
+<Info>
+  Section folder names must not start with a `_` or contain spaces.
+</Info>
+
 
 Additionally the root directory, as well as any language folder, can contain
 one `_static` folder. It holds [static files](/section/02-elements/04-media)

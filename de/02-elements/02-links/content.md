@@ -4,13 +4,13 @@ title: Links
 
 Es existieren verschiedene Möglichkeiten, um Links darzustellen.
 
-:::table[Syntax für Links]
-| Ergebnis                                                                               | Markdown                                                                                 | Beschreibung                                                              |
-|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <https://www.wikipedia.org/>                                                           | `<https://www.wikipedia.org/>`                                                           | Nur Linkziel                                                              |
-| [Wikipedia](https://www.wikipedia.org/)                                                | `[Wikipedia](https://www.wikipedia.org/)`                                                | Linkziel und -text                                                        |
-| [Wikipedia](https://www.wikipedia.org/ "Wikipedia ist eine freie Online-Enzyklopädie") | `[Wikipedia](https://www.wikipedia.org/ "Wikipedia ist eine freie Online-Enzyklopädie")` | Linkziel, -text und -titel (Titel wird bei Hovern über den Link sichtbar) |
-:::
+<Table>
+  <Caption>Syntax für Links</Caption>
+  | Ergebnis                                                                               | Markdown                                                                                 | Beschreibung                                                              |
+  |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+  | [Wikipedia](https://www.wikipedia.org/)                                                | `[Wikipedia](https://www.wikipedia.org/)`                                                | Linkziel und -text                                                        |
+  | [Wikipedia](https://www.wikipedia.org/ "Wikipedia ist eine freie Online-Enzyklopädie") | `[Wikipedia](https://www.wikipedia.org/ "Wikipedia ist eine freie Online-Enzyklopädie")` | Linkziel, -text und -titel (Titel wird bei Hovern über den Link sichtbar) |
+</Table>
 
 Der Link-Text kann aus beliebigen Inline-Elementen, wie [formatiertem
 Text](app:section|02-elements/01-basics#formatting),
@@ -24,38 +24,37 @@ das [Stichwortverzeichnis](app:glossary). Durch [externe
 Links](app:section|02-elements/02-links/02-external) sind Verweise auf andere
 Webseiten außerhalb dieses Kurses möglich.
 
-:::info
-In Abschnitt [](/section/02-elements/04-media#bilder-als-links)
-ist beschrieben, wie Bilder als Link verwendet werden können.
-:::
+<Info>
+  In Abschnitt [](/section/02-elements/04-media#bilder-als-links)
+  ist beschrieben, wie Bilder als Link verwendet werden können.
+</Info>
 
 Linkadressen können auch gesammelt in eine Linkliste geschrieben werden.
 Dazu wird anstatt einer Adresse in runden Klammern ein Bezeichner in eckigen
 Klammern angegeben. Am Ende des Dokumentes muss dann eine Linkliste
 stehen, die Bezeichnern Adressen zuordnet.
 
-:::::example
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-[Link zur TU Berlin][TU Berlin]  
-[Wikipedia]
-:::
+<Example>
+  <Tabs>
+    <TabItem label="Ergebnis">
+      [Link zur TU Berlin][TU Berlin]  
+      [Wikipedia]
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      [Link zur TU Berlin][TU Berlin]  
+      [Wikipedia]
+      ```
 
-:::tab-item
-```markdown
-[Link zur TU Berlin][TU Berlin]  
-[Wikipedia]
-```
+      Ganz am Ende des Dokuments wird eine Linkliste angefügt.
 
-Ganz am Ende des Dokuments wird eine Linkliste angefügt.
-
-```markdown
-[TU Berlin]: https://www.tu-berlin.de
-[Wikipedia]: https://www.wikipedia.org
-```
-:::
-::::
-:::::
+      ```markdown
+      [TU Berlin]: https://www.tu-berlin.de
+      [Wikipedia]: https://www.wikipedia.org
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
 [TU Berlin]: https://www.tu-berlin.de
 [Wikipedia]: https://www.wikipedia.org

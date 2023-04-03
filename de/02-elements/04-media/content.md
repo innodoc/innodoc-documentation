@@ -16,52 +16,53 @@ Für Rastergrafiken sollte PNG oder JPG, für Vektorgrafiken SVG als Bildformat
 gewählt werden. Standardmäßig werden Bilder inline, d. h. im Textfluss innerhalb
 eines Absatzes angezeigt.
 
-:::example
-**Markdown**
+<Example>
+  **Markdown**
 
-```markdown
-Ein Bild ![Stern](star.png) im Fließtext.
-```
+  ```markdown
+  Ein Bild ![Stern](star.png) im Fließtext.
+  ```
 
-**Ergebnis**
+  **Ergebnis**
 
-Ein Bild ![Stern](star.png) im Fließtext.
-:::
+  Ein Bild ![Stern](star.png) im Fließtext.
+</Example>
 
 Größere Bilder sollten in ein `figure`-Element eingeschlossen werden. Dadurch
 werden sie mit einem umgebenden Rahmen angezeigt. Außerdem können sie so auch
-eine Beschriftung und eine Referenz-ID erhalten. Der Alternativtext wird in
-diesem Fall automatisch aus dem Bildtitel erzeugt.
+eine Beschriftung und eine Referenz-ID erhalten.
 
-::::example
-**Markdown**
+<Example>
+  **Markdown**
 
-```markdown
-:::figure
-![Die Erschaffung Adams von Michelangelo](adam.jpg "Die Erschaffung Adams"){.img}
-:::
-```
+  ```markdown
+  <Figure>
+    <Caption>Die Erschaffung Adams von Michelangelo</Caption>
+    ![Die Erschaffung Adams von Michelangelo](adam.jpg "Die Erschaffung Adams"){.img}
+  </Figure>
+  ```
 
-**Ergebnis**
+  **Ergebnis**
 
-:::figure
-![Die Erschaffung Adams von Michelangelo](adam.jpg "Die Erschaffung Adams"){.img}
-:::
-::::
+  <Figure>
+    <Caption>Die Erschaffung Adams von Michelangelo</Caption>
+    ![Die Erschaffung Adams von Michelangelo](adam.jpg "Die Erschaffung Adams"){.img}
+  </Figure>
+</Example>
 
-:::example{#images-as-link}
-Bilder können auch innerhalb von Links benutzt werden.
+<Example id="images-as-link">
+  Bilder können auch innerhalb von Links benutzt werden.
 
-**Markdown**
+  **Markdown**
 
-```markdown
-[![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
-```
+  ```markdown
+  [![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
+  ```
 
-**Ergebnis**
+  **Ergebnis**
 
-[![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
-:::
+  [![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
+</Example>
 
 ## Videos
 
@@ -74,53 +75,56 @@ kann die Klasse `video-youtube` verwendet werden. Für die Videodateien sollten
 die von Browsern unterstützten gängigen Codecs und Containerformate verwendet
 werden.
 
-:::::example
-Eine Videodatei wird eingebettet, indem auf den Dateinamen verwiesen und ein
-Titel angegeben wird.
+<Example>
+  Eine Videodatei wird eingebettet, indem auf den Dateinamen verwiesen und ein
+  Titel angegeben wird.
 
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-::video[Test video]{src="video.mp4"}
-:::
+  <Tabs>
+    <TabItem label="Ergebnis">
+      <Video caption="Test video" src="video.mp4" />
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      <Video caption="Test video" src="video.mp4" />
+      ```
+    </TabItem>
+  </Tabs>
 
-:::tab-item
-```markdown
-::video[Test video]{src="video.mp4"}
-```
-:::
-::::
+  Videoelemente können auch auf eine Videodatei von einem externen Server
+  verweisen.
 
-Videoelemente können auch auf eine Videodatei von einem externen Server
-verweisen.
+  <Tabs>
+    <TabItem label="Ergebnis">
+      <Video
+        caption=""
+        src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"
+      />
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      <Video
+        caption="\"L'Arrivee d'un train en gare de la Ciotat, 1895\" aus der  Wikipedia"
+        src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"
+      />
+      ```
+    </TabItem>
+  </Tabs>
 
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-::video["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia]{src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"}
-:::
+  Das folgende Beispiel bettet ein Video von YouTube ein.
 
-:::tab-item
-```markdown
-::video["L'Arrivee d'un train en gare de la Ciotat, 1895" aus der  Wikipedia]{src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"}
-```
-:::
-::::
+  <Tabs>
+    <TabItem label="Ergebnis">
+      <YouTube title="Wir sind TU Berlin - Weitersagen" videoId="OlH6bqv5Z-c" />
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      <YouTube title="Wir sind TU Berlin - Weitersagen" videoId="OlH6bqv5Z-c" />
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
-Das folgende Beispiel bettet ein Video von YouTube ein.
-
-::::tabs{labels="Ergebnis,Markdown"}
-:::tab-item
-::youtube[Wir sind TU Berlin - Weitersagen]{videoId="OlH6bqv5Z-c"}
-:::
-
-:::tab-item
-```markdown
-::youtube[Wir sind TU Berlin - Weitersagen]{videoId="OlH6bqv5Z-c"}
-```
-:::
-::::
-:::::
-
-## Speicherorte der Mediendateien  {#file-locations}
+## Speicherorte der Mediendateien {#file-locations}
 
 Alle statischen Dateien befinden sich im Ordner `_static` des
 Wurzelverzeichnisses, sofern sie nicht auf externe Server verweisen. Die
@@ -136,50 +140,54 @@ vereinfachen. Beispielsweise bezieht sich `tu-logo.png` auf die Bilddatei
 `_static/02-elements/04-media/tu-logo.png`, während sich `/tu-logo.png` auf
 `_static/tu-logo.png` bezieht.
 
-::::example
-Ein Bild, das in einem Unterordner von `_static` gespeichert ist.
+<Example>
+  Ein Bild, das in einem Unterordner von `_static` gespeichert ist.
 
-**Markdown**
+  **Markdown**
 
-```markdown
-:::figure
-![Bild aus Unterordner](/subfolder/math.jpg "Beispiel Unterordner"){.img}
-:::
-```
+  ```markdown
+  <Figure>
+    <Caption>Bild aus Unterordner</Caption>
+    ![Bild aus Unterordner](/subfolder/math.jpg "Beispiel Unterordner"){.img}
+  </Figure>
+  ```
 
-**Ergebnis**
+  **Ergebnis**
 
-:::figure
-![Bild aus Unterordner](/subfolder/math.jpg "Beispiel Unterordner"){.img}
-:::
+  <Figure>
+    <Caption>Bild aus Unterordner</Caption>
+    ![Bild aus Unterordner](/subfolder/math.jpg "Beispiel Unterordner"){.img}
+  </Figure>
 
-Ein Bild, das in `_static/02-elements/04-media` gespeichert ist.
+  Ein Bild, das in `_static/02-elements/04-media` gespeichert ist.
 
-**Markdown**
+  **Markdown**
 
-```markdown
-:::figure
-![Logo TU Berlin](tu-logo.png)
-:::
-```
+  ```markdown
+  <Figure>
+    <Caption>Logo TU Berlin</Caption>
+    ![Logo TU Berlin](tu-logo.png)
+  </Figure>
+  ```
 
-**Ergebnis**
+  **Ergebnis**
 
-:::figure
-![Logo TU Berlin](tu-logo.png)
-:::
-::::
+  <Figure>
+    <Caption>Logo TU Berlin</Caption>
+    ![Logo TU Berlin](tu-logo.png)
+  </Figure>
+</Example>
 
-:::info
-Wenn Medien von externen Servern verwenden werden, ist es wichtig zu bedenken,
-dass diese
+<Info>
+  Wenn Medien von externen Servern verwenden werden, ist es wichtig zu bedenken,
+  dass diese
 
-1. jederzeit ohne Vorankündigung offline gehen oder sich ändern können, und
-2. Auswirkungen auf die Privatsphäre Ihrer Benutzer haben.
+  1. jederzeit ohne Vorankündigung offline gehen oder sich ändern können, und
+  2. Auswirkungen auf die Privatsphäre Ihrer Benutzer haben.
 
-Daher wird grundsätzlich angeraten, Medien aus dem `_static`-Ordner des
-Projekts zu laden, anstatt sich auf externe Dienste zu verlassen.
-:::
+  Daher wird grundsätzlich angeraten, Medien aus dem `_static`-Ordner des
+  Projekts zu laden, anstatt sich auf externe Dienste zu verlassen.
+</Info>
 
 ### Übersetzung von statischen Dateien
 
@@ -188,27 +196,29 @@ anzuzeigen. innoDoc benutzt automatisch die sprachspezifische Datei, wenn sie
 vorhanden ist. Die übersetzte Version der Datei muss im Ordner `_static` der
 jeweiligen Sprache abgelegt werden.
 
-::::example
-In diesem Beispiel gibt es zwei Versionen von `lines.png`, eine für jede
-Sprache:
+<Example>
+  In diesem Beispiel gibt es zwei Versionen von `lines.png`, eine für jede
+  Sprache:
 
-- `de/_static/02-elements/04-media/lines.png`
-- `en/_static/02-elements/04-media/lines.png`
+  - `de/_static/02-elements/04-media/lines.png`
+  - `en/_static/02-elements/04-media/lines.png`
 
-**Markdown**
+  **Markdown**
 
-```markdown
-:::figure
-![Lines](lines.png)
-:::
-```
+  ```markdown
+  <Figure>
+    <Caption>Geraden</Caption>
+    ![Geraden](lines.png)
+  </Figure>
+  ```
 
-**Ergebnis**
+  **Ergebnis**
 
-:::figure
-![Lines](lines.png)
-:::
+  <Figure>
+    <Caption>Geraden</Caption>
+    ![Geraden](lines.png)
+  </Figure>
 
-*(Um die verschiedenen Versionen der Datei zu sehen, kann die Kurssprache
-gewechselt werden.)*
-::::
+  *Um die verschiedenen Versionen der Datei zu sehen, kann die Kurssprache
+  gewechselt werden.*
+</Example>

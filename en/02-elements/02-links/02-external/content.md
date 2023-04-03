@@ -2,48 +2,44 @@
 title: External Links
 ---
 
-:::::example
-The easiest way to create a link is to enclose the URL in the characters `<` and
-`>`.
+<Example>
+  A simple external link.
 
-::::tabs{labels="Result,Markdown"}
-:::tab-item
-<https://www.tu-berlin.de/>
-:::
+  <Tabs>
+    <TabItem label="Result">
+      [TU Berlin](https://www.tu-berlin.de)
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      [TU Berlin](https://www.tu-berlin.de)
+      ```
+    </TabItem>
+  </Tabs>
 
-:::tab-item
-```markdown
-<https://www.tu-berlin.de/>
-```
-:::
-::::
+  Usually, however, it is desirable to specify a link text.
 
-Usually, however, it is desirable to specify a link text.
+  <Tabs>
+    <TabItem label="Result">
+      [TU Berlin](https://www.tu-berlin.de)
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      [TU Berlin](https://www.tu-berlin.de)
+      ```
+    </TabItem>
+  </Tabs>
 
-::::tabs{labels="Result,Markdown"}
-:::tab-item
-[TU Berlin](https://www.tu-berlin.de)
-:::
+  Links can also be provided with a title. This increases the Accessibility.
+  It is displayed when somebody hovers with the mouse over the link.
 
-:::tab-item
-```markdown
-[TU Berlin](https://www.tu-berlin.de)
-```
-:::
-::::
-
-Links can also be provided with a title. This increases the Accessibility.
-It is displayed when somebody hovers with the mouse over the link.
-
-::::tabs{labels="Result,Markdown"}
-:::tab-item
-[TU Berlin](https://www.tu-berlin.de "Homepage of TU Berlin")
-:::
-
-:::tab-item
-```markdown
-[TU Berlin](https://www.tu-berlin.de "Homepage of TU Berlin")
-```
-:::
-::::
-:::::
+  <Tabs>
+    <TabItem label="Result">
+      [TU Berlin](https://www.tu-berlin.de "Homepage of TU Berlin")
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      [TU Berlin](https://www.tu-berlin.de "Homepage of TU Berlin")
+      ```
+    </TabItem>
+  </Tabs>
+</Example>

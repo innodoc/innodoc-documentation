@@ -11,12 +11,27 @@ checkbox that is displayed.
 At the beginning, the checkbox are not filled in, i. e. meaning neither
 selected nor not selected.
 
-:::exercise
-Are the following inequalities true or false?
+<Exercise>
+  Are the following inequalities true or false?
 
------------------------------------------------------------------- -----------------------------------------------------------
-[]{.question .checkbox #EX_CB_1 solution="0" validation="boolean"} $\frac12>1-\frac13$
-[]{.question .checkbox #EX_CB_2 solution="1" validation="boolean"} $a^2\geq 2a b-b^2$ (where $a$ and $b$ are unknown numbers)
-[]{.question .checkbox #EX_CB_3 solution="1" validation="boolean"} $\frac12<\frac23<\frac34$
------------------------------------------------------------------- -----------------------------------------------------------
-:::
+  <Grid>
+    <GridItem xs="4">
+      []{.question .checkbox #EX_CB_1 solution="0" validation="boolean"}
+    </GridItem>
+    <GridItem xs="8">
+      $\frac12>1-\frac13$
+    </GridItem>
+    <GridItem xs="4">
+      []{.question .checkbox #EX_CB_2 solution="1" validation="boolean"}
+    </GridItem>
+    <GridItem xs="8">
+      $a^2\geq 2a b-b^2$ (where $a$ and $b$ are unknown numbers)
+    </GridItem>
+    <GridItem xs="4">
+      []{.question .checkbox #EX_CB_3 solution="1" validation="boolean"}
+    </GridItem>
+    <GridItem xs="8">
+      $\frac12<\frac23<\frac34$
+    </GridItem>
+  </Grid>
+</Exercise>

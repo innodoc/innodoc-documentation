@@ -16,52 +16,53 @@ The preferred image formats are PNG or JPG for raster graphics and SVG for
 vector graphics. By default an image is an inline element, meaning it will be
 displayed inside of a paragraph.
 
-:::example
-**Markdown**
+<Example>
+  **Markdown**
 
-```markdown
-An inline image ![Star](star.png) in the regular text flow.
-```
+  ```markdown
+  An inline image ![Star](star.png) in the regular text flow.
+  ```
 
-**Result**
+  **Result**
 
-An inline image ![Star](star.png) in the regular text flow.
-:::
+  An inline image ![Star](star.png) in the regular text flow.
+</Example>
 
 Bigger images should be wrapped in a `figure` element. This way they are
 formatted with a surrounding frame and can also receive a caption and a
-reference ID. The alternate text is referred automatically from the image title
-in this case.
+reference ID.
 
-::::example
-**Markdown**
+<Example>
+  **Markdown**
 
-```markdown
-:::figure
-![The Creation of Adam by Michelangelo](adam.jpg "The Creation of Adam"){.img}
-:::
-```
+  ```markdown
+  <Figure>
+    <Caption>The Creation of Adam by Michelangelo</Caption>
+    ![The Creation of Adam by Michelangelo](adam.jpg "The Creation of Adam"){.img}
+  </Figure>
+  ```
 
-**Result**
+  **Result**
 
-:::figure
-![The Creation of Adam by Michelangelo](adam.jpg "The Creation of Adam"){.img}
-:::
-::::
+  <Figure>
+    <Caption>The Creation of Adam by Michelangelo</Caption>
+    ![The Creation of Adam by Michelangelo](adam.jpg "The Creation of Adam"){.img}
+  </Figure>
+</Example>
 
-:::example{#images-as-link}
-Images can also be used inside links.
+<Example id="images-as-link">
+  Images can also be used inside links.
 
-**Markdown**
+  **Markdown**
 
-```markdown
-[![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
-```
+  ```markdown
+  [![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
+  ```
 
-**Result**
+  **Result**
 
-[![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
-:::
+  [![Logo TU Berlin](tu-logo.png)](https://www.tu-berlin.de/ "Homepage TU Berlin")
+</Example>
 
 ## Videos
 
@@ -73,49 +74,52 @@ folder or on a remote server. For embedding videos from YouTube, the
 `video-youtube` class is supported. Use browser-supported codecs and container
 format for optimal compatibility.
 
-:::::example
-Embed a video file simply by referencing its filename and adding a title.
+<Example>
+  Embed a video file simply by referencing its filename and adding a title.
 
-::::tabs{labels="Result,Markdown"}
-:::tab-item
-::video[Test video]{src="video.mp4"}
-:::
+  <Tabs>
+    <TabItem label="Result">
+      <Video caption="Test video" src="video.mp4" />
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      <Video caption="Test video" src="video.mp4" />
+      ```
+    </TabItem>
+  </Tabs>
 
-:::tab-item
-```markdown
-::video[Test video]{src="video.mp4"}
-```
-:::
-::::
+  Video elements can also reference a video file from an external server.
 
-Video elements can also reference a video file from an external server.
+  <Tabs>
+    <TabItem label="Result">
+      <Video
+        caption="\"L'Arrivee d'un train en gare de la Ciotat, 1895\" from Wikipedia"
+        src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"
+      />
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      <Video
+        caption="\"L'Arrivee d'un train en gare de la Ciotat, 1895\" from Wikipedia"
+        src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"
+      />
+      ```
+    </TabItem>
+  </Tabs>
 
-::::tabs{labels="Result,Markdown"}
-:::tab-item
-::video["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia]{src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"}
-:::
+  The following example embeds a video from YouTube.
 
-:::tab-item
-```markdown
-::video["L'Arrivee d'un train en gare de la Ciotat, 1895" from  Wikipedia]{src="https://upload.wikimedia.org/wikipedia/en/c/c3/L%27Arrivee_d%27un_train_en_gare_de_la_Ciotat%2C_1895.ogv"}
-```
-:::
-::::
-:::::
-
-The following example embeds a video from YouTube.
-
-::::tabs{labels="Result,Markdown"}
-:::tab-item
-::youtube[Wir sind TU Berlin - Weitersagen]{videoId="OlH6bqv5Z-c"}
-:::
-
-:::tab-item
-```markdown
-::youtube[Wir sind TU Berlin - Weitersagen]{videoId="OlH6bqv5Z-c"}
-```
-:::
-::::
+  <Tabs>
+    <TabItem label="Result">
+      <YouTube title="Wir sind TU Berlin - Weitersagen" videoId="OlH6bqv5Z-c" />
+    </TabItem>
+    <TabItem label="Markdown">
+      ```markdown
+      <YouTube title="Wir sind TU Berlin - Weitersagen" videoId="OlH6bqv5Z-c" />
+      ```
+    </TabItem>
+  </Tabs>
+</Example>
 
 ## File locations {#file-locations}
 
@@ -129,49 +133,53 @@ folder plus the section path for easy file management, e.g. `tu-logo.png` refers
 to the image file `_static/02-elements/04-media/tu-logo.png` while
 `/tu-logo.png` refers to `_static/tu-logo.png`.
 
-::::example
-An image stored in a sub-folder of `_static`.
+<Example>
+  An image stored in a sub-folder of `_static`.
 
-**Markdown**
+  **Markdown**
 
-```markdown
-:::figure
-![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
-:::
-```
+  ```markdown
+  <Figure>
+    <Caption>Loaded from a subfolder</Caption>
+    ![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
+  </Figure>
+  ```
 
-**Result**
+  **Result**
 
-:::figure
-![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
-:::
+  <Figure>
+    <Caption>Loaded from a subfolder</Caption>
+    ![Loaded from a subfolder](/subfolder/math.jpg "Example subfolder"){.img}
+  </Figure>
 
-An image stored in `_static/02-elements/04-media`.
+  An image stored in `_static/02-elements/04-media`.
 
-**Markdown**
+  **Markdown**
 
-```markdown
-:::figure
-![Logo TU Berlin](tu-logo.png)
-:::
-```
+  ```markdown
+  <Figure>
+    <Caption>Logo TU Berlin</Caption>
+    ![Logo TU Berlin](tu-logo.png)
+  </Figure>
+  ```
 
-**Result**
+  **Result**
 
-:::figure
-![Logo TU Berlin](tu-logo.png)
-:::
-::::
+  <Figure>
+    <Caption>Logo TU Berlin</Caption>
+    ![Logo TU Berlin](tu-logo.png)
+  </Figure>
+</Example>
 
-:::info
-When using media from external servers, please keep in mind that these
+<Info>
+  When using media from external servers, please keep in mind that these
 
-1. might go offline or change at any time without notice, and
-2. do have privacy implications for your users.
+  1. might go offline or change at any time without notice, and
+  2. do have privacy implications for your users.
 
-Therefore it's generally recommended to load media from the project's `_static`
-folder instead of relying on external services.
-:::
+  Therefore it's generally recommended to load media from the project's `_static`
+  folder instead of relying on external services.
+</Info>
 
 ### Translation of static files
 
@@ -180,25 +188,27 @@ languages. innoDoc will always display the language-specific file if it is
 present. The translated version of the file needs to be placed in the `_static`
 folder of the respective language.
 
-::::example
-For this example there are two versions of `lines.png`, one for each language:
+<Example>
+  For this example there are two versions of `lines.png`, one for each language:
 
-- `de/_static/02-elements/04-media/lines.png`
-- `en/_static/02-elements/04-media/lines.png`
+  - `de/_static/02-elements/04-media/lines.png`
+  - `en/_static/02-elements/04-media/lines.png`
 
-**Markdown**
+  **Markdown**
 
-```markdown
-:::figure
-![Lines](lines.png)
-:::
-```
+  ```markdown
+  <Figure>
+    <Caption>Lines</Caption>
+    ![Lines](lines.png)
+  </Figure>
+  ```
 
-**Result**
+  **Result**
 
-:::figure
-![Lines](lines.png)
-:::
+  <Figure>
+    <Caption>Lines</Caption>
+    ![Lines](lines.png)
+  </Figure>
 
-*(Try switching the language to see the other version of the file.)*
-::::
+  *Try switching the language to see the other version of the file.*
+</Example>
